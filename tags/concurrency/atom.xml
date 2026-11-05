@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>Mukund Parmar - Full Stack Web Developer &amp; Software Engineer - Concurrency</title>
+    <subtitle>Portfolio of Mukund Parmar, a passionate Full Stack Web Developer specializing in MERN Stack, DevOps, and Competitive Programming. View my projects and experience.</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://mukund58.github.io/tags/concurrency/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://mukund58.github.io/"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2025-06-23T00:00:00+00:00</updated>
+    <id>https://mukund58.github.io/tags/concurrency/atom.xml</id>
+    <entry xml:lang="en">
+        <title>How Single-CPU Systems Multitask</title>
+        <published>2025-06-23T00:00:00+00:00</published>
+        <updated>2025-06-23T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://mukund58.github.io/notes/concurrency-is-not-what-you-think/"/>
+        <id>https://mukund58.github.io/notes/concurrency-is-not-what-you-think/</id>
+        
+        <content type="html" xml:base="https://mukund58.github.io/notes/concurrency-is-not-what-you-think/">&lt;p&gt;Have you ever wondered how your computer can run multiple programs at the same time?&lt;&#x2F;p&gt;
+&lt;p&gt;Most people think of &lt;strong&gt;multi-core CPUs&lt;&#x2F;strong&gt;, which is understandable with the marketing push from CPU manufacturers. However, the ability to multitask has been around &lt;strong&gt;since the days of single-core processors&lt;&#x2F;strong&gt;.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;a-historical-perspective&quot;&gt;A Historical Perspective&lt;&#x2F;h2&gt;
+&lt;p&gt;Back in the 1980s, machines like the &lt;strong&gt;Commodore Amiga&lt;&#x2F;strong&gt; and &lt;strong&gt;Apple Macintosh&lt;&#x2F;strong&gt; could already run multiple programs at once—even with only &lt;strong&gt;one processor&lt;&#x2F;strong&gt;.&lt;&#x2F;p&gt;
+&lt;a href=&quot;https:&amp;#x2F;&amp;#x2F;upload.wikimedia.org&amp;#x2F;wikipedia&amp;#x2F;commons&amp;#x2F;thumb&amp;#x2F;c&amp;#x2F;c3&amp;#x2F;Amiga500_system.jpg&amp;#x2F;250px-Amiga500_system.jpg&quot; data-lightbox=&quot;blog-img&quot; data-title=&quot;Online Image Example&quot;&gt;
+  &lt;img src=&quot;https:&amp;#x2F;&amp;#x2F;upload.wikimedia.org&amp;#x2F;wikipedia&amp;#x2F;commons&amp;#x2F;thumb&amp;#x2F;c&amp;#x2F;c3&amp;#x2F;Amiga500_system.jpg&amp;#x2F;250px-Amiga500_system.jpg&quot;
+       alt=&quot;Online Image Example&quot;
+       loading=&quot;lazy&quot;
+       style=&quot;max-width: 100%; height: auto; border-radius: 6px;&quot; &#x2F;&gt;
+&lt;&#x2F;a&gt;
+&lt;p&gt;To understand how, we need to go back further.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;mainframes-and-limited-access&quot;&gt;Mainframes and Limited Access&lt;&#x2F;h3&gt;
+&lt;a href=&quot;https:&amp;#x2F;&amp;#x2F;media.wired.com&amp;#x2F;photos&amp;#x2F;59329428a312645844995f4d&amp;#x2F;master&amp;#x2F;w_1600,c_limit&amp;#x2F;AP120305028348.jpg&quot; data-lightbox=&quot;blog-img&quot; data-title=&quot;Online Image Example&quot;&gt;
+  &lt;img src=&quot;https:&amp;#x2F;&amp;#x2F;media.wired.com&amp;#x2F;photos&amp;#x2F;59329428a312645844995f4d&amp;#x2F;master&amp;#x2F;w_1600,c_limit&amp;#x2F;AP120305028348.jpg&quot;
+       alt=&quot;Online Image Example&quot;
+       loading=&quot;lazy&quot;
+       style=&quot;max-width: 100%; height: auto; border-radius: 6px;&quot; &#x2F;&gt;
+&lt;&#x2F;a&gt;
+&lt;p&gt;Early computers were massive and expensive machines called &lt;strong&gt;mainframes&lt;&#x2F;strong&gt;. They filled entire rooms and were only accessible to governments, big companies, and universities. Due to their high cost and complexity, &lt;strong&gt;computer time was highly valuable&lt;&#x2F;strong&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;Operating a program on these machines wasn’t simple:&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;Load the compiler (often from magnetic tape).&lt;&#x2F;li&gt;
+&lt;li&gt;Input the source code (e.g., in Fortran).&lt;&#x2F;li&gt;
+&lt;li&gt;Generate Assembly code.&lt;&#x2F;li&gt;
+&lt;li&gt;Use an assembler to produce machine code.&lt;&#x2F;li&gt;
+&lt;li&gt;Finally, execute the program.&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;p&gt;Each step involved manual tape mounting and waiting, during which the &lt;strong&gt;CPU sat idle&lt;&#x2F;strong&gt;, even though other users couldn’t access it.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;the-birth-of-operating-systems&quot;&gt;The Birth of Operating Systems&lt;&#x2F;h3&gt;
+&lt;p&gt;To improve efficiency, researchers created early &lt;strong&gt;operating systems&lt;&#x2F;strong&gt; that enabled &lt;strong&gt;multiple users&lt;&#x2F;strong&gt; to connect via devices like &lt;strong&gt;teletypes&lt;&#x2F;strong&gt; or &lt;strong&gt;dumb terminals&lt;&#x2F;strong&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;This led to &lt;strong&gt;time-sharing&lt;&#x2F;strong&gt; systems, where the operating system would &lt;strong&gt;switch between users’ programs&lt;&#x2F;strong&gt;, keeping the CPU busy and maximizing the value of expensive computers.&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;h2 id=&quot;concurrency-in-single-cpu-systems&quot;&gt;Concurrency in Single-CPU Systems&lt;&#x2F;h2&gt;
+&lt;p&gt;A &lt;strong&gt;CPU executes one instruction at a time&lt;&#x2F;strong&gt;, but it does so incredibly fast which gives the illusion of simultaneous execution. This is the core idea of &lt;strong&gt;concurrency&lt;&#x2F;strong&gt;.&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Even with one CPU, computers can appear to run many processes at once by rapidly switching between them.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;p&gt;Systems like &lt;strong&gt;Multics&lt;&#x2F;strong&gt; (developed in the 1960s) were pioneers in this approach.&lt;&#x2F;p&gt;
+&lt;a href=&quot;https:&amp;#x2F;&amp;#x2F;www.macos.utah.edu&amp;#x2F;documentation&amp;#x2F;short_courses&amp;#x2F;mac_os_x_overview&amp;#x2F;history_and_evolution&amp;#x2F;unix_history&amp;#x2F;mainColumnParagraphs&amp;#x2F;010&amp;#x2F;image&amp;#x2F;openstep1.jpg&quot; data-lightbox=&quot;blog-img&quot; data-title=&quot;Online Image Example&quot;&gt;
+  &lt;img src=&quot;https:&amp;#x2F;&amp;#x2F;www.macos.utah.edu&amp;#x2F;documentation&amp;#x2F;short_courses&amp;#x2F;mac_os_x_overview&amp;#x2F;history_and_evolution&amp;#x2F;unix_history&amp;#x2F;mainColumnParagraphs&amp;#x2F;010&amp;#x2F;image&amp;#x2F;openstep1.jpg&quot;
+       alt=&quot;Online Image Example&quot;
+       loading=&quot;lazy&quot;
+       style=&quot;max-width: 100%; height: auto; border-radius: 6px;&quot; &#x2F;&gt;
+&lt;&#x2F;a&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.macos.utah.edu&#x2F;documentation&#x2F;short_courses&#x2F;mac_os_x_overview&#x2F;history_and_evolution&#x2F;unix_history.html&quot;&gt;refrence&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Later, personal computers adopted similar techniques to serve multiple users, but to allow a &lt;strong&gt;single user to run multiple applications&lt;&#x2F;strong&gt;.&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;h2 id=&quot;how-cpus-execute-instructions&quot;&gt;How CPUs Execute Instructions&lt;&#x2F;h2&gt;
+&lt;p&gt;At a low level, the CPU operates in a &lt;strong&gt;fetch-decode-execute&lt;&#x2F;strong&gt; cycle:&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;The &lt;strong&gt;address register&lt;&#x2F;strong&gt; holds the memory location of the next instruction.&lt;&#x2F;li&gt;
+&lt;li&gt;The instruction is &lt;strong&gt;fetched&lt;&#x2F;strong&gt; and moved to the &lt;strong&gt;instruction register&lt;&#x2F;strong&gt;.&lt;&#x2F;li&gt;
+&lt;li&gt;The CPU &lt;strong&gt;decodes and executes&lt;&#x2F;strong&gt; the instruction.&lt;&#x2F;li&gt;
+&lt;li&gt;The address register is updated to point to the next instruction.&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;p&gt;&lt;strong&gt;Jump instructions&lt;&#x2F;strong&gt; allow for loops and conditions, by modifying the address register manually.&lt;&#x2F;p&gt;
+&lt;p&gt;This means programs don’t need to be split in memory—the &lt;strong&gt;operating system changes the CPU’s state&lt;&#x2F;strong&gt; to switch between processes.&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;h2 id=&quot;scheduling-and-process-management&quot;&gt;Scheduling and Process Management&lt;&#x2F;h2&gt;
+&lt;p&gt;Once a program starts running, it becomes a &lt;strong&gt;process&lt;&#x2F;strong&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;The OS uses a &lt;strong&gt;queue&lt;&#x2F;strong&gt; to manage all active processes. Two key components handle this:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Scheduler&lt;&#x2F;strong&gt;: Determines which process should run next.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Dispatcher&lt;&#x2F;strong&gt;: Loads the selected process into the CPU.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;but-when-does-the-os-run&quot;&gt;But When Does the OS Run?&lt;&#x2F;h3&gt;
+&lt;p&gt;Programs often rely on the OS for tasks like file access or memory allocation. These are handled through &lt;strong&gt;interruptions&lt;&#x2F;strong&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;When an &lt;strong&gt;interrupt&lt;&#x2F;strong&gt; occurs (e.g., from an I&#x2F;O request):&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;The CPU saves the current process’s state.&lt;&#x2F;li&gt;
+&lt;li&gt;It jumps to the &lt;strong&gt;interrupt service routine (ISR)&lt;&#x2F;strong&gt; in OS memory.&lt;&#x2F;li&gt;
+&lt;li&gt;The OS handles the request and schedules the next process.&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;p&gt;This is how the &lt;strong&gt;OS regains control&lt;&#x2F;strong&gt; of the CPU.&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;h2 id=&quot;the-problem-with-cooperative-scheduling&quot;&gt;The Problem With Cooperative Scheduling&lt;&#x2F;h2&gt;
+&lt;p&gt;Originally, systems used &lt;strong&gt;cooperative scheduling&lt;&#x2F;strong&gt;:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;A process keeps the CPU until it voluntarily gives it up.&lt;&#x2F;li&gt;
+&lt;li&gt;This can lead to problems if a process enters an &lt;strong&gt;infinite loop&lt;&#x2F;strong&gt; with no I&#x2F;O.&lt;&#x2F;li&gt;
+&lt;li&gt;The OS never regains control, potentially locking the system.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;This method is insecure, especially with malicious programs.&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;h2 id=&quot;enter-preemptive-scheduling&quot;&gt;Enter Preemptive Scheduling&lt;&#x2F;h2&gt;
+&lt;p&gt;To solve this, hardware support is essential.&lt;&#x2F;p&gt;
+&lt;p&gt;A &lt;strong&gt;hardware timer&lt;&#x2F;strong&gt; is introduced:&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;Before assigning the CPU to a process, the OS sets the timer.&lt;&#x2F;li&gt;
+&lt;li&gt;If the timer expires, it &lt;strong&gt;automatically triggers an interrupt&lt;&#x2F;strong&gt;.&lt;&#x2F;li&gt;
+&lt;li&gt;This forces the CPU to return control to the OS.&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Preemptive scheduling allows the OS to &lt;strong&gt;interrupt any process&lt;&#x2F;strong&gt; and regain CPU control—even if the process doesn’t cooperate.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;p&gt;Modern systems, including versions of Windows from &lt;strong&gt;95 onward&lt;&#x2F;strong&gt;, use this method. Interestingly, &lt;strong&gt;Multics supported it in the 1960s&lt;&#x2F;strong&gt;!&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;h2 id=&quot;what-about-multi-core-systems&quot;&gt;What About Multi-core Systems?&lt;&#x2F;h2&gt;
+&lt;p&gt;Multitasking on a single core uses concurrency to &lt;strong&gt;simulate&lt;&#x2F;strong&gt; parallel execution.&lt;&#x2F;p&gt;
+&lt;p&gt;However, as the number of processes grows, delays become noticeable.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;hardware-solution-multi-core-cpus&quot;&gt;Hardware Solution: Multi-core CPUs&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Each core can handle a process independently.&lt;&#x2F;li&gt;
+&lt;li&gt;This enables &lt;strong&gt;true parallelism&lt;&#x2F;strong&gt;.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;Yet, even in multi-core systems, concurrency is still crucial—because &lt;strong&gt;we often have more processes than cores&lt;&#x2F;strong&gt;.&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;h2 id=&quot;final-thought&quot;&gt;Final Thought&lt;&#x2F;h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Concurrency is about dealing with lots of things at once.&lt;br &#x2F;&gt;
+Parallelism is about doing lots of things at once.&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;hr &#x2F;&gt;
+</content>
+        
+    </entry>
+</feed>

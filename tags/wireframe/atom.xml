@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>Mukund Parmar - Full Stack Web Developer &amp; Software Engineer - Wireframe</title>
+    <subtitle>Portfolio of Mukund Parmar, a passionate Full Stack Web Developer specializing in MERN Stack, DevOps, and Competitive Programming. View my projects and experience.</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://mukund58.github.io/tags/wireframe/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://mukund58.github.io/"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2025-06-20T00:00:00+00:00</updated>
+    <id>https://mukund58.github.io/tags/wireframe/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Wireframe Tool</title>
+        <published>2025-06-20T00:00:00+00:00</published>
+        <updated>2025-06-20T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://mukund58.github.io/project/wireframe/"/>
+        <id>https://mukund58.github.io/project/wireframe/</id>
+        
+        <content type="html" xml:base="https://mukund58.github.io/project/wireframe/">&lt;h2 id=&quot;wireframe-tool-project-report&quot;&gt;Wireframe Tool Project Report&lt;&#x2F;h2&gt;
+&lt;p&gt;&lt;strong&gt;Institute:&lt;&#x2F;strong&gt; Birla Vishvakarma Mahavidyalaya&lt;br &#x2F;&gt;
+&lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;mukund58&#x2F;Wireframe-tool&quot;&gt;Project Repo&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;Group Members:&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Mukund Parmar (23CP014)&lt;&#x2F;li&gt;
+&lt;li&gt;Jaivik Prajapati (23CP002)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;snapshots&quot;&gt;Snapshots&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;home-page&quot;&gt;Home Page&lt;&#x2F;h3&gt;
+
+
+
+
+
+&lt;a href=&quot;&#x2F;images&amp;#x2F;project.png&quot; data-lightbox=&quot;blog-img&quot; data-title=&quot;Sample image&quot;&gt;
+    &lt;img src=&quot;https:&amp;#x2F;&amp;#x2F;mukund58.github.io&amp;#x2F;processed_images&amp;#x2F;project.924513388348b469.png&quot;
+         srcset=&quot;&#x2F;images&amp;#x2F;project.png 2x&quot;
+         width=&quot;675&quot;
+         height=&quot;921&quot;
+         alt=&quot;Sample image&quot;
+         loading=&quot;lazy&quot;
+         style=&quot;max-width: 100%; height: auto; border-radius: 6px;&quot; &#x2F;&gt;
+&lt;&#x2F;a&gt;
+&lt;h3 id=&quot;login-and-signup-page&quot;&gt;Login and Signup Page&lt;&#x2F;h3&gt;
+&lt;p&gt;
+
+
+
+
+&lt;a href=&quot;&#x2F;images&amp;#x2F;project-login.png&quot; data-lightbox=&quot;blog-img&quot; data-title=&quot;Sample image&quot;&gt;
+    &lt;img src=&quot;https:&amp;#x2F;&amp;#x2F;mukund58.github.io&amp;#x2F;processed_images&amp;#x2F;project-login.18800b93816dc9a8.png&quot;
+         srcset=&quot;&#x2F;images&amp;#x2F;project-login.png 2x&quot;
+         width=&quot;675&quot;
+         height=&quot;306&quot;
+         alt=&quot;Sample image&quot;
+         loading=&quot;lazy&quot;
+         style=&quot;max-width: 100%; height: auto; border-radius: 6px;&quot; &#x2F;&gt;
+&lt;&#x2F;a&gt;
+
+
+
+
+
+
+&lt;a href=&quot;&#x2F;images&amp;#x2F;project-signup.png&quot; data-lightbox=&quot;blog-img&quot; data-title=&quot;Sample image&quot;&gt;
+    &lt;img src=&quot;https:&amp;#x2F;&amp;#x2F;mukund58.github.io&amp;#x2F;processed_images&amp;#x2F;project-signup.3a9e4b3783c69830.png&quot;
+         srcset=&quot;&#x2F;images&amp;#x2F;project-signup.png 2x&quot;
+         width=&quot;675&quot;
+         height=&quot;306&quot;
+         alt=&quot;Sample image&quot;
+         loading=&quot;lazy&quot;
+         style=&quot;max-width: 100%; height: auto; border-radius: 6px;&quot; &#x2F;&gt;
+&lt;&#x2F;a&gt;
+&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;dashboard-page&quot;&gt;Dashboard Page&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Send verification email&lt;&#x2F;li&gt;
+&lt;li&gt;Edit or delete draft&lt;&#x2F;li&gt;
+&lt;li&gt;Create new drafts&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;
+
+
+
+
+&lt;a href=&quot;&#x2F;images&amp;#x2F;project-dashborad.png&quot; data-lightbox=&quot;blog-img&quot; data-title=&quot;Sample image&quot;&gt;
+    &lt;img src=&quot;https:&amp;#x2F;&amp;#x2F;mukund58.github.io&amp;#x2F;processed_images&amp;#x2F;project-dashborad.bd04a0222b6ec3b3.png&quot;
+         srcset=&quot;&#x2F;images&amp;#x2F;project-dashborad.png 2x&quot;
+         width=&quot;675&quot;
+         height=&quot;356&quot;
+         alt=&quot;Sample image&quot;
+         loading=&quot;lazy&quot;
+         style=&quot;max-width: 100%; height: auto; border-radius: 6px;&quot; &#x2F;&gt;
+&lt;&#x2F;a&gt;
+
+
+
+
+
+
+&lt;a href=&quot;&#x2F;images&amp;#x2F;project-DashboardDraft.png&quot; data-lightbox=&quot;blog-img&quot; data-title=&quot;Sample image&quot;&gt;
+    &lt;img src=&quot;https:&amp;#x2F;&amp;#x2F;mukund58.github.io&amp;#x2F;processed_images&amp;#x2F;project-DashboardDraft.7cf545200223c93e.png&quot;
+         srcset=&quot;&#x2F;images&amp;#x2F;project-DashboardDraft.png 2x&quot;
+         width=&quot;675&quot;
+         height=&quot;385&quot;
+         alt=&quot;Sample image&quot;
+         loading=&quot;lazy&quot;
+         style=&quot;max-width: 100%; height: auto; border-radius: 6px;&quot; &#x2F;&gt;
+&lt;&#x2F;a&gt;
+&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;editor-page&quot;&gt;Editor Page&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Name and create drafts&lt;&#x2F;li&gt;
+&lt;li&gt;View&#x2F;search all drafts&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+
+
+
+
+&lt;a href=&quot;&#x2F;images&amp;#x2F;project-editor.png&quot; data-lightbox=&quot;blog-img&quot; data-title=&quot;Sample image&quot;&gt;
+    &lt;img src=&quot;https:&amp;#x2F;&amp;#x2F;mukund58.github.io&amp;#x2F;processed_images&amp;#x2F;project-editor.f06ead22fd3643da.png&quot;
+         srcset=&quot;&#x2F;images&amp;#x2F;project-editor.png 2x&quot;
+         width=&quot;675&quot;
+         height=&quot;306&quot;
+         alt=&quot;Sample image&quot;
+         loading=&quot;lazy&quot;
+         style=&quot;max-width: 100%; height: auto; border-radius: 6px;&quot; &#x2F;&gt;
+&lt;&#x2F;a&gt;
+&lt;h2 id=&quot;1-introduction&quot;&gt;1. Introduction&lt;&#x2F;h2&gt;
+&lt;p&gt;The &lt;strong&gt;Wireframe Tool&lt;&#x2F;strong&gt; is a web-based application designed to assist UI&#x2F;UX designers in creating wireframes efficiently. The tool provides an infinite canvas where users can collaboratively design, modify, and share wireframes. It is developed using the LAMP stack (Linux, Apache, MySQL, PHP) and aims to streamline the design process with real-time collaboration features.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;2-purpose&quot;&gt;2. Purpose&lt;&#x2F;h2&gt;
+&lt;p&gt;The primary goal of this project is to create an intuitive and feature-rich wireframe design tool that allows users to design interfaces collaboratively.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;what-is-a-wireframe&quot;&gt;What is a Wireframe?&lt;&#x2F;h3&gt;
+&lt;p&gt;A wireframe is a simple sketch or blueprint that shows the basic layout of a website or app.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;why-use-wireframes&quot;&gt;Why Use Wireframes?&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Clarify ideas.&lt;&#x2F;li&gt;
+&lt;li&gt;Get early feedback.&lt;&#x2F;li&gt;
+&lt;li&gt;Save time.&lt;&#x2F;li&gt;
+&lt;li&gt;Focus on function.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;benefits-of-using-wireframes&quot;&gt;Benefits of Using Wireframes&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Improves user experience.&lt;&#x2F;li&gt;
+&lt;li&gt;Faster changes.&lt;&#x2F;li&gt;
+&lt;li&gt;Clearer development.&lt;&#x2F;li&gt;
+&lt;li&gt;Saves costs.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;objectives&quot;&gt;Objectives&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Provide an infinite canvas for designing wireframes.&lt;&#x2F;li&gt;
+&lt;li&gt;Enable real-time collaboration through link-based sharing.&lt;&#x2F;li&gt;
+&lt;li&gt;Store and retrieve wireframe data efficiently.&lt;&#x2F;li&gt;
+&lt;li&gt;Offer an easy-to-use UI without coding knowledge.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;3-modules&quot;&gt;3. Modules&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;3-1-user-authentication-module&quot;&gt;3.1 User Authentication Module&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Registration and login&lt;&#x2F;li&gt;
+&lt;li&gt;Secure session handling&lt;&#x2F;li&gt;
+&lt;li&gt;Password encryption and reset&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;3-2-wireframe-design-module&quot;&gt;3.2 Wireframe Design Module&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Infinite canvas&lt;&#x2F;li&gt;
+&lt;li&gt;Drag-and-drop UI elements&lt;&#x2F;li&gt;
+&lt;li&gt;Layered object management&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;3-3-collaboration-module&quot;&gt;3.3 Collaboration Module&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Shareable links&lt;&#x2F;li&gt;
+&lt;li&gt;Real-time sync via WebSockets&#x2F;AJAX&lt;&#x2F;li&gt;
+&lt;li&gt;View&#x2F;edit permission management&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;3-4-storage-and-database-module&quot;&gt;3.4 Storage and Database Module&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;MySQL storage and retrieval&lt;&#x2F;li&gt;
+&lt;li&gt;Load previous designs&lt;&#x2F;li&gt;
+&lt;li&gt;Optimized queries&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;3-5-export-and-sharing-module&quot;&gt;3.5 Export and Sharing Module&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Export to PDF&#x2F;PNG&#x2F;SVG&lt;&#x2F;li&gt;
+&lt;li&gt;Unique sharing links&lt;&#x2F;li&gt;
+&lt;li&gt;Print-ready outputs&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;4-functional-requirements&quot;&gt;4. Functional Requirements&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;4-1-user-authentication&quot;&gt;4.1 User Authentication&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Secure login&#x2F;logout&lt;&#x2F;li&gt;
+&lt;li&gt;Password hashing&lt;&#x2F;li&gt;
+&lt;li&gt;Session management&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;4-2-wireframe-creation&quot;&gt;4.2 Wireframe Creation&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Drag and drop elements&lt;&#x2F;li&gt;
+&lt;li&gt;Resize, move, delete&lt;&#x2F;li&gt;
+&lt;li&gt;Undo&#x2F;redo support&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;4-3-collaboration&quot;&gt;4.3 Collaboration&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Invite via link&lt;&#x2F;li&gt;
+&lt;li&gt;Real-time updates&lt;&#x2F;li&gt;
+&lt;li&gt;Shared views for all collaborators&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;4-4-data-storage-and-retrieval&quot;&gt;4.4 Data Storage and Retrieval&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Save wireframes in DB&lt;&#x2F;li&gt;
+&lt;li&gt;Access previous work&lt;&#x2F;li&gt;
+&lt;li&gt;Autosave support&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;4-5-export-and-sharing&quot;&gt;4.5 Export and Sharing&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Export to standard formats&lt;&#x2F;li&gt;
+&lt;li&gt;Shareable links&lt;&#x2F;li&gt;
+&lt;li&gt;Print options&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;additional-functional-requirements&quot;&gt;Additional Functional Requirements&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;1-user-management&quot;&gt;1. User Management&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Register with email, username, password&lt;&#x2F;li&gt;
+&lt;li&gt;Role-based access (admin&#x2F;user)&lt;&#x2F;li&gt;
+&lt;li&gt;Update profile info&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;2-draft-management&quot;&gt;2. Draft Management&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Create&#x2F;view&#x2F;edit&#x2F;delete drafts&lt;&#x2F;li&gt;
+&lt;li&gt;Use assets in drafts&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;3-asset-management-admin&quot;&gt;3. Asset Management (Admin)&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Add&#x2F;update&#x2F;delete assets&lt;&#x2F;li&gt;
+&lt;li&gt;Assets linked to drafts&lt;&#x2F;li&gt;
+&lt;li&gt;Access control&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;4-draft-asset-relationship&quot;&gt;4. Draft-Asset Relationship&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Multiple assets per draft&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;5-security-authorization&quot;&gt;5. Security &amp;amp; Authorization&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Only authenticated users can access features&lt;&#x2F;li&gt;
+&lt;li&gt;Hashed passwords&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;6-database-constraints&quot;&gt;6. Database Constraints&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Valid user-draft relationship&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;7-import-export&quot;&gt;7. Import&#x2F;Export&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Drafts as JSON import&#x2F;export&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;er-model&quot;&gt;ER Model&lt;&#x2F;h2&gt;
+
+
+
+
+
+&lt;a href=&quot;&#x2F;images&amp;#x2F;ER.png&quot; data-lightbox=&quot;blog-img&quot; data-title=&quot;Sample image&quot;&gt;
+    &lt;img src=&quot;https:&amp;#x2F;&amp;#x2F;mukund58.github.io&amp;#x2F;processed_images&amp;#x2F;ER.3df21119eb03ca3c.png&quot;
+         srcset=&quot;&#x2F;images&amp;#x2F;ER.png 2x&quot;
+         width=&quot;402&quot;
+         height=&quot;156&quot;
+         alt=&quot;Sample image&quot;
+         loading=&quot;lazy&quot;
+         style=&quot;max-width: 100%; height: auto; border-radius: 6px;&quot; &#x2F;&gt;
+&lt;&#x2F;a&gt;
+&lt;h2 id=&quot;relational-schema&quot;&gt;Relational Schema&lt;&#x2F;h2&gt;
+
+
+
+
+
+&lt;a href=&quot;&#x2F;images&amp;#x2F;RS.png&quot; data-lightbox=&quot;blog-img&quot; data-title=&quot;Sample image&quot;&gt;
+    &lt;img src=&quot;https:&amp;#x2F;&amp;#x2F;mukund58.github.io&amp;#x2F;processed_images&amp;#x2F;RS.2cd053587c4e7278.png&quot;
+         srcset=&quot;&#x2F;images&amp;#x2F;RS.png 2x&quot;
+         width=&quot;411&quot;
+         height=&quot;193&quot;
+         alt=&quot;Sample image&quot;
+         loading=&quot;lazy&quot;
+         style=&quot;max-width: 100%; height: auto; border-radius: 6px;&quot; &#x2F;&gt;
+&lt;&#x2F;a&gt;
+&lt;hr &#x2F;&gt;
+</content>
+        
+    </entry>
+</feed>

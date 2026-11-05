@@ -1,0 +1,1002 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>Mukund Parmar - Full Stack Web Developer &amp; Software Engineer - React</title>
+    <subtitle>Portfolio of Mukund Parmar, a passionate Full Stack Web Developer specializing in MERN Stack, DevOps, and Competitive Programming. View my projects and experience.</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://mukund58.github.io/tags/react/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://mukund58.github.io/"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2026-11-05T00:00:00+00:00</updated>
+    <id>https://mukund58.github.io/tags/react/atom.xml</id>
+    <entry xml:lang="en">
+        <title>System design </title>
+        <published>2026-11-05T00:00:00+00:00</published>
+        <updated>2026-11-05T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://mukund58.github.io/notes/system-desgin/"/>
+        <id>https://mukund58.github.io/notes/system-desgin/</id>
+        
+        <content type="html" xml:base="https://mukund58.github.io/notes/system-desgin/">&lt;p&gt;This blog is where I will document my journey of learning React over the next 90 days. Each day, I will focus on a specific topic or concept, and share my notes, code snippets, and resources.&lt;&#x2F;p&gt;
+&lt;a href=&quot;&amp;#x2F;images&amp;#x2F;system-design.png&quot; data-lightbox=&quot;blog-img&quot; data-title=&quot;React Logo&quot;&gt;
+  &lt;img src=&quot;&amp;#x2F;images&amp;#x2F;system-design.png&quot;
+       alt=&quot;React Logo&quot;
+       loading=&quot;lazy&quot;
+       style=&quot;max-width: 100%; height: auto; border-radius: 6px;&quot; &#x2F;&gt;
+&lt;&#x2F;a&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Building VendorBridge</title>
+        <published>2026-07-22T00:00:00+00:00</published>
+        <updated>2026-07-22T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://mukund58.github.io/project/vendorbridge/"/>
+        <id>https://mukund58.github.io/project/vendorbridge/</id>
+        
+        <content type="html" xml:base="https://mukund58.github.io/project/vendorbridge/">&lt;h1 id=&quot;building-vendorbridge&quot;&gt;Building VendorBridge&lt;&#x2F;h1&gt;
+&lt;p&gt;&lt;strong&gt;Company:&lt;&#x2F;strong&gt; Help Me Buddy IT Pvt. Ltd.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;Duration:&lt;&#x2F;strong&gt; 18 May 2026 – 28 June 2026&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;h2 id=&quot;project-at-a-glance&quot;&gt;Project at a Glance&lt;&#x2F;h2&gt;
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Item&lt;&#x2F;th&gt;&lt;th&gt;Details&lt;&#x2F;th&gt;&lt;&#x2F;tr&gt;&lt;&#x2F;thead&gt;&lt;tbody&gt;
+&lt;tr&gt;&lt;td&gt;Duration&lt;&#x2F;td&gt;&lt;td&gt;6 Weeks&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;Company&lt;&#x2F;td&gt;&lt;td&gt;Help Me Buddy IT Pvt. Ltd.&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;Project&lt;&#x2F;td&gt;&lt;td&gt;VendorBridge ERP&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;Backend&lt;&#x2F;td&gt;&lt;td&gt;ASP.NET Core Minimal API&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;Frontend&lt;&#x2F;td&gt;&lt;td&gt;React&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;Database&lt;&#x2F;td&gt;&lt;td&gt;PostgreSQL&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;ORM&lt;&#x2F;td&gt;&lt;td&gt;Entity Framework Core&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;Authentication&lt;&#x2F;td&gt;&lt;td&gt;JWT&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;Architecture&lt;&#x2F;td&gt;&lt;td&gt;Layered Architecture&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;APIs&lt;&#x2F;td&gt;&lt;td&gt;REST&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;Documentation&lt;&#x2F;td&gt;&lt;td&gt;Swagger&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;&#x2F;tbody&gt;&lt;&#x2F;table&gt;
+&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;&#x2F;h2&gt;
+&lt;p&gt;During my summer internship at &lt;strong&gt;Help Me Buddy IT Pvt. Ltd.&lt;&#x2F;strong&gt;, I worked on a real-world ERP application called &lt;strong&gt;VendorBridge&lt;&#x2F;strong&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;VendorBridge is a Procurement &amp;amp; Vendor Management ERP that helps organizations manage their complete procurement workflow digitally—from vendor registration to purchase orders and invoices.&lt;&#x2F;p&gt;
+&lt;p&gt;This internship was my first experience building a large-scale backend using &lt;strong&gt;ASP.NET Core Minimal APIs&lt;&#x2F;strong&gt; and &lt;strong&gt;Entity Framework Core&lt;&#x2F;strong&gt;.&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;h2 id=&quot;why-asp-net-core&quot;&gt;Why ASP.NET Core?&lt;&#x2F;h2&gt;
+&lt;p&gt;Before this internship, I had experimented with .NET but had never built a complete production-style application.&lt;&#x2F;p&gt;
+&lt;p&gt;I wanted to understand how modern backend systems are designed beyond simple CRUD applications.&lt;&#x2F;p&gt;
+&lt;p&gt;ASP.NET Core Minimal APIs appealed to me because they provide a lightweight approach to building REST services while still supporting dependency injection, middleware, authentication, validation, and Entity Framework Core.&lt;&#x2F;p&gt;
+&lt;p&gt;This internship gave me an opportunity to apply these technologies to a real business problem.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;why-this-project&quot;&gt;Why this project?&lt;&#x2F;h2&gt;
+&lt;p&gt;Many companies still manage procurement using Excel sheets, emails and paper documents.&lt;&#x2F;p&gt;
+&lt;p&gt;This creates several problems:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Slow approval process&lt;&#x2F;li&gt;
+&lt;li&gt;Difficult vendor comparison&lt;&#x2F;li&gt;
+&lt;li&gt;Manual invoice generation&lt;&#x2F;li&gt;
+&lt;li&gt;No centralized records&lt;&#x2F;li&gt;
+&lt;li&gt;Lack of transparency&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;VendorBridge solves these problems by bringing the entire procurement lifecycle into one application.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;thinking-beyond-crud&quot;&gt;Thinking Beyond CRUD&lt;&#x2F;h2&gt;
+&lt;p&gt;One of the biggest lessons from this internship was learning that software is not just about writing APIs.&lt;&#x2F;p&gt;
+&lt;p&gt;Every feature starts with understanding a business workflow.&lt;&#x2F;p&gt;
+&lt;p&gt;Instead of asking:&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;“What tables do I need?”&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;p&gt;I learned to ask:&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;“How does procurement actually work?”&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;p&gt;Understanding vendors, RFQs, quotations, approvals, purchase orders, and invoices helped me design a backend that reflected real-world business processes.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;challenges-i-faced&quot;&gt;Challenges I Faced&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;understanding-the-procurement-domain&quot;&gt;Understanding the Procurement Domain&lt;&#x2F;h3&gt;
+&lt;p&gt;The hardest part wasn’t writing code—it was understanding procurement itself.&lt;&#x2F;p&gt;
+&lt;p&gt;Terms like:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;RFQ&lt;&#x2F;li&gt;
+&lt;li&gt;Purchase Orders&lt;&#x2F;li&gt;
+&lt;li&gt;Quotations&lt;&#x2F;li&gt;
+&lt;li&gt;Vendor Categories&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;were completely new to me.&lt;&#x2F;p&gt;
+&lt;p&gt;I spent the first few days learning the business process before implementing the database schema.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;lessons-learned&quot;&gt;Lessons Learned&lt;&#x2F;h2&gt;
+&lt;p&gt;This internship changed how I approach backend development.&lt;&#x2F;p&gt;
+&lt;p&gt;Some important lessons were:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Design business workflows before designing tables.&lt;&#x2F;li&gt;
+&lt;li&gt;Keep APIs small and focused.&lt;&#x2F;li&gt;
+&lt;li&gt;Write clean code instead of clever code.&lt;&#x2F;li&gt;
+&lt;li&gt;Database design matters more than most beginners think.&lt;&#x2F;li&gt;
+&lt;li&gt;Documentation saves debugging time.&lt;&#x2F;li&gt;
+&lt;li&gt;Good architecture makes future features easier to build.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;if-i-continued-this-project&quot;&gt;If I Continued This Project&lt;&#x2F;h2&gt;
+&lt;p&gt;If I had more time, I would add several production-ready improvements.&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Redis caching&lt;&#x2F;li&gt;
+&lt;li&gt;Background jobs using Hangfire&lt;&#x2F;li&gt;
+&lt;li&gt;Docker Compose&lt;&#x2F;li&gt;
+&lt;li&gt;CI&#x2F;CD with GitHub Actions&lt;&#x2F;li&gt;
+&lt;li&gt;Azure deployment&lt;&#x2F;li&gt;
+&lt;li&gt;Unit and Integration Testing&lt;&#x2F;li&gt;
+&lt;li&gt;SignalR for real-time notifications&lt;&#x2F;li&gt;
+&lt;li&gt;Audit history&lt;&#x2F;li&gt;
+&lt;li&gt;File storage using Azure Blob Storage&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;hr &#x2F;&gt;
+&lt;h2 id=&quot;tech-stack&quot;&gt;Tech Stack&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;backend&quot;&gt;Backend&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;ASP.NET Core 8 Minimal API&lt;&#x2F;li&gt;
+&lt;li&gt;Entity Framework Core&lt;&#x2F;li&gt;
+&lt;li&gt;PostgreSQL&lt;&#x2F;li&gt;
+&lt;li&gt;JWT Authentication&lt;&#x2F;li&gt;
+&lt;li&gt;Role-Based Authorization&lt;&#x2F;li&gt;
+&lt;li&gt;FluentValidation&lt;&#x2F;li&gt;
+&lt;li&gt;Dependency Injection&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;frontend&quot;&gt;Frontend&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;React&lt;&#x2F;li&gt;
+&lt;li&gt;React Router&lt;&#x2F;li&gt;
+&lt;li&gt;Axios&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;tools&quot;&gt;Tools&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Git &amp;amp; GitHub&lt;&#x2F;li&gt;
+&lt;li&gt;Swagger&lt;&#x2F;li&gt;
+&lt;li&gt;Postman&lt;&#x2F;li&gt;
+&lt;li&gt;Visual Studio Code&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;hr &#x2F;&gt;
+&lt;h2 id=&quot;production-oriented-features&quot;&gt;Production-Oriented Features&lt;&#x2F;h2&gt;
+&lt;p&gt;Rather than focusing only on CRUD operations, I tried to build features commonly found in production software.&lt;&#x2F;p&gt;
+&lt;p&gt;Some examples include:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;JWT Authentication&lt;&#x2F;li&gt;
+&lt;li&gt;Role-Based Authorization&lt;&#x2F;li&gt;
+&lt;li&gt;Global Exception Handling&lt;&#x2F;li&gt;
+&lt;li&gt;Validation&lt;&#x2F;li&gt;
+&lt;li&gt;Activity Logging&lt;&#x2F;li&gt;
+&lt;li&gt;RESTful API Design&lt;&#x2F;li&gt;
+&lt;li&gt;Swagger Documentation&lt;&#x2F;li&gt;
+&lt;li&gt;Layered Architecture&lt;&#x2F;li&gt;
+&lt;li&gt;Entity Framework Core&lt;&#x2F;li&gt;
+&lt;li&gt;PostgreSQL&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;project-architecture&quot;&gt;Project Architecture&lt;&#x2F;h2&gt;
+&lt;p&gt;The backend follows a layered architecture.&lt;&#x2F;p&gt;
+&lt;pre&gt;&lt;code&gt;
+React Frontend
+
+↓
+
+REST APIs
+
+↓
+
+Minimal API Endpoints
+
+↓
+
+Business Logic
+
+↓
+
+Entity Framework Core
+
+↓
+
+PostgreSQL
+
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Keeping the application modular made it easier to maintain and extend.&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;h2 id=&quot;major-features&quot;&gt;Major Features&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;authentication&quot;&gt;Authentication&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;JWT Authentication&lt;&#x2F;li&gt;
+&lt;li&gt;Login&lt;&#x2F;li&gt;
+&lt;li&gt;Register&lt;&#x2F;li&gt;
+&lt;li&gt;Refresh Tokens&lt;&#x2F;li&gt;
+&lt;li&gt;Protected APIs&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;hr &#x2F;&gt;
+&lt;h3 id=&quot;vendor-management&quot;&gt;Vendor Management&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Create Vendors&lt;&#x2F;li&gt;
+&lt;li&gt;Update Vendor Details&lt;&#x2F;li&gt;
+&lt;li&gt;Vendor Categories&lt;&#x2F;li&gt;
+&lt;li&gt;Search Vendors&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;hr &#x2F;&gt;
+&lt;h3 id=&quot;request-for-quotations-rfq&quot;&gt;Request For Quotations (RFQ)&lt;&#x2F;h3&gt;
+&lt;p&gt;Procurement officers can&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Create RFQs&lt;&#x2F;li&gt;
+&lt;li&gt;Publish RFQs&lt;&#x2F;li&gt;
+&lt;li&gt;Add Products&lt;&#x2F;li&gt;
+&lt;li&gt;Set Deadlines&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;Vendors can submit quotations for published RFQs.&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;h3 id=&quot;quotation-comparison&quot;&gt;Quotation Comparison&lt;&#x2F;h3&gt;
+&lt;p&gt;One of my favorite modules.&lt;&#x2F;p&gt;
+&lt;p&gt;The system compares vendor quotations based on&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Price&lt;&#x2F;li&gt;
+&lt;li&gt;Delivery Time&lt;&#x2F;li&gt;
+&lt;li&gt;Vendor Rating&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;making vendor selection much easier.&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;h3 id=&quot;approval-workflow&quot;&gt;Approval Workflow&lt;&#x2F;h3&gt;
+&lt;p&gt;Managers review procurement requests before purchase orders are generated.&lt;&#x2F;p&gt;
+&lt;p&gt;This creates a proper approval chain inside the organization.&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;h3 id=&quot;purchase-orders&quot;&gt;Purchase Orders&lt;&#x2F;h3&gt;
+&lt;p&gt;After approval,&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Purchase Orders are generated&lt;&#x2F;li&gt;
+&lt;li&gt;Vendors receive updates&lt;&#x2F;li&gt;
+&lt;li&gt;Procurement history is maintained&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;hr &#x2F;&gt;
+&lt;h3 id=&quot;invoice-generation&quot;&gt;Invoice Generation&lt;&#x2F;h3&gt;
+&lt;p&gt;The ERP automatically creates invoices which can later be exported as PDF.&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;h3 id=&quot;reports-analytics&quot;&gt;Reports &amp;amp; Analytics&lt;&#x2F;h3&gt;
+&lt;p&gt;The dashboard provides&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Procurement Trends&lt;&#x2F;li&gt;
+&lt;li&gt;Vendor Performance&lt;&#x2F;li&gt;
+&lt;li&gt;Monthly Spending&lt;&#x2F;li&gt;
+&lt;li&gt;Purchase Statistics&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;which helps management take better decisions.&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;h2 id=&quot;database-design&quot;&gt;Database Design&lt;&#x2F;h2&gt;
+&lt;p&gt;The project contains multiple interconnected tables including&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Users&lt;&#x2F;li&gt;
+&lt;li&gt;Roles&lt;&#x2F;li&gt;
+&lt;li&gt;Vendors&lt;&#x2F;li&gt;
+&lt;li&gt;Vendor Categories&lt;&#x2F;li&gt;
+&lt;li&gt;RFQs&lt;&#x2F;li&gt;
+&lt;li&gt;Quotations&lt;&#x2F;li&gt;
+&lt;li&gt;Purchase Orders&lt;&#x2F;li&gt;
+&lt;li&gt;Invoices&lt;&#x2F;li&gt;
+&lt;li&gt;Activity Logs&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;Entity Framework Core handled relationships and migrations efficiently.&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;h2 id=&quot;what-i-learned&quot;&gt;What I Learned&lt;&#x2F;h2&gt;
+&lt;p&gt;This internship taught me much more than simply writing APIs.&lt;&#x2F;p&gt;
+&lt;p&gt;I learned&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Designing scalable REST APIs&lt;&#x2F;li&gt;
+&lt;li&gt;Database modelling&lt;&#x2F;li&gt;
+&lt;li&gt;Clean project organization&lt;&#x2F;li&gt;
+&lt;li&gt;JWT Authentication&lt;&#x2F;li&gt;
+&lt;li&gt;Role Based Authorization&lt;&#x2F;li&gt;
+&lt;li&gt;Entity Framework Core&lt;&#x2F;li&gt;
+&lt;li&gt;PostgreSQL&lt;&#x2F;li&gt;
+&lt;li&gt;API testing using Swagger&lt;&#x2F;li&gt;
+&lt;li&gt;Git workflow&lt;&#x2F;li&gt;
+&lt;li&gt;Debugging production-like issues&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;hr &#x2F;&gt;
+&lt;h3 id=&quot;database-design-1&quot;&gt;Database Design&lt;&#x2F;h3&gt;
+&lt;p&gt;Designing relationships was much harder than writing controllers.&lt;&#x2F;p&gt;
+&lt;p&gt;Choosing where to place foreign keys, handling cascading deletes, and modelling approval workflows required several iterations before arriving at a clean design.&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;h3 id=&quot;authentication-1&quot;&gt;Authentication&lt;&#x2F;h3&gt;
+&lt;h2 id=&quot;implementing-secure-authentication-using-jwt-taught-me-how-production-apis-protect-resources-while-supporting-different-user-roles&quot;&gt;Implementing secure authentication using JWT taught me how production APIs protect resources while supporting different user roles.&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;database-design-2&quot;&gt;Database Design&lt;&#x2F;h3&gt;
+&lt;p&gt;Designing relationships between multiple modules was challenging.&lt;&#x2F;p&gt;
+&lt;p&gt;Thinking through foreign keys and business rules took much longer than writing CRUD APIs.&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;h3 id=&quot;authentication-2&quot;&gt;Authentication&lt;&#x2F;h3&gt;
+&lt;p&gt;Implementing secure authentication with JWT and role-based authorization helped me understand how modern backend applications protect APIs.&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;h2 id=&quot;screenshots&quot;&gt;Screenshots&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;login&quot;&gt;Login&lt;&#x2F;h3&gt;
+
+
+
+
+
+&lt;a href=&quot;&#x2F;images&amp;#x2F;vendorbridge&amp;#x2F;login.png&quot; data-lightbox=&quot;blog-img&quot; data-title=&quot;Sample image&quot;&gt;
+    &lt;img src=&quot;https:&amp;#x2F;&amp;#x2F;mukund58.github.io&amp;#x2F;processed_images&amp;#x2F;login.ec809521cf604c02.png&quot;
+         srcset=&quot;&#x2F;images&amp;#x2F;vendorbridge&amp;#x2F;login.png 2x&quot;
+         width=&quot;724&quot;
+         height=&quot;481&quot;
+         alt=&quot;Sample image&quot;
+         loading=&quot;lazy&quot;
+         style=&quot;max-width: 100%; height: auto; border-radius: 6px;&quot; &#x2F;&gt;
+&lt;&#x2F;a&gt;
+&lt;hr &#x2F;&gt;
+&lt;h3 id=&quot;dashboard&quot;&gt;Dashboard&lt;&#x2F;h3&gt;
+
+
+
+
+
+&lt;a href=&quot;&#x2F;images&amp;#x2F;vendorbridge&amp;#x2F;dashboard.png&quot; data-lightbox=&quot;blog-img&quot; data-title=&quot;Sample image&quot;&gt;
+    &lt;img src=&quot;https:&amp;#x2F;&amp;#x2F;mukund58.github.io&amp;#x2F;processed_images&amp;#x2F;dashboard.5737e52902e057f6.png&quot;
+         srcset=&quot;&#x2F;images&amp;#x2F;vendorbridge&amp;#x2F;dashboard.png 2x&quot;
+         width=&quot;641&quot;
+         height=&quot;357&quot;
+         alt=&quot;Sample image&quot;
+         loading=&quot;lazy&quot;
+         style=&quot;max-width: 100%; height: auto; border-radius: 6px;&quot; &#x2F;&gt;
+&lt;&#x2F;a&gt;
+&lt;hr &#x2F;&gt;
+&lt;h3 id=&quot;vendor-directory&quot;&gt;Vendor Directory&lt;&#x2F;h3&gt;
+
+
+
+
+
+&lt;a href=&quot;&#x2F;images&amp;#x2F;vendorbridge&amp;#x2F;vendors.png&quot; data-lightbox=&quot;blog-img&quot; data-title=&quot;Sample image&quot;&gt;
+    &lt;img src=&quot;https:&amp;#x2F;&amp;#x2F;mukund58.github.io&amp;#x2F;processed_images&amp;#x2F;vendors.ed8648f9088dc5cf.png&quot;
+         srcset=&quot;&#x2F;images&amp;#x2F;vendorbridge&amp;#x2F;vendors.png 2x&quot;
+         width=&quot;641&quot;
+         height=&quot;357&quot;
+         alt=&quot;Sample image&quot;
+         loading=&quot;lazy&quot;
+         style=&quot;max-width: 100%; height: auto; border-radius: 6px;&quot; &#x2F;&gt;
+&lt;&#x2F;a&gt;
+&lt;hr &#x2F;&gt;
+&lt;h3 id=&quot;rfq-module&quot;&gt;RFQ Module&lt;&#x2F;h3&gt;
+
+
+
+
+
+&lt;a href=&quot;&#x2F;images&amp;#x2F;vendorbridge&amp;#x2F;rfq.png&quot; data-lightbox=&quot;blog-img&quot; data-title=&quot;Sample image&quot;&gt;
+    &lt;img src=&quot;https:&amp;#x2F;&amp;#x2F;mukund58.github.io&amp;#x2F;processed_images&amp;#x2F;rfq.9faa51d9ceccc139.png&quot;
+         srcset=&quot;&#x2F;images&amp;#x2F;vendorbridge&amp;#x2F;rfq.png 2x&quot;
+         width=&quot;642&quot;
+         height=&quot;357&quot;
+         alt=&quot;Sample image&quot;
+         loading=&quot;lazy&quot;
+         style=&quot;max-width: 100%; height: auto; border-radius: 6px;&quot; &#x2F;&gt;
+&lt;&#x2F;a&gt;
+&lt;hr &#x2F;&gt;
+&lt;h3 id=&quot;reports&quot;&gt;Reports&lt;&#x2F;h3&gt;
+
+
+
+
+
+&lt;a href=&quot;&#x2F;images&amp;#x2F;vendorbridge&amp;#x2F;reports.png&quot; data-lightbox=&quot;blog-img&quot; data-title=&quot;Sample image&quot;&gt;
+    &lt;img src=&quot;https:&amp;#x2F;&amp;#x2F;mukund58.github.io&amp;#x2F;processed_images&amp;#x2F;reports.6bb56df85bc7c4c8.png&quot;
+         srcset=&quot;&#x2F;images&amp;#x2F;vendorbridge&amp;#x2F;reports.png 2x&quot;
+         width=&quot;620&quot;
+         height=&quot;345&quot;
+         alt=&quot;Sample image&quot;
+         loading=&quot;lazy&quot;
+         style=&quot;max-width: 100%; height: auto; border-radius: 6px;&quot; &#x2F;&gt;
+&lt;&#x2F;a&gt;
+&lt;hr &#x2F;&gt;
+&lt;h2 id=&quot;internship-outcomes&quot;&gt;Internship Outcomes&lt;&#x2F;h2&gt;
+&lt;p&gt;By the end of the internship I had built a complete backend application using modern Microsoft technologies.&lt;&#x2F;p&gt;
+&lt;p&gt;More importantly, I became comfortable with&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;ASP.NET Core&lt;&#x2F;li&gt;
+&lt;li&gt;Minimal APIs&lt;&#x2F;li&gt;
+&lt;li&gt;Entity Framework Core&lt;&#x2F;li&gt;
+&lt;li&gt;PostgreSQL&lt;&#x2F;li&gt;
+&lt;li&gt;Authentication&lt;&#x2F;li&gt;
+&lt;li&gt;Authorization&lt;&#x2F;li&gt;
+&lt;li&gt;REST APIs&lt;&#x2F;li&gt;
+&lt;li&gt;ERP domain modelling&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;This project gave me confidence to build larger backend systems in the future.&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;h2 id=&quot;final-thoughts&quot;&gt;Final Thoughts&lt;&#x2F;h2&gt;
+&lt;p&gt;When I started this internship, I thought backend development was mostly about writing CRUD APIs.&lt;&#x2F;p&gt;
+&lt;p&gt;By the end, I realized that backend engineering is really about solving business problems through software design.&lt;&#x2F;p&gt;
+&lt;p&gt;Building VendorBridge taught me how authentication, database modelling, API design, and business workflows fit together to create a complete application.&lt;&#x2F;p&gt;
+&lt;p&gt;This internship strengthened my interest in backend engineering and gave me confidence to build larger systems using the .NET ecosystem.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>90 Days of Learning React</title>
+        <published>2025-07-19T00:00:00+00:00</published>
+        <updated>2025-07-19T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://mukund58.github.io/notes/90-days-of-learing-react/"/>
+        <id>https://mukund58.github.io/notes/90-days-of-learing-react/</id>
+        
+        <content type="html" xml:base="https://mukund58.github.io/notes/90-days-of-learing-react/">&lt;p&gt;This blog is where I will document my journey of learning React over the next 90 days. Each day, I will focus on a specific topic or concept, and share my notes, code snippets, and resources.&lt;&#x2F;p&gt;
+&lt;a href=&quot;&amp;#x2F;images&amp;#x2F;react-logo.png&quot; data-lightbox=&quot;blog-img&quot; data-title=&quot;React Logo&quot;&gt;
+  &lt;img src=&quot;&amp;#x2F;images&amp;#x2F;react-logo.png&quot;
+       alt=&quot;React Logo&quot;
+       loading=&quot;lazy&quot;
+       style=&quot;max-width: 100%; height: auto; border-radius: 6px;&quot; &#x2F;&gt;
+&lt;&#x2F;a&gt;
+&lt;h2 id=&quot;day-1-introduction-to-react&quot;&gt;Day 1: Introduction to React&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;What is React?&lt;&#x2F;strong&gt;
+&lt;ul&gt;
+&lt;li&gt;A JavaScript library for building user interfaces.&lt;&#x2F;li&gt;
+&lt;li&gt;Developed by Facebook and released in 2013.&lt;&#x2F;li&gt;
+&lt;li&gt;Focuses on building reusable UI components.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Key Features:&lt;&#x2F;strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Virtual DOM for efficient rendering.&lt;&#x2F;li&gt;
+&lt;li&gt;Component-based architecture.&lt;&#x2F;li&gt;
+&lt;li&gt;Single Page Application (SPA) capabilities.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h4 id=&quot;setup-and-installation&quot;&gt;Setup and Installation&lt;&#x2F;h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Install Node.js and npm.&lt;&#x2F;li&gt;
+&lt;li&gt;Create a new React app using Create React App:&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;pre&gt;&lt;code data-lang=&quot;bash&quot;&gt;npx create-react-app my-app
+cd my-app
+npm start
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;ul&gt;
+&lt;li&gt;Alternatively, you can set up a React project using Vite for faster development:&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;pre&gt;&lt;code data-lang=&quot;bash&quot;&gt;npm create vite@latest my-app --template React
+cd my-app
+npm install 
+npm run dev 
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Structure of a React App:&lt;&#x2F;p&gt;
+&lt;pre&gt;&lt;code data-lang=&quot;plaintext&quot;&gt;├── eslint.config.js
+├── index.html
+├── package.json
+├── package-lock.json
+├── public
+│   └── vite.svg
+├── README.md
+├── src
+│   ├── App.jsx
+│   ├── main.jsx
+   └── Nav.jsx
+└── vite.config.jsx
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h2 id=&quot;day-2-jsx-and-rendering-elements&quot;&gt;Day 2: JSX and Rendering Elements&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;jsx-javascript-xml&quot;&gt;JSX (JavaScript XML)&lt;&#x2F;h3&gt;
+&lt;p&gt;App.jsx&lt;&#x2F;p&gt;
+&lt;pre&gt;&lt;code data-lang=&quot;js&quot;&gt;import React from &amp;#39;react&amp;#39;
+export default App
+function App() {
+
+  return (
+	  &amp;lt;h1&amp;gt;Hello, World!&amp;lt;&#x2F;h1&amp;gt;
+
+  )
+}
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Nav.jsx&lt;&#x2F;p&gt;
+&lt;pre&gt;&lt;code data-lang=&quot;js&quot;&gt;import React from &amp;quot;react&amp;quot;;
+export default Nav 
+function Nav(){
+	return(
+		&amp;lt;h1&amp;gt;Nav Bar&amp;lt;&#x2F;h1&amp;gt;
+	)
+}
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;main.jsx&lt;&#x2F;p&gt;
+&lt;pre&gt;&lt;code data-lang=&quot;js&quot;&gt;import { StrictMode } from &amp;#39;react&amp;#39;
+import { createRoot } from &amp;#39;react-dom&#x2F;client&amp;#39;
+import App from &amp;#39;.&#x2F;App.jsx&amp;#39;
+import Nav from &amp;#39;.&#x2F;Nav.jsx&amp;#39;
+
+createRoot(document.getElementById(&amp;#39;root&amp;#39;)).render(
+  &amp;lt;StrictMode&amp;gt;
+    &amp;lt;App &#x2F;&amp;gt;
+    &amp;lt;Nav &#x2F;&amp;gt;
+  &amp;lt;&#x2F;StrictMode&amp;gt;,
+)
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;key-points&quot;&gt;Key Points&lt;&#x2F;h3&gt;
+&lt;p&gt;Component should  start with an uppercase letter, and the file name should match the component name. This is a convention in React to differentiate components from regular HTML elements.&lt;&#x2F;p&gt;
+&lt;p&gt;We can name both App.js &amp;amp; App.jsx but in vite development environment we have to use jsx&lt;&#x2F;p&gt;
+&lt;p&gt;We can return only one component by a jsx function so it’s good to wrap in &amp;lt;&amp;gt;&amp;lt;&#x2F;&amp;gt; or &lt;div&gt;&lt;&#x2F;div&gt;&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;day-3-create-own-custom-components&quot;&gt;Day 3: Create own Custom components&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;creating-custom-components&quot;&gt;Creating Custom components&lt;&#x2F;h3&gt;
+&lt;p&gt;script.js&lt;&#x2F;p&gt;
+&lt;pre&gt;&lt;code data-lang=&quot;js&quot;&gt;let rootElement = document.getElementById(&amp;#39;root&amp;#39;);
+
+const reactElement = {
+	type: &amp;#39;a&amp;#39;,
+	props: {
+		href: &amp;#39;https:&#x2F;&#x2F;mukund.xyz&amp;#39;,
+		_target: &amp;#39;_blank&amp;#39;,
+	},
+	children: &amp;#39;Visit mukund.xyz&amp;#39;,
+};
+
+
+CreateReactElement(reactElement, rootElement);
+
+
+function CreateReactElement(element, container) {
+	const domElement = document.createElement(element.type);
+	domElement.textContent = element.children;
+        for (const prop in element.props) {
+			if (prop === &amp;#39;children&amp;#39;) continue;
+		domElement.setAttribute(prop, element.props[prop]);
+	}
+container.appendChild(domElement);
+}
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;index.html&lt;&#x2F;p&gt;
+&lt;pre&gt;&lt;code data-lang=&quot;html&quot;&gt;&amp;lt;!DOCTYPE html&amp;gt;
+&amp;lt;html lang=&amp;quot;en&amp;quot;&amp;gt;
+	&amp;lt;head&amp;gt;
+		&amp;lt;meta charset=&amp;quot;UTF-8&amp;quot;&amp;gt;
+		&amp;lt;meta name=&amp;quot;viewport&amp;quot; content=&amp;quot;width=device-width, initial-scale=1&amp;quot;&amp;gt;
+		&amp;lt;title&amp;gt;&amp;lt;&#x2F;title&amp;gt;
+		&amp;lt;link href=&amp;quot;css&#x2F;style.css&amp;quot; rel=&amp;quot;stylesheet&amp;quot;&amp;gt;
+	&amp;lt;&#x2F;head&amp;gt;
+	&amp;lt;body&amp;gt;
+	
+		&amp;lt;div id=&amp;quot;root&amp;quot;&amp;gt;
+			
+		&amp;lt;&#x2F;div&amp;gt;
+	&amp;lt;&#x2F;body&amp;gt;
+		&amp;lt;script src=&amp;quot;script.js&amp;quot;&amp;gt;&amp;lt;&#x2F;script&amp;gt;
+&amp;lt;&#x2F;html&amp;gt;
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Create a custom component in React that renders an anchor tag with a link to your website.&lt;&#x2F;p&gt;
+&lt;p&gt;main.jsx&lt;&#x2F;p&gt;
+&lt;pre&gt;&lt;code data-lang=&quot;js&quot;&gt;import React from &amp;#39;react&amp;#39;
+import { createRoot } from &amp;#39;react-dom&#x2F;client&amp;#39;
+const reactElement = React.createElement(
+  &amp;#39;a&amp;#39;,
+  {
+    href: &amp;#39;https:&#x2F;&#x2F;mukund.xyz&amp;#39;,
+    target: &amp;#39;_blank&amp;#39;,
+  },
+  &amp;#39;Visit mukund.xyz&amp;#39;
+)
+
+
+
+createRoot(document.getElementById(&amp;#39;root&amp;#39;))
+.render(
+reactElement
+)
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h2 id=&quot;days-4-hooks-and-state-management&quot;&gt;Days 4 Hooks and State Management&lt;&#x2F;h2&gt;
+&lt;p&gt;Hooks are functions that let you use state and other React features in functional components. They allow you to manage state, lifecycle events, and side effects without writing class components.&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;useState Hook&lt;&#x2F;strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Allows you to add state to functional components.&lt;&#x2F;li&gt;
+&lt;li&gt;Returns an array with the current state and a function to update it.&lt;&#x2F;li&gt;
+&lt;li&gt;Hooks can’t be called inside loops, conditions, or nested functions. They should be called at the top level of your component.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;day-5-virtual-dom-and-reconciliation&quot;&gt;Day 5: Virtual DOM and Reconciliation&lt;&#x2F;h2&gt;
+&lt;p&gt;React Fiber Architecture is an ongoing reimplementation of React’s core algorithm. It is the culmination of over two years of research by the React team.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;virtual-dom&quot;&gt;Virtual dom&lt;&#x2F;h3&gt;
+&lt;p&gt;Virtual DOM (VDOM) is a programming concept where a virtual representation of the UI is kept in memory and synced with the real DOM by a library such as ReactDOM. This process is called reconciliation.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;what-is-reconciliation&quot;&gt;What is reconciliation?&lt;&#x2F;h3&gt;
+&lt;pre&gt;&lt;code&gt;The algorithm React uses to diff(differentiate) one tree with another to determine which parts need to be changed.
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;&lt;strong&gt;reconciliation&lt;&#x2F;strong&gt; is the process through which React updates the DOM. When a component’s state or props change, React creates a new Virtual DOM tree and compares it with the previous one. It then calculates the most efficient way to update the real DOM to match the new Virtual DOM.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;key-terms&quot;&gt;Key Terms&lt;&#x2F;h3&gt;
+&lt;p&gt;Other key features include the&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;ability to pause&lt;&#x2F;strong&gt;,
+&lt;strong&gt;abort&lt;&#x2F;strong&gt;, or &lt;strong&gt;reuse work as new updates come in&lt;&#x2F;strong&gt;
+&lt;strong&gt;the ability to assign priority to different types of updates&lt;&#x2F;strong&gt;
+and new concurrency primitives.&lt;&#x2F;p&gt;
+&lt;p&gt;The algorithm React uses to diff one tree with another to determine which parts need to be changed.&lt;&#x2F;p&gt;
+&lt;a href=&quot;https:&amp;#x2F;&amp;#x2F;media.geeksforgeeks.org&amp;#x2F;wp-content&amp;#x2F;uploads&amp;#x2F;20241212235246933476&amp;#x2F;Browser-DOM-Virtual-DOM.webp&quot; data-lightbox=&quot;blog-img&quot; data-title=&quot;Online Image Example&quot;&gt;
+  &lt;img src=&quot;https:&amp;#x2F;&amp;#x2F;media.geeksforgeeks.org&amp;#x2F;wp-content&amp;#x2F;uploads&amp;#x2F;20241212235246933476&amp;#x2F;Browser-DOM-Virtual-DOM.webp&quot;
+       alt=&quot;Online Image Example&quot;
+       loading=&quot;lazy&quot;
+       style=&quot;max-width: 100%; height: auto; border-radius: 6px;&quot; &#x2F;&gt;
+&lt;&#x2F;a&gt;
+&lt;p&gt;&lt;strong&gt;Reconciliation is the algorithm behind what is popularly understood as the “virtual DOM.”&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;A high-level description goes something like this: when you render a React application, a tree of nodes that describes the app is generated and saved in memory. This tree is then flushed to the rendering environment — for example, in the case of a browser application, it’s translated to a set of DOM operations. When the app is updated (usually via setState), a new tree is generated. The new tree is diffed with the previous tree to compute which operations are needed to update the rendered app.&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Although Fiber is a ground-up rewrite of the reconciler, the high-level algorithm described in the React docs will be largely the same.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;The key points are:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Different component types are assumed to generate substantially different trees. React will not attempt to diff them, but rather replace the old tree completely.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Diffing of lists is performed using keys. Keys should be “stable, predictable, and unique.”&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;in-array-why-keys-should-be-introduced&quot;&gt;In Array Why keys should be introduced?&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;In Fiber algorithm if we want to impove performance of list when itrating over array of items  we should use keys.&lt;&#x2F;strong&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;When React sees a list of elements, it needs to determine which items have changed, been added, or been removed. Keys help React identify which items in the list correspond to which elements in the previous render.&lt;&#x2F;p&gt;
+&lt;p&gt;Scheduling&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;the process of determining when work should be performed.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;The key points are:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;In a UI, it’s not necessary for every update to be applied immediately; in fact, doing so can be wasteful, causing frames to drop and degrading the user experience.&lt;&#x2F;li&gt;
+&lt;li&gt;Different types of updates have different priorities — an animation update needs to complete more quickly than, say, an update from a data store.&lt;&#x2F;li&gt;
+&lt;li&gt;A push-based approach requires the app (you, the programmer) to decide how to schedule work. A pull-based approach allows the framework (React) to be smart and make those decisions for you.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;what-is-a-fiber&quot;&gt;What is a fiber?&lt;&#x2F;h3&gt;
+&lt;p&gt;We’ve established that a primary goal of Fiber is to enable React to take advantage of scheduling. Specifically, we need to be able to&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;pause work and come back to it later.&lt;&#x2F;li&gt;
+&lt;li&gt;assign priority to different types of work.&lt;&#x2F;li&gt;
+&lt;li&gt;reuse previously completed work.&lt;&#x2F;li&gt;
+&lt;li&gt;abort work if it’s no longer needed.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;structure-of-a-fiber&quot;&gt;Structure of a Fiber&lt;&#x2F;h3&gt;
+&lt;p&gt;In concrete terms, a fiber is a JavaScript object that contains information about a component, its input, and its output.&lt;&#x2F;p&gt;
+&lt;p&gt;A fiber corresponds to a stack frame, but it also corresponds to an instance of a component.&lt;&#x2F;p&gt;
+&lt;p&gt;Here are some of the important fields that belong to a fiber. (This list is not exhaustive.)
+&lt;code&gt;type&lt;&#x2F;code&gt; and &lt;code&gt;key&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;day-6-props-for-component-communication&quot;&gt;Day 6: Props for  Component Communication&lt;&#x2F;h2&gt;
+&lt;p&gt;Props (short for “properties”) are a way to pass data from a parent component to a child component in React. They are read-only and cannot be modified by the child component.&lt;&#x2F;p&gt;
+&lt;h4 id=&quot;function-and-class-components&quot;&gt;Function and Class Components&lt;&#x2F;h4&gt;
+&lt;p&gt;The simplest way to define a component is to write a JavaScript function:&lt;&#x2F;p&gt;
+&lt;pre&gt;&lt;code data-lang=&quot;js&quot;&gt;function Welcome(props) {
+  return &amp;lt;h1&amp;gt;Hello, {props.name}&amp;lt;&#x2F;h1&amp;gt;;
+}
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;This function is a valid React component because it accepts a single “props” (which stands for properties) object argument with data and returns a React element. &lt;code&gt;We call such components “function components” because they are literally JavaScript functions.&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;You can also use an &lt;code&gt;ES6&lt;&#x2F;code&gt; class to define a component:&lt;&#x2F;p&gt;
+&lt;pre&gt;&lt;code data-lang=&quot;js&quot;&gt;class Welcome extends React.Component {
+  render() {
+    return &amp;lt;h1&amp;gt;Hello, {this.props.name}&amp;lt;&#x2F;h1&amp;gt;;
+  }
+}
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;The above two components are equivalent from React’s point of view.&lt;&#x2F;p&gt;
+&lt;p&gt;How to create Parents and Child components using props&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;code&gt;ParentCard.jsx&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;pre&gt;&lt;code data-lang=&quot;js&quot;&gt;import Card from &amp;quot;.&#x2F;Card&amp;quot;;
+
+function ParentCard() {
+  const products = [
+    {
+      name: &amp;quot;Apple Watch&amp;quot;,
+      price: &amp;quot;$899&amp;quot;,
+      stock: &amp;quot;In Stock&amp;quot;,
+      img: &amp;quot;https:&#x2F;&#x2F;files.refurbed.com&#x2F;ii&#x2F;apple-watch-series-7-titan-45mm-1705929512.jpg&amp;quot;
+    },
+    {
+      name: &amp;quot;Samsung Galaxy Watch&amp;quot;,
+      price: &amp;quot;$699&amp;quot;,
+      stock: &amp;quot;Only 3 Left&amp;quot;,
+      img: &amp;quot;https:&#x2F;&#x2F;m.media-amazon.com&#x2F;images&#x2F;I&#x2F;71Swqqe7XAL._AC_UL600_FMwebp_QL65_.jpg&amp;quot;
+    },
+    {
+      name: &amp;quot;Noise Smartwatch&amp;quot;,
+      price: &amp;quot;$199&amp;quot;,
+      stock: &amp;quot;Out of Stock&amp;quot;,
+      img: &amp;quot;https:&#x2F;&#x2F;sell.gameloot.in&#x2F;wp-content&#x2F;uploads&#x2F;sites&#x2F;4&#x2F;2022&#x2F;05&#x2F;Samsung-Galaxy-Watch-4-Classic-LTE-42mm.jpg&amp;quot;
+    }
+  ];
+
+  return (
+    &amp;lt;div className=&amp;quot;container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 p-5&amp;quot;&amp;gt;
+      {products.map((product, index) =&amp;gt; (
+        &amp;lt;Card key={index} productData={product} &#x2F;&amp;gt;
+      ))}
+    &amp;lt;&#x2F;div&amp;gt;
+  );
+}
+
+export default ParentCard;
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;&lt;code&gt;Card.jsx&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;pre&gt;&lt;code data-lang=&quot;js&quot;&gt;function Card(props) {
+  const obj = props.productData;
+
+const { name= &amp;quot;default Watch &amp;quot;, price= &amp;quot;$899&amp;quot;, stock= &amp;quot;Out of Stock&amp;quot;, img=&amp;quot;https:&#x2F;&#x2F;files.refurbed.com&#x2F;ii&#x2F;apple-watch-series-7-titan-45mm-1705929512.jpg&amp;quot; } = obj;
+
+    return (
+        &amp;lt;div className=&amp;quot;max-w-sm rounded overflow-hidden shadow-lg&amp;quot;&amp;gt;
+        &amp;lt;img className=&amp;quot;w-full h-64 object-cover&amp;quot; src={img} alt={name} &#x2F;&amp;gt;
+        &amp;lt;div className=&amp;quot;px-6 py-4&amp;quot;&amp;gt;
+            &amp;lt;div className=&amp;quot;font-bold text-xl mb-2&amp;quot;&amp;gt;{name}&amp;lt;&#x2F;div&amp;gt;
+            &amp;lt;p className=&amp;quot;text-gray-700 text-base&amp;quot;&amp;gt;Price: {price}&amp;lt;&#x2F;p&amp;gt;
+            &amp;lt;p className={`text-base ${stock === &amp;quot;In Stock&amp;quot; ? &amp;quot;text-green-500&amp;quot; : stock === &amp;quot;Only 3 Left&amp;quot; ? &amp;quot;text-yellow-500&amp;quot; : &amp;quot;text-red-500&amp;quot;}`}&amp;gt;
+            {stock}
+            &amp;lt;&#x2F;p&amp;gt;
+        &amp;lt;&#x2F;div&amp;gt;
+        &amp;lt;div className=&amp;quot;px-6 pt-4 pb-2&amp;quot;&amp;gt;
+            &amp;lt;button className=&amp;quot;bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded&amp;quot;&amp;gt;
+            Buy Now
+            &amp;lt;&#x2F;button&amp;gt;
+        &amp;lt;&#x2F;div&amp;gt;
+        &amp;lt;&#x2F;div&amp;gt;
+    );
+    }
+
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h2 id=&quot;day-7-usestate-hook-in-depth&quot;&gt;Day 7: useState Hook in Depth&lt;&#x2F;h2&gt;
+&lt;p&gt;The &lt;code&gt;useState&lt;&#x2F;code&gt; hook is a fundamental building block in React that allows you to add state to functional components. It provides a way to manage and update state within your components without the need for class components.&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;Understanding State&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;p&gt;Definition: State is data in an application that changes over time . In React, this means data that can be different from one component render to another .&lt;&#x2F;p&gt;
+&lt;p&gt;Importance: Tracking state is crucial for application functionality, such as showing a loading spinner while fetching data, displaying error messages, or handling the data itself .&lt;&#x2F;p&gt;
+&lt;ol start=&quot;2&quot;&gt;
+&lt;li&gt;The useState Hook&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;p&gt;Purpose: useState is the primary hook used in functional components to manage and manipulate state in React .&lt;&#x2F;p&gt;
+&lt;p&gt;How to Import: You must import the hook from React: import { useState } from ‘react’ .&lt;&#x2F;p&gt;
+&lt;ol start=&quot;3&quot;&gt;
+&lt;li&gt;useState Syntax and Structure&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;p&gt;The hook is used by destructuring an array that contains two elements:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;State Variable (count): The current value of the state .&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Updater Function (setCount): A function used to update the state variable .&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;Naming Convention: By convention, the updater function is named set followed by the name of the state variable (e.g., setCount) .&lt;&#x2F;p&gt;
+&lt;p&gt;Default Value: The value passed as an argument to useState() is the initial or default value of the state. If no value is provided, the state will be undefined .&lt;&#x2F;p&gt;
+&lt;p&gt;JavaScript&lt;&#x2F;p&gt;
+&lt;pre&gt;&lt;code data-lang=&quot;js&quot;&gt;&#x2F;&#x2F; Example: Initializing count with a default value of 0
+const [count, setCount] = useState(0);
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;state&lt;&#x2F;code&gt;: The current state value.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;setState&lt;&#x2F;code&gt;: A function that allows you to update the state.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;initialState&lt;&#x2F;code&gt;: The initial value of the state.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;example-of-usestate-hook-for-background-color-change-on-button-click&quot;&gt;Example of useState Hook for Background Color Change on Button Click&lt;&#x2F;h3&gt;
+&lt;pre&gt;&lt;code data-lang=&quot;js&quot;&gt;import { useState } from &amp;#39;react&amp;#39;
+
+function App() {
+  const [colorbg, setColor] = useState(&amp;quot;Black&amp;quot;);
+
+  return (
+    &amp;lt;&amp;gt;
+	  &amp;lt;div className=&amp;quot;App&amp;quot; style={{ backgroundColor: colorbg, transition: &amp;#39;background-color 0.5s ease&amp;#39;, height: &amp;#39;100vh&amp;#39; }}&amp;gt;
+	&amp;lt;h1 className=&amp;quot;text-3xl font-bold text-center min-h-screen&amp;quot;&amp;gt;
+	  Background Color Change on Click
+	&amp;lt;&#x2F;h1&amp;gt;
+	  
+	  &amp;lt;div className=&amp;quot;flex flex-row items-top justify-center p-10 gap-5 absolute top-10 w-full bg-white&#x2F;10 &amp;quot;&amp;gt;
+	  	&amp;lt;button className=&amp;quot;bg-green hover:bg-green-700 text-white  font-bold py-2 px-4 rounded border&amp;quot; onClick={()=&amp;gt; {setColor(&amp;quot;Green&amp;quot;)}} &amp;gt;Green&amp;lt;&#x2F;button&amp;gt;
+	  	&amp;lt;button className=&amp;quot;bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded&amp;quot;onClick={() =&amp;gt; setColor(&amp;quot;Blue&amp;quot;)}&amp;gt;Blue&amp;lt;&#x2F;button&amp;gt;
+	  	&amp;lt;button className=&amp;quot;bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded&amp;quot;onClick={() =&amp;gt; setColor(&amp;quot;Red&amp;quot;)}&amp;gt;Red&amp;lt;&#x2F;button&amp;gt;
+	  	&amp;lt;button className=&amp;quot;bg-yellow-500 hover:bg-yellow-700 text-white font-bold py-2 px-4 rounded&amp;quot;onClick={() =&amp;gt; setColor(&amp;quot;Yellow&amp;quot;)}&amp;gt;Yellow&amp;lt;&#x2F;button&amp;gt;
+	  	&amp;lt;button className=&amp;quot;bg-purple-500 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded&amp;quot;onClick={() =&amp;gt; setColor(&amp;quot;Purple&amp;quot;)}&amp;gt;Purple&amp;lt;&#x2F;button&amp;gt;
+	  	&amp;lt;button className=&amp;quot;bg-pink-500 hover:bg-pink-700 text-white font-bold py-2 px-4 rounded&amp;quot;onClick={() =&amp;gt; setColor(&amp;quot;Pink&amp;quot;)}&amp;gt;Pink&amp;lt;&#x2F;button&amp;gt;
+	  	&amp;lt;button className=&amp;quot;bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded&amp;quot;onClick={() =&amp;gt; setColor(&amp;quot;Gray&amp;quot;)}&amp;gt;Gray&amp;lt;&#x2F;button&amp;gt;
+	  	&amp;lt;button className=&amp;quot;bg-black hover:bg-black text-white font-bold py-2 px-4 rounded&amp;quot;onClick={() =&amp;gt; setColor(&amp;quot;Black&amp;quot;)}&amp;gt;Black&amp;lt;&#x2F;button&amp;gt;
+	  	&amp;lt;button className=&amp;quot;bg-white hover:bg-white text-black font-bold py-2 px-4 rounded border&amp;quot;onClick={() =&amp;gt; setColor(&amp;quot;White&amp;quot;)}&amp;gt;White&amp;lt;&#x2F;button&amp;gt;
+
+	  	&amp;lt;&#x2F;div&amp;gt;
+	  &amp;lt;&#x2F;div&amp;gt;
+    &amp;lt;&#x2F;&amp;gt;
+  )
+}
+
+export default App
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;explanation&quot;&gt;Explanation&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;We import the &lt;code&gt;useState&lt;&#x2F;code&gt; hook from React.&lt;&#x2F;li&gt;
+&lt;li&gt;We define a functional component &lt;code&gt;App&lt;&#x2F;code&gt;.&lt;&#x2F;li&gt;
+&lt;li&gt;We use the &lt;code&gt;useState&lt;&#x2F;code&gt; hook to create a state variable &lt;code&gt;colorbg&lt;&#x2F;code&gt; with an initial value of “Black”.&lt;&#x2F;li&gt;
+&lt;li&gt;We create buttons that, when clicked, update the &lt;code&gt;colorbg&lt;&#x2F;code&gt; state to different colors.&lt;&#x2F;li&gt;
+&lt;li&gt;The background color of the &lt;code&gt;div&lt;&#x2F;code&gt; changes based on the current value of &lt;code&gt;colorbg&lt;&#x2F;code&gt;.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;key-points-1&quot;&gt;Key points&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;The &lt;code&gt;useState&lt;&#x2F;code&gt; hook can be called multiple times in a single component to manage different pieces of state.&lt;&#x2F;li&gt;
+&lt;li&gt;State updates are asynchronous, so the new state value may not be immediately available after calling the &lt;code&gt;setState&lt;&#x2F;code&gt; function.&lt;&#x2F;li&gt;
+&lt;li&gt;You can pass a function to the &lt;code&gt;setState&lt;&#x2F;code&gt; function if you need to update the state based on the previous state.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;example-of-updating-state-based-on-previous-state&quot;&gt;Example of updating state based on previous state&lt;&#x2F;h3&gt;
+&lt;pre&gt;&lt;code data-lang=&quot;js&quot;&gt;setCount(prevCount =&amp;gt; prevCount + 1);
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;This ensures that you are working with the most up-to-date state value, especially when multiple state updates are queued.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;conclusion&quot;&gt;Conclusion&lt;&#x2F;h3&gt;
+&lt;p&gt;The &lt;code&gt;useState&lt;&#x2F;code&gt; hook is a powerful and essential tool for managing state in React functional Components. It allows you to create dynamic and interactive user interfaces by enabling stateful behavior in your components.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;day-8-useeffect-useref-and-usecallback-hooks&quot;&gt;Day 8: useEffect, useRef and useCallback Hooks&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;useeffect-hook&quot;&gt;useEffect Hook&lt;&#x2F;h3&gt;
+&lt;p&gt;What is &lt;code&gt;useEffect&lt;&#x2F;code&gt; ?
+It is a hook from react to perform side effects in out application.
+side effects you can think of about them as name implies  as things happening as consequence of something else happening in your application like fetching data from an API, setting up a subscription, or manually changing the DOM in React components.&lt;&#x2F;p&gt;
+&lt;p&gt;how to use it ?&lt;&#x2F;p&gt;
+&lt;p&gt;when to use it ?
+how it works ?&lt;&#x2F;p&gt;
+&lt;p&gt;The &lt;code&gt;useEffect&lt;&#x2F;code&gt; hook allows you to perform side effects in your functional components. Side effects can include data fetching, subscriptions, or manually changing the DOM. The &lt;code&gt;useEffect&lt;&#x2F;code&gt; hook runs after the component renders.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;syntax&quot;&gt;Syntax&lt;&#x2F;h3&gt;
+&lt;pre&gt;&lt;code data-lang=&quot;js&quot;&gt;useEffect(() =&amp;gt; {}, [dependencies]);
+
+useEffect(() =&amp;gt; {
+&#x2F;&#x2F; Side effect code here 
+&#x2F;&#x2F; optional return  function for cleanup
+}, [dependencies]);
+
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;The first argument is a function that contains the side effect code.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;The second argument is an optional array of dependencies. The effect will only re-run if one of the dependencies has changed.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;it is guaranteed that the useEffect function will run at least once when our component mounts.And no matter what you pass as dependencies.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;useref-hook&quot;&gt;useRef Hook&lt;&#x2F;h3&gt;
+&lt;p&gt;The &lt;code&gt;useRef&lt;&#x2F;code&gt; hook allows you to create a mutable reference that persists across renders. It can be used to access DOM elements directly or to store any mutable value that does not cause a re-render when updated.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;syntax-1&quot;&gt;Syntax&lt;&#x2F;h3&gt;
+&lt;pre&gt;&lt;code data-lang=&quot;js&quot;&gt;const ref = useRef(initialValue);
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;ref&lt;&#x2F;code&gt;: The mutable reference object.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;initialValue&lt;&#x2F;code&gt;: The initial value of the reference.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;usecallback-hook&quot;&gt;useCallback Hook&lt;&#x2F;h3&gt;
+&lt;p&gt;The &lt;code&gt;useCallback&lt;&#x2F;code&gt; hook returns a memoized version of a callback function that only changes if one of the dependencies has changed. It is useful for optimizing performance by preventing unnecessary re-creations of functions.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;syntax-2&quot;&gt;Syntax&lt;&#x2F;h3&gt;
+&lt;pre&gt;&lt;code data-lang=&quot;js&quot;&gt;const memoizedCallback = useCallback(() =&amp;gt; {
+  &#x2F;&#x2F; Callback code here
+}, [dependencies]);
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;ul&gt;
+&lt;li&gt;The first argument is the callback function.&lt;&#x2F;li&gt;
+&lt;li&gt;The second argument is an array of dependencies. The callback will only be re-created if one of the dependencies has changed.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;example-using-useeffect-useref-and-usecallback&quot;&gt;Example using useEffect, useRef, and useCallback&lt;&#x2F;h3&gt;
+&lt;pre&gt;&lt;code data-lang=&quot;js&quot;&gt;import { useState, useEffect, useRef, useCallback } from &amp;#39;react&amp;#39;;
+import &amp;#39;.&#x2F;App.css&amp;#39;
+function App() {
+  const [count, setCount] = useState(0);
+  const countRef = useRef(count);
+
+  useEffect(() =&amp;gt; {
+    countRef.current = count;
+  }, [count]);
+
+  const increment = useCallback(() =&amp;gt; {
+    setCount(prevCount =&amp;gt; prevCount + 1);
+  }, []);
+
+  return (
+    &amp;lt;&amp;gt;
+      &amp;lt;div className=&amp;quot;App&amp;quot;&amp;gt;
+    &amp;lt;h1 className=&amp;quot;text-3xl font-bold underline&amp;quot;&amp;gt;useEffect, useRef and useCallback Hooks&amp;lt;&#x2F;h1&amp;gt;
+      &amp;lt;button className=&amp;quot;bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded&amp;quot; onClick={increment}&amp;gt;Increment Count: {count}&amp;lt;&#x2F;button&amp;gt;
+      &amp;lt;h1 className=&amp;quot;text-3xl font-bold underline&amp;quot;&amp;gt;{count}&amp;lt;&#x2F;h1&amp;gt;
+      &amp;lt;&#x2F;div&amp;gt;
+    &amp;lt;&#x2F;&amp;gt;
+  )
+}
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h2 id=&quot;day-9-project-password-generator-using-react&quot;&gt;Day 9: Project password generator using React&lt;&#x2F;h2&gt;
+&lt;pre&gt;&lt;code data-lang=&quot;js&quot;&gt;import { useState,useEffect } from &amp;#39;react&amp;#39;
+import &amp;#39;.&#x2F;App.css&amp;#39;
+
+function App() {
+  const [length, setLength] = useState(8);
+  const [allowedCharacter, setAllowedCharacter] = useState(false);
+  const [allowedNumber, setAllowedNumber] = useState(false);
+  const [password, setPassword] = useState(&amp;quot;&amp;quot;);
+  const [randomNumber, setRandomNumber] = useState(0);
+  const [copied, setCopied] = useState(false);
+
+
+	const generatePassword = () =&amp;gt;{
+		let chars = &amp;quot;abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ&amp;quot;;
+	        let numbers = &amp;quot;0123456789&amp;quot;;
+		let symbols = &amp;quot;!@#$%^&amp;amp;*()_-+=&amp;lt;&amp;gt;?&#x2F;{}~&amp;quot;;
+
+		let allowed = chars;
+   		if (allowedNumber) allowed += numbers;
+	   	if (allowedCharacter) allowed += symbols;
+
+		let pass = &amp;quot;&amp;quot;;
+		for (let i = 0; i &amp;lt; length; i++) {
+			const randomIndex = Math.floor(Math.random() * allowed.length);
+			pass += allowed[randomIndex];
+		}
+		setPassword(pass);
+	};
+         	 useEffect(() =&amp;gt; {
+    		generatePassword();
+	 	 }, [length, allowedCharacter, allowedNumber]);
+	  const copyToClipboard = () =&amp;gt; {
+   		 navigator.clipboard.writeText(password);
+   		 setCopied(true);
+    		setTimeout(() =&amp;gt; setCopied(false), 1500); &#x2F;&#x2F; Reset &amp;quot;copied&amp;quot; message
+  	};
+
+
+
+  return (
+    &amp;lt;&amp;gt;
+
+	  &amp;lt;h1 className=&amp;#39;text-3xl font-bold  m-4 position-absolute top-0 &amp;#39;&amp;gt;
+	    Password Generator 
+	  &amp;lt;&#x2F;h1&amp;gt;
+	  	&amp;lt;div className=&amp;#39;container bg-black border rounded-md p-4&amp;#39;&amp;gt;
+	  	&amp;lt;div className=&amp;quot;box&amp;quot;&amp;gt;
+	  		Password : &amp;lt;input type=&amp;#39;text&amp;#39; readOnly name=&amp;#39;length&amp;#39; className=&amp;#39;bg-white text-black w-90&amp;#39; value={password}  &#x2F;&amp;gt;  
+	  	&amp;lt;&#x2F;div&amp;gt;
+	  &amp;lt;button onClick={generatePassword} className=&amp;quot;ml-2 bg-blue-500 text-white px-2 py-1 rounded&amp;quot; &amp;gt;Refresh&amp;lt;&#x2F;button&amp;gt;
+	&amp;lt;button    onClick={copyToClipboard} className=&amp;quot;bg-green-500 hover:bg-green-600 text-white px-2 py-1 rounded&amp;quot; &amp;gt; Copy  &amp;lt;&#x2F;button&amp;gt;
+
+          {copied &amp;amp;&amp;amp; &amp;lt;span className=&amp;quot;text-green-400 ml-2&amp;quot;&amp;gt;Copied!&amp;lt;&#x2F;span&amp;gt;}
+	        &amp;lt;div className=&amp;quot;container flex flex-col content-center justify-start m-4 align-center&amp;quot;&amp;gt;
+	  	
+	  	
+	  	&amp;lt;div className=&amp;quot;box flex flex-row content-center  align-center m-1&amp;quot; &amp;gt;
+	  
+	  		Length : &amp;lt;input type=&amp;#39;range&amp;#39; min=&amp;quot;4&amp;quot; max=&amp;quot;20&amp;quot; value={length} name=&amp;#39;length&amp;#39;  onChange={(e) =&amp;gt; setLength(e.target.value)} &#x2F;&amp;gt;{&amp;quot; &amp;quot;}{length} 
+	  
+	  	&amp;lt;&#x2F;div&amp;gt; 
+	  		
+	  	&amp;lt;div className=&amp;quot;box flex flex-row content-center justify-start m-1 align-center&amp;quot;&amp;gt;
+	  		Charater : &amp;lt;input type=&amp;#39;checkbox&amp;#39; name=&amp;#39;length&amp;#39; checked={allowedCharacter} onChange={()=&amp;gt; setAllowedCharacter((prev) =&amp;gt; !prev)} &#x2F;&amp;gt;  
+
+	  	&amp;lt;&#x2F;div&amp;gt; 
+	  	&amp;lt;div className=&amp;quot;box flex flex-row content-center justify-start m-1 align-center &amp;quot;&amp;gt;
+	  		Numbers : &amp;lt;input type=&amp;#39;checkbox&amp;#39; name=&amp;#39;length&amp;#39; className=&amp;#39;bg-white text-black&amp;#39; checked={allowedNumber} onChange={() =&amp;gt; setAllowedNumber ((prev) =&amp;gt; !prev)} &#x2F;&amp;gt;  
+	  	&amp;lt;&#x2F;div&amp;gt; 
+
+	  &amp;lt;&#x2F;div&amp;gt;
+  
+	  &amp;lt;&#x2F;div&amp;gt;
+	&amp;lt;&#x2F;&amp;gt;
+  )
+}
+
+export default App
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;explanation-1&quot;&gt;Explanation&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;We use the &lt;code&gt;useState&lt;&#x2F;code&gt; hook to manage various state variables such as &lt;code&gt;length&lt;&#x2F;code&gt;, &lt;code&gt;allowedCharacter&lt;&#x2F;code&gt;, &lt;code&gt;allowedNumber&lt;&#x2F;code&gt;, &lt;code&gt;password&lt;&#x2F;code&gt;, and &lt;code&gt;copied&lt;&#x2F;code&gt;.&lt;&#x2F;li&gt;
+&lt;li&gt;The &lt;code&gt;generatePassword&lt;&#x2F;code&gt; function generates a random password based on the selected criteria.&lt;&#x2F;li&gt;
+&lt;li&gt;The &lt;code&gt;useEffect&lt;&#x2F;code&gt; hook is used to automatically generate a new password whenever the &lt;code&gt;length&lt;&#x2F;code&gt;, &lt;code&gt;allowedCharacter&lt;&#x2F;code&gt;, or &lt;code&gt;allowedNumber&lt;&#x2F;code&gt; state changes.&lt;&#x2F;li&gt;
+&lt;li&gt;The &lt;code&gt;copyToClipboard&lt;&#x2F;code&gt; function copies the generated password to the clipboard and shows a “Copied!” message for 1.5 seconds.&lt;&#x2F;li&gt;
+&lt;li&gt;The UI includes input elements for selecting password length and options for including characters and numbers, as well as buttons for generating and copying the password.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+        
+    </entry>
+</feed>

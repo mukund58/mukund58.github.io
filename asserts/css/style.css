@@ -1,0 +1,50 @@
+body {
+    margin: 5;
+    padding: 0;
+}
+code {
+    font-family: monospace;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+pre
+{
+ 
+  border: solid;
+  border-radius: 7px;
+  padding: 10px;
+  overflow: scroll;
+  box-shadow: 2px 2px 5px grey;
+}
+table th, table td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+    text-align: left;
+}
+
+p a {
+color: #6464ae;
+
+}
+
+.fade-in-1s{
+    animation: fadeIn 1s ease-out forwards;
+  }
+.fade-in-2s{
+    animation: fadeIn 2s ease-out forwards ;
+  }
+  .fade-in-4s{
+    animation: fadeIn 3s ease-in-out forwards;
+  }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+
+  

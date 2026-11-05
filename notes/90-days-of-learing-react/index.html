@@ -1,0 +1,1145 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="UTF-8" />
+        <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+        <meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, user-scalable=no"
+        />
+        <meta name="robots" content="index, follow" />
+
+        <!-- Google tag (gtag.js) -->
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-RPWLQR6JQ1"
+        ></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
+
+            gtag("config", "G-RPWLQR6JQ1");
+        </script>
+
+        <!-- Dynamic Title -->
+        <title>90 Days of Learning React | Mukund Parmar</title>
+
+        <!-- Meta Description -->
+        <meta
+            name="description"
+            content="A comprehensive guide to mastering React in 90 days, covering essential concepts, best practices, and advanced techniques."
+        />
+
+        <!-- Keywords -->
+        <meta
+            name="keywords"
+            content="React, JavaScript, Web Development, Frontend Development"
+        />
+
+        <!-- Author -->
+        <meta name="author" content="Mukund Parmar" />
+
+        <!-- Canonical URL -->
+        <link
+            rel="canonical"
+            href="https:&#x2F;&#x2F;mukund58.github.io&#x2F;notes&#x2F;90-days-of-learing-react&#x2F;"
+        />
+
+        <!-- Open Graph Meta Tags -->
+        <meta
+            property="og:title"
+            content="90 Days of Learning React"
+        />
+        <meta
+            property="og:description"
+            content="A comprehensive guide to mastering React in 90 days, covering essential concepts, best practices, and advanced techniques."
+        />
+        <meta property="og:type" content="article" />
+        <meta
+            property="og:url"
+            content="https:&#x2F;&#x2F;mukund58.github.io&#x2F;notes&#x2F;90-days-of-learing-react&#x2F;"
+        />
+        <meta
+            property="og:image"
+            content="/images/react-logo.png"
+        />
+        <meta property="og:site_name" content="Mukund Parmar" />
+
+        <!-- X (Twitter) -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+            name="twitter:title"
+            content="90 Days of Learning React"
+        />
+        <meta
+            name="twitter:description"
+            content="A comprehensive guide to mastering React in 90 days, covering essential concepts, best practices, and advanced techniques."
+        />
+        <meta
+            name="twitter:image"
+            content="/images/react-logo.png"
+        />
+
+        
+
+        <link rel="icon" href="https://mukund58.github.io/images/logo.jpg" />
+        <link
+            href="https://cdn.boxicons.com/fonts/basic/boxicons.min.css"
+            rel="stylesheet"
+        />
+        <link
+            href="https://cdn.boxicons.com/fonts/brands/boxicons-brands.min.css"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://mukund58.github.io/asserts/css/style.css"
+        />
+        <!-- <link rel="stylesheet"  href="https://mukund58.github.io/asserts/css/output.css"> -->
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script src="https://unpkg.com/@boxicons/js@latest"></script>
+        <script defer src="https://mukund58.github.io/asserts/js/script.js"></script>
+        <!-- <script  defer src="https://mukund58.github.io/asserts/js/tailwind.config.js"></script> -->
+        <script defer>
+            tailwind.config = {
+                corePlugins: {
+                    preflight: false,
+                },
+                darkMode: "class",
+            };
+        </script>
+
+    </head>
+
+    <body
+        class="bg-white dark:bg-[#1c1917] dark:text-white transition-all duration-300 fade-in-1s"
+    >
+        <nav class="bg-white text-2xl dark:bg-[#1c1917] shadow">
+            <div
+                class="mx-auto px-4 py-3 flex justify-around flex-col sm:flex-row items-center text-base md:text-lg"
+            >
+                <a
+                    href="/"
+                    class="dark:filter-none dark:mix-blend-lighten bg-transparent mix-blend-hard-light font-bold text-gray-900 dark:text-white md:space-y-0 md:space-x-4 mt-4 md:mt-0"
+                >
+                    <img
+                        src="https://mukund58.github.io/images/logo.jpg"
+                        class="w-12"
+                        alt=""
+                    />
+                </a>
+
+                <!-- Navigation links -->
+                <div
+                    id="menu"
+                    class="text-xl whitespace-nowrap md:flex flex-col grid grid-cols-3 md:grid-cols-5 md:flex-row md:items-center md:space-y-0 md:space-x-4 mt-4 md:mt-0"
+                >
+                    <a
+                        href="/"
+                        class="text-gray-700 dark:text-gray-300 no-underline hover:underline"
+                        >~/home</a
+                    >
+                    <a
+                        href="/about"
+                        class="text-gray-700 dark:text-gray-300 no-underline hover:underline"
+                        >~/about</a
+                    >
+                    <a
+                        href="/project"
+                        class="text-gray-700 dark:text-gray-300 no-underline hover:underline"
+                        >~/projects</a
+                    >
+                    <a
+                        href="/notes"
+                        class="text-gray-700 dark:text-gray-300 no-underline hover:underline"
+                        >~/notes</a
+                    >
+                    <a
+                        href="/blog"
+                        class="text-gray-700 dark:text-gray-300 no-underline hover:underline"
+                        >~/blog</a
+                    >
+                    <!-- Dark Mode Toggle -->
+                    <button
+                        id="theme-toggle"
+                        class="bg-inherit text-white border-none text-lg"
+                    >
+                        <i class="bxr bx-moon text-black"></i>
+                        <audio
+                            id="toggle-sound"
+                            src="https://mukund58.github.io/sounds/toggle-button.mp3"
+                            preload="auto"
+                        ></audio>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Optional script for mobile toggle -->
+        </nav>
+
+        <section class="section w-full">
+            
+
+
+<div class="max-w-5xl m-auto mt-4">
+
+    <div class=""><a href=".." class="text-black dark:text-amber-200"><-- </a><span class="accent-data">90-days-of-learing-react</span></div>
+    <time datetime="2025-07-19">Published on: <span class="accent-data">2025-07-19</span></time>
+    
+    <address rel="author">By <span class="accent-data">Mukund Parmar</span></address>
+    
+  </div>
+<div class="wrapper max-w-5xl m-auto">
+<h1 class="title">
+  90 Days of Learning React
+</h1>
+
+         
+  <!-- <ul>
+    
+      <li class='list-none text-xl'><a href="https://mukund58.github.io/notes/90-days-of-learing-react/#day-1-introduction-to-react" class="no-underline hover:underline dark:text-white text-black>Day 1: Introduction to React</a>
+        
+          <ul >
+            
+              <li class='list-none' ><a href="https://mukund58.github.io/notes/90-days-of-learing-react/#setup-and-installation" class="no-underline hover:underline dark:text-white text-black">Setup and Installation</a></li>
+            
+          </ul>
+        
+      </li>
+    
+      <li class='list-none text-xl'><a href="https://mukund58.github.io/notes/90-days-of-learing-react/#day-2-jsx-and-rendering-elements" class="no-underline hover:underline dark:text-white text-black>Day 2: JSX and Rendering Elements</a>
+        
+          <ul >
+            
+              <li class='list-none' ><a href="https://mukund58.github.io/notes/90-days-of-learing-react/#jsx-javascript-xml" class="no-underline hover:underline dark:text-white text-black">JSX (JavaScript XML)</a></li>
+            
+              <li class='list-none' ><a href="https://mukund58.github.io/notes/90-days-of-learing-react/#key-points" class="no-underline hover:underline dark:text-white text-black">Key Points</a></li>
+            
+          </ul>
+        
+      </li>
+    
+      <li class='list-none text-xl'><a href="https://mukund58.github.io/notes/90-days-of-learing-react/#day-3-create-own-custom-components" class="no-underline hover:underline dark:text-white text-black>Day 3: Create own Custom components</a>
+        
+          <ul >
+            
+              <li class='list-none' ><a href="https://mukund58.github.io/notes/90-days-of-learing-react/#creating-custom-components" class="no-underline hover:underline dark:text-white text-black">Creating Custom components</a></li>
+            
+          </ul>
+        
+      </li>
+    
+      <li class='list-none text-xl'><a href="https://mukund58.github.io/notes/90-days-of-learing-react/#days-4-hooks-and-state-management" class="no-underline hover:underline dark:text-white text-black>Days 4 Hooks and State Management</a>
+        
+      </li>
+    
+      <li class='list-none text-xl'><a href="https://mukund58.github.io/notes/90-days-of-learing-react/#day-5-virtual-dom-and-reconciliation" class="no-underline hover:underline dark:text-white text-black>Day 5: Virtual DOM and Reconciliation</a>
+        
+          <ul >
+            
+              <li class='list-none' ><a href="https://mukund58.github.io/notes/90-days-of-learing-react/#virtual-dom" class="no-underline hover:underline dark:text-white text-black">Virtual dom</a></li>
+            
+              <li class='list-none' ><a href="https://mukund58.github.io/notes/90-days-of-learing-react/#what-is-reconciliation" class="no-underline hover:underline dark:text-white text-black">What is reconciliation?</a></li>
+            
+              <li class='list-none' ><a href="https://mukund58.github.io/notes/90-days-of-learing-react/#key-terms" class="no-underline hover:underline dark:text-white text-black">Key Terms</a></li>
+            
+              <li class='list-none' ><a href="https://mukund58.github.io/notes/90-days-of-learing-react/#in-array-why-keys-should-be-introduced" class="no-underline hover:underline dark:text-white text-black">In Array Why keys should be introduced?</a></li>
+            
+              <li class='list-none' ><a href="https://mukund58.github.io/notes/90-days-of-learing-react/#what-is-a-fiber" class="no-underline hover:underline dark:text-white text-black">What is a fiber?</a></li>
+            
+              <li class='list-none' ><a href="https://mukund58.github.io/notes/90-days-of-learing-react/#structure-of-a-fiber" class="no-underline hover:underline dark:text-white text-black">Structure of a Fiber</a></li>
+            
+          </ul>
+        
+      </li>
+    
+      <li class='list-none text-xl'><a href="https://mukund58.github.io/notes/90-days-of-learing-react/#day-6-props-for-component-communication" class="no-underline hover:underline dark:text-white text-black>Day 6: Props for  Component Communication</a>
+        
+          <ul >
+            
+              <li class='list-none' ><a href="https://mukund58.github.io/notes/90-days-of-learing-react/#function-and-class-components" class="no-underline hover:underline dark:text-white text-black">Function and Class Components</a></li>
+            
+          </ul>
+        
+      </li>
+    
+      <li class='list-none text-xl'><a href="https://mukund58.github.io/notes/90-days-of-learing-react/#day-7-usestate-hook-in-depth" class="no-underline hover:underline dark:text-white text-black>Day 7: useState Hook in Depth</a>
+        
+          <ul >
+            
+              <li class='list-none' ><a href="https://mukund58.github.io/notes/90-days-of-learing-react/#example-of-usestate-hook-for-background-color-change-on-button-click" class="no-underline hover:underline dark:text-white text-black">Example of useState Hook for Background Color Change on Button Click</a></li>
+            
+              <li class='list-none' ><a href="https://mukund58.github.io/notes/90-days-of-learing-react/#explanation" class="no-underline hover:underline dark:text-white text-black">Explanation</a></li>
+            
+              <li class='list-none' ><a href="https://mukund58.github.io/notes/90-days-of-learing-react/#key-points-1" class="no-underline hover:underline dark:text-white text-black">Key points</a></li>
+            
+              <li class='list-none' ><a href="https://mukund58.github.io/notes/90-days-of-learing-react/#example-of-updating-state-based-on-previous-state" class="no-underline hover:underline dark:text-white text-black">Example of updating state based on previous state</a></li>
+            
+              <li class='list-none' ><a href="https://mukund58.github.io/notes/90-days-of-learing-react/#conclusion" class="no-underline hover:underline dark:text-white text-black">Conclusion</a></li>
+            
+          </ul>
+        
+      </li>
+    
+      <li class='list-none text-xl'><a href="https://mukund58.github.io/notes/90-days-of-learing-react/#day-8-useeffect-useref-and-usecallback-hooks" class="no-underline hover:underline dark:text-white text-black>Day 8: useEffect, useRef and useCallback Hooks</a>
+        
+          <ul >
+            
+              <li class='list-none' ><a href="https://mukund58.github.io/notes/90-days-of-learing-react/#useeffect-hook" class="no-underline hover:underline dark:text-white text-black">useEffect Hook</a></li>
+            
+              <li class='list-none' ><a href="https://mukund58.github.io/notes/90-days-of-learing-react/#syntax" class="no-underline hover:underline dark:text-white text-black">Syntax</a></li>
+            
+              <li class='list-none' ><a href="https://mukund58.github.io/notes/90-days-of-learing-react/#useref-hook" class="no-underline hover:underline dark:text-white text-black">useRef Hook</a></li>
+            
+              <li class='list-none' ><a href="https://mukund58.github.io/notes/90-days-of-learing-react/#syntax-1" class="no-underline hover:underline dark:text-white text-black">Syntax</a></li>
+            
+              <li class='list-none' ><a href="https://mukund58.github.io/notes/90-days-of-learing-react/#usecallback-hook" class="no-underline hover:underline dark:text-white text-black">useCallback Hook</a></li>
+            
+              <li class='list-none' ><a href="https://mukund58.github.io/notes/90-days-of-learing-react/#syntax-2" class="no-underline hover:underline dark:text-white text-black">Syntax</a></li>
+            
+              <li class='list-none' ><a href="https://mukund58.github.io/notes/90-days-of-learing-react/#example-using-useeffect-useref-and-usecallback" class="no-underline hover:underline dark:text-white text-black">Example using useEffect, useRef, and useCallback</a></li>
+            
+          </ul>
+        
+      </li>
+    
+      <li class='list-none text-xl'><a href="https://mukund58.github.io/notes/90-days-of-learing-react/#day-9-project-password-generator-using-react" class="no-underline hover:underline dark:text-white text-black>Day 9: Project password generator using React</a>
+        
+          <ul >
+            
+              <li class='list-none' ><a href="https://mukund58.github.io/notes/90-days-of-learing-react/#explanation-1" class="no-underline hover:underline dark:text-white text-black">Explanation</a></li>
+            
+          </ul>
+        
+      </li>
+    
+  </ul> -->
+  
+  <h2>Table of contents</h2>
+<ul>
+
+  <li class='list-none text-base'>
+  <a href="https://mukund58.github.io/notes/90-days-of-learing-react/#day-1-introduction-to-react"  class="no-underline hover:underline dark:text-white text-black ">Day 1: Introduction to React</a>
+  
+    <ul>
+      
+        <li>
+        <a href="https://mukund58.github.io/notes/90-days-of-learing-react/#setup-and-installation"class="text-black dark:text-amber-200" >Setup and Installation</a>
+          <ul>
+          
+          </ul>
+        </li>
+      
+    </ul>
+  
+  </li>
+
+  <li class='list-none text-base'>
+  <a href="https://mukund58.github.io/notes/90-days-of-learing-react/#day-2-jsx-and-rendering-elements"  class="no-underline hover:underline dark:text-white text-black ">Day 2: JSX and Rendering Elements</a>
+  
+    <ul>
+      
+        <li>
+        <a href="https://mukund58.github.io/notes/90-days-of-learing-react/#jsx-javascript-xml"class="text-black dark:text-amber-200" >JSX (JavaScript XML)</a>
+          <ul>
+          
+          </ul>
+        </li>
+      
+        <li>
+        <a href="https://mukund58.github.io/notes/90-days-of-learing-react/#key-points"class="text-black dark:text-amber-200" >Key Points</a>
+          <ul>
+          
+          </ul>
+        </li>
+      
+    </ul>
+  
+  </li>
+
+  <li class='list-none text-base'>
+  <a href="https://mukund58.github.io/notes/90-days-of-learing-react/#day-3-create-own-custom-components"  class="no-underline hover:underline dark:text-white text-black ">Day 3: Create own Custom components</a>
+  
+    <ul>
+      
+        <li>
+        <a href="https://mukund58.github.io/notes/90-days-of-learing-react/#creating-custom-components"class="text-black dark:text-amber-200" >Creating Custom components</a>
+          <ul>
+          
+          </ul>
+        </li>
+      
+    </ul>
+  
+  </li>
+
+  <li class='list-none text-base'>
+  <a href="https://mukund58.github.io/notes/90-days-of-learing-react/#days-4-hooks-and-state-management"  class="no-underline hover:underline dark:text-white text-black ">Days 4 Hooks and State Management</a>
+  
+  </li>
+
+  <li class='list-none text-base'>
+  <a href="https://mukund58.github.io/notes/90-days-of-learing-react/#day-5-virtual-dom-and-reconciliation"  class="no-underline hover:underline dark:text-white text-black ">Day 5: Virtual DOM and Reconciliation</a>
+  
+    <ul>
+      
+        <li>
+        <a href="https://mukund58.github.io/notes/90-days-of-learing-react/#virtual-dom"class="text-black dark:text-amber-200" >Virtual dom</a>
+          <ul>
+          
+          </ul>
+        </li>
+      
+        <li>
+        <a href="https://mukund58.github.io/notes/90-days-of-learing-react/#what-is-reconciliation"class="text-black dark:text-amber-200" >What is reconciliation?</a>
+          <ul>
+          
+          </ul>
+        </li>
+      
+        <li>
+        <a href="https://mukund58.github.io/notes/90-days-of-learing-react/#key-terms"class="text-black dark:text-amber-200" >Key Terms</a>
+          <ul>
+          
+          </ul>
+        </li>
+      
+        <li>
+        <a href="https://mukund58.github.io/notes/90-days-of-learing-react/#in-array-why-keys-should-be-introduced"class="text-black dark:text-amber-200" >In Array Why keys should be introduced?</a>
+          <ul>
+          
+          </ul>
+        </li>
+      
+        <li>
+        <a href="https://mukund58.github.io/notes/90-days-of-learing-react/#what-is-a-fiber"class="text-black dark:text-amber-200" >What is a fiber?</a>
+          <ul>
+          
+          </ul>
+        </li>
+      
+        <li>
+        <a href="https://mukund58.github.io/notes/90-days-of-learing-react/#structure-of-a-fiber"class="text-black dark:text-amber-200" >Structure of a Fiber</a>
+          <ul>
+          
+          </ul>
+        </li>
+      
+    </ul>
+  
+  </li>
+
+  <li class='list-none text-base'>
+  <a href="https://mukund58.github.io/notes/90-days-of-learing-react/#day-6-props-for-component-communication"  class="no-underline hover:underline dark:text-white text-black ">Day 6: Props for  Component Communication</a>
+  
+    <ul>
+      
+        <li>
+        <a href="https://mukund58.github.io/notes/90-days-of-learing-react/#function-and-class-components"class="text-black dark:text-amber-200" >Function and Class Components</a>
+          <ul>
+          
+          </ul>
+        </li>
+      
+    </ul>
+  
+  </li>
+
+  <li class='list-none text-base'>
+  <a href="https://mukund58.github.io/notes/90-days-of-learing-react/#day-7-usestate-hook-in-depth"  class="no-underline hover:underline dark:text-white text-black ">Day 7: useState Hook in Depth</a>
+  
+    <ul>
+      
+        <li>
+        <a href="https://mukund58.github.io/notes/90-days-of-learing-react/#example-of-usestate-hook-for-background-color-change-on-button-click"class="text-black dark:text-amber-200" >Example of useState Hook for Background Color Change on Button Click</a>
+          <ul>
+          
+          </ul>
+        </li>
+      
+        <li>
+        <a href="https://mukund58.github.io/notes/90-days-of-learing-react/#explanation"class="text-black dark:text-amber-200" >Explanation</a>
+          <ul>
+          
+          </ul>
+        </li>
+      
+        <li>
+        <a href="https://mukund58.github.io/notes/90-days-of-learing-react/#key-points-1"class="text-black dark:text-amber-200" >Key points</a>
+          <ul>
+          
+          </ul>
+        </li>
+      
+        <li>
+        <a href="https://mukund58.github.io/notes/90-days-of-learing-react/#example-of-updating-state-based-on-previous-state"class="text-black dark:text-amber-200" >Example of updating state based on previous state</a>
+          <ul>
+          
+          </ul>
+        </li>
+      
+        <li>
+        <a href="https://mukund58.github.io/notes/90-days-of-learing-react/#conclusion"class="text-black dark:text-amber-200" >Conclusion</a>
+          <ul>
+          
+          </ul>
+        </li>
+      
+    </ul>
+  
+  </li>
+
+  <li class='list-none text-base'>
+  <a href="https://mukund58.github.io/notes/90-days-of-learing-react/#day-8-useeffect-useref-and-usecallback-hooks"  class="no-underline hover:underline dark:text-white text-black ">Day 8: useEffect, useRef and useCallback Hooks</a>
+  
+    <ul>
+      
+        <li>
+        <a href="https://mukund58.github.io/notes/90-days-of-learing-react/#useeffect-hook"class="text-black dark:text-amber-200" >useEffect Hook</a>
+          <ul>
+          
+          </ul>
+        </li>
+      
+        <li>
+        <a href="https://mukund58.github.io/notes/90-days-of-learing-react/#syntax"class="text-black dark:text-amber-200" >Syntax</a>
+          <ul>
+          
+          </ul>
+        </li>
+      
+        <li>
+        <a href="https://mukund58.github.io/notes/90-days-of-learing-react/#useref-hook"class="text-black dark:text-amber-200" >useRef Hook</a>
+          <ul>
+          
+          </ul>
+        </li>
+      
+        <li>
+        <a href="https://mukund58.github.io/notes/90-days-of-learing-react/#syntax-1"class="text-black dark:text-amber-200" >Syntax</a>
+          <ul>
+          
+          </ul>
+        </li>
+      
+        <li>
+        <a href="https://mukund58.github.io/notes/90-days-of-learing-react/#usecallback-hook"class="text-black dark:text-amber-200" >useCallback Hook</a>
+          <ul>
+          
+          </ul>
+        </li>
+      
+        <li>
+        <a href="https://mukund58.github.io/notes/90-days-of-learing-react/#syntax-2"class="text-black dark:text-amber-200" >Syntax</a>
+          <ul>
+          
+          </ul>
+        </li>
+      
+        <li>
+        <a href="https://mukund58.github.io/notes/90-days-of-learing-react/#example-using-useeffect-useref-and-usecallback"class="text-black dark:text-amber-200" >Example using useEffect, useRef, and useCallback</a>
+          <ul>
+          
+          </ul>
+        </li>
+      
+    </ul>
+  
+  </li>
+
+  <li class='list-none text-base'>
+  <a href="https://mukund58.github.io/notes/90-days-of-learing-react/#day-9-project-password-generator-using-react"  class="no-underline hover:underline dark:text-white text-black ">Day 9: Project password generator using React</a>
+  
+    <ul>
+      
+        <li>
+        <a href="https://mukund58.github.io/notes/90-days-of-learing-react/#explanation-1"class="text-black dark:text-amber-200" >Explanation</a>
+          <ul>
+          
+          </ul>
+        </li>
+      
+    </ul>
+  
+  </li>
+
+</ul>
+
+
+
+  <p>This blog is where I will document my journey of learning React over the next 90 days. Each day, I will focus on a specific topic or concept, and share my notes, code snippets, and resources.</p>
+<a href="&#x2F;images&#x2F;react-logo.png" data-lightbox="blog-img" data-title="React Logo">
+  <img src="&#x2F;images&#x2F;react-logo.png"
+       alt="React Logo"
+       loading="lazy"
+       style="max-width: 100%; height: auto; border-radius: 6px;" />
+</a>
+<h2 id="day-1-introduction-to-react">Day 1: Introduction to React</h2>
+<ul>
+<li><strong>What is React?</strong>
+<ul>
+<li>A JavaScript library for building user interfaces.</li>
+<li>Developed by Facebook and released in 2013.</li>
+<li>Focuses on building reusable UI components.</li>
+</ul>
+</li>
+<li><strong>Key Features:</strong>
+<ul>
+<li>Virtual DOM for efficient rendering.</li>
+<li>Component-based architecture.</li>
+<li>Single Page Application (SPA) capabilities.</li>
+</ul>
+</li>
+</ul>
+<h4 id="setup-and-installation">Setup and Installation</h4>
+<ul>
+<li>Install Node.js and npm.</li>
+<li>Create a new React app using Create React App:</li>
+</ul>
+<pre><code data-lang="bash">npx create-react-app my-app
+cd my-app
+npm start
+</code></pre>
+<ul>
+<li>Alternatively, you can set up a React project using Vite for faster development:</li>
+</ul>
+<pre><code data-lang="bash">npm create vite@latest my-app --template React
+cd my-app
+npm install 
+npm run dev 
+</code></pre>
+<p>Structure of a React App:</p>
+<pre><code data-lang="plaintext">├── eslint.config.js
+├── index.html
+├── package.json
+├── package-lock.json
+├── public
+│   └── vite.svg
+├── README.md
+├── src
+│   ├── App.jsx
+│   ├── main.jsx
+   └── Nav.jsx
+└── vite.config.jsx
+</code></pre>
+<h2 id="day-2-jsx-and-rendering-elements">Day 2: JSX and Rendering Elements</h2>
+<h3 id="jsx-javascript-xml">JSX (JavaScript XML)</h3>
+<p>App.jsx</p>
+<pre><code data-lang="js">import React from &#39;react&#39;
+export default App
+function App() {
+
+  return (
+	  &lt;h1&gt;Hello, World!&lt;/h1&gt;
+
+  )
+}
+</code></pre>
+<p>Nav.jsx</p>
+<pre><code data-lang="js">import React from &quot;react&quot;;
+export default Nav 
+function Nav(){
+	return(
+		&lt;h1&gt;Nav Bar&lt;/h1&gt;
+	)
+}
+</code></pre>
+<p>main.jsx</p>
+<pre><code data-lang="js">import { StrictMode } from &#39;react&#39;
+import { createRoot } from &#39;react-dom/client&#39;
+import App from &#39;./App.jsx&#39;
+import Nav from &#39;./Nav.jsx&#39;
+
+createRoot(document.getElementById(&#39;root&#39;)).render(
+  &lt;StrictMode&gt;
+    &lt;App /&gt;
+    &lt;Nav /&gt;
+  &lt;/StrictMode&gt;,
+)
+</code></pre>
+<h3 id="key-points">Key Points</h3>
+<p>Component should  start with an uppercase letter, and the file name should match the component name. This is a convention in React to differentiate components from regular HTML elements.</p>
+<p>We can name both App.js &amp; App.jsx but in vite development environment we have to use jsx</p>
+<p>We can return only one component by a jsx function so it’s good to wrap in &lt;&gt;&lt;/&gt; or <div></div></p>
+<h2 id="day-3-create-own-custom-components">Day 3: Create own Custom components</h2>
+<h3 id="creating-custom-components">Creating Custom components</h3>
+<p>script.js</p>
+<pre><code data-lang="js">let rootElement = document.getElementById(&#39;root&#39;);
+
+const reactElement = {
+	type: &#39;a&#39;,
+	props: {
+		href: &#39;https://mukund.xyz&#39;,
+		_target: &#39;_blank&#39;,
+	},
+	children: &#39;Visit mukund.xyz&#39;,
+};
+
+
+CreateReactElement(reactElement, rootElement);
+
+
+function CreateReactElement(element, container) {
+	const domElement = document.createElement(element.type);
+	domElement.textContent = element.children;
+        for (const prop in element.props) {
+			if (prop === &#39;children&#39;) continue;
+		domElement.setAttribute(prop, element.props[prop]);
+	}
+container.appendChild(domElement);
+}
+</code></pre>
+<p>index.html</p>
+<pre><code data-lang="html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+	&lt;head&gt;
+		&lt;meta charset=&quot;UTF-8&quot;&gt;
+		&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+		&lt;title&gt;&lt;/title&gt;
+		&lt;link href=&quot;css/style.css&quot; rel=&quot;stylesheet&quot;&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+	
+		&lt;div id=&quot;root&quot;&gt;
+			
+		&lt;/div&gt;
+	&lt;/body&gt;
+		&lt;script src=&quot;script.js&quot;&gt;&lt;/script&gt;
+&lt;/html&gt;
+</code></pre>
+<p>Create a custom component in React that renders an anchor tag with a link to your website.</p>
+<p>main.jsx</p>
+<pre><code data-lang="js">import React from &#39;react&#39;
+import { createRoot } from &#39;react-dom/client&#39;
+const reactElement = React.createElement(
+  &#39;a&#39;,
+  {
+    href: &#39;https://mukund.xyz&#39;,
+    target: &#39;_blank&#39;,
+  },
+  &#39;Visit mukund.xyz&#39;
+)
+
+
+
+createRoot(document.getElementById(&#39;root&#39;))
+.render(
+reactElement
+)
+</code></pre>
+<h2 id="days-4-hooks-and-state-management">Days 4 Hooks and State Management</h2>
+<p>Hooks are functions that let you use state and other React features in functional components. They allow you to manage state, lifecycle events, and side effects without writing class components.</p>
+<ul>
+<li><strong>useState Hook</strong>
+<ul>
+<li>Allows you to add state to functional components.</li>
+<li>Returns an array with the current state and a function to update it.</li>
+<li>Hooks can’t be called inside loops, conditions, or nested functions. They should be called at the top level of your component.</li>
+</ul>
+</li>
+</ul>
+<h2 id="day-5-virtual-dom-and-reconciliation">Day 5: Virtual DOM and Reconciliation</h2>
+<p>React Fiber Architecture is an ongoing reimplementation of React’s core algorithm. It is the culmination of over two years of research by the React team.</p>
+<h3 id="virtual-dom">Virtual dom</h3>
+<p>Virtual DOM (VDOM) is a programming concept where a virtual representation of the UI is kept in memory and synced with the real DOM by a library such as ReactDOM. This process is called reconciliation.</p>
+<h3 id="what-is-reconciliation">What is reconciliation?</h3>
+<pre><code>The algorithm React uses to diff(differentiate) one tree with another to determine which parts need to be changed.
+</code></pre>
+<p><strong>reconciliation</strong> is the process through which React updates the DOM. When a component’s state or props change, React creates a new Virtual DOM tree and compares it with the previous one. It then calculates the most efficient way to update the real DOM to match the new Virtual DOM.</p>
+<h3 id="key-terms">Key Terms</h3>
+<p>Other key features include the</p>
+<p><strong>ability to pause</strong>,
+<strong>abort</strong>, or <strong>reuse work as new updates come in</strong>
+<strong>the ability to assign priority to different types of updates</strong>
+and new concurrency primitives.</p>
+<p>The algorithm React uses to diff one tree with another to determine which parts need to be changed.</p>
+<a href="https:&#x2F;&#x2F;media.geeksforgeeks.org&#x2F;wp-content&#x2F;uploads&#x2F;20241212235246933476&#x2F;Browser-DOM-Virtual-DOM.webp" data-lightbox="blog-img" data-title="Online Image Example">
+  <img src="https:&#x2F;&#x2F;media.geeksforgeeks.org&#x2F;wp-content&#x2F;uploads&#x2F;20241212235246933476&#x2F;Browser-DOM-Virtual-DOM.webp"
+       alt="Online Image Example"
+       loading="lazy"
+       style="max-width: 100%; height: auto; border-radius: 6px;" />
+</a>
+<p><strong>Reconciliation is the algorithm behind what is popularly understood as the “virtual DOM.”</strong></p>
+<p>A high-level description goes something like this: when you render a React application, a tree of nodes that describes the app is generated and saved in memory. This tree is then flushed to the rendering environment — for example, in the case of a browser application, it’s translated to a set of DOM operations. When the app is updated (usually via setState), a new tree is generated. The new tree is diffed with the previous tree to compute which operations are needed to update the rendered app.</p>
+<ul>
+<li>Although Fiber is a ground-up rewrite of the reconciler, the high-level algorithm described in the React docs will be largely the same.</li>
+</ul>
+<p>The key points are:</p>
+<ul>
+<li>
+<p>Different component types are assumed to generate substantially different trees. React will not attempt to diff them, but rather replace the old tree completely.</p>
+</li>
+<li>
+<p>Diffing of lists is performed using keys. Keys should be “stable, predictable, and unique.”</p>
+</li>
+</ul>
+<h3 id="in-array-why-keys-should-be-introduced">In Array Why keys should be introduced?</h3>
+<ul>
+<li><strong>In Fiber algorithm if we want to impove performance of list when itrating over array of items  we should use keys.</strong></li>
+</ul>
+<p>When React sees a list of elements, it needs to determine which items have changed, been added, or been removed. Keys help React identify which items in the list correspond to which elements in the previous render.</p>
+<p>Scheduling</p>
+<ul>
+<li>the process of determining when work should be performed.</li>
+</ul>
+<p>The key points are:</p>
+<ul>
+<li>In a UI, it’s not necessary for every update to be applied immediately; in fact, doing so can be wasteful, causing frames to drop and degrading the user experience.</li>
+<li>Different types of updates have different priorities — an animation update needs to complete more quickly than, say, an update from a data store.</li>
+<li>A push-based approach requires the app (you, the programmer) to decide how to schedule work. A pull-based approach allows the framework (React) to be smart and make those decisions for you.</li>
+</ul>
+<h3 id="what-is-a-fiber">What is a fiber?</h3>
+<p>We’ve established that a primary goal of Fiber is to enable React to take advantage of scheduling. Specifically, we need to be able to</p>
+<ul>
+<li>pause work and come back to it later.</li>
+<li>assign priority to different types of work.</li>
+<li>reuse previously completed work.</li>
+<li>abort work if it’s no longer needed.</li>
+</ul>
+<h3 id="structure-of-a-fiber">Structure of a Fiber</h3>
+<p>In concrete terms, a fiber is a JavaScript object that contains information about a component, its input, and its output.</p>
+<p>A fiber corresponds to a stack frame, but it also corresponds to an instance of a component.</p>
+<p>Here are some of the important fields that belong to a fiber. (This list is not exhaustive.)
+<code>type</code> and <code>key</code></p>
+<h2 id="day-6-props-for-component-communication">Day 6: Props for  Component Communication</h2>
+<p>Props (short for “properties”) are a way to pass data from a parent component to a child component in React. They are read-only and cannot be modified by the child component.</p>
+<h4 id="function-and-class-components">Function and Class Components</h4>
+<p>The simplest way to define a component is to write a JavaScript function:</p>
+<pre><code data-lang="js">function Welcome(props) {
+  return &lt;h1&gt;Hello, {props.name}&lt;/h1&gt;;
+}
+</code></pre>
+<p>This function is a valid React component because it accepts a single “props” (which stands for properties) object argument with data and returns a React element. <code>We call such components “function components” because they are literally JavaScript functions.</code></p>
+<p>You can also use an <code>ES6</code> class to define a component:</p>
+<pre><code data-lang="js">class Welcome extends React.Component {
+  render() {
+    return &lt;h1&gt;Hello, {this.props.name}&lt;/h1&gt;;
+  }
+}
+</code></pre>
+<p>The above two components are equivalent from React’s point of view.</p>
+<p>How to create Parents and Child components using props</p>
+<p><code>ParentCard.jsx</code></p>
+<pre><code data-lang="js">import Card from &quot;./Card&quot;;
+
+function ParentCard() {
+  const products = [
+    {
+      name: &quot;Apple Watch&quot;,
+      price: &quot;$899&quot;,
+      stock: &quot;In Stock&quot;,
+      img: &quot;https://files.refurbed.com/ii/apple-watch-series-7-titan-45mm-1705929512.jpg&quot;
+    },
+    {
+      name: &quot;Samsung Galaxy Watch&quot;,
+      price: &quot;$699&quot;,
+      stock: &quot;Only 3 Left&quot;,
+      img: &quot;https://m.media-amazon.com/images/I/71Swqqe7XAL._AC_UL600_FMwebp_QL65_.jpg&quot;
+    },
+    {
+      name: &quot;Noise Smartwatch&quot;,
+      price: &quot;$199&quot;,
+      stock: &quot;Out of Stock&quot;,
+      img: &quot;https://sell.gameloot.in/wp-content/uploads/sites/4/2022/05/Samsung-Galaxy-Watch-4-Classic-LTE-42mm.jpg&quot;
+    }
+  ];
+
+  return (
+    &lt;div className=&quot;container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 p-5&quot;&gt;
+      {products.map((product, index) =&gt; (
+        &lt;Card key={index} productData={product} /&gt;
+      ))}
+    &lt;/div&gt;
+  );
+}
+
+export default ParentCard;
+</code></pre>
+<p><code>Card.jsx</code></p>
+<pre><code data-lang="js">function Card(props) {
+  const obj = props.productData;
+
+const { name= &quot;default Watch &quot;, price= &quot;$899&quot;, stock= &quot;Out of Stock&quot;, img=&quot;https://files.refurbed.com/ii/apple-watch-series-7-titan-45mm-1705929512.jpg&quot; } = obj;
+
+    return (
+        &lt;div className=&quot;max-w-sm rounded overflow-hidden shadow-lg&quot;&gt;
+        &lt;img className=&quot;w-full h-64 object-cover&quot; src={img} alt={name} /&gt;
+        &lt;div className=&quot;px-6 py-4&quot;&gt;
+            &lt;div className=&quot;font-bold text-xl mb-2&quot;&gt;{name}&lt;/div&gt;
+            &lt;p className=&quot;text-gray-700 text-base&quot;&gt;Price: {price}&lt;/p&gt;
+            &lt;p className={`text-base ${stock === &quot;In Stock&quot; ? &quot;text-green-500&quot; : stock === &quot;Only 3 Left&quot; ? &quot;text-yellow-500&quot; : &quot;text-red-500&quot;}`}&gt;
+            {stock}
+            &lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div className=&quot;px-6 pt-4 pb-2&quot;&gt;
+            &lt;button className=&quot;bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded&quot;&gt;
+            Buy Now
+            &lt;/button&gt;
+        &lt;/div&gt;
+        &lt;/div&gt;
+    );
+    }
+
+</code></pre>
+<h2 id="day-7-usestate-hook-in-depth">Day 7: useState Hook in Depth</h2>
+<p>The <code>useState</code> hook is a fundamental building block in React that allows you to add state to functional components. It provides a way to manage and update state within your components without the need for class components.</p>
+<ol>
+<li>Understanding State</li>
+</ol>
+<p>Definition: State is data in an application that changes over time . In React, this means data that can be different from one component render to another .</p>
+<p>Importance: Tracking state is crucial for application functionality, such as showing a loading spinner while fetching data, displaying error messages, or handling the data itself .</p>
+<ol start="2">
+<li>The useState Hook</li>
+</ol>
+<p>Purpose: useState is the primary hook used in functional components to manage and manipulate state in React .</p>
+<p>How to Import: You must import the hook from React: import { useState } from ‘react’ .</p>
+<ol start="3">
+<li>useState Syntax and Structure</li>
+</ol>
+<p>The hook is used by destructuring an array that contains two elements:</p>
+<ul>
+<li>
+<p>State Variable (count): The current value of the state .</p>
+</li>
+<li>
+<p>Updater Function (setCount): A function used to update the state variable .</p>
+</li>
+</ul>
+<p>Naming Convention: By convention, the updater function is named set followed by the name of the state variable (e.g., setCount) .</p>
+<p>Default Value: The value passed as an argument to useState() is the initial or default value of the state. If no value is provided, the state will be undefined .</p>
+<p>JavaScript</p>
+<pre><code data-lang="js">// Example: Initializing count with a default value of 0
+const [count, setCount] = useState(0);
+</code></pre>
+<ul>
+<li><code>state</code>: The current state value.</li>
+<li><code>setState</code>: A function that allows you to update the state.</li>
+<li><code>initialState</code>: The initial value of the state.</li>
+</ul>
+<h3 id="example-of-usestate-hook-for-background-color-change-on-button-click">Example of useState Hook for Background Color Change on Button Click</h3>
+<pre><code data-lang="js">import { useState } from &#39;react&#39;
+
+function App() {
+  const [colorbg, setColor] = useState(&quot;Black&quot;);
+
+  return (
+    &lt;&gt;
+	  &lt;div className=&quot;App&quot; style={{ backgroundColor: colorbg, transition: &#39;background-color 0.5s ease&#39;, height: &#39;100vh&#39; }}&gt;
+	&lt;h1 className=&quot;text-3xl font-bold text-center min-h-screen&quot;&gt;
+	  Background Color Change on Click
+	&lt;/h1&gt;
+	  
+	  &lt;div className=&quot;flex flex-row items-top justify-center p-10 gap-5 absolute top-10 w-full bg-white/10 &quot;&gt;
+	  	&lt;button className=&quot;bg-green hover:bg-green-700 text-white  font-bold py-2 px-4 rounded border&quot; onClick={()=&gt; {setColor(&quot;Green&quot;)}} &gt;Green&lt;/button&gt;
+	  	&lt;button className=&quot;bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded&quot;onClick={() =&gt; setColor(&quot;Blue&quot;)}&gt;Blue&lt;/button&gt;
+	  	&lt;button className=&quot;bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded&quot;onClick={() =&gt; setColor(&quot;Red&quot;)}&gt;Red&lt;/button&gt;
+	  	&lt;button className=&quot;bg-yellow-500 hover:bg-yellow-700 text-white font-bold py-2 px-4 rounded&quot;onClick={() =&gt; setColor(&quot;Yellow&quot;)}&gt;Yellow&lt;/button&gt;
+	  	&lt;button className=&quot;bg-purple-500 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded&quot;onClick={() =&gt; setColor(&quot;Purple&quot;)}&gt;Purple&lt;/button&gt;
+	  	&lt;button className=&quot;bg-pink-500 hover:bg-pink-700 text-white font-bold py-2 px-4 rounded&quot;onClick={() =&gt; setColor(&quot;Pink&quot;)}&gt;Pink&lt;/button&gt;
+	  	&lt;button className=&quot;bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded&quot;onClick={() =&gt; setColor(&quot;Gray&quot;)}&gt;Gray&lt;/button&gt;
+	  	&lt;button className=&quot;bg-black hover:bg-black text-white font-bold py-2 px-4 rounded&quot;onClick={() =&gt; setColor(&quot;Black&quot;)}&gt;Black&lt;/button&gt;
+	  	&lt;button className=&quot;bg-white hover:bg-white text-black font-bold py-2 px-4 rounded border&quot;onClick={() =&gt; setColor(&quot;White&quot;)}&gt;White&lt;/button&gt;
+
+	  	&lt;/div&gt;
+	  &lt;/div&gt;
+    &lt;/&gt;
+  )
+}
+
+export default App
+</code></pre>
+<h3 id="explanation">Explanation</h3>
+<ul>
+<li>We import the <code>useState</code> hook from React.</li>
+<li>We define a functional component <code>App</code>.</li>
+<li>We use the <code>useState</code> hook to create a state variable <code>colorbg</code> with an initial value of “Black”.</li>
+<li>We create buttons that, when clicked, update the <code>colorbg</code> state to different colors.</li>
+<li>The background color of the <code>div</code> changes based on the current value of <code>colorbg</code>.</li>
+</ul>
+<h3 id="key-points-1">Key points</h3>
+<ul>
+<li>The <code>useState</code> hook can be called multiple times in a single component to manage different pieces of state.</li>
+<li>State updates are asynchronous, so the new state value may not be immediately available after calling the <code>setState</code> function.</li>
+<li>You can pass a function to the <code>setState</code> function if you need to update the state based on the previous state.</li>
+</ul>
+<h3 id="example-of-updating-state-based-on-previous-state">Example of updating state based on previous state</h3>
+<pre><code data-lang="js">setCount(prevCount =&gt; prevCount + 1);
+</code></pre>
+<p>This ensures that you are working with the most up-to-date state value, especially when multiple state updates are queued.</p>
+<h3 id="conclusion">Conclusion</h3>
+<p>The <code>useState</code> hook is a powerful and essential tool for managing state in React functional Components. It allows you to create dynamic and interactive user interfaces by enabling stateful behavior in your components.</p>
+<h2 id="day-8-useeffect-useref-and-usecallback-hooks">Day 8: useEffect, useRef and useCallback Hooks</h2>
+<h3 id="useeffect-hook">useEffect Hook</h3>
+<p>What is <code>useEffect</code> ?
+It is a hook from react to perform side effects in out application.
+side effects you can think of about them as name implies  as things happening as consequence of something else happening in your application like fetching data from an API, setting up a subscription, or manually changing the DOM in React components.</p>
+<p>how to use it ?</p>
+<p>when to use it ?
+how it works ?</p>
+<p>The <code>useEffect</code> hook allows you to perform side effects in your functional components. Side effects can include data fetching, subscriptions, or manually changing the DOM. The <code>useEffect</code> hook runs after the component renders.</p>
+<h3 id="syntax">Syntax</h3>
+<pre><code data-lang="js">useEffect(() =&gt; {}, [dependencies]);
+
+useEffect(() =&gt; {
+// Side effect code here 
+// optional return  function for cleanup
+}, [dependencies]);
+
+</code></pre>
+<ul>
+<li>
+<p>The first argument is a function that contains the side effect code.</p>
+</li>
+<li>
+<p>The second argument is an optional array of dependencies. The effect will only re-run if one of the dependencies has changed.</p>
+</li>
+<li>
+<p>it is guaranteed that the useEffect function will run at least once when our component mounts.And no matter what you pass as dependencies.</p>
+</li>
+</ul>
+<h3 id="useref-hook">useRef Hook</h3>
+<p>The <code>useRef</code> hook allows you to create a mutable reference that persists across renders. It can be used to access DOM elements directly or to store any mutable value that does not cause a re-render when updated.</p>
+<h3 id="syntax-1">Syntax</h3>
+<pre><code data-lang="js">const ref = useRef(initialValue);
+</code></pre>
+<ul>
+<li><code>ref</code>: The mutable reference object.</li>
+<li><code>initialValue</code>: The initial value of the reference.</li>
+</ul>
+<h3 id="usecallback-hook">useCallback Hook</h3>
+<p>The <code>useCallback</code> hook returns a memoized version of a callback function that only changes if one of the dependencies has changed. It is useful for optimizing performance by preventing unnecessary re-creations of functions.</p>
+<h3 id="syntax-2">Syntax</h3>
+<pre><code data-lang="js">const memoizedCallback = useCallback(() =&gt; {
+  // Callback code here
+}, [dependencies]);
+</code></pre>
+<ul>
+<li>The first argument is the callback function.</li>
+<li>The second argument is an array of dependencies. The callback will only be re-created if one of the dependencies has changed.</li>
+</ul>
+<h3 id="example-using-useeffect-useref-and-usecallback">Example using useEffect, useRef, and useCallback</h3>
+<pre><code data-lang="js">import { useState, useEffect, useRef, useCallback } from &#39;react&#39;;
+import &#39;./App.css&#39;
+function App() {
+  const [count, setCount] = useState(0);
+  const countRef = useRef(count);
+
+  useEffect(() =&gt; {
+    countRef.current = count;
+  }, [count]);
+
+  const increment = useCallback(() =&gt; {
+    setCount(prevCount =&gt; prevCount + 1);
+  }, []);
+
+  return (
+    &lt;&gt;
+      &lt;div className=&quot;App&quot;&gt;
+    &lt;h1 className=&quot;text-3xl font-bold underline&quot;&gt;useEffect, useRef and useCallback Hooks&lt;/h1&gt;
+      &lt;button className=&quot;bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded&quot; onClick={increment}&gt;Increment Count: {count}&lt;/button&gt;
+      &lt;h1 className=&quot;text-3xl font-bold underline&quot;&gt;{count}&lt;/h1&gt;
+      &lt;/div&gt;
+    &lt;/&gt;
+  )
+}
+</code></pre>
+<h2 id="day-9-project-password-generator-using-react">Day 9: Project password generator using React</h2>
+<pre><code data-lang="js">import { useState,useEffect } from &#39;react&#39;
+import &#39;./App.css&#39;
+
+function App() {
+  const [length, setLength] = useState(8);
+  const [allowedCharacter, setAllowedCharacter] = useState(false);
+  const [allowedNumber, setAllowedNumber] = useState(false);
+  const [password, setPassword] = useState(&quot;&quot;);
+  const [randomNumber, setRandomNumber] = useState(0);
+  const [copied, setCopied] = useState(false);
+
+
+	const generatePassword = () =&gt;{
+		let chars = &quot;abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ&quot;;
+	        let numbers = &quot;0123456789&quot;;
+		let symbols = &quot;!@#$%^&amp;*()_-+=&lt;&gt;?/{}~&quot;;
+
+		let allowed = chars;
+   		if (allowedNumber) allowed += numbers;
+	   	if (allowedCharacter) allowed += symbols;
+
+		let pass = &quot;&quot;;
+		for (let i = 0; i &lt; length; i++) {
+			const randomIndex = Math.floor(Math.random() * allowed.length);
+			pass += allowed[randomIndex];
+		}
+		setPassword(pass);
+	};
+         	 useEffect(() =&gt; {
+    		generatePassword();
+	 	 }, [length, allowedCharacter, allowedNumber]);
+	  const copyToClipboard = () =&gt; {
+   		 navigator.clipboard.writeText(password);
+   		 setCopied(true);
+    		setTimeout(() =&gt; setCopied(false), 1500); // Reset &quot;copied&quot; message
+  	};
+
+
+
+  return (
+    &lt;&gt;
+
+	  &lt;h1 className=&#39;text-3xl font-bold  m-4 position-absolute top-0 &#39;&gt;
+	    Password Generator 
+	  &lt;/h1&gt;
+	  	&lt;div className=&#39;container bg-black border rounded-md p-4&#39;&gt;
+	  	&lt;div className=&quot;box&quot;&gt;
+	  		Password : &lt;input type=&#39;text&#39; readOnly name=&#39;length&#39; className=&#39;bg-white text-black w-90&#39; value={password}  /&gt;  
+	  	&lt;/div&gt;
+	  &lt;button onClick={generatePassword} className=&quot;ml-2 bg-blue-500 text-white px-2 py-1 rounded&quot; &gt;Refresh&lt;/button&gt;
+	&lt;button    onClick={copyToClipboard} className=&quot;bg-green-500 hover:bg-green-600 text-white px-2 py-1 rounded&quot; &gt; Copy  &lt;/button&gt;
+
+          {copied &amp;&amp; &lt;span className=&quot;text-green-400 ml-2&quot;&gt;Copied!&lt;/span&gt;}
+	        &lt;div className=&quot;container flex flex-col content-center justify-start m-4 align-center&quot;&gt;
+	  	
+	  	
+	  	&lt;div className=&quot;box flex flex-row content-center  align-center m-1&quot; &gt;
+	  
+	  		Length : &lt;input type=&#39;range&#39; min=&quot;4&quot; max=&quot;20&quot; value={length} name=&#39;length&#39;  onChange={(e) =&gt; setLength(e.target.value)} /&gt;{&quot; &quot;}{length} 
+	  
+	  	&lt;/div&gt; 
+	  		
+	  	&lt;div className=&quot;box flex flex-row content-center justify-start m-1 align-center&quot;&gt;
+	  		Charater : &lt;input type=&#39;checkbox&#39; name=&#39;length&#39; checked={allowedCharacter} onChange={()=&gt; setAllowedCharacter((prev) =&gt; !prev)} /&gt;  
+
+	  	&lt;/div&gt; 
+	  	&lt;div className=&quot;box flex flex-row content-center justify-start m-1 align-center &quot;&gt;
+	  		Numbers : &lt;input type=&#39;checkbox&#39; name=&#39;length&#39; className=&#39;bg-white text-black&#39; checked={allowedNumber} onChange={() =&gt; setAllowedNumber ((prev) =&gt; !prev)} /&gt;  
+	  	&lt;/div&gt; 
+
+	  &lt;/div&gt;
+  
+	  &lt;/div&gt;
+	&lt;/&gt;
+  )
+}
+
+export default App
+</code></pre>
+<h3 id="explanation-1">Explanation</h3>
+<ul>
+<li>We use the <code>useState</code> hook to manage various state variables such as <code>length</code>, <code>allowedCharacter</code>, <code>allowedNumber</code>, <code>password</code>, and <code>copied</code>.</li>
+<li>The <code>generatePassword</code> function generates a random password based on the selected criteria.</li>
+<li>The <code>useEffect</code> hook is used to automatically generate a new password whenever the <code>length</code>, <code>allowedCharacter</code>, or <code>allowedNumber</code> state changes.</li>
+<li>The <code>copyToClipboard</code> function copies the generated password to the clipboard and shows a “Copied!” message for 1.5 seconds.</li>
+<li>The UI includes input elements for selecting password length and options for including characters and numbers, as well as buttons for generating and copying the password.</li>
+</ul>
+
+</div>
+
+        </section>
+    </body>
+</html>

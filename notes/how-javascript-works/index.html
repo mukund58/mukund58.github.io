@@ -1,0 +1,414 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="UTF-8" />
+        <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+        <meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, user-scalable=no"
+        />
+        <meta name="robots" content="index, follow" />
+
+        <!-- Google tag (gtag.js) -->
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-RPWLQR6JQ1"
+        ></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
+
+            gtag("config", "G-RPWLQR6JQ1");
+        </script>
+
+        <!-- Dynamic Title -->
+        <title>JavaScript notes | Mukund Parmar</title>
+
+        <!-- Meta Description -->
+        <meta
+            name="description"
+            content="How JavaScript Works and its Execution Context"
+        />
+
+        <!-- Keywords -->
+        <meta
+            name="keywords"
+            content="JavaScript, Execution Context, Call Stack, Synchronous, Asynchronous, Single Threaded, Multi Threaded"
+        />
+
+        <!-- Author -->
+        <meta name="author" content="Mukund Parmar" />
+
+        <!-- Canonical URL -->
+        <link
+            rel="canonical"
+            href="https:&#x2F;&#x2F;mukund58.github.io&#x2F;notes&#x2F;how-javascript-works&#x2F;"
+        />
+
+        <!-- Open Graph Meta Tags -->
+        <meta
+            property="og:title"
+            content="JavaScript notes"
+        />
+        <meta
+            property="og:description"
+            content="How JavaScript Works and its Execution Context"
+        />
+        <meta property="og:type" content="article" />
+        <meta
+            property="og:url"
+            content="https:&#x2F;&#x2F;mukund58.github.io&#x2F;notes&#x2F;how-javascript-works&#x2F;"
+        />
+        <meta
+            property="og:image"
+            content="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEim3XmMyXtIw7xgiECdqHePh2dkJN6LPqcydmj0LDhjY1Gtn-HuqqczqBkiLJC395xn3b5JCnee0uhUjmeeOPtvzJdZzipPRmRCk3SJtwWezplF6szNw6QXjBeO2Ynjv85-rB3m1UJagAbnfKIcvU369M3IU0pYVXIsdn6CVNnTC6gBrGG-SlqB8hqKw4Xp/s16000/09-02-2025+16:45:36.png"
+        />
+        <meta property="og:site_name" content="Mukund Parmar" />
+
+        <!-- X (Twitter) -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+            name="twitter:title"
+            content="JavaScript notes"
+        />
+        <meta
+            name="twitter:description"
+            content="How JavaScript Works and its Execution Context"
+        />
+        <meta
+            name="twitter:image"
+            content="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEim3XmMyXtIw7xgiECdqHePh2dkJN6LPqcydmj0LDhjY1Gtn-HuqqczqBkiLJC395xn3b5JCnee0uhUjmeeOPtvzJdZzipPRmRCk3SJtwWezplF6szNw6QXjBeO2Ynjv85-rB3m1UJagAbnfKIcvU369M3IU0pYVXIsdn6CVNnTC6gBrGG-SlqB8hqKw4Xp/s16000/09-02-2025+16:45:36.png"
+        />
+
+        
+
+        <link rel="icon" href="https://mukund58.github.io/images/logo.jpg" />
+        <link
+            href="https://cdn.boxicons.com/fonts/basic/boxicons.min.css"
+            rel="stylesheet"
+        />
+        <link
+            href="https://cdn.boxicons.com/fonts/brands/boxicons-brands.min.css"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://mukund58.github.io/asserts/css/style.css"
+        />
+        <!-- <link rel="stylesheet"  href="https://mukund58.github.io/asserts/css/output.css"> -->
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script src="https://unpkg.com/@boxicons/js@latest"></script>
+        <script defer src="https://mukund58.github.io/asserts/js/script.js"></script>
+        <!-- <script  defer src="https://mukund58.github.io/asserts/js/tailwind.config.js"></script> -->
+        <script defer>
+            tailwind.config = {
+                corePlugins: {
+                    preflight: false,
+                },
+                darkMode: "class",
+            };
+        </script>
+
+    </head>
+
+    <body
+        class="bg-white dark:bg-[#1c1917] dark:text-white transition-all duration-300 fade-in-1s"
+    >
+        <nav class="bg-white text-2xl dark:bg-[#1c1917] shadow">
+            <div
+                class="mx-auto px-4 py-3 flex justify-around flex-col sm:flex-row items-center text-base md:text-lg"
+            >
+                <a
+                    href="/"
+                    class="dark:filter-none dark:mix-blend-lighten bg-transparent mix-blend-hard-light font-bold text-gray-900 dark:text-white md:space-y-0 md:space-x-4 mt-4 md:mt-0"
+                >
+                    <img
+                        src="https://mukund58.github.io/images/logo.jpg"
+                        class="w-12"
+                        alt=""
+                    />
+                </a>
+
+                <!-- Navigation links -->
+                <div
+                    id="menu"
+                    class="text-xl whitespace-nowrap md:flex flex-col grid grid-cols-3 md:grid-cols-5 md:flex-row md:items-center md:space-y-0 md:space-x-4 mt-4 md:mt-0"
+                >
+                    <a
+                        href="/"
+                        class="text-gray-700 dark:text-gray-300 no-underline hover:underline"
+                        >~/home</a
+                    >
+                    <a
+                        href="/about"
+                        class="text-gray-700 dark:text-gray-300 no-underline hover:underline"
+                        >~/about</a
+                    >
+                    <a
+                        href="/project"
+                        class="text-gray-700 dark:text-gray-300 no-underline hover:underline"
+                        >~/projects</a
+                    >
+                    <a
+                        href="/notes"
+                        class="text-gray-700 dark:text-gray-300 no-underline hover:underline"
+                        >~/notes</a
+                    >
+                    <a
+                        href="/blog"
+                        class="text-gray-700 dark:text-gray-300 no-underline hover:underline"
+                        >~/blog</a
+                    >
+                    <!-- Dark Mode Toggle -->
+                    <button
+                        id="theme-toggle"
+                        class="bg-inherit text-white border-none text-lg"
+                    >
+                        <i class="bxr bx-moon text-black"></i>
+                        <audio
+                            id="toggle-sound"
+                            src="https://mukund58.github.io/sounds/toggle-button.mp3"
+                            preload="auto"
+                        ></audio>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Optional script for mobile toggle -->
+        </nav>
+
+        <section class="section w-full">
+            
+
+
+<div class="max-w-5xl m-auto mt-4">
+
+    <div class=""><a href=".." class="text-black dark:text-amber-200"><-- </a><span class="accent-data">how-javascript-works</span></div>
+    <time datetime="2024-10-09">Published on: <span class="accent-data">2024-10-09</span></time>
+    
+    <address rel="author">By <span class="accent-data">Mukund Parmar</span></address>
+    
+  </div>
+<div class="wrapper max-w-5xl m-auto">
+<h1 class="title">
+  JavaScript notes
+</h1>
+
+         
+  <!-- <ul>
+    
+      <li class='list-none text-xl'><a href="https://mukund58.github.io/notes/how-javascript-works/#how-javascript-works" class="no-underline hover:underline dark:text-white text-black>How JavaScript Works</a>
+        
+          <ul >
+            
+              <li class='list-none' ><a href="https://mukund58.github.io/notes/how-javascript-works/#execution-context" class="no-underline hover:underline dark:text-white text-black">Execution context</a></li>
+            
+              <li class='list-none' ><a href="https://mukund58.github.io/notes/how-javascript-works/#what-happen-when-you-run-javascript-code" class="no-underline hover:underline dark:text-white text-black">What happen when You run JavaScript code ?</a></li>
+            
+              <li class='list-none' ><a href="https://mukund58.github.io/notes/how-javascript-works/#1-memory-allocation-phase" class="no-underline hover:underline dark:text-white text-black">1.Memory Allocation phase</a></li>
+            
+              <li class='list-none' ><a href="https://mukund58.github.io/notes/how-javascript-works/#2-code-execution-phase" class="no-underline hover:underline dark:text-white text-black">2.Code Execution phase</a></li>
+            
+              <li class='list-none' ><a href="https://mukund58.github.io/notes/how-javascript-works/#what-do-you-mean-by-function-invocation" class="no-underline hover:underline dark:text-white text-black">What Do you mean by Function Invocation</a></li>
+            
+              <li class='list-none' ><a href="https://mukund58.github.io/notes/how-javascript-works/#how-javascript-engine-handle-all-this-execution-context-creation-deletion-and-control" class="no-underline hover:underline dark:text-white text-black">How javascript Engine handle all this execution context creation,deletion and control</a></li>
+            
+          </ul>
+        
+      </li>
+    
+      <li class='list-none text-xl'><a href="https://mukund58.github.io/notes/how-javascript-works/#synchronous-or-asynchronous" class="no-underline hover:underline dark:text-white text-black>Synchronous OR Asynchronous</a>
+        
+      </li>
+    
+      <li class='list-none text-xl'><a href="https://mukund58.github.io/notes/how-javascript-works/#single-threaded-or-multi-threaded" class="no-underline hover:underline dark:text-white text-black>Single Threaded OR Multi-Threaded</a>
+        
+      </li>
+    
+  </ul> -->
+  
+  <h2>Table of contents</h2>
+<ul>
+
+  <li class='list-none text-base'>
+  <a href="https://mukund58.github.io/notes/how-javascript-works/#how-javascript-works"  class="no-underline hover:underline dark:text-white text-black ">How JavaScript Works</a>
+  
+    <ul>
+      
+        <li>
+        <a href="https://mukund58.github.io/notes/how-javascript-works/#execution-context"class="text-black dark:text-amber-200" >Execution context</a>
+          <ul>
+          
+          </ul>
+        </li>
+      
+        <li>
+        <a href="https://mukund58.github.io/notes/how-javascript-works/#what-happen-when-you-run-javascript-code"class="text-black dark:text-amber-200" >What happen when You run JavaScript code ?</a>
+          <ul>
+          
+          </ul>
+        </li>
+      
+        <li>
+        <a href="https://mukund58.github.io/notes/how-javascript-works/#1-memory-allocation-phase"class="text-black dark:text-amber-200" >1.Memory Allocation phase</a>
+          <ul>
+          
+          </ul>
+        </li>
+      
+        <li>
+        <a href="https://mukund58.github.io/notes/how-javascript-works/#2-code-execution-phase"class="text-black dark:text-amber-200" >2.Code Execution phase</a>
+          <ul>
+          
+          </ul>
+        </li>
+      
+        <li>
+        <a href="https://mukund58.github.io/notes/how-javascript-works/#what-do-you-mean-by-function-invocation"class="text-black dark:text-amber-200" >What Do you mean by Function Invocation</a>
+          <ul>
+          
+          </ul>
+        </li>
+      
+        <li>
+        <a href="https://mukund58.github.io/notes/how-javascript-works/#how-javascript-engine-handle-all-this-execution-context-creation-deletion-and-control"class="text-black dark:text-amber-200" >How javascript Engine handle all this execution context creation,deletion and control</a>
+          <ul>
+          
+          </ul>
+        </li>
+      
+    </ul>
+  
+  </li>
+
+  <li class='list-none text-base'>
+  <a href="https://mukund58.github.io/notes/how-javascript-works/#synchronous-or-asynchronous"  class="no-underline hover:underline dark:text-white text-black ">Synchronous OR Asynchronous</a>
+  
+  </li>
+
+  <li class='list-none text-base'>
+  <a href="https://mukund58.github.io/notes/how-javascript-works/#single-threaded-or-multi-threaded"  class="no-underline hover:underline dark:text-white text-black ">Single Threaded OR Multi-Threaded</a>
+  
+  </li>
+
+</ul>
+
+
+
+  <h4 id="how-javascript-works">How JavaScript Works</h4>
+<ul>
+<li>Everything in JavaScript happen inside an Execution context</li>
+</ul>
+<h5 id="execution-context">Execution context</h5>
+<table><thead><tr><th>Memory</th><th style="text-align: center">code</th></tr></thead><tbody>
+<tr><td>Variable Environment</td><td style="text-align: center">Thread Of Execution</td></tr>
+<tr><td>Key Value</td><td style="text-align: center">Your Programs</td></tr>
+<tr><td>a:10</td><td style="text-align: center">Where code line by line Execute</td></tr>
+<tr><td>fn:{…}</td><td style="text-align: center"></td></tr>
+</tbody></table>
+<p><code>JavaScript Is a Synchronous Single-Threaded Language</code></p>
+<p>Single-Threaded Language - Executed code line by line<br />
+Synchronous Single-Threaded Language - Executed code line by line but at specific order</p>
+<h5 id="what-happen-when-you-run-javascript-code">What happen when You run JavaScript code ?</h5>
+<p>let take a JavaScript Programs</p>
+<pre><code data-lang="JavaScript">1 var n = 2;
+2 function square(num) {
+3  var ans = num * num;
+4  return ans;
+4 }
+5 var square2 = square(n);
+6 var square4 = square(4);
+</code></pre>
+<p>When Code is Executed it has two phase</p>
+<h5 id="1-memory-allocation-phase">1.Memory Allocation phase</h5>
+<table><thead><tr><th>Memory</th><th style="text-align: center">code</th></tr></thead><tbody>
+<tr><td>n : undefined</td><td style="text-align: center">at line 1</td></tr>
+<tr><td>square:{store whole code of the function}</td><td style="text-align: center">skip 2 to 5</td></tr>
+<tr><td>square2:undefined</td><td style="text-align: center">At 6 Function Invocation</td></tr>
+<tr><td>square4:undefined</td><td style="text-align: center"></td></tr>
+<tr><td>In 1st phase of Memory allocation  we were allocating memory to variable and function inside the global space (whole program) and we allocated the memory to variable which is undefined in case of function we totally store whole functions code into the memory</td><td style="text-align: center"></td></tr>
+</tbody></table>
+<h5 id="2-code-execution-phase">2.Code Execution phase</h5>
+<table><thead><tr><th>Memory</th><th style="text-align: center">code</th></tr></thead><tbody>
+<tr><td>n : 2</td><td style="text-align: center">at line 1</td></tr>
+<tr><td>square:{store whole code of the function}</td><td style="text-align: center">skip 2 to 5</td></tr>
+<tr><td>square2:4</td><td style="text-align: center">At 6 Function Invocation</td></tr>
+<tr><td>square4:16</td><td style="text-align: center"></td></tr>
+<tr><td>In 2nd Phase which is Code Execution Phase Now it executed code line by line and</td><td style="text-align: center"></td></tr>
+<tr><td>it goes to first line allocate value to it variable and</td><td style="text-align: center"></td></tr>
+<tr><td>as control goes to line number 6 ,it’ll invoke the function so when you invoke the function Execution context is created and as it is there 1st Memory allocation num and ans is allocated to memeory and 2nd in Code Execution whole function will run here num * num it store into ans and return statement is executed.In return statement we take back the control over at line number 6 and now square2 will store new value which is coming from function invocation which was the ans</td><td style="text-align: center"></td></tr>
+</tbody></table>
+<h5 id="what-do-you-mean-by-function-invocation">What Do you mean by Function Invocation</h5>
+<p>It means that function is now begin executed</p>
+<pre><code data-lang="js">var square2 = square(n);
+</code></pre>
+<p>Everytime when Function Invoaction there a new Execution Context has been created</p>
+<a href="https:&#x2F;&#x2F;blogger.googleusercontent.com&#x2F;img&#x2F;b&#x2F;R29vZ2xl&#x2F;AVvXsEim3XmMyXtIw7xgiECdqHePh2dkJN6LPqcydmj0LDhjY1Gtn-HuqqczqBkiLJC395xn3b5JCnee0uhUjmeeOPtvzJdZzipPRmRCk3SJtwWezplF6szNw6QXjBeO2Ynjv85-rB3m1UJagAbnfKIcvU369M3IU0pYVXIsdn6CVNnTC6gBrGG-SlqB8hqKw4Xp&#x2F;s16000&#x2F;09-02-2025+16:45:36.png" data-lightbox="blog-img" data-title="Screenshot">
+  <img src="https:&#x2F;&#x2F;blogger.googleusercontent.com&#x2F;img&#x2F;b&#x2F;R29vZ2xl&#x2F;AVvXsEim3XmMyXtIw7xgiECdqHePh2dkJN6LPqcydmj0LDhjY1Gtn-HuqqczqBkiLJC395xn3b5JCnee0uhUjmeeOPtvzJdZzipPRmRCk3SJtwWezplF6szNw6QXjBeO2Ynjv85-rB3m1UJagAbnfKIcvU369M3IU0pYVXIsdn6CVNnTC6gBrGG-SlqB8hqKw4Xp&#x2F;s16000&#x2F;09-02-2025+16:45:36.png"
+       alt="Screenshot"
+       loading="lazy"
+       style="max-width: 100%; height: auto; border-radius: 6px;" />
+</a>
+<p>As soon as you run the code there a global Execution context is created and</p>
+<p>In 1st phase of Memory allocation  we were allocating memory to variable and function inside the global space (whole program) and we allocated the memory to variable which is undefined in case of function we totally store whole functions code into the memory</p>
+<p>Now in 2nd Phase which is Code Execution Phase Now it executed code line by line and
+it goes to first line allocate value to it variable and</p>
+<p>as control goes to line number 6 ,it’ll invoke the function so when you invoke the function Execution context is created and as it is there 1st Memory allocation num and ans is allocated to memeory and 2nd in Code Execution whole function will run here num * num it store into ans and return statement is executed.In return statement we take back the control over at line number 6 and now square2 will store new value which is coming from function invocation which was the ans</p>
+<h5 id="how-javascript-engine-handle-all-this-execution-context-creation-deletion-and-control">How javascript Engine handle all this execution context creation,deletion and control</h5>
+<ul>
+<li>It Manages a Call Stack</li>
+</ul>
+<p>It is stack where a whole(Global) execution context is pushed inside the stack(GEC).
+<a href="https:&#x2F;&#x2F;blogger.googleusercontent.com&#x2F;img&#x2F;b&#x2F;R29vZ2xl&#x2F;AVvXsEiNgv7cIqJ7TynCvJSFwU19lFliThp1fHyFYVxeENPomHa5CJxJFX11lB86MIGmVE70PZZoqDAXhd6QoWR4-YmY-KcNKt7Fu7r8KmEQejYuGo-lPNoqBPUKCwK5HV0BM-uUYu2VBG8TIakNtLMGF7ihXaxwqIaIIx23myQXqhpvg6gJ3nDBMJjuzQbkfN3v&#x2F;s1600&#x2F;09-02-2025+21:29:51.png" data-lightbox="blog-img" data-title="Screenshot">
+  <img src="https:&#x2F;&#x2F;blogger.googleusercontent.com&#x2F;img&#x2F;b&#x2F;R29vZ2xl&#x2F;AVvXsEiNgv7cIqJ7TynCvJSFwU19lFliThp1fHyFYVxeENPomHa5CJxJFX11lB86MIGmVE70PZZoqDAXhd6QoWR4-YmY-KcNKt7Fu7r8KmEQejYuGo-lPNoqBPUKCwK5HV0BM-uUYu2VBG8TIakNtLMGF7ihXaxwqIaIIx23myQXqhpvg6gJ3nDBMJjuzQbkfN3v&#x2F;s1600&#x2F;09-02-2025+21:29:51.png"
+       alt="Screenshot"
+       loading="lazy"
+       style="max-width: 100%; height: auto; border-radius: 6px;" />
+</a>
+</p>
+<p>when control goes to function invoaction it create new execution context 1. Which is pushed into stack e.g E1 Once we are done with executing function, we return the ans and poped out E1 and
+<a href="https:&#x2F;&#x2F;blogger.googleusercontent.com&#x2F;img&#x2F;b&#x2F;R29vZ2xl&#x2F;AVvXsEhrRsXvWFsJF8diu93CipTdGVnmLRKr5veGckgDcNMHdXdgdg5Hmjomi2tFDid8AqQpqsVy1YGOrwH-QWom5pvwMiphlHJOKM250RMLwHmIcO9-volynANnINnX4CbNphC00gcy_TPLywxMHBmrPastjRhYOjmyw1w0n60AeYPYxEcJZID2DpbN8ivQbnmj&#x2F;s1600&#x2F;09-02-2025+21:19:55.png" data-lightbox="blog-img" data-title="Screenshot">
+  <img src="https:&#x2F;&#x2F;blogger.googleusercontent.com&#x2F;img&#x2F;b&#x2F;R29vZ2xl&#x2F;AVvXsEhrRsXvWFsJF8diu93CipTdGVnmLRKr5veGckgDcNMHdXdgdg5Hmjomi2tFDid8AqQpqsVy1YGOrwH-QWom5pvwMiphlHJOKM250RMLwHmIcO9-volynANnINnX4CbNphC00gcy_TPLywxMHBmrPastjRhYOjmyw1w0n60AeYPYxEcJZID2DpbN8ivQbnmj&#x2F;s1600&#x2F;09-02-2025+21:19:55.png"
+       alt="Screenshot"
+       loading="lazy"
+       style="max-width: 100%; height: auto; border-radius: 6px;" />
+</a>
+
+control goes back to GEC where it left<br />
+then we move on line numeber 7,Where the new function is invoked and new execution context is created e.g E2…
+After executing function, we return the ans and poped out E2 and control goes back to GEC where it left</p>
+<p>after all code is executed Whole stack become empty
+<a href="https:&#x2F;&#x2F;blogger.googleusercontent.com&#x2F;img&#x2F;b&#x2F;R29vZ2xl&#x2F;AVvXsEi8r4M3GWmCQlsMng-ycQkPZkCoTfMfAejzkoSmQeqgfy2MkTyJ1ffqJfQeGxY5VB2eOT9ncti3uDT_0Ump8MgKNCfWJxJY5MbuesEb3Wfmrydhe7ycIgcqxgUo0lHyOQoHbCpHswsPdL0wFdMeTkoyaIi_hrDBKmYYv7t70DeBbqVZSNOfvO5MlmJiqKvx&#x2F;s1600&#x2F;09-02-2025+21:28:08.png" data-lightbox="blog-img" data-title="Screenshot">
+  <img src="https:&#x2F;&#x2F;blogger.googleusercontent.com&#x2F;img&#x2F;b&#x2F;R29vZ2xl&#x2F;AVvXsEi8r4M3GWmCQlsMng-ycQkPZkCoTfMfAejzkoSmQeqgfy2MkTyJ1ffqJfQeGxY5VB2eOT9ncti3uDT_0Ump8MgKNCfWJxJY5MbuesEb3Wfmrydhe7ycIgcqxgUo0lHyOQoHbCpHswsPdL0wFdMeTkoyaIi_hrDBKmYYv7t70DeBbqVZSNOfvO5MlmJiqKvx&#x2F;s1600&#x2F;09-02-2025+21:28:08.png"
+       alt="Screenshot"
+       loading="lazy"
+       style="max-width: 100%; height: auto; border-radius: 6px;" />
+</a>
+</p>
+<p><code>Call Stack Maintain the order of execution of execution context</code></p>
+<p>ALt Names of Call Stack</p>
+<ul>
+<li>1.call Stack</li>
+<li>2.Execution Context Stack</li>
+<li>3.Program Stack</li>
+<li>4.Runtime Stack</li>
+<li>5.Machine Stack</li>
+</ul>
+<h4 id="synchronous-or-asynchronous">Synchronous OR Asynchronous</h4>
+<h4 id="single-threaded-or-multi-threaded">Single Threaded OR Multi-Threaded</h4>
+<ul>
+<li></li>
+</ul>
+<p>Thank You For Your Time :)</p>
+
+</div>
+
+        </section>
+    </body>
+</html>

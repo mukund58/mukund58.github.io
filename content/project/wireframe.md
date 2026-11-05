@@ -2,7 +2,8 @@
 title = "Wireframe Tool"
 date = 2025-06-20
 description = "web-based application for designer"
-tags = "DevOps" 
+[taxonomies]
+tags = ["DevOps", "Wireframe", "Design", "PHP", "MySQL"] 
 [extra]
 toc = true
 image = "/images/wireframePage.png"

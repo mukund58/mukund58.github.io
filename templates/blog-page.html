@@ -1,14 +1,93 @@
 {% extends "base.html" %}
-{% block title %}  {{ page.title }}
-{% endblock title %}
+
+{% block title %}{{ page.title }} | Mukund Parmar{% endblock title %}
+{% block description %}{{ page.description }}{% endblock description %}
+{% block keywords %}{% if page.taxonomies.tags %}{{ page.taxonomies.tags | join(sep=", ") }}{% else %}{{ page.title }}{% endif %}{% endblock keywords %}
+
+{% block og_title %}{{ page.title }}{% endblock og_title %}
+{% block og_description %}{{ page.description }}{% endblock og_description %}
+{% block og_type %}article{% endblock og_type %}
+{% block og_image %}{% if page.extra.image %}{{ page.extra.image | safe }}{% else %}{{ get_url(path='images/logo.jpg') }}{% endif %}{% endblock og_image %}
+{% block twitter_title %}{{ page.title }}{% endblock twitter_title %}
+{% block twitter_description %}{{ page.description }}{% endblock twitter_description %}
+{% block twitter_image %}{% if page.extra.image %}{{ page.extra.image | safe }}{% else %}{{ get_url(path='images/logo.jpg') }}{% endif %}{% endblock twitter_image %}
+
+{% block extra_head %}
+{% if page.date %}
+<meta property="article:published_time" content="{{ page.date }}" />
+{% endif %}
+<meta property="article:author" content="Mukund Parmar" />
+{% if page.taxonomies.tags %}
+{% for tag in page.taxonomies.tags %}
+<meta property="article:tag" content="{{ tag }}" />
+{% endfor %}
+{% endif %}
+
+<!-- Schema.org BlogPosting Structured Data for Google Search -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": {{ page.title | json_encode() | safe }},
+  "description": {{ page.description | json_encode() | safe }},
+  "datePublished": "{{ page.date }}",
+  "author": {
+    "@type": "Person",
+    "name": "Mukund Parmar",
+    "url": "{{ config.base_url | safe }}"
+  },
+  {% if page.extra.image %}
+  "image": {{ page.extra.image | json_encode() | safe }},
+  {% endif %}
+  "keywords": [{% if page.taxonomies.tags %}{% for tag in page.taxonomies.tags %}{{ tag | json_encode() | safe }}{% if not loop.last %}, {% endif %}{% endfor %}{% endif %}],
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ current_url | safe }}"
+  }
+}
+</script>
+{% endblock extra_head %}
 
 {% block content %}
-<div class="wrapper max-w-5xl m-auto">
-<h1 class="title">
-  {{ page.title }}
-</h1>
+<div class="wrapper max-w-4xl m-auto p-4 md:p-8">
+  <a href="/blog" class="inline-flex items-center gap-1 text-sm font-medium text-stone-600 dark:text-stone-400 hover:text-[#bc4a3c] dark:hover:text-[#bc4a3c] mb-6 transition-colors">
+    <i class="bx bx-left-arrow-alt text-lg"></i> Back to Blog
+  </a>
 
-<p class="subtitle"><strong>{{ page.date }}</strong></p>
-  {{ page.content | safe }}
+  <h1 class="text-3xl md:text-4xl font-extrabold tracking-tight mb-3 text-stone-900 dark:text-white">
+    {{ page.title }}
+  </h1>
+
+  <div class="flex flex-wrap items-center gap-4 text-sm text-stone-500 dark:text-stone-400 mb-4 pb-4 border-b border-stone-200 dark:border-stone-800">
+    {% if page.date %}
+    <div class="flex items-center gap-1.5">
+      <i class="bx bx-calendar text-base"></i>
+      <span>{{ page.date | date(format="%B %d, %Y") }}</span>
+    </div>
+    {% endif %}
+    {% if page.reading_time %}
+    <div class="flex items-center gap-1.5">
+      <i class="bx bx-time text-base"></i>
+      <span>{{ page.reading_time }} min read</span>
+    </div>
+    {% endif %}
+  </div>
+
+  {% if page.taxonomies.tags %}
+  <div class="flex flex-wrap items-center gap-2 mb-8">
+    <span class="text-xs uppercase tracking-wider text-stone-400 font-semibold">Tags:</span>
+    {% for tag in page.taxonomies.tags %}
+    <a href="{{ get_taxonomy_url(kind="tags", name=tag) | safe }}"
+       class="inline-flex items-center text-xs px-2.5 py-1 rounded-md bg-stone-100 hover:bg-[#bc4a3c] hover:text-white dark:bg-stone-800 dark:hover:bg-[#bc4a3c] dark:hover:text-white text-stone-700 dark:text-stone-300 font-medium transition-colors"
+       title="View all posts tagged #{{ tag }}">
+      #{{ tag }}
+    </a>
+    {% endfor %}
+  </div>
+  {% endif %}
+
+  <div class="content prose dark:prose-invert max-w-none">
+    {{ page.content | safe }}
+  </div>
 </div>
 {% endblock content %}

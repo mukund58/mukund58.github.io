@@ -2,6 +2,7 @@
 title = "Building VendorBridge"
 date = 2026-07-22
 description = "Building a Procurement & Vendor Management ERP using React, ASP.NET Core Minimal API and PostgreSQL during my summer internship."
+[taxonomies]
 tags = ["ASP.NET Core", "React", "PostgreSQL", "Internship", "ERP", "Minimal API"]
 [extra]
 toc = true

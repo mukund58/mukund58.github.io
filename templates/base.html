@@ -39,7 +39,7 @@
         <!-- Keywords -->
         <meta
             name="keywords"
-            content="{% block keywords %}Mukund Parmar, Web Developer, Full Stack Developer, MERN Stack, Portfolio{% endblock keywords %}"
+            content="{% block keywords %}{{ config.extra.keywords | join(sep=', ') }}{% endblock keywords %}"
         />
 
         <!-- Author -->
@@ -48,7 +48,7 @@
         <!-- Canonical URL -->
         <link
             rel="canonical"
-            href="{% block canonical %}{{ current_url }}{% endblock canonical %}"
+            href="{% block canonical %}{{ current_url | default(value=config.base_url) }}{% endblock canonical %}"
         />
 
         <!-- Open Graph Meta Tags -->
@@ -60,11 +60,34 @@
             property="og:description"
             content="{% block og_description %}{{ config.description }}{% endblock og_description %}"
         />
-        <meta property="og:type" content="website" />
+        <meta property="og:type" content="{% block og_type %}website{% endblock og_type %}" />
         <meta
             property="og:url"
-            content="{% block og_url %}{{ current_url }}{% endblock og_url %}"
+            content="{% block og_url %}{{ current_url | default(value=config.base_url) }}{% endblock og_url %}"
         />
+        <meta
+            property="og:image"
+            content="{% block og_image %}{{ get_url(path='images/logo.jpg') }}{% endblock og_image %}"
+        />
+        <meta property="og:site_name" content="Mukund Parmar" />
+
+        <!-- X (Twitter) -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+            name="twitter:title"
+            content="{% block twitter_title %}{{ config.title }}{% endblock twitter_title %}"
+        />
+        <meta
+            name="twitter:description"
+            content="{% block twitter_description %}{{ config.description }}{% endblock twitter_description %}"
+        />
+        <meta
+            name="twitter:image"
+            content="{% block twitter_image %}{{ get_url(path='images/logo.jpg') }}{% endblock twitter_image %}"
+        />
+
+        {% block extra_head %}{% endblock extra_head %}
+
         <link rel="icon" href="{{ get_url(path='images/logo.jpg') }}" />
         <link
             href="https://cdn.boxicons.com/fonts/basic/boxicons.min.css"
@@ -74,36 +97,6 @@
             href="https://cdn.boxicons.com/fonts/brands/boxicons-brands.min.css"
             rel="stylesheet"
         />
-        <meta property="og:url" content="https://www.mukund.xyz/" />
-        <meta
-            property="og:title"
-            content="Mukund Parmar - Full Stack Web Developer Portfolio"
-        />
-        <meta
-            property="og:description"
-            content="Welcome to Mukund Parmar's portfolio. Full Stack Web Developer specializing in MERN Stack, DevOps, and Backend Development. View my projects and work experience."
-        />
-        <meta
-            property="og:image"
-            content="https://mukund.xyz/images/logo.jpg"
-        />
-        <meta
-            property="twitter:image"
-            content="value='https://mukund.xyz/images/logo.jpg"
-        />
-
-        <!-- X (Twitter) -->
-        <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content="https://www.mukund.xyz/" />
-        <meta
-            property="twitter:title"
-            content="Mukund Parmar - Full Stack Web Developer Portfolio"
-        />
-        <meta
-            property="twitter:description"
-            content="Welcome to Mukund Parmar's portfolio. Full Stack Web Developer specializing in MERN Stack, DevOps, and Backend Development. View my projects and work experience."
-        />
-        <title>MyBlog</title>
         <link
             rel="stylesheet"
             href="{{ get_url(path='asserts/css/style.css') }}"

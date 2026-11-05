@@ -2,6 +2,7 @@
 title = "Configure neovim from Scratch"
 date = 2025-09-18
 description = "An explanation of how i configure my neovim setup. "
+[taxonomies]
 tags = ["editor", "Open Source", "nvim"]
 categories = ["Software"]
 [extra]

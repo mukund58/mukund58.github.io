@@ -2,6 +2,7 @@
 title = "How to debug Your code"
 date = 2024-10-24 
 description = "How to debug Your code using GDB debugger"
+[taxonomies]
 tags = ["gdb","debugger","c++","programming"]
 categories = ["programming","tools"]
 

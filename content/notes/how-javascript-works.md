@@ -2,6 +2,7 @@
 title = "JavaScript notes"
 date = 2024-10-09
 description = "How JavaScript Works and its Execution Context"
+[taxonomies]
 tags = ["JavaScript","Execution Context","Call Stack","Synchronous","Asynchronous","Single Threaded","Multi Threaded"]
 categories = ["JavaScript","Programming"]
 [extra]

@@ -1,6 +1,15 @@
 {% extends "base.html" %}
-{% block title %}Projects - Mukund Parmar Portfolio{% endblock title %}
-{% block description %}Explore my web development projects including Wireframe Tool, LAMP stack applications, and Full Stack development work using modern technologies.{% endblock description %}
+{% block title %}{{ page.title }} | Mukund Parmar{% endblock title %}
+{% block description %}{{ page.description }}{% endblock description %}
+{% block keywords %}{% if page.taxonomies.tags %}{{ page.taxonomies.tags | join(sep=", ") }}{% else %}{{ page.title }}{% endif %}{% endblock keywords %}
+
+{% block og_title %}{{ page.title }}{% endblock og_title %}
+{% block og_description %}{{ page.description }}{% endblock og_description %}
+{% block og_type %}article{% endblock og_type %}
+{% block og_image %}{% if page.extra.image %}{{ page.extra.image | safe }}{% else %}{{ get_url(path='images/logo.jpg') }}{% endif %}{% endblock og_image %}
+{% block twitter_title %}{{ page.title }}{% endblock twitter_title %}
+{% block twitter_description %}{{ page.description }}{% endblock twitter_description %}
+{% block twitter_image %}{% if page.extra.image %}{{ page.extra.image | safe }}{% else %}{{ get_url(path='images/logo.jpg') }}{% endif %}{% endblock twitter_image %}
 {% block content %}
 <div class="max-w-5xl m-auto mt-4">
 

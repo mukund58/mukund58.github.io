@@ -1,10 +1,31 @@
 {% extends "base.html" %}
 
+{% block title %}All Tags | Mukund Parmar{% endblock title %}
+{% block description %}Browse all articles, notes, and projects by topic and technology tag.{% endblock description %}
+
 {% block content %}
-<h1>{{ taxonomy.name }}</h1>
-<p>
-{% for term in terms %}
-<a href="{{ term.permalink | safe }}">#{{ term.name }}</a>[{{ term.pages | length }}]
-{% endfor %}
-</p>
+<div class="max-w-4xl mx-auto p-6 md:p-12">
+  <div class="mb-8 text-center md:text-left">
+    <h1 class="text-3xl md:text-4xl font-extrabold tracking-tight text-gray-900 dark:text-white mb-3">
+      Explore by Tags
+    </h1>
+    <p class="text-gray-600 dark:text-gray-400">
+      Browse all {{ terms | length }} topics across articles, notes, and projects.
+    </p>
+  </div>
+
+  <div class="flex flex-wrap gap-3">
+    {% for term in terms %}
+    <a href="{{ term.permalink | safe }}"
+       class="inline-flex items-center gap-2 px-3.5 py-2 rounded-xl bg-white dark:bg-[#252220] border border-gray-200 dark:border-gray-700 shadow-sm hover:border-[#bc4a3c] dark:hover:border-[#bc4a3c] hover:shadow-md transition-all group">
+      <span class="text-sm font-semibold text-gray-800 dark:text-gray-200 group-hover:text-[#bc4a3c] dark:group-hover:text-[#bc4a3c] transition-colors">
+        #{{ term.name }}
+      </span>
+      <span class="text-xs px-2 py-0.5 rounded-full bg-stone-100 dark:bg-stone-800 text-stone-600 dark:text-stone-300 group-hover:bg-[#bc4a3c] group-hover:text-white transition-colors">
+        {{ term.pages | length }}
+      </span>
+    </a>
+    {% endfor %}
+  </div>
+</div>
 {% endblock content %}

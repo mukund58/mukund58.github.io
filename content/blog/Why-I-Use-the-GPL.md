@@ -2,6 +2,7 @@
 title = "Why I Use the GPL"
 date = 2025-09-10
 description = "An explanation of why I choose to use the GNU General Public License (GPL) for my software projects."
+[taxonomies]
 tags = ["GPL", "Open Source", "Software Licensing"]
 categories = ["Software", "Licensing"]
 [extra]

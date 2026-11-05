@@ -52,7 +52,7 @@ Structure of a React App:
 ├── src
 │   ├── App.jsx
 │   ├── main.jsx
-│   └── Nav.jsx
+   └── Nav.jsx
 └── vite.config.jsx
 ```
 ## Day 2: JSX and Rendering Elements 

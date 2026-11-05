@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>Mukund Parmar - Full Stack Web Developer &amp; Software Engineer - Proprietary Software</title>
+    <subtitle>Portfolio of Mukund Parmar, a passionate Full Stack Web Developer specializing in MERN Stack, DevOps, and Competitive Programming. View my projects and experience.</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://mukund58.github.io/tags/proprietary-software/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://mukund58.github.io/"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2025-06-20T00:00:00+00:00</updated>
+    <id>https://mukund58.github.io/tags/proprietary-software/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Why Free software is good ?</title>
+        <published>2025-06-20T00:00:00+00:00</published>
+        <updated>2025-06-20T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://mukund58.github.io/blog/first/"/>
+        <id>https://mukund58.github.io/blog/first/</id>
+        
+        <content type="html" xml:base="https://mukund58.github.io/blog/first/">&lt;h3 id=&quot;what-is-free-software&quot;&gt;What is free Software&lt;&#x2F;h3&gt;
+&lt;!-- 
+
+
+
+
+&lt;a href=&quot;&#x2F;images&amp;#x2F;08-example.jpg&quot; data-lightbox=&quot;blog-img&quot; data-title=&quot;Sample image&quot;&gt;
+    &lt;img src=&quot;https:&amp;#x2F;&amp;#x2F;mukund58.github.io&amp;#x2F;processed_images&amp;#x2F;08-example.2e188466128dd42a.jpg&quot;
+         srcset=&quot;&#x2F;images&amp;#x2F;08-example.jpg 2x&quot;
+         width=&quot;512&quot;
+         height=&quot;308&quot;
+         alt=&quot;Sample image&quot;
+         loading=&quot;lazy&quot;
+         style=&quot;max-width: 100%; height: auto; border-radius: 6px;&quot; &#x2F;&gt;
+&lt;&#x2F;a&gt;
+ --&gt;
+
+
+
+
+
+&lt;a href=&quot;&#x2F;images&amp;#x2F;gnu-means-freedom.png&quot; data-lightbox=&quot;blog-img&quot; data-title=&quot;Sample image&quot;&gt;
+    &lt;img src=&quot;https:&amp;#x2F;&amp;#x2F;mukund58.github.io&amp;#x2F;processed_images&amp;#x2F;gnu-means-freedom.b27c0f549c607b56.png&quot;
+         srcset=&quot;&#x2F;images&amp;#x2F;gnu-means-freedom.png 2x&quot;
+         width=&quot;270&quot;
+         height=&quot;259&quot;
+         alt=&quot;Sample image&quot;
+         loading=&quot;lazy&quot;
+         style=&quot;max-width: 100%; height: auto; border-radius: 6px;&quot; &#x2F;&gt;
+&lt;&#x2F;a&gt;
+&lt;p&gt;A program is free software which respect user Freedom ‘Its free as freedom’ Its means Zero price but we are not taking about price, We talking about more freedom.&lt;&#x2F;p&gt;
+&lt;p&gt;More precisely, To support defination free software there are four essential freedoms:&lt;&#x2F;p&gt;
+&lt;ol start=&quot;0&quot;&gt;
+&lt;li&gt;The freedom to run the program as you wish, for any purpose.&lt;&#x2F;li&gt;
+&lt;li&gt;The freedom to study ,to change and  how the program works.&lt;&#x2F;li&gt;
+&lt;li&gt;The freedom to redistribute copies When you wish .&lt;&#x2F;li&gt;
+&lt;li&gt;The freedom to distribute copies of your modified versions to others.&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;ul&gt;
+&lt;li&gt;“When user control program that’s  free software and When program control user that’s Proprietary Software” - Richard Stallman&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;what-is-proprietary-software&quot;&gt;what is Proprietary Software&lt;&#x2F;h3&gt;
+&lt;p&gt;Proprietary software, also called nonfree software, means software that doesn’t respect users’ freedom and community.&lt;&#x2F;p&gt;
+&lt;p&gt;A proprietary program puts its developer or owner in a position of power over its users. This power is in itself an injustice.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;free-software-vs-proprietary-software&quot;&gt;Free Software Vs Proprietary Software&lt;&#x2F;h3&gt;
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Points&lt;&#x2F;th&gt;&lt;th style=&quot;text-align: center&quot;&gt;Free Software&lt;&#x2F;th&gt;&lt;th style=&quot;text-align: right&quot;&gt;Proprietary Software&lt;&#x2F;th&gt;&lt;&#x2F;tr&gt;&lt;&#x2F;thead&gt;&lt;tbody&gt;
+&lt;tr&gt;&lt;td&gt;Modify&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;Freedom to change anything&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: right&quot;&gt;restrict to change thing&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;Jail&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;No censorship on application&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: right&quot;&gt;censorship on application&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;Distribution&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;freely distribute&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: right&quot;&gt;cannot freely distribute&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;Source Code&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;Have access&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: right&quot;&gt;Not have acces&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;Run Program&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;Free of cost&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: right&quot;&gt;pay of cost&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;Customization&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;Highly customizable&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: right&quot;&gt;Limited customization&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;&#x2F;tbody&gt;&lt;&#x2F;table&gt;
+&lt;h3 id=&quot;free-software-is-even-more-important-now&quot;&gt;Free Software Is Even More Important Now&lt;&#x2F;h3&gt;
+&lt;p&gt;With free software, the users control the program, both individually and collectively. So they control what their computers do&lt;&#x2F;p&gt;
+&lt;p&gt;With proprietary software, the program controls the users, and some other entity (the developer or “owner”) controls the program
+Even when proprietary software isn’t downright malicious, its developers have an incentive to make it addictive, controlling and manipulative.&lt;&#x2F;p&gt;
+&lt;p&gt;Freedom means having control over your own life. If you use a program to carry out activities in your life, your freedom depends on your having control over the program. You deserve to have control over the programs you use, and all the more so when you use them for something important in your life.&lt;&#x2F;p&gt;
+&lt;p&gt;“The Free Software Foundation (FSF) is a nonprofit with a worldwide mission to promote computer user freedom. We defend the rights of all software users.”&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+</feed>

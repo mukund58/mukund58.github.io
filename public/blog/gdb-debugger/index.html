@@ -1,0 +1,355 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="UTF-8" />
+        <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+        <meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, user-scalable=no"
+        />
+        <meta name="robots" content="index, follow" />
+
+        <!-- Google tag (gtag.js) -->
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-RPWLQR6JQ1"
+        ></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
+
+            gtag("config", "G-RPWLQR6JQ1");
+        </script>
+
+        <!-- Dynamic Title -->
+        <title>How to debug Your code | Mukund Parmar</title>
+
+        <!-- Meta Description -->
+        <meta
+            name="description"
+            content="How to debug Your code using GDB debugger"
+        />
+
+        <!-- Keywords -->
+        <meta
+            name="keywords"
+            content="gdb, debugger, c++, programming"
+        />
+
+        <!-- Author -->
+        <meta name="author" content="Mukund Parmar" />
+
+        <!-- Canonical URL -->
+        <link
+            rel="canonical"
+            href="https:&#x2F;&#x2F;mukund58.github.io&#x2F;blog&#x2F;gdb-debugger&#x2F;"
+        />
+
+        <!-- Open Graph Meta Tags -->
+        <meta
+            property="og:title"
+            content="How to debug Your code"
+        />
+        <meta
+            property="og:description"
+            content="How to debug Your code using GDB debugger"
+        />
+        <meta property="og:type" content="article" />
+        <meta
+            property="og:url"
+            content="https:&#x2F;&#x2F;mukund58.github.io&#x2F;blog&#x2F;gdb-debugger&#x2F;"
+        />
+        <meta
+            property="og:image"
+            content="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh_YqCCDkmkV2jWyCSwwCsyjEtuNknGjtYEUhGAp5eqwQhgOHjDb3khwg1rzL9Jn4WNR5ljFoTYha4wzNl5tt4m8tn1T_1cG7CEyMOcD5pyOz-ZaUUkGBwXoD380GunlviJTw_loMAuQ2Z8jxNxuHp_Dpp-SmzouKJGmyaBFUFHq7bvNomCu6cucCZBSm19/s1366/pic-full-240910-1913-48.png"
+        />
+        <meta property="og:site_name" content="Mukund Parmar" />
+
+        <!-- X (Twitter) -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+            name="twitter:title"
+            content="How to debug Your code"
+        />
+        <meta
+            name="twitter:description"
+            content="How to debug Your code using GDB debugger"
+        />
+        <meta
+            name="twitter:image"
+            content="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh_YqCCDkmkV2jWyCSwwCsyjEtuNknGjtYEUhGAp5eqwQhgOHjDb3khwg1rzL9Jn4WNR5ljFoTYha4wzNl5tt4m8tn1T_1cG7CEyMOcD5pyOz-ZaUUkGBwXoD380GunlviJTw_loMAuQ2Z8jxNxuHp_Dpp-SmzouKJGmyaBFUFHq7bvNomCu6cucCZBSm19/s1366/pic-full-240910-1913-48.png"
+        />
+
+        
+
+<meta property="article:published_time" content="2024-10-24" />
+
+<meta property="article:author" content="Mukund Parmar" />
+
+
+<meta property="article:tag" content="gdb" />
+
+<meta property="article:tag" content="debugger" />
+
+<meta property="article:tag" content="c++" />
+
+<meta property="article:tag" content="programming" />
+
+
+
+<!-- Schema.org BlogPosting Structured Data for Google Search -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "How to debug Your code",
+  "description": "How to debug Your code using GDB debugger",
+  "datePublished": "2024-10-24",
+  "author": {
+    "@type": "Person",
+    "name": "Mukund Parmar",
+    "url": "https://mukund58.github.io/"
+  },
+  
+  "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh_YqCCDkmkV2jWyCSwwCsyjEtuNknGjtYEUhGAp5eqwQhgOHjDb3khwg1rzL9Jn4WNR5ljFoTYha4wzNl5tt4m8tn1T_1cG7CEyMOcD5pyOz-ZaUUkGBwXoD380GunlviJTw_loMAuQ2Z8jxNxuHp_Dpp-SmzouKJGmyaBFUFHq7bvNomCu6cucCZBSm19/s1366/pic-full-240910-1913-48.png",
+  
+  "keywords": ["gdb", "debugger", "c++", "programming"],
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://mukund58.github.io/blog/gdb-debugger/"
+  }
+}
+</script>
+
+
+        <link rel="icon" href="https://mukund58.github.io/images/logo.jpg" />
+        <link
+            href="https://cdn.boxicons.com/fonts/basic/boxicons.min.css"
+            rel="stylesheet"
+        />
+        <link
+            href="https://cdn.boxicons.com/fonts/brands/boxicons-brands.min.css"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://mukund58.github.io/asserts/css/style.css"
+        />
+        <!-- <link rel="stylesheet"  href="https://mukund58.github.io/asserts/css/output.css"> -->
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script src="https://unpkg.com/@boxicons/js@latest"></script>
+        <script defer src="https://mukund58.github.io/asserts/js/script.js"></script>
+        <!-- <script  defer src="https://mukund58.github.io/asserts/js/tailwind.config.js"></script> -->
+        <script defer>
+            tailwind.config = {
+                corePlugins: {
+                    preflight: false,
+                },
+                darkMode: "class",
+            };
+        </script>
+
+    </head>
+
+    <body
+        class="bg-white dark:bg-[#1c1917] dark:text-white transition-all duration-300 fade-in-1s"
+    >
+        <nav class="bg-white text-2xl dark:bg-[#1c1917] shadow">
+            <div
+                class="mx-auto px-4 py-3 flex justify-around flex-col sm:flex-row items-center text-base md:text-lg"
+            >
+                <a
+                    href="/"
+                    class="dark:filter-none dark:mix-blend-lighten bg-transparent mix-blend-hard-light font-bold text-gray-900 dark:text-white md:space-y-0 md:space-x-4 mt-4 md:mt-0"
+                >
+                    <img
+                        src="https://mukund58.github.io/images/logo.jpg"
+                        class="w-12"
+                        alt=""
+                    />
+                </a>
+
+                <!-- Navigation links -->
+                <div
+                    id="menu"
+                    class="text-xl whitespace-nowrap md:flex flex-col grid grid-cols-3 md:grid-cols-5 md:flex-row md:items-center md:space-y-0 md:space-x-4 mt-4 md:mt-0"
+                >
+                    <a
+                        href="/"
+                        class="text-gray-700 dark:text-gray-300 no-underline hover:underline"
+                        >~/home</a
+                    >
+                    <a
+                        href="/about"
+                        class="text-gray-700 dark:text-gray-300 no-underline hover:underline"
+                        >~/about</a
+                    >
+                    <a
+                        href="/project"
+                        class="text-gray-700 dark:text-gray-300 no-underline hover:underline"
+                        >~/projects</a
+                    >
+                    <a
+                        href="/notes"
+                        class="text-gray-700 dark:text-gray-300 no-underline hover:underline"
+                        >~/notes</a
+                    >
+                    <a
+                        href="/blog"
+                        class="text-gray-700 dark:text-gray-300 no-underline hover:underline"
+                        >~/blog</a
+                    >
+                    <!-- Dark Mode Toggle -->
+                    <button
+                        id="theme-toggle"
+                        class="bg-inherit text-white border-none text-lg"
+                    >
+                        <i class="bxr bx-moon text-black"></i>
+                        <audio
+                            id="toggle-sound"
+                            src="https://mukund58.github.io/sounds/toggle-button.mp3"
+                            preload="auto"
+                        ></audio>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Optional script for mobile toggle -->
+        </nav>
+
+        <section class="section w-full">
+            
+<div class="wrapper max-w-4xl m-auto p-4 md:p-8">
+  <a href="/blog" class="inline-flex items-center gap-1 text-sm font-medium text-stone-600 dark:text-stone-400 hover:text-[#bc4a3c] dark:hover:text-[#bc4a3c] mb-6 transition-colors">
+    <i class="bx bx-left-arrow-alt text-lg"></i> Back to Blog
+  </a>
+
+  <h1 class="text-3xl md:text-4xl font-extrabold tracking-tight mb-3 text-stone-900 dark:text-white">
+    How to debug Your code
+  </h1>
+
+  <div class="flex flex-wrap items-center gap-4 text-sm text-stone-500 dark:text-stone-400 mb-4 pb-4 border-b border-stone-200 dark:border-stone-800">
+    
+    <div class="flex items-center gap-1.5">
+      <i class="bx bx-calendar text-base"></i>
+      <span>October 24, 2024</span>
+    </div>
+    
+    
+    <div class="flex items-center gap-1.5">
+      <i class="bx bx-time text-base"></i>
+      <span>2 min read</span>
+    </div>
+    
+  </div>
+
+  
+  <div class="flex flex-wrap items-center gap-2 mb-8">
+    <span class="text-xs uppercase tracking-wider text-stone-400 font-semibold">Tags:</span>
+    
+    <a href="https://mukund58.github.io/tags/gdb/"
+       class="inline-flex items-center text-xs px-2.5 py-1 rounded-md bg-stone-100 hover:bg-[#bc4a3c] hover:text-white dark:bg-stone-800 dark:hover:bg-[#bc4a3c] dark:hover:text-white text-stone-700 dark:text-stone-300 font-medium transition-colors"
+       title="View all posts tagged #gdb">
+      #gdb
+    </a>
+    
+    <a href="https://mukund58.github.io/tags/debugger/"
+       class="inline-flex items-center text-xs px-2.5 py-1 rounded-md bg-stone-100 hover:bg-[#bc4a3c] hover:text-white dark:bg-stone-800 dark:hover:bg-[#bc4a3c] dark:hover:text-white text-stone-700 dark:text-stone-300 font-medium transition-colors"
+       title="View all posts tagged #debugger">
+      #debugger
+    </a>
+    
+    <a href="https://mukund58.github.io/tags/c/"
+       class="inline-flex items-center text-xs px-2.5 py-1 rounded-md bg-stone-100 hover:bg-[#bc4a3c] hover:text-white dark:bg-stone-800 dark:hover:bg-[#bc4a3c] dark:hover:text-white text-stone-700 dark:text-stone-300 font-medium transition-colors"
+       title="View all posts tagged #c++">
+      #c++
+    </a>
+    
+    <a href="https://mukund58.github.io/tags/programming/"
+       class="inline-flex items-center text-xs px-2.5 py-1 rounded-md bg-stone-100 hover:bg-[#bc4a3c] hover:text-white dark:bg-stone-800 dark:hover:bg-[#bc4a3c] dark:hover:text-white text-stone-700 dark:text-stone-300 font-medium transition-colors"
+       title="View all posts tagged #programming">
+      #programming
+    </a>
+    
+  </div>
+  
+
+  <div class="content prose dark:prose-invert max-w-none">
+    <p>When your code is running but not working at that time we mostly check line by line code it cant find any clue.</p>
+<p>The best way to check your code line by line and what code acutally do internally, when you run the code.</p>
+<p>so anyway let’s start by installing GDB debugger in computer .</p>
+<p>To install on Ubuntu</p>
+<pre><code>sudo apt install gdb
+</code></pre>
+<p>To install on arch</p>
+<pre><code>sudo pacman -S gdb
+</code></pre>
+<p>To download on Your Machine
+<code>https://sourceware.org/gdb/download/</code></p>
+<p>You can also use it online <code>https://www.onlinegdb.com/</code></p>
+<p>How to run GDB</p>
+<ul>
+<li>Run Your complier</li>
+</ul>
+<pre><code>$ g++ -g program
+</code></pre>
+<ul>
+<li>Run Your gdb</li>
+</ul>
+<pre><code>$ gdb a.out
+</code></pre>
+<p>you will get output something like</p>
+<a href="https:&#x2F;&#x2F;blogger.googleusercontent.com&#x2F;img&#x2F;b&#x2F;R29vZ2xl&#x2F;AVvXsEh1MRdJ05GegnQsLcDMAANqWMjfdqUodUt60DdytAogc20kgN_if3b5-E31D1XxdkA3HgeOcdHhebmnvLCdc4T-YZE9RuqhnMokxGt0adIE6cBU2W1MUbtXJ3Bh-5E1mM7z1LN1DlBH5gPYQZSquW5IFFd3v02gL3AWUmNw_DBnO4uTi1PFKazy2OXs4gpY&#x2F;s1062&#x2F;pic-selected-240910-1852-15.png" data-lightbox="blog-img" data-title="Screenshot">
+  <img src="https:&#x2F;&#x2F;blogger.googleusercontent.com&#x2F;img&#x2F;b&#x2F;R29vZ2xl&#x2F;AVvXsEh1MRdJ05GegnQsLcDMAANqWMjfdqUodUt60DdytAogc20kgN_if3b5-E31D1XxdkA3HgeOcdHhebmnvLCdc4T-YZE9RuqhnMokxGt0adIE6cBU2W1MUbtXJ3Bh-5E1mM7z1LN1DlBH5gPYQZSquW5IFFd3v02gL3AWUmNw_DBnO4uTi1PFKazy2OXs4gpY&#x2F;s1062&#x2F;pic-selected-240910-1852-15.png"
+       alt="Screenshot"
+       loading="lazy"
+       style="max-width: 100%; height: auto; border-radius: 6px;" />
+</a>
+<p>Start Your gdb with start command</p>
+<pre><code>start 
+</code></pre>
+<p>Now Press ctrl + x + a
+<a href="https:&#x2F;&#x2F;blogger.googleusercontent.com&#x2F;img&#x2F;b&#x2F;R29vZ2xl&#x2F;AVvXsEh_YqCCDkmkV2jWyCSwwCsyjEtuNknGjtYEUhGAp5eqwQhgOHjDb3khwg1rzL9Jn4WNR5ljFoTYha4wzNl5tt4m8tn1T_1cG7CEyMOcD5pyOz-ZaUUkGBwXoD380GunlviJTw_loMAuQ2Z8jxNxuHp_Dpp-SmzouKJGmyaBFUFHq7bvNomCu6cucCZBSm19&#x2F;s1366&#x2F;pic-full-240910-1913-48.png" data-lightbox="blog-img" data-title="Screenshot">
+  <img src="https:&#x2F;&#x2F;blogger.googleusercontent.com&#x2F;img&#x2F;b&#x2F;R29vZ2xl&#x2F;AVvXsEh_YqCCDkmkV2jWyCSwwCsyjEtuNknGjtYEUhGAp5eqwQhgOHjDb3khwg1rzL9Jn4WNR5ljFoTYha4wzNl5tt4m8tn1T_1cG7CEyMOcD5pyOz-ZaUUkGBwXoD380GunlviJTw_loMAuQ2Z8jxNxuHp_Dpp-SmzouKJGmyaBFUFHq7bvNomCu6cucCZBSm19&#x2F;s1366&#x2F;pic-full-240910-1913-48.png"
+       alt="Screenshot"
+       loading="lazy"
+       style="max-width: 100%; height: auto; border-radius: 6px;" />
+</a>
+
+Now for go to next line</p>
+<pre><code>next
+</code></pre>
+<p>it go two second line</p>
+<pre><code>next
+</code></pre>
+<p>if your ui is not lagging than press <code>ctrl + l</code> to refresh the ui</p>
+<p>To check store data in variable</p>
+<pre><code>print var_name
+</code></pre>
+<p>or</p>
+<pre><code>info locals
+</code></pre>
+<p>To Go Function defination when debgger reach to that line</p>
+<pre><code>step 
+</code></pre>
+<p>To exit</p>
+<pre><code>exit
+</code></pre>
+<p>Hope you get basic idea who to use this software</p>
+<p>I know that i did not teach everything ,so
+To know more You can refere any Documenation or cheatsheet</p>
+<p>If i get sometime than i may continue this blog to the end and I will teach everything</p>
+<p>Thank You For Your Time :)</p>
+
+  </div>
+</div>
+
+        </section>
+    </body>
+</html>

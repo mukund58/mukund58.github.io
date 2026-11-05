@@ -1,0 +1,465 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="UTF-8" />
+        <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+        <meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, user-scalable=no"
+        />
+        <meta name="robots" content="index, follow" />
+
+        <!-- Google tag (gtag.js) -->
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-RPWLQR6JQ1"
+        ></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
+
+            gtag("config", "G-RPWLQR6JQ1");
+        </script>
+
+        <!-- Dynamic Title -->
+        <title>How Single-CPU Systems Multitask | Mukund Parmar</title>
+
+        <!-- Meta Description -->
+        <meta
+            name="description"
+            content="Explore how computers run multiple programs at once, even with a single CPU, by understanding concurrency and scheduling"
+        />
+
+        <!-- Keywords -->
+        <meta
+            name="keywords"
+            content="Operating Systems, Concurrency, CPU, Multitasking"
+        />
+
+        <!-- Author -->
+        <meta name="author" content="Mukund Parmar" />
+
+        <!-- Canonical URL -->
+        <link
+            rel="canonical"
+            href="https:&#x2F;&#x2F;mukund58.github.io&#x2F;notes&#x2F;concurrency-is-not-what-you-think&#x2F;"
+        />
+
+        <!-- Open Graph Meta Tags -->
+        <meta
+            property="og:title"
+            content="How Single-CPU Systems Multitask"
+        />
+        <meta
+            property="og:description"
+            content="Explore how computers run multiple programs at once, even with a single CPU, by understanding concurrency and scheduling"
+        />
+        <meta property="og:type" content="article" />
+        <meta
+            property="og:url"
+            content="https:&#x2F;&#x2F;mukund58.github.io&#x2F;notes&#x2F;concurrency-is-not-what-you-think&#x2F;"
+        />
+        <meta
+            property="og:image"
+            content="/images/computer.jpg"
+        />
+        <meta property="og:site_name" content="Mukund Parmar" />
+
+        <!-- X (Twitter) -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+            name="twitter:title"
+            content="How Single-CPU Systems Multitask"
+        />
+        <meta
+            name="twitter:description"
+            content="Explore how computers run multiple programs at once, even with a single CPU, by understanding concurrency and scheduling"
+        />
+        <meta
+            name="twitter:image"
+            content="/images/computer.jpg"
+        />
+
+        
+
+        <link rel="icon" href="https://mukund58.github.io/images/logo.jpg" />
+        <link
+            href="https://cdn.boxicons.com/fonts/basic/boxicons.min.css"
+            rel="stylesheet"
+        />
+        <link
+            href="https://cdn.boxicons.com/fonts/brands/boxicons-brands.min.css"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://mukund58.github.io/asserts/css/style.css"
+        />
+        <!-- <link rel="stylesheet"  href="https://mukund58.github.io/asserts/css/output.css"> -->
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script src="https://unpkg.com/@boxicons/js@latest"></script>
+        <script defer src="https://mukund58.github.io/asserts/js/script.js"></script>
+        <!-- <script  defer src="https://mukund58.github.io/asserts/js/tailwind.config.js"></script> -->
+        <script defer>
+            tailwind.config = {
+                corePlugins: {
+                    preflight: false,
+                },
+                darkMode: "class",
+            };
+        </script>
+
+    </head>
+
+    <body
+        class="bg-white dark:bg-[#1c1917] dark:text-white transition-all duration-300 fade-in-1s"
+    >
+        <nav class="bg-white text-2xl dark:bg-[#1c1917] shadow">
+            <div
+                class="mx-auto px-4 py-3 flex justify-around flex-col sm:flex-row items-center text-base md:text-lg"
+            >
+                <a
+                    href="/"
+                    class="dark:filter-none dark:mix-blend-lighten bg-transparent mix-blend-hard-light font-bold text-gray-900 dark:text-white md:space-y-0 md:space-x-4 mt-4 md:mt-0"
+                >
+                    <img
+                        src="https://mukund58.github.io/images/logo.jpg"
+                        class="w-12"
+                        alt=""
+                    />
+                </a>
+
+                <!-- Navigation links -->
+                <div
+                    id="menu"
+                    class="text-xl whitespace-nowrap md:flex flex-col grid grid-cols-3 md:grid-cols-5 md:flex-row md:items-center md:space-y-0 md:space-x-4 mt-4 md:mt-0"
+                >
+                    <a
+                        href="/"
+                        class="text-gray-700 dark:text-gray-300 no-underline hover:underline"
+                        >~/home</a
+                    >
+                    <a
+                        href="/about"
+                        class="text-gray-700 dark:text-gray-300 no-underline hover:underline"
+                        >~/about</a
+                    >
+                    <a
+                        href="/project"
+                        class="text-gray-700 dark:text-gray-300 no-underline hover:underline"
+                        >~/projects</a
+                    >
+                    <a
+                        href="/notes"
+                        class="text-gray-700 dark:text-gray-300 no-underline hover:underline"
+                        >~/notes</a
+                    >
+                    <a
+                        href="/blog"
+                        class="text-gray-700 dark:text-gray-300 no-underline hover:underline"
+                        >~/blog</a
+                    >
+                    <!-- Dark Mode Toggle -->
+                    <button
+                        id="theme-toggle"
+                        class="bg-inherit text-white border-none text-lg"
+                    >
+                        <i class="bxr bx-moon text-black"></i>
+                        <audio
+                            id="toggle-sound"
+                            src="https://mukund58.github.io/sounds/toggle-button.mp3"
+                            preload="auto"
+                        ></audio>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Optional script for mobile toggle -->
+        </nav>
+
+        <section class="section w-full">
+            
+
+
+<div class="max-w-5xl m-auto mt-4">
+
+    <div class=""><a href=".." class="text-black dark:text-amber-200"><-- </a><span class="accent-data">concurrency-is-not-what-you-think</span></div>
+    <time datetime="2025-06-23">Published on: <span class="accent-data">2025-06-23</span></time>
+    
+    <address rel="author">By <span class="accent-data">Mukund Parmar</span></address>
+    
+  </div>
+<div class="wrapper max-w-5xl m-auto">
+<h1 class="title">
+  How Single-CPU Systems Multitask
+</h1>
+
+         
+  <!-- <ul>
+    
+      <li class='list-none text-xl'><a href="https://mukund58.github.io/notes/concurrency-is-not-what-you-think/#a-historical-perspective" class="no-underline hover:underline dark:text-white text-black>A Historical Perspective</a>
+        
+          <ul >
+            
+              <li class='list-none' ><a href="https://mukund58.github.io/notes/concurrency-is-not-what-you-think/#mainframes-and-limited-access" class="no-underline hover:underline dark:text-white text-black">Mainframes and Limited Access</a></li>
+            
+              <li class='list-none' ><a href="https://mukund58.github.io/notes/concurrency-is-not-what-you-think/#the-birth-of-operating-systems" class="no-underline hover:underline dark:text-white text-black">The Birth of Operating Systems</a></li>
+            
+          </ul>
+        
+      </li>
+    
+      <li class='list-none text-xl'><a href="https://mukund58.github.io/notes/concurrency-is-not-what-you-think/#concurrency-in-single-cpu-systems" class="no-underline hover:underline dark:text-white text-black>Concurrency in Single-CPU Systems</a>
+        
+      </li>
+    
+      <li class='list-none text-xl'><a href="https://mukund58.github.io/notes/concurrency-is-not-what-you-think/#how-cpus-execute-instructions" class="no-underline hover:underline dark:text-white text-black>How CPUs Execute Instructions</a>
+        
+      </li>
+    
+      <li class='list-none text-xl'><a href="https://mukund58.github.io/notes/concurrency-is-not-what-you-think/#scheduling-and-process-management" class="no-underline hover:underline dark:text-white text-black>Scheduling and Process Management</a>
+        
+          <ul >
+            
+              <li class='list-none' ><a href="https://mukund58.github.io/notes/concurrency-is-not-what-you-think/#but-when-does-the-os-run" class="no-underline hover:underline dark:text-white text-black">But When Does the OS Run?</a></li>
+            
+          </ul>
+        
+      </li>
+    
+      <li class='list-none text-xl'><a href="https://mukund58.github.io/notes/concurrency-is-not-what-you-think/#the-problem-with-cooperative-scheduling" class="no-underline hover:underline dark:text-white text-black>The Problem With Cooperative Scheduling</a>
+        
+      </li>
+    
+      <li class='list-none text-xl'><a href="https://mukund58.github.io/notes/concurrency-is-not-what-you-think/#enter-preemptive-scheduling" class="no-underline hover:underline dark:text-white text-black>Enter Preemptive Scheduling</a>
+        
+      </li>
+    
+      <li class='list-none text-xl'><a href="https://mukund58.github.io/notes/concurrency-is-not-what-you-think/#what-about-multi-core-systems" class="no-underline hover:underline dark:text-white text-black>What About Multi-core Systems?</a>
+        
+          <ul >
+            
+              <li class='list-none' ><a href="https://mukund58.github.io/notes/concurrency-is-not-what-you-think/#hardware-solution-multi-core-cpus" class="no-underline hover:underline dark:text-white text-black">Hardware Solution: Multi-core CPUs</a></li>
+            
+          </ul>
+        
+      </li>
+    
+      <li class='list-none text-xl'><a href="https://mukund58.github.io/notes/concurrency-is-not-what-you-think/#final-thought" class="no-underline hover:underline dark:text-white text-black>Final Thought</a>
+        
+      </li>
+    
+  </ul> -->
+  
+  <h2>Table of contents</h2>
+<ul>
+
+  <li class='list-none text-base'>
+  <a href="https://mukund58.github.io/notes/concurrency-is-not-what-you-think/#a-historical-perspective"  class="no-underline hover:underline dark:text-white text-black ">A Historical Perspective</a>
+  
+    <ul>
+      
+        <li>
+        <a href="https://mukund58.github.io/notes/concurrency-is-not-what-you-think/#mainframes-and-limited-access"class="text-black dark:text-amber-200" >Mainframes and Limited Access</a>
+          <ul>
+          
+          </ul>
+        </li>
+      
+        <li>
+        <a href="https://mukund58.github.io/notes/concurrency-is-not-what-you-think/#the-birth-of-operating-systems"class="text-black dark:text-amber-200" >The Birth of Operating Systems</a>
+          <ul>
+          
+          </ul>
+        </li>
+      
+    </ul>
+  
+  </li>
+
+  <li class='list-none text-base'>
+  <a href="https://mukund58.github.io/notes/concurrency-is-not-what-you-think/#concurrency-in-single-cpu-systems"  class="no-underline hover:underline dark:text-white text-black ">Concurrency in Single-CPU Systems</a>
+  
+  </li>
+
+  <li class='list-none text-base'>
+  <a href="https://mukund58.github.io/notes/concurrency-is-not-what-you-think/#how-cpus-execute-instructions"  class="no-underline hover:underline dark:text-white text-black ">How CPUs Execute Instructions</a>
+  
+  </li>
+
+  <li class='list-none text-base'>
+  <a href="https://mukund58.github.io/notes/concurrency-is-not-what-you-think/#scheduling-and-process-management"  class="no-underline hover:underline dark:text-white text-black ">Scheduling and Process Management</a>
+  
+    <ul>
+      
+        <li>
+        <a href="https://mukund58.github.io/notes/concurrency-is-not-what-you-think/#but-when-does-the-os-run"class="text-black dark:text-amber-200" >But When Does the OS Run?</a>
+          <ul>
+          
+          </ul>
+        </li>
+      
+    </ul>
+  
+  </li>
+
+  <li class='list-none text-base'>
+  <a href="https://mukund58.github.io/notes/concurrency-is-not-what-you-think/#the-problem-with-cooperative-scheduling"  class="no-underline hover:underline dark:text-white text-black ">The Problem With Cooperative Scheduling</a>
+  
+  </li>
+
+  <li class='list-none text-base'>
+  <a href="https://mukund58.github.io/notes/concurrency-is-not-what-you-think/#enter-preemptive-scheduling"  class="no-underline hover:underline dark:text-white text-black ">Enter Preemptive Scheduling</a>
+  
+  </li>
+
+  <li class='list-none text-base'>
+  <a href="https://mukund58.github.io/notes/concurrency-is-not-what-you-think/#what-about-multi-core-systems"  class="no-underline hover:underline dark:text-white text-black ">What About Multi-core Systems?</a>
+  
+    <ul>
+      
+        <li>
+        <a href="https://mukund58.github.io/notes/concurrency-is-not-what-you-think/#hardware-solution-multi-core-cpus"class="text-black dark:text-amber-200" >Hardware Solution: Multi-core CPUs</a>
+          <ul>
+          
+          </ul>
+        </li>
+      
+    </ul>
+  
+  </li>
+
+  <li class='list-none text-base'>
+  <a href="https://mukund58.github.io/notes/concurrency-is-not-what-you-think/#final-thought"  class="no-underline hover:underline dark:text-white text-black ">Final Thought</a>
+  
+  </li>
+
+</ul>
+
+
+
+  <p>Have you ever wondered how your computer can run multiple programs at the same time?</p>
+<p>Most people think of <strong>multi-core CPUs</strong>, which is understandable with the marketing push from CPU manufacturers. However, the ability to multitask has been around <strong>since the days of single-core processors</strong>.</p>
+<h2 id="a-historical-perspective">A Historical Perspective</h2>
+<p>Back in the 1980s, machines like the <strong>Commodore Amiga</strong> and <strong>Apple Macintosh</strong> could already run multiple programs at once—even with only <strong>one processor</strong>.</p>
+<a href="https:&#x2F;&#x2F;upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;thumb&#x2F;c&#x2F;c3&#x2F;Amiga500_system.jpg&#x2F;250px-Amiga500_system.jpg" data-lightbox="blog-img" data-title="Online Image Example">
+  <img src="https:&#x2F;&#x2F;upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;thumb&#x2F;c&#x2F;c3&#x2F;Amiga500_system.jpg&#x2F;250px-Amiga500_system.jpg"
+       alt="Online Image Example"
+       loading="lazy"
+       style="max-width: 100%; height: auto; border-radius: 6px;" />
+</a>
+<p>To understand how, we need to go back further.</p>
+<h3 id="mainframes-and-limited-access">Mainframes and Limited Access</h3>
+<a href="https:&#x2F;&#x2F;media.wired.com&#x2F;photos&#x2F;59329428a312645844995f4d&#x2F;master&#x2F;w_1600,c_limit&#x2F;AP120305028348.jpg" data-lightbox="blog-img" data-title="Online Image Example">
+  <img src="https:&#x2F;&#x2F;media.wired.com&#x2F;photos&#x2F;59329428a312645844995f4d&#x2F;master&#x2F;w_1600,c_limit&#x2F;AP120305028348.jpg"
+       alt="Online Image Example"
+       loading="lazy"
+       style="max-width: 100%; height: auto; border-radius: 6px;" />
+</a>
+<p>Early computers were massive and expensive machines called <strong>mainframes</strong>. They filled entire rooms and were only accessible to governments, big companies, and universities. Due to their high cost and complexity, <strong>computer time was highly valuable</strong>.</p>
+<p>Operating a program on these machines wasn’t simple:</p>
+<ol>
+<li>Load the compiler (often from magnetic tape).</li>
+<li>Input the source code (e.g., in Fortran).</li>
+<li>Generate Assembly code.</li>
+<li>Use an assembler to produce machine code.</li>
+<li>Finally, execute the program.</li>
+</ol>
+<p>Each step involved manual tape mounting and waiting, during which the <strong>CPU sat idle</strong>, even though other users couldn’t access it.</p>
+<h3 id="the-birth-of-operating-systems">The Birth of Operating Systems</h3>
+<p>To improve efficiency, researchers created early <strong>operating systems</strong> that enabled <strong>multiple users</strong> to connect via devices like <strong>teletypes</strong> or <strong>dumb terminals</strong>.</p>
+<p>This led to <strong>time-sharing</strong> systems, where the operating system would <strong>switch between users’ programs</strong>, keeping the CPU busy and maximizing the value of expensive computers.</p>
+<hr />
+<h2 id="concurrency-in-single-cpu-systems">Concurrency in Single-CPU Systems</h2>
+<p>A <strong>CPU executes one instruction at a time</strong>, but it does so incredibly fast which gives the illusion of simultaneous execution. This is the core idea of <strong>concurrency</strong>.</p>
+<blockquote>
+<p>Even with one CPU, computers can appear to run many processes at once by rapidly switching between them.</p>
+</blockquote>
+<p>Systems like <strong>Multics</strong> (developed in the 1960s) were pioneers in this approach.</p>
+<a href="https:&#x2F;&#x2F;www.macos.utah.edu&#x2F;documentation&#x2F;short_courses&#x2F;mac_os_x_overview&#x2F;history_and_evolution&#x2F;unix_history&#x2F;mainColumnParagraphs&#x2F;010&#x2F;image&#x2F;openstep1.jpg" data-lightbox="blog-img" data-title="Online Image Example">
+  <img src="https:&#x2F;&#x2F;www.macos.utah.edu&#x2F;documentation&#x2F;short_courses&#x2F;mac_os_x_overview&#x2F;history_and_evolution&#x2F;unix_history&#x2F;mainColumnParagraphs&#x2F;010&#x2F;image&#x2F;openstep1.jpg"
+       alt="Online Image Example"
+       loading="lazy"
+       style="max-width: 100%; height: auto; border-radius: 6px;" />
+</a>
+<p><a rel="noopener external" target="_blank" href="https://www.macos.utah.edu/documentation/short_courses/mac_os_x_overview/history_and_evolution/unix_history.html">refrence</a></p>
+<p>Later, personal computers adopted similar techniques to serve multiple users, but to allow a <strong>single user to run multiple applications</strong>.</p>
+<hr />
+<h2 id="how-cpus-execute-instructions">How CPUs Execute Instructions</h2>
+<p>At a low level, the CPU operates in a <strong>fetch-decode-execute</strong> cycle:</p>
+<ol>
+<li>The <strong>address register</strong> holds the memory location of the next instruction.</li>
+<li>The instruction is <strong>fetched</strong> and moved to the <strong>instruction register</strong>.</li>
+<li>The CPU <strong>decodes and executes</strong> the instruction.</li>
+<li>The address register is updated to point to the next instruction.</li>
+</ol>
+<p><strong>Jump instructions</strong> allow for loops and conditions, by modifying the address register manually.</p>
+<p>This means programs don’t need to be split in memory—the <strong>operating system changes the CPU’s state</strong> to switch between processes.</p>
+<hr />
+<h2 id="scheduling-and-process-management">Scheduling and Process Management</h2>
+<p>Once a program starts running, it becomes a <strong>process</strong>.</p>
+<p>The OS uses a <strong>queue</strong> to manage all active processes. Two key components handle this:</p>
+<ul>
+<li><strong>Scheduler</strong>: Determines which process should run next.</li>
+<li><strong>Dispatcher</strong>: Loads the selected process into the CPU.</li>
+</ul>
+<h3 id="but-when-does-the-os-run">But When Does the OS Run?</h3>
+<p>Programs often rely on the OS for tasks like file access or memory allocation. These are handled through <strong>interruptions</strong>.</p>
+<p>When an <strong>interrupt</strong> occurs (e.g., from an I/O request):</p>
+<ol>
+<li>The CPU saves the current process’s state.</li>
+<li>It jumps to the <strong>interrupt service routine (ISR)</strong> in OS memory.</li>
+<li>The OS handles the request and schedules the next process.</li>
+</ol>
+<p>This is how the <strong>OS regains control</strong> of the CPU.</p>
+<hr />
+<h2 id="the-problem-with-cooperative-scheduling">The Problem With Cooperative Scheduling</h2>
+<p>Originally, systems used <strong>cooperative scheduling</strong>:</p>
+<ul>
+<li>A process keeps the CPU until it voluntarily gives it up.</li>
+<li>This can lead to problems if a process enters an <strong>infinite loop</strong> with no I/O.</li>
+<li>The OS never regains control, potentially locking the system.</li>
+</ul>
+<p>This method is insecure, especially with malicious programs.</p>
+<hr />
+<h2 id="enter-preemptive-scheduling">Enter Preemptive Scheduling</h2>
+<p>To solve this, hardware support is essential.</p>
+<p>A <strong>hardware timer</strong> is introduced:</p>
+<ol>
+<li>Before assigning the CPU to a process, the OS sets the timer.</li>
+<li>If the timer expires, it <strong>automatically triggers an interrupt</strong>.</li>
+<li>This forces the CPU to return control to the OS.</li>
+</ol>
+<blockquote>
+<p>Preemptive scheduling allows the OS to <strong>interrupt any process</strong> and regain CPU control—even if the process doesn’t cooperate.</p>
+</blockquote>
+<p>Modern systems, including versions of Windows from <strong>95 onward</strong>, use this method. Interestingly, <strong>Multics supported it in the 1960s</strong>!</p>
+<hr />
+<h2 id="what-about-multi-core-systems">What About Multi-core Systems?</h2>
+<p>Multitasking on a single core uses concurrency to <strong>simulate</strong> parallel execution.</p>
+<p>However, as the number of processes grows, delays become noticeable.</p>
+<h3 id="hardware-solution-multi-core-cpus">Hardware Solution: Multi-core CPUs</h3>
+<ul>
+<li>Each core can handle a process independently.</li>
+<li>This enables <strong>true parallelism</strong>.</li>
+</ul>
+<p>Yet, even in multi-core systems, concurrency is still crucial—because <strong>we often have more processes than cores</strong>.</p>
+<hr />
+<h2 id="final-thought">Final Thought</h2>
+<blockquote>
+<p><strong>Concurrency is about dealing with lots of things at once.<br />
+Parallelism is about doing lots of things at once.</strong></p>
+</blockquote>
+<hr />
+
+</div>
+
+        </section>
+    </body>
+</html>

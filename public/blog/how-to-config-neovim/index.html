@@ -1,0 +1,622 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="UTF-8" />
+        <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+        <meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, user-scalable=no"
+        />
+        <meta name="robots" content="index, follow" />
+
+        <!-- Google tag (gtag.js) -->
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-RPWLQR6JQ1"
+        ></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
+
+            gtag("config", "G-RPWLQR6JQ1");
+        </script>
+
+        <!-- Dynamic Title -->
+        <title>Configure neovim from Scratch | Mukund Parmar</title>
+
+        <!-- Meta Description -->
+        <meta
+            name="description"
+            content="An explanation of how i configure my neovim setup. "
+        />
+
+        <!-- Keywords -->
+        <meta
+            name="keywords"
+            content="editor, Open Source, nvim"
+        />
+
+        <!-- Author -->
+        <meta name="author" content="Mukund Parmar" />
+
+        <!-- Canonical URL -->
+        <link
+            rel="canonical"
+            href="https:&#x2F;&#x2F;mukund58.github.io&#x2F;blog&#x2F;how-to-config-neovim&#x2F;"
+        />
+
+        <!-- Open Graph Meta Tags -->
+        <meta
+            property="og:title"
+            content="Configure neovim from Scratch"
+        />
+        <meta
+            property="og:description"
+            content="An explanation of how i configure my neovim setup. "
+        />
+        <meta property="og:type" content="article" />
+        <meta
+            property="og:url"
+            content="https:&#x2F;&#x2F;mukund58.github.io&#x2F;blog&#x2F;how-to-config-neovim&#x2F;"
+        />
+        <meta
+            property="og:image"
+            content="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhOsNuiNiR_5Veu1EeTXOMG7VpQyxUUZS2QHeTzo24faCL6KEfAyjYuKglYez31zHjxtAh_n13I9cKNDOnFJQLGK5bmQVe_VAa6vYorLG4eCpRhxYmUIy7CEWH54yZLw9RzQG2ceSDzFnHS1WnaqMkeJTrGUEpqFDuTYPyL4LNC97rM-WlDsM47w8wD5yyF/s1365/pic-selected-240914-1406-41.png"
+        />
+        <meta property="og:site_name" content="Mukund Parmar" />
+
+        <!-- X (Twitter) -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+            name="twitter:title"
+            content="Configure neovim from Scratch"
+        />
+        <meta
+            name="twitter:description"
+            content="An explanation of how i configure my neovim setup. "
+        />
+        <meta
+            name="twitter:image"
+            content="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhOsNuiNiR_5Veu1EeTXOMG7VpQyxUUZS2QHeTzo24faCL6KEfAyjYuKglYez31zHjxtAh_n13I9cKNDOnFJQLGK5bmQVe_VAa6vYorLG4eCpRhxYmUIy7CEWH54yZLw9RzQG2ceSDzFnHS1WnaqMkeJTrGUEpqFDuTYPyL4LNC97rM-WlDsM47w8wD5yyF/s1365/pic-selected-240914-1406-41.png"
+        />
+
+        
+
+<meta property="article:published_time" content="2025-09-18" />
+
+<meta property="article:author" content="Mukund Parmar" />
+
+
+<meta property="article:tag" content="editor" />
+
+<meta property="article:tag" content="Open Source" />
+
+<meta property="article:tag" content="nvim" />
+
+
+
+<!-- Schema.org BlogPosting Structured Data for Google Search -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Configure neovim from Scratch",
+  "description": "An explanation of how i configure my neovim setup. ",
+  "datePublished": "2025-09-18",
+  "author": {
+    "@type": "Person",
+    "name": "Mukund Parmar",
+    "url": "https://mukund58.github.io/"
+  },
+  
+  "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhOsNuiNiR_5Veu1EeTXOMG7VpQyxUUZS2QHeTzo24faCL6KEfAyjYuKglYez31zHjxtAh_n13I9cKNDOnFJQLGK5bmQVe_VAa6vYorLG4eCpRhxYmUIy7CEWH54yZLw9RzQG2ceSDzFnHS1WnaqMkeJTrGUEpqFDuTYPyL4LNC97rM-WlDsM47w8wD5yyF/s1365/pic-selected-240914-1406-41.png",
+  
+  "keywords": ["editor", "Open Source", "nvim"],
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://mukund58.github.io/blog/how-to-config-neovim/"
+  }
+}
+</script>
+
+
+        <link rel="icon" href="https://mukund58.github.io/images/logo.jpg" />
+        <link
+            href="https://cdn.boxicons.com/fonts/basic/boxicons.min.css"
+            rel="stylesheet"
+        />
+        <link
+            href="https://cdn.boxicons.com/fonts/brands/boxicons-brands.min.css"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://mukund58.github.io/asserts/css/style.css"
+        />
+        <!-- <link rel="stylesheet"  href="https://mukund58.github.io/asserts/css/output.css"> -->
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script src="https://unpkg.com/@boxicons/js@latest"></script>
+        <script defer src="https://mukund58.github.io/asserts/js/script.js"></script>
+        <!-- <script  defer src="https://mukund58.github.io/asserts/js/tailwind.config.js"></script> -->
+        <script defer>
+            tailwind.config = {
+                corePlugins: {
+                    preflight: false,
+                },
+                darkMode: "class",
+            };
+        </script>
+
+    </head>
+
+    <body
+        class="bg-white dark:bg-[#1c1917] dark:text-white transition-all duration-300 fade-in-1s"
+    >
+        <nav class="bg-white text-2xl dark:bg-[#1c1917] shadow">
+            <div
+                class="mx-auto px-4 py-3 flex justify-around flex-col sm:flex-row items-center text-base md:text-lg"
+            >
+                <a
+                    href="/"
+                    class="dark:filter-none dark:mix-blend-lighten bg-transparent mix-blend-hard-light font-bold text-gray-900 dark:text-white md:space-y-0 md:space-x-4 mt-4 md:mt-0"
+                >
+                    <img
+                        src="https://mukund58.github.io/images/logo.jpg"
+                        class="w-12"
+                        alt=""
+                    />
+                </a>
+
+                <!-- Navigation links -->
+                <div
+                    id="menu"
+                    class="text-xl whitespace-nowrap md:flex flex-col grid grid-cols-3 md:grid-cols-5 md:flex-row md:items-center md:space-y-0 md:space-x-4 mt-4 md:mt-0"
+                >
+                    <a
+                        href="/"
+                        class="text-gray-700 dark:text-gray-300 no-underline hover:underline"
+                        >~/home</a
+                    >
+                    <a
+                        href="/about"
+                        class="text-gray-700 dark:text-gray-300 no-underline hover:underline"
+                        >~/about</a
+                    >
+                    <a
+                        href="/project"
+                        class="text-gray-700 dark:text-gray-300 no-underline hover:underline"
+                        >~/projects</a
+                    >
+                    <a
+                        href="/notes"
+                        class="text-gray-700 dark:text-gray-300 no-underline hover:underline"
+                        >~/notes</a
+                    >
+                    <a
+                        href="/blog"
+                        class="text-gray-700 dark:text-gray-300 no-underline hover:underline"
+                        >~/blog</a
+                    >
+                    <!-- Dark Mode Toggle -->
+                    <button
+                        id="theme-toggle"
+                        class="bg-inherit text-white border-none text-lg"
+                    >
+                        <i class="bxr bx-moon text-black"></i>
+                        <audio
+                            id="toggle-sound"
+                            src="https://mukund58.github.io/sounds/toggle-button.mp3"
+                            preload="auto"
+                        ></audio>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Optional script for mobile toggle -->
+        </nav>
+
+        <section class="section w-full">
+            
+<div class="wrapper max-w-4xl m-auto p-4 md:p-8">
+  <a href="/blog" class="inline-flex items-center gap-1 text-sm font-medium text-stone-600 dark:text-stone-400 hover:text-[#bc4a3c] dark:hover:text-[#bc4a3c] mb-6 transition-colors">
+    <i class="bx bx-left-arrow-alt text-lg"></i> Back to Blog
+  </a>
+
+  <h1 class="text-3xl md:text-4xl font-extrabold tracking-tight mb-3 text-stone-900 dark:text-white">
+    Configure neovim from Scratch
+  </h1>
+
+  <div class="flex flex-wrap items-center gap-4 text-sm text-stone-500 dark:text-stone-400 mb-4 pb-4 border-b border-stone-200 dark:border-stone-800">
+    
+    <div class="flex items-center gap-1.5">
+      <i class="bx bx-calendar text-base"></i>
+      <span>September 18, 2025</span>
+    </div>
+    
+    
+    <div class="flex items-center gap-1.5">
+      <i class="bx bx-time text-base"></i>
+      <span>7 min read</span>
+    </div>
+    
+  </div>
+
+  
+  <div class="flex flex-wrap items-center gap-2 mb-8">
+    <span class="text-xs uppercase tracking-wider text-stone-400 font-semibold">Tags:</span>
+    
+    <a href="https://mukund58.github.io/tags/editor/"
+       class="inline-flex items-center text-xs px-2.5 py-1 rounded-md bg-stone-100 hover:bg-[#bc4a3c] hover:text-white dark:bg-stone-800 dark:hover:bg-[#bc4a3c] dark:hover:text-white text-stone-700 dark:text-stone-300 font-medium transition-colors"
+       title="View all posts tagged #editor">
+      #editor
+    </a>
+    
+    <a href="https://mukund58.github.io/tags/open-source/"
+       class="inline-flex items-center text-xs px-2.5 py-1 rounded-md bg-stone-100 hover:bg-[#bc4a3c] hover:text-white dark:bg-stone-800 dark:hover:bg-[#bc4a3c] dark:hover:text-white text-stone-700 dark:text-stone-300 font-medium transition-colors"
+       title="View all posts tagged #Open Source">
+      #Open Source
+    </a>
+    
+    <a href="https://mukund58.github.io/tags/nvim/"
+       class="inline-flex items-center text-xs px-2.5 py-1 rounded-md bg-stone-100 hover:bg-[#bc4a3c] hover:text-white dark:bg-stone-800 dark:hover:bg-[#bc4a3c] dark:hover:text-white text-stone-700 dark:text-stone-300 font-medium transition-colors"
+       title="View all posts tagged #nvim">
+      #nvim
+    </a>
+    
+  </div>
+  
+
+  <div class="content prose dark:prose-invert max-w-none">
+    <h4 id="how-to-install">How to install</h4>
+<p>To install simply just type</p>
+<pre><code data-lang="bash">sudo pacman -S neovim
+</code></pre>
+<p>Now make a directory in .config</p>
+<pre><code data-lang="bash">mkdir ~/.config/nvim
+</code></pre>
+<p>then go to that directory and open nvim</p>
+<pre><code data-lang="bash">cd ~/.config/nvim
+nvim .
+</code></pre>
+<p>here this type of interface popup</p>
+<a href="https:&#x2F;&#x2F;blogger.googleusercontent.com&#x2F;img&#x2F;b&#x2F;R29vZ2xl&#x2F;AVvXsEhlEccoDEj5CZgXVd6CiweqhVczEQRHgki0We_MffmX2BqDx3B5HnaY0dc6Sjgg8UhUmgDqDSGvXY-2BFVDqHv_qf5ZoDLFaICZGwVfN4EMGUiRIQGon5F2VIoo2DNEs2RfyTKr14gLWaSYFUSR7RdvoLBhoJZ-GHK56EEyCqxkPzU1iuIBjqQNU-MZMfqj&#x2F;s1364&#x2F;pic-window-240913-1743-56.png" data-lightbox="blog-img" data-title="Screenshot">
+  <img src="https:&#x2F;&#x2F;blogger.googleusercontent.com&#x2F;img&#x2F;b&#x2F;R29vZ2xl&#x2F;AVvXsEhlEccoDEj5CZgXVd6CiweqhVczEQRHgki0We_MffmX2BqDx3B5HnaY0dc6Sjgg8UhUmgDqDSGvXY-2BFVDqHv_qf5ZoDLFaICZGwVfN4EMGUiRIQGon5F2VIoo2DNEs2RfyTKr14gLWaSYFUSR7RdvoLBhoJZ-GHK56EEyCqxkPzU1iuIBjqQNU-MZMfqj&#x2F;s1364&#x2F;pic-window-240913-1743-56.png"
+       alt="Screenshot"
+       loading="lazy"
+       style="max-width: 100%; height: auto; border-radius: 6px;" />
+</a>
+<h4 id="how-to-configure">How to configure</h4>
+<p>Now press <code>:</code> and type</p>
+<pre><code>:h rtp
+</code></pre>
+<p>here you can see <code>default $XDG_CONFIG_HOME/nvim</code> is our main directory where we put all our config files.
+<a href="https:&#x2F;&#x2F;blogger.googleusercontent.com&#x2F;img&#x2F;b&#x2F;R29vZ2xl&#x2F;AVvXsEgxIXHocnkLhtvxZN4rIk7xEVAH1fjw809GNTUtNZZ3TzGUT0f1M3OXuUCDi2658gGYym7XHirlKi2ZCjdO4AIN80Fl7Mp985hdHtjlLXtw0qKMSzVNngVe2gs2iQY_Ln3JQWQzRwL05Ja_Se7L-J4mwMx4eh32LBsVaBlfvyw0Pvva25TNJQdWshF0Ym55&#x2F;s1364&#x2F;pic-window-240913-1748-25.png" data-lightbox="blog-img" data-title="Screenshot">
+  <img src="https:&#x2F;&#x2F;blogger.googleusercontent.com&#x2F;img&#x2F;b&#x2F;R29vZ2xl&#x2F;AVvXsEgxIXHocnkLhtvxZN4rIk7xEVAH1fjw809GNTUtNZZ3TzGUT0f1M3OXuUCDi2658gGYym7XHirlKi2ZCjdO4AIN80Fl7Mp985hdHtjlLXtw0qKMSzVNngVe2gs2iQY_Ln3JQWQzRwL05Ja_Se7L-J4mwMx4eh32LBsVaBlfvyw0Pvva25TNJQdWshF0Ym55&#x2F;s1364&#x2F;pic-window-240913-1748-25.png"
+       alt="Screenshot"
+       loading="lazy"
+       style="max-width: 100%; height: auto; border-radius: 6px;" />
+</a>
+</p>
+<p>Now exit from that your interface should look like this</p>
+<a href="https:&#x2F;&#x2F;blogger.googleusercontent.com&#x2F;img&#x2F;b&#x2F;R29vZ2xl&#x2F;AVvXsEhSAZcEnzH-SOXjVUgO_v2YnV2Dyw85kIKMAJp6iVlgJHk1rkfqtybFvjD2MgTh9o0HiQLGgiJ_ycv7MRV2G9i4ChN2ksg-_qEfdTyMk-xsWboqPaPLLyc-gtedBURYFw7S9jpZtfknIPT1J0k5TEQs3EvW666VX34ERuegZp1kKMZ-XXbyIpxV41HabjNZ&#x2F;s1364&#x2F;pic-window-240913-1743-56.png" data-lightbox="blog-img" data-title="Screenshot">
+  <img src="https:&#x2F;&#x2F;blogger.googleusercontent.com&#x2F;img&#x2F;b&#x2F;R29vZ2xl&#x2F;AVvXsEhSAZcEnzH-SOXjVUgO_v2YnV2Dyw85kIKMAJp6iVlgJHk1rkfqtybFvjD2MgTh9o0HiQLGgiJ_ycv7MRV2G9i4ChN2ksg-_qEfdTyMk-xsWboqPaPLLyc-gtedBURYFw7S9jpZtfknIPT1J0k5TEQs3EvW666VX34ERuegZp1kKMZ-XXbyIpxV41HabjNZ&#x2F;s1364&#x2F;pic-window-240913-1743-56.png"
+       alt="Screenshot"
+       loading="lazy"
+       style="max-width: 100%; height: auto; border-radius: 6px;" />
+</a>
+<p>Now press % and give file name <code>init.lua</code></p>
+<a href="https:&#x2F;&#x2F;blogger.googleusercontent.com&#x2F;img&#x2F;b&#x2F;R29vZ2xl&#x2F;AVvXsEhBh7cr8aFVY-ds0dN_xYKfcNph1WL-UM5aY7ESQaqsCbUQ_ZDiH5-djUKqEt_izHkHnmjnPOdw1k2xvR1PhiWhwFkzvwxw3sinknaf5z3XYqCmFskUD-IdLh_F9ltbk7j8c_DQyi08Y822w-FPwpQ_mb_fluP4t9RW8Bmk2Qgx7bTW8bTm-plN11bdqlCb&#x2F;s501&#x2F;pic-selected-240913-1812-12.png" data-lightbox="blog-img" data-title="Screenshot">
+  <img src="https:&#x2F;&#x2F;blogger.googleusercontent.com&#x2F;img&#x2F;b&#x2F;R29vZ2xl&#x2F;AVvXsEhBh7cr8aFVY-ds0dN_xYKfcNph1WL-UM5aY7ESQaqsCbUQ_ZDiH5-djUKqEt_izHkHnmjnPOdw1k2xvR1PhiWhwFkzvwxw3sinknaf5z3XYqCmFskUD-IdLh_F9ltbk7j8c_DQyi08Y822w-FPwpQ_mb_fluP4t9RW8Bmk2Qgx7bTW8bTm-plN11bdqlCb&#x2F;s501&#x2F;pic-selected-240913-1812-12.png"
+       alt="Screenshot"
+       loading="lazy"
+       style="max-width: 100%; height: auto; border-radius: 6px;" />
+</a>
+<p>To type something press <code>i</code> (insert) or <code>a</code>(append)
+type this
+<a href="https:&#x2F;&#x2F;blogger.googleusercontent.com&#x2F;img&#x2F;b&#x2F;R29vZ2xl&#x2F;AVvXsEhaQ98ctWxLs-7I6zb9ZJge3X8_qn9f4rlyiQ-7KlwDW8u7DruJ5YtXDisDVBWh_nkzteZQpmrARbSlqwFEFop5SBlB4mewx1U03kNvEFyn9I2TnpT6ams3qdqSJKw923wByoOCPxWJ6qW_oqzKTn30LErGIaXfzSgpXF9bSAkPN-RuOXa8e1YXUFOmSbgT&#x2F;s368&#x2F;pic-selected-240913-1815-40.png" data-lightbox="blog-img" data-title="Screenshot">
+  <img src="https:&#x2F;&#x2F;blogger.googleusercontent.com&#x2F;img&#x2F;b&#x2F;R29vZ2xl&#x2F;AVvXsEhaQ98ctWxLs-7I6zb9ZJge3X8_qn9f4rlyiQ-7KlwDW8u7DruJ5YtXDisDVBWh_nkzteZQpmrARbSlqwFEFop5SBlB4mewx1U03kNvEFyn9I2TnpT6ams3qdqSJKw923wByoOCPxWJ6qW_oqzKTn30LErGIaXfzSgpXF9bSAkPN-RuOXa8e1YXUFOmSbgT&#x2F;s368&#x2F;pic-selected-240913-1815-40.png"
+       alt="Screenshot"
+       loading="lazy"
+       style="max-width: 100%; height: auto; border-radius: 6px;" />
+</a>
+</p>
+<p>now exit from insert mode by pressing <code>Esc</code> or <code>ctrl + c</code></p>
+<p>After to save this file press <code>:</code> and type <code>w</code>(write) or <code>wq</code>(write and quiet)</p>
+<a href="https:&#x2F;&#x2F;blogger.googleusercontent.com&#x2F;img&#x2F;b&#x2F;R29vZ2xl&#x2F;AVvXsEjpdOezSW67-NQy0aDlGu0Kwjbd8syUv59SArftXhIdej2_8t9F6j_ZAcQYZSV1jmwDHaHvz4j_oNmsFtSrwQgr5rbUQJZtGVkQKuWcoDw4YQkwBF0A2WMaLRD4gN7ELO0eyX8qB6UqcF4iXwebBCuw8dmGTx7BTj2vWki6rsZOjnp3W_GzpYHOnsYh4yP4&#x2F;s421&#x2F;pic-selected-240913-1823-04.png" data-lightbox="blog-img" data-title="Screenshot">
+  <img src="https:&#x2F;&#x2F;blogger.googleusercontent.com&#x2F;img&#x2F;b&#x2F;R29vZ2xl&#x2F;AVvXsEjpdOezSW67-NQy0aDlGu0Kwjbd8syUv59SArftXhIdej2_8t9F6j_ZAcQYZSV1jmwDHaHvz4j_oNmsFtSrwQgr5rbUQJZtGVkQKuWcoDw4YQkwBF0A2WMaLRD4gN7ELO0eyX8qB6UqcF4iXwebBCuw8dmGTx7BTj2vWki6rsZOjnp3W_GzpYHOnsYh4yP4&#x2F;s421&#x2F;pic-selected-240913-1823-04.png"
+       alt="Screenshot"
+       loading="lazy"
+       style="max-width: 100%; height: auto; border-radius: 6px;" />
+</a>
+<p>Again go to nvim</p>
+<pre><code>nvim .
+</code></pre>
+<p>here you can notice that our file is created and bottom left you can see hello.</p>
+<a href="https:&#x2F;&#x2F;blogger.googleusercontent.com&#x2F;img&#x2F;b&#x2F;R29vZ2xl&#x2F;AVvXsEjMB3Opt0bRBdhmPvygfl9gno_5qNKMYS0L9e2L1xZ7bypb06yaCcNM7jYwnrRCL5R-XhnV9nCMRXtgjuSSLQAZGAwjc342wyQKptP02zPURy90YhXAFDL8Kt5YPhWuS1wTQ_LPNrruEtf50tki2t0fUde7R4YXn2Suf_UzA-4m-4F76od5_Ms9qWu2TpLM&#x2F;s1364&#x2F;pic-window-240913-1833-48.png" data-lightbox="blog-img" data-title="Screenshot">
+  <img src="https:&#x2F;&#x2F;blogger.googleusercontent.com&#x2F;img&#x2F;b&#x2F;R29vZ2xl&#x2F;AVvXsEjMB3Opt0bRBdhmPvygfl9gno_5qNKMYS0L9e2L1xZ7bypb06yaCcNM7jYwnrRCL5R-XhnV9nCMRXtgjuSSLQAZGAwjc342wyQKptP02zPURy90YhXAFDL8Kt5YPhWuS1wTQ_LPNrruEtf50tki2t0fUde7R4YXn2Suf_UzA-4m-4F76od5_Ms9qWu2TpLM&#x2F;s1364&#x2F;pic-window-240913-1833-48.png"
+       alt="Screenshot"
+       loading="lazy"
+       style="max-width: 100%; height: auto; border-radius: 6px;" />
+</a>
+<p>Now press <code>d</code> to create directory and give name <code>lua</code>
+<a href="https:&#x2F;&#x2F;blogger.googleusercontent.com&#x2F;img&#x2F;b&#x2F;R29vZ2xl&#x2F;AVvXsEi8NXHzCnitR7Xo4yNijWhiskByVxuySeYQefEIMfgtcAE_Xw9RrsUW4fXPHYWo8kyDoAv6EO2_skts5Tp8ZW-SuyfynQr-mqYU1-Ptk-X6CSoSHJNl2I5i5FNoxPKYQ9rrRhWAyQ-uA5exKwZiJvl0rs5w3YhoE-I1VKG6ECR2EhzYX80D39zVEIwbIzT6&#x2F;s1364&#x2F;pic-window-240913-1844-33.png" data-lightbox="blog-img" data-title="Screenshot">
+  <img src="https:&#x2F;&#x2F;blogger.googleusercontent.com&#x2F;img&#x2F;b&#x2F;R29vZ2xl&#x2F;AVvXsEi8NXHzCnitR7Xo4yNijWhiskByVxuySeYQefEIMfgtcAE_Xw9RrsUW4fXPHYWo8kyDoAv6EO2_skts5Tp8ZW-SuyfynQr-mqYU1-Ptk-X6CSoSHJNl2I5i5FNoxPKYQ9rrRhWAyQ-uA5exKwZiJvl0rs5w3YhoE-I1VKG6ECR2EhzYX80D39zVEIwbIzT6&#x2F;s1364&#x2F;pic-window-240913-1844-33.png"
+       alt="Screenshot"
+       loading="lazy"
+       style="max-width: 100%; height: auto; border-radius: 6px;" />
+</a>
+</p>
+<p>Go to lua directory and create a whatever named directory
+<a href="https:&#x2F;&#x2F;blogger.googleusercontent.com&#x2F;img&#x2F;b&#x2F;R29vZ2xl&#x2F;AVvXsEiJ7bK9EGUlpO1Dco4fQgqA4Xdt-6v_hGy1GAlPHNGz66hSlsVycc-TSvM7FLa4pGIktsm3_-af8u6HnrR5YrH84_MPZvp7Y7NFKfgzfqEMZBg6HtBlnH2MPejwMn79jdBoP-OFTOFn-t806JABVJYnDjFTLbd2oXIw1kVgKeKKnQfrDtCsz4PbVtqyZeXt&#x2F;s1364&#x2F;pic-window-240913-1911-55.png" data-lightbox="blog-img" data-title="Screenshot">
+  <img src="https:&#x2F;&#x2F;blogger.googleusercontent.com&#x2F;img&#x2F;b&#x2F;R29vZ2xl&#x2F;AVvXsEiJ7bK9EGUlpO1Dco4fQgqA4Xdt-6v_hGy1GAlPHNGz66hSlsVycc-TSvM7FLa4pGIktsm3_-af8u6HnrR5YrH84_MPZvp7Y7NFKfgzfqEMZBg6HtBlnH2MPejwMn79jdBoP-OFTOFn-t806JABVJYnDjFTLbd2oXIw1kVgKeKKnQfrDtCsz4PbVtqyZeXt&#x2F;s1364&#x2F;pic-window-240913-1911-55.png"
+       alt="Screenshot"
+       loading="lazy"
+       style="max-width: 100%; height: auto; border-radius: 6px;" />
+</a>
+</p>
+<p>And go to that directory and create file <code>init.lua</code></p>
+<p>for testing type this in your file:</p>
+<a href="https:&#x2F;&#x2F;blogger.googleusercontent.com&#x2F;img&#x2F;b&#x2F;R29vZ2xl&#x2F;AVvXsEiyM5KXuvn-gep8cjwaEVplNJQlLORxU02KLEZ_Z_4vjFtsKsgjPp_fnlvJYDHRcrVkBv07YJmkBA0L_PcdSsySEw4l8i0lHyTZ431SHcQ7-YN0ciWIq5ZZbboR6A-_axsPJh11OXWKTpkBvlf8I6zLzn-pDlN1bVxbgIV2_RQ2KU_8pr9a-kcjRdssrO7W&#x2F;s421&#x2F;pic-selected-240913-1924-20.png" data-lightbox="blog-img" data-title="Screenshot">
+  <img src="https:&#x2F;&#x2F;blogger.googleusercontent.com&#x2F;img&#x2F;b&#x2F;R29vZ2xl&#x2F;AVvXsEiyM5KXuvn-gep8cjwaEVplNJQlLORxU02KLEZ_Z_4vjFtsKsgjPp_fnlvJYDHRcrVkBv07YJmkBA0L_PcdSsySEw4l8i0lHyTZ431SHcQ7-YN0ciWIq5ZZbboR6A-_axsPJh11OXWKTpkBvlf8I6zLzn-pDlN1bVxbgIV2_RQ2KU_8pr9a-kcjRdssrO7W&#x2F;s421&#x2F;pic-selected-240913-1924-20.png"
+       alt="Screenshot"
+       loading="lazy"
+       style="max-width: 100%; height: auto; border-radius: 6px;" />
+</a>
+<p>Again press <code>:</code> to go explore mode <code>Ex</code>
+and go to previous directory <code>../</code>  where our first file created</p>
+<p>open that file <code>~/.config/nvim/init.lua</code> and type this</p>
+<a href="https:&#x2F;&#x2F;blogger.googleusercontent.com&#x2F;img&#x2F;b&#x2F;R29vZ2xl&#x2F;AVvXsEiT6b3sAVAiFr1U1ppFdb-bByHxALCEixxo3sBAMnEcAW4SJoOgChureVhKI9cAOE4hdhrWbgiC5xIqG1mguQRwYt73-NLjELafCnbrnj6cwsuau2QNjlG6HfLFCUeJy7ehN8BSHinkkUgmUy0LTEdAY1XxD73IKWOTeStmkPPrtPltedD-9M_HZ-qImK7J&#x2F;s437&#x2F;pic-selected-240913-2120-00.png" data-lightbox="blog-img" data-title="Screenshot">
+  <img src="https:&#x2F;&#x2F;blogger.googleusercontent.com&#x2F;img&#x2F;b&#x2F;R29vZ2xl&#x2F;AVvXsEiT6b3sAVAiFr1U1ppFdb-bByHxALCEixxo3sBAMnEcAW4SJoOgChureVhKI9cAOE4hdhrWbgiC5xIqG1mguQRwYt73-NLjELafCnbrnj6cwsuau2QNjlG6HfLFCUeJy7ehN8BSHinkkUgmUy0LTEdAY1XxD73IKWOTeStmkPPrtPltedD-9M_HZ-qImK7J&#x2F;s437&#x2F;pic-selected-240913-2120-00.png"
+       alt="Screenshot"
+       loading="lazy"
+       style="max-width: 100%; height: auto; border-radius: 6px;" />
+</a>
+<p>now exit from nvim by pressing <code>:wq</code></p>
+<p>Again open nvim</p>
+<p>pwd :- ~/.config/nvim</p>
+<pre><code>nvim .
+</code></pre>
+<p>A message like this will show when you open nvim</p>
+<p>congrats if this type of  message will shows so you go further and lets make nvim usable.
+<a href="https:&#x2F;&#x2F;blogger.googleusercontent.com&#x2F;img&#x2F;b&#x2F;R29vZ2xl&#x2F;AVvXsEhYrqlA4oWINyvo_eBhS9rQhy0Hyxje-okrf72B1grUz9KcNLu-OHtkUEa6reFmY5QtY3PadNvt-8rX_fq9lxQjxBB8l9IA04sapSjgAZvvPigHQBX_vYbEsDl_Cy3MjOjgyCiiUEeCmJnxrTqGfDOCuBdy3JkTTBr4IuFnGEMpNRJvfpLIearaiJKDPxB-&#x2F;s566&#x2F;pic-selected-240913-2125-02.png" data-lightbox="blog-img" data-title="Screenshot">
+  <img src="https:&#x2F;&#x2F;blogger.googleusercontent.com&#x2F;img&#x2F;b&#x2F;R29vZ2xl&#x2F;AVvXsEhYrqlA4oWINyvo_eBhS9rQhy0Hyxje-okrf72B1grUz9KcNLu-OHtkUEa6reFmY5QtY3PadNvt-8rX_fq9lxQjxBB8l9IA04sapSjgAZvvPigHQBX_vYbEsDl_Cy3MjOjgyCiiUEeCmJnxrTqGfDOCuBdy3JkTTBr4IuFnGEMpNRJvfpLIearaiJKDPxB-&#x2F;s566&#x2F;pic-selected-240913-2125-02.png"
+       alt="Screenshot"
+       loading="lazy"
+       style="max-width: 100%; height: auto; border-radius: 6px;" />
+</a>
+</p>
+<h4 id="creating-some-shortcuts">Creating some shortcuts</h4>
+<p>Now lets make some shortcuts
+first you have to create a remap.lua file in
+~/.config/nvim/lua/soul/remap.lua</p>
+<p>here <code>vim.g.leader</code> is name where you can assign a keybutton</p>
+<p>in second line you can see <code>vim.keymap.set</code> is used for set keyboard shortcuts of vim command</p>
+<p>here we can directly execute this command  <code>Ex</code> by <code>spacebar pv</code></p>
+<a href="https:&#x2F;&#x2F;blogger.googleusercontent.com&#x2F;img&#x2F;b&#x2F;R29vZ2xl&#x2F;AVvXsEgkIWoYFI1FDCInDmElLLTNXJg5RMNWMcl9lr5fyd2hkMuc9JgP455kQ5o-vDAfumfGmkp6vkN4lsOAYMPJUOOnVJmLUCGc2rVNvS30WZggCV56L1XGMgLT_tBNO7of3YWbSKnTIGPkNhxcs3CVUEcaXtzVmso30lxwH2nSVH_u72Wz5wyiLg6HeyBQMNKe&#x2F;s722&#x2F;pic-selected-240913-2136-46.png" data-lightbox="blog-img" data-title="Screenshot">
+  <img src="https:&#x2F;&#x2F;blogger.googleusercontent.com&#x2F;img&#x2F;b&#x2F;R29vZ2xl&#x2F;AVvXsEgkIWoYFI1FDCInDmElLLTNXJg5RMNWMcl9lr5fyd2hkMuc9JgP455kQ5o-vDAfumfGmkp6vkN4lsOAYMPJUOOnVJmLUCGc2rVNvS30WZggCV56L1XGMgLT_tBNO7of3YWbSKnTIGPkNhxcs3CVUEcaXtzVmso30lxwH2nSVH_u72Wz5wyiLg6HeyBQMNKe&#x2F;s722&#x2F;pic-selected-240913-2136-46.png"
+       alt="Screenshot"
+       loading="lazy"
+       style="max-width: 100%; height: auto; border-radius: 6px;" />
+</a>
+<p>save this file <code>:w</code></p>
+<p>after press <code>:so</code> hit Enter (it will complie the source)
+now you can press <code>spacebar pv</code></p>
+<p>here when you exit from nvim you have to complie again
+so to solve this problem
+we have to type this in our init.lua</p>
+<p>pwd:- ~/.config/nvim/lua/soul/init.lua</p>
+<a href="https:&#x2F;&#x2F;blogger.googleusercontent.com&#x2F;img&#x2F;b&#x2F;R29vZ2xl&#x2F;AVvXsEgUOFsyOZKl6t6RgG0Husli4wsPs3SQ-x0RuOLF8usuHSbk-5qqaL1Lgjv5VsCPvSihfZK8op-EHFw2YdaZBkiE0ITJXQRCCPzA80pNNQn1iGaxKbFtLQ6xVVDLg4hkj_Vyz2mHRbQsDMv2v3IUxJaMQYwwrd1lbkj5JBGQTDlyrH4ks-1I-bGXP8RMUoRa&#x2F;s722&#x2F;pic-selected-240913-2204-18.png" data-lightbox="blog-img" data-title="Screenshot">
+  <img src="https:&#x2F;&#x2F;blogger.googleusercontent.com&#x2F;img&#x2F;b&#x2F;R29vZ2xl&#x2F;AVvXsEgUOFsyOZKl6t6RgG0Husli4wsPs3SQ-x0RuOLF8usuHSbk-5qqaL1Lgjv5VsCPvSihfZK8op-EHFw2YdaZBkiE0ITJXQRCCPzA80pNNQn1iGaxKbFtLQ6xVVDLg4hkj_Vyz2mHRbQsDMv2v3IUxJaMQYwwrd1lbkj5JBGQTDlyrH4ks-1I-bGXP8RMUoRa&#x2F;s722&#x2F;pic-selected-240913-2204-18.png"
+       alt="Screenshot"
+       loading="lazy"
+       style="max-width: 100%; height: auto; border-radius: 6px;" />
+</a>
+<p>Now you everytime you open your nvim it will compile automatically</p>
+<h4 id="add-pulgin-manger-packer">Add pulgin-manger(packer)</h4>
+<p>Go to this repo <a rel="noopener external" target="_blank" href="https://github.com/wbthomason/packer.nvim">packer.nvim</a></p>
+<p>clone this repo in your ~/.config</p>
+<pre><code data-lang="bash">git clone --depth 1 https://github.com/wbthomason/packer.nvim\
+ ~/.local/share/nvim/site/pack/packer/start/packer.nvim
+</code></pre>
+<p>Now copy this from that repo</p>
+<pre><code data-lang="lua">vim.cmd [[packadd packer.nvim]]
+
+return require(&#39;packer&#39;).startup(function(use)
+  -- Packer can manage itself
+  use &#39;wbthomason/packer.nvim&#39;
+end)
+</code></pre>
+<p>paste it in
+~/.config/nvim/lua/soul/packer.lua</p>
+<p>now complie it <code>:so</code></p>
+<p>now can able to type this <code>:PackerSync</code>
+it will look like this</p>
+<p>if the option is not available you  can restart your nvim and recomplie it .</p>
+<a href="https:&#x2F;&#x2F;blogger.googleusercontent.com&#x2F;img&#x2F;b&#x2F;R29vZ2xl&#x2F;AVvXsEgh375U-HZtX-coZhrI3CWI-Js40-XB3U4NZs98O2rFTKdEcesOj7uu1o3U5vWleZgWs5M5ElorMuVQYJ-PeLND3yImfUfsnZ9ODEz0gQQRHHO6DTQiN7UcZTCxWtAlcjQBuxXHr0O6P4XXVoQZHRxeiGAXnchpmbhA9l7Bn2U4vHo465XCjjJzfrYp19pO&#x2F;s1364&#x2F;pic-window-240913-2238-51.png" data-lightbox="blog-img" data-title="Screenshot">
+  <img src="https:&#x2F;&#x2F;blogger.googleusercontent.com&#x2F;img&#x2F;b&#x2F;R29vZ2xl&#x2F;AVvXsEgh375U-HZtX-coZhrI3CWI-Js40-XB3U4NZs98O2rFTKdEcesOj7uu1o3U5vWleZgWs5M5ElorMuVQYJ-PeLND3yImfUfsnZ9ODEz0gQQRHHO6DTQiN7UcZTCxWtAlcjQBuxXHr0O6P4XXVoQZHRxeiGAXnchpmbhA9l7Bn2U4vHo465XCjjJzfrYp19pO&#x2F;s1364&#x2F;pic-window-240913-2238-51.png"
+       alt="Screenshot"
+       loading="lazy"
+       style="max-width: 100%; height: auto; border-radius: 6px;" />
+</a>
+<p>congrats you come this far you have succesfully installed pulgin-manger.</p>
+<h5 id="add-pulgin-fuzzy-finder">Add Pulgin(fuzzy finder)</h5>
+<p>Now lets add some pulgin</p>
+<p>go to repo <a rel="noopener external" target="_blank" href="https://github.com/nvim-telescope/telescope.nvim">telescope.nvim</a></p>
+<p>copy this from that repo</p>
+<pre><code data-lang="lua">use {
+  &#39;nvim-telescope/telescope.nvim&#39;, tag = &#39;0.1.8&#39;,
+-- or                            , branch = &#39;0.1.x&#39;,
+  requires = { {&#39;nvim-lua/plenary.nvim&#39;} }
+}
+</code></pre>
+<p>paste in your packer.lua
+it should be look like this
+<a href="https:&#x2F;&#x2F;blogger.googleusercontent.com&#x2F;img&#x2F;b&#x2F;R29vZ2xl&#x2F;AVvXsEiYndla32ASmdYaPT8Hei_O37y4CWg60XD-Iq3T3e_-_6NYKpYTqsh2pc8YN7wc_XG7dgKnQ_iX6y5EkBxmHAn2KM-cpeKE31BElAb0P1hxtYo3_kO1lkUOGrU8doI3ozwy7tIHtSzmK2kLpkpgj0EKQG2zFnfMS_gnkhVQE6Mog12IdVM-SclNdXx5ndvl&#x2F;s617&#x2F;pic-selected-240913-2258-47.png" data-lightbox="blog-img" data-title="Screenshot">
+  <img src="https:&#x2F;&#x2F;blogger.googleusercontent.com&#x2F;img&#x2F;b&#x2F;R29vZ2xl&#x2F;AVvXsEiYndla32ASmdYaPT8Hei_O37y4CWg60XD-Iq3T3e_-_6NYKpYTqsh2pc8YN7wc_XG7dgKnQ_iX6y5EkBxmHAn2KM-cpeKE31BElAb0P1hxtYo3_kO1lkUOGrU8doI3ozwy7tIHtSzmK2kLpkpgj0EKQG2zFnfMS_gnkhVQE6Mog12IdVM-SclNdXx5ndvl&#x2F;s617&#x2F;pic-selected-240913-2258-47.png"
+       alt="Screenshot"
+       loading="lazy"
+       style="max-width: 100%; height: auto; border-radius: 6px;" />
+</a>
+</p>
+<p>Now press <code>:w</code>, <code>:so</code> and after that <code>:PackerSync</code>
+it will start to install that pulgin</p>
+<a href="https:&#x2F;&#x2F;blogger.googleusercontent.com&#x2F;img&#x2F;b&#x2F;R29vZ2xl&#x2F;AVvXsEihJpdFhxgTfc0yMf4doskm_O3ow39JywjDig4GljqgfXrRcFOHouxfLts4TNX3t-pki0FbA-_miGjCY7XfuMsNISkFvd7SQSvo2O3o8K01vz3X470k64m3HUj_Lleity-hWBDM1kPhyphenhyphenZ_N-AHWhr4vbPQYOtOSnri4iWxUz9nlOBqgT_q44Zkgg7X7OpPm&#x2F;s1364&#x2F;pic-window-240913-2302-39.png" data-lightbox="blog-img" data-title="Screenshot">
+  <img src="https:&#x2F;&#x2F;blogger.googleusercontent.com&#x2F;img&#x2F;b&#x2F;R29vZ2xl&#x2F;AVvXsEihJpdFhxgTfc0yMf4doskm_O3ow39JywjDig4GljqgfXrRcFOHouxfLts4TNX3t-pki0FbA-_miGjCY7XfuMsNISkFvd7SQSvo2O3o8K01vz3X470k64m3HUj_Lleity-hWBDM1kPhyphenhyphenZ_N-AHWhr4vbPQYOtOSnri4iWxUz9nlOBqgT_q44Zkgg7X7OpPm&#x2F;s1364&#x2F;pic-window-240913-2302-39.png"
+       alt="Screenshot"
+       loading="lazy"
+       style="max-width: 100%; height: auto; border-radius: 6px;" />
+</a>
+<p>Now copy this line
+paste it in  ~/.config/nvim/after/pulgin/telescope.lua
+here create respective directory</p>
+<pre><code data-lang="lua">local builtin = require(&#39;telescope.builtin&#39;)
+vim.keymap.set(&#39;n&#39;, &#39;&lt;leader&gt;pf&#39;, builtin.find_files, {})
+vim.keymap.set(&#39;n&#39;, &#39;C-p&#39;, builtin.git_files, {})
+vim.keymap.set(&#39;n&#39;, &#39;&lt;leader&gt;ps&#39;, function()
+	builtin.grep_string({ search = vim.fn.input(&quot;Grep &gt; &quot;)});
+end)
+</code></pre>
+<p>Now press <code>:w</code> <code>:so</code></p>
+<p>now you can use fuzzy finder
+press <code>spacebar pf or ps</code></p>
+<a href="https:&#x2F;&#x2F;blogger.googleusercontent.com&#x2F;img&#x2F;b&#x2F;R29vZ2xl&#x2F;AVvXsEgZmYnHq8oVAFiA4PIhNFusfq1XP2EeWEdXAJSHLkrjEK8-mLU2SpM1N0_-UCAhCXVSG-WfhibauYrrn-fxgxQY48WxW-qyeW8YMJ2nP6qh3Eha6TX1oHmPjt69pL-GLpaXNwVtUZfZyFsnN4N3kS8dMt8iWcG4-rEcrh8yvvmWSQTzHeumTqpIxlfxug0-&#x2F;s1364&#x2F;pic-window-240913-2355-48.png" data-lightbox="blog-img" data-title="Screenshot">
+  <img src="https:&#x2F;&#x2F;blogger.googleusercontent.com&#x2F;img&#x2F;b&#x2F;R29vZ2xl&#x2F;AVvXsEgZmYnHq8oVAFiA4PIhNFusfq1XP2EeWEdXAJSHLkrjEK8-mLU2SpM1N0_-UCAhCXVSG-WfhibauYrrn-fxgxQY48WxW-qyeW8YMJ2nP6qh3Eha6TX1oHmPjt69pL-GLpaXNwVtUZfZyFsnN4N3kS8dMt8iWcG4-rEcrh8yvvmWSQTzHeumTqpIxlfxug0-&#x2F;s1364&#x2F;pic-window-240913-2355-48.png"
+       alt="Screenshot"
+       loading="lazy"
+       style="max-width: 100%; height: auto; border-radius: 6px;" />
+</a>
+<h5 id="add-pulgin-rose-pine">Add pulgin (Rosé Pine)</h5>
+<p>Now go to this repo <a rel="noopener external" target="_blank" href="https://github.com/will/rose-pine-neovim">Rosé Pine</a></p>
+<p>copy this line
+paste it in ~/.config/nvim/lua/soul/packer.lua</p>
+<pre><code data-lang="lua">use({ &#39;rose-pine/neovim&#39;, as = &#39;rose-pine&#39; })
+
+vim.cmd(&#39;colorscheme rose-pine&#39;)
+</code></pre>
+<p>Now you can change it colorschema <code>:coloschema rose-pine-main</code></p>
+<a href="https:&#x2F;&#x2F;blogger.googleusercontent.com&#x2F;img&#x2F;b&#x2F;R29vZ2xl&#x2F;AVvXsEgejqL4HwbMUBTGYfUMEqH5z7FfGzzfszcrfdyqJb4bnlt9XjdX11z7LfPIifCg7zudPcvF9GifS0E35o1uCSVJxFuO_HjUWNO96nWBr2Xn4q2oGoo9fyDrEqGdEaG5A2wkZ2MSwDKSGru7mmB2FRPhQtrkqrIybQAuHhfQYdqCRFf7vXUGCCiCrU7z-Nth&#x2F;s1364&#x2F;pic-window-240914-0003-57.png" data-lightbox="blog-img" data-title="Screenshot">
+  <img src="https:&#x2F;&#x2F;blogger.googleusercontent.com&#x2F;img&#x2F;b&#x2F;R29vZ2xl&#x2F;AVvXsEgejqL4HwbMUBTGYfUMEqH5z7FfGzzfszcrfdyqJb4bnlt9XjdX11z7LfPIifCg7zudPcvF9GifS0E35o1uCSVJxFuO_HjUWNO96nWBr2Xn4q2oGoo9fyDrEqGdEaG5A2wkZ2MSwDKSGru7mmB2FRPhQtrkqrIybQAuHhfQYdqCRFf7vXUGCCiCrU7z-Nth&#x2F;s1364&#x2F;pic-window-240914-0003-57.png"
+       alt="Screenshot"
+       loading="lazy"
+       style="max-width: 100%; height: auto; border-radius: 6px;" />
+</a>
+<h4 id="transparent-background">Transparent Background</h4>
+<p>here i want traspraent background</p>
+<p>create a file colors.lua
+at ~/.config/nvim/after/pulgin/colors.lua</p>
+<pre><code data-lang="lua">function ColorMyPencils(color)
+            color = color or &quot;rose-pine&quot;
+            vim.cmd.colorscheme(color)
+            vim.api.nvim_set_hl(0,&quot;Normal&quot;,{bg = &quot;none&quot;})
+            vim.api.nvim_set_hl(0,&quot;NormalFloat&quot;,{bg = &quot;none&quot;})
+end
+
+ColorMyPencils()
+</code></pre>
+<p>After transparenting  background .
+it will look beautiful <code>&gt;&lt;</code>.</p>
+<a href="https:&#x2F;&#x2F;blogger.googleusercontent.com&#x2F;img&#x2F;b&#x2F;R29vZ2xl&#x2F;AVvXsEhOsNuiNiR_5Veu1EeTXOMG7VpQyxUUZS2QHeTzo24faCL6KEfAyjYuKglYez31zHjxtAh_n13I9cKNDOnFJQLGK5bmQVe_VAa6vYorLG4eCpRhxYmUIy7CEWH54yZLw9RzQG2ceSDzFnHS1WnaqMkeJTrGUEpqFDuTYPyL4LNC97rM-WlDsM47w8wD5yyF&#x2F;s1365&#x2F;pic-selected-240914-1406-41.png" data-lightbox="blog-img" data-title="Screenshot">
+  <img src="https:&#x2F;&#x2F;blogger.googleusercontent.com&#x2F;img&#x2F;b&#x2F;R29vZ2xl&#x2F;AVvXsEhOsNuiNiR_5Veu1EeTXOMG7VpQyxUUZS2QHeTzo24faCL6KEfAyjYuKglYez31zHjxtAh_n13I9cKNDOnFJQLGK5bmQVe_VAa6vYorLG4eCpRhxYmUIy7CEWH54yZLw9RzQG2ceSDzFnHS1WnaqMkeJTrGUEpqFDuTYPyL4LNC97rM-WlDsM47w8wD5yyF&#x2F;s1365&#x2F;pic-selected-240914-1406-41.png"
+       alt="Screenshot"
+       loading="lazy"
+       style="max-width: 100%; height: auto; border-radius: 6px;" />
+</a>
+<h4 id="add-tree-sitter">Add tree sitter</h4>
+<p>Add this line in your packer.lua</p>
+<pre><code data-lang="lua">use( &#39;nvim-treesitter/nvim-treesitter&#39;, { run = &#39;:TSUpdate&#39;})
+</code></pre>
+<p>Save the file <code>:w</code> and comple it <code>:so</code> and run Packer <code>:PackerSync</code></p>
+<p>copy this line and paste it in
+~/.config/nvim/after/pulgin/tree-sitter.lua</p>
+<pre><code data-lang="lua">require&#39;nvim-treesitter.configs&#39;.setup {
+  -- A list of parser names, or &quot;all&quot; (the listed parsers MUST always be installed)
+  ensure_installed = { &quot;c&quot;, &quot;lua&quot;, &quot;vim&quot;, &quot;vimdoc&quot;, &quot;query&quot;, &quot;markdown&quot;, &quot;markdown_inline&quot;, &quot;javascript&quot;, &quot;rust&quot;, &quot;typescript&quot;  },
+
+  -- Install parsers synchronously (only applied to `ensure_installed`)
+  sync_install = false,
+
+  -- Automatically install missing parsers when entering buffer
+  -- Recommendation: set to false if you don&#39;t have `tree-sitter` CLI installed locally
+  auto_install = true,
+  highlight = {
+    enable = true,
+    -- Setting this to true will run `:h syntax` and tree-sitter at the same time.
+    -- Set this to `true` if you depend on &#39;syntax&#39; being enabled (like for indentation).
+    -- Using this option may slow down your editor, and you may see some duplicate highlights.
+    -- Instead of true it can also be a list of languages
+    additional_vim_regex_highlighting = false,
+  },
+}
+</code></pre>
+<p>Save the file <code>:w</code> and comple it <code>:so</code></p>
+<p>Add this line in your packer.lua</p>
+<pre><code data-lang="lua">use( &#39;nvim-treesitter/playground&#39;)
+</code></pre>
+<p>Save the file <code>:w</code> and comple it <code>:so</code> and run packer <code>PackerSync</code></p>
+<p>you can able to run <code>:TSPlaygroundToggle</code></p>
+<h4 id="add-harrpon">Add harrpon</h4>
+<p>Add this line in you Packer</p>
+<pre><code data-lang="lua">use( &#39;ThePrimeagen/harpoon&#39;)
+</code></pre>
+<p>same as above</p>
+<p>Now create a file harpoon.lua
+at ~/.config/nvim/after/harpoon.lua
+paste this</p>
+<pre><code data-lang="lua">local mark = require(&quot;harpoon.mark&quot;)
+local ui = require(&quot;harpoon.ui&quot;)
+vim.keymap.set(&quot;n&quot;, &quot;&lt;leader&gt;a&quot;, mark.add_file)
+vim.keymap.set(&quot;n&quot;, &quot;&lt;leader&gt;as&quot;, ui.toggle_quick_menu)
+
+vim.keymap.set(&quot;n&quot;, &quot;&lt;C-a&gt;&quot;, function () ui.nav_file(1) end)
+vim.keymap.set(&quot;n&quot;, &quot;&lt;C-s&gt;&quot;, function () ui.nav_file(2) end)
+vim.keymap.set(&quot;n&quot;, &quot;&lt;C-u&gt;&quot;, function () ui.nav_file(3) end)
+vim.keymap.set(&quot;n&quot;, &quot;&lt;C-i&gt;&quot;, function () ui.nav_file(4) end)
+</code></pre>
+<p>and save it and complie it
+Now can switch one file to another very fast</p>
+<p>Here How ?</p>
+<p>when i press <code>spacebar a</code> means to add  file in nav
+now press <code>spacebar pf</code> serach file you want to access and go to that file and</p>
+<a href="https:&#x2F;&#x2F;blogger.googleusercontent.com&#x2F;img&#x2F;b&#x2F;R29vZ2xl&#x2F;AVvXsEgcP_RVinVABBKu0SGZlujBo_Q23zkXH8HVQDQ2OKUDblsV4wnF12o3twD_BeGHrUTx3lBY5FNTwVIGn5vndjd68MY7NX3D3llE8bLmHwn52PyMJAWP9M-qiLBm873TiwvL5T4E-jdIa2G-cv7M_wNgQv7WZ3_RQn89nemPZVgMTCXj_byvkmyW1kwTLt5F&#x2F;s1366&#x2F;pic-window-240914-1648-01.png" data-lightbox="blog-img" data-title="Screenshot">
+  <img src="https:&#x2F;&#x2F;blogger.googleusercontent.com&#x2F;img&#x2F;b&#x2F;R29vZ2xl&#x2F;AVvXsEgcP_RVinVABBKu0SGZlujBo_Q23zkXH8HVQDQ2OKUDblsV4wnF12o3twD_BeGHrUTx3lBY5FNTwVIGn5vndjd68MY7NX3D3llE8bLmHwn52PyMJAWP9M-qiLBm873TiwvL5T4E-jdIa2G-cv7M_wNgQv7WZ3_RQn89nemPZVgMTCXj_byvkmyW1kwTLt5F&#x2F;s1366&#x2F;pic-window-240914-1648-01.png"
+       alt="Screenshot"
+       loading="lazy"
+       style="max-width: 100%; height: auto; border-radius: 6px;" />
+</a>
+<p>press <code>spacebar a</code> now press <code>spacebar as</code> now and see two file that you selected</p>
+<a href="https:&#x2F;&#x2F;blogger.googleusercontent.com&#x2F;img&#x2F;b&#x2F;R29vZ2xl&#x2F;AVvXsEi2xPB2PCKSyBSns_7B_oul-uwHJ47D7RgN2RW-mqKCFVs6aAOt6pMzLqjJ0qpPZH3qPpsHwb00YSCBtV5yoN0Q1MXr2Xsah0EidZBbXJnB-Ulls-D1VQms6yI5Y7e4FUorI8nLiJ6yjk07nwE9dQQFcnRz2i45d8fsFMszRdUy-hGv4nUjcDi6nJrp24Sp&#x2F;s1363&#x2F;pic-selected-240914-1652-13.png" data-lightbox="blog-img" data-title="Screenshot">
+  <img src="https:&#x2F;&#x2F;blogger.googleusercontent.com&#x2F;img&#x2F;b&#x2F;R29vZ2xl&#x2F;AVvXsEi2xPB2PCKSyBSns_7B_oul-uwHJ47D7RgN2RW-mqKCFVs6aAOt6pMzLqjJ0qpPZH3qPpsHwb00YSCBtV5yoN0Q1MXr2Xsah0EidZBbXJnB-Ulls-D1VQms6yI5Y7e4FUorI8nLiJ6yjk07nwE9dQQFcnRz2i45d8fsFMszRdUy-hGv4nUjcDi6nJrp24Sp&#x2F;s1363&#x2F;pic-selected-240914-1652-13.png"
+       alt="Screenshot"
+       loading="lazy"
+       style="max-width: 100%; height: auto; border-radius: 6px;" />
+</a>
+<p>now you can switch using <code>Ctrl + a</code> and <code>Ctrl + s</code> and thats very quick</p>
+<p>or you can use <code>spacebar as</code> to switch</p>
+<h4 id="add-undotree">Add undotree</h4>
+<p>add this line in your packer</p>
+<pre><code data-lang="lua">use (&#39;mbbill/undotree&#39;)
+</code></pre>
+<p>then save it and complie it</p>
+<p>now create a file undotree.lua
+~/.config/nvim/after/plugin/undotree.lua</p>
+<pre><code data-lang="lua">vim.keymap.set(&#39;n&#39;, &#39;&lt;leader&gt;u&#39;, vim.cmd.UndotreeToggle)
+</code></pre>
+<p>save this file and complie it</p>
+<h4 id="conclusion">Conclusion</h4>
+<p>Hope this helps you to understand who things works
+I also want to add lsp but i still confuse how to configure so if i fully understand then i will update it.</p>
+<p>I try my best to make things simple
+see you in another blog :)</p>
+
+  </div>
+</div>
+
+        </section>
+    </body>
+</html>

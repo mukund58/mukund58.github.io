@@ -520,11 +520,13 @@ DevOps, and Backend Development. View my projects and work experience.{% endbloc
                     </div>
                     {% if post.taxonomies.tags %}
                     <div class="flex flex-wrap gap-1.5 pt-3 border-t border-gray-100 dark:border-gray-700/60 mt-auto">
-                        {% for tag in post.taxonomies.tags | slice(end=3) %}
+                        {% for tag in post.taxonomies.tags %}
+                        {% if loop.index <= 3 %}
                         <span
                             class="text-xs px-2 py-0.5 rounded-md bg-stone-100 dark:bg-stone-800 text-stone-600 dark:text-stone-300">
                             #{{ tag }}
                         </span>
+                        {% endif %}
                         {% endfor %}
                     </div>
                     {% endif %}

@@ -1,0 +1,866 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="UTF-8" />
+        <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+        <meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, user-scalable=no"
+        />
+        <meta name="robots" content="index, follow" />
+
+        <!-- Google tag (gtag.js) -->
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-RPWLQR6JQ1"
+        ></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
+
+            gtag("config", "G-RPWLQR6JQ1");
+        </script>
+
+        <!-- Dynamic Title -->
+        <title>Building VendorBridge | Mukund Parmar</title>
+
+        <!-- Meta Description -->
+        <meta
+            name="description"
+            content="Building a Procurement &amp; Vendor Management ERP using React, ASP.NET Core Minimal API and PostgreSQL during my summer internship."
+        />
+
+        <!-- Keywords -->
+        <meta
+            name="keywords"
+            content="ASP.NET Core, React, PostgreSQL, Internship, ERP, Minimal API"
+        />
+
+        <!-- Author -->
+        <meta name="author" content="Mukund Parmar" />
+
+        <!-- Canonical URL -->
+        <link
+            rel="canonical"
+            href="https:&#x2F;&#x2F;mukund58.github.io&#x2F;project&#x2F;vendorbridge&#x2F;"
+        />
+
+        <!-- Open Graph Meta Tags -->
+        <meta
+            property="og:title"
+            content="Building VendorBridge"
+        />
+        <meta
+            property="og:description"
+            content="Building a Procurement &amp; Vendor Management ERP using React, ASP.NET Core Minimal API and PostgreSQL during my summer internship."
+        />
+        <meta property="og:type" content="article" />
+        <meta
+            property="og:url"
+            content="https:&#x2F;&#x2F;mukund58.github.io&#x2F;project&#x2F;vendorbridge&#x2F;"
+        />
+        <meta
+            property="og:image"
+            content="/images/vendorbridge/dashboard.png"
+        />
+        <meta property="og:site_name" content="Mukund Parmar" />
+
+        <!-- X (Twitter) -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+            name="twitter:title"
+            content="Building VendorBridge"
+        />
+        <meta
+            name="twitter:description"
+            content="Building a Procurement &amp; Vendor Management ERP using React, ASP.NET Core Minimal API and PostgreSQL during my summer internship."
+        />
+        <meta
+            name="twitter:image"
+            content="/images/vendorbridge/dashboard.png"
+        />
+
+        
+
+        <link rel="icon" href="https://mukund58.github.io/images/logo.jpg" />
+        <link
+            href="https://cdn.boxicons.com/fonts/basic/boxicons.min.css"
+            rel="stylesheet"
+        />
+        <link
+            href="https://cdn.boxicons.com/fonts/brands/boxicons-brands.min.css"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://mukund58.github.io/asserts/css/style.css"
+        />
+        <!-- <link rel="stylesheet"  href="https://mukund58.github.io/asserts/css/output.css"> -->
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script src="https://unpkg.com/@boxicons/js@latest"></script>
+        <script defer src="https://mukund58.github.io/asserts/js/script.js"></script>
+        <!-- <script  defer src="https://mukund58.github.io/asserts/js/tailwind.config.js"></script> -->
+        <script defer>
+            tailwind.config = {
+                corePlugins: {
+                    preflight: false,
+                },
+                darkMode: "class",
+            };
+        </script>
+
+    </head>
+
+    <body
+        class="bg-white dark:bg-[#1c1917] dark:text-white transition-all duration-300 fade-in-1s"
+    >
+        <nav class="bg-white text-2xl dark:bg-[#1c1917] shadow">
+            <div
+                class="mx-auto px-4 py-3 flex justify-around flex-col sm:flex-row items-center text-base md:text-lg"
+            >
+                <a
+                    href="/"
+                    class="dark:filter-none dark:mix-blend-lighten bg-transparent mix-blend-hard-light font-bold text-gray-900 dark:text-white md:space-y-0 md:space-x-4 mt-4 md:mt-0"
+                >
+                    <img
+                        src="https://mukund58.github.io/images/logo.jpg"
+                        class="w-12"
+                        alt=""
+                    />
+                </a>
+
+                <!-- Navigation links -->
+                <div
+                    id="menu"
+                    class="text-xl whitespace-nowrap md:flex flex-col grid grid-cols-3 md:grid-cols-5 md:flex-row md:items-center md:space-y-0 md:space-x-4 mt-4 md:mt-0"
+                >
+                    <a
+                        href="/"
+                        class="text-gray-700 dark:text-gray-300 no-underline hover:underline"
+                        >~/home</a
+                    >
+                    <a
+                        href="/about"
+                        class="text-gray-700 dark:text-gray-300 no-underline hover:underline"
+                        >~/about</a
+                    >
+                    <a
+                        href="/project"
+                        class="text-gray-700 dark:text-gray-300 no-underline hover:underline"
+                        >~/projects</a
+                    >
+                    <a
+                        href="/notes"
+                        class="text-gray-700 dark:text-gray-300 no-underline hover:underline"
+                        >~/notes</a
+                    >
+                    <a
+                        href="/blog"
+                        class="text-gray-700 dark:text-gray-300 no-underline hover:underline"
+                        >~/blog</a
+                    >
+                    <!-- Dark Mode Toggle -->
+                    <button
+                        id="theme-toggle"
+                        class="bg-inherit text-white border-none text-lg"
+                    >
+                        <i class="bxr bx-moon text-black"></i>
+                        <audio
+                            id="toggle-sound"
+                            src="https://mukund58.github.io/sounds/toggle-button.mp3"
+                            preload="auto"
+                        ></audio>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Optional script for mobile toggle -->
+        </nav>
+
+        <section class="section w-full">
+            
+<div class="max-w-5xl m-auto mt-4">
+
+  <div class=""><a href=".."class="text-black dark:text-amber-200" ><-- Back </a><span class="accent-data">vendorbridge</span></div>
+  <time datetime="2026-07-22">Published on: <span class="accent-data">2026-07-22</span></time>
+  
+  <address rel="author">By <span class="accent-data">Mukund Parmar</span></address>
+  
+</div>
+
+    <div class="wrapper max-w-5xl m-auto">
+        <h1 class="title">
+            Building VendorBridge
+        </h1>
+         
+  <!-- <ul>
+    
+      <li class='list-none text-xl'><a href="https://mukund58.github.io/project/vendorbridge/#building-vendorbridge" class="no-underline hover:underline dark:text-white text-black>Building VendorBridge</a>
+        
+          <ul >
+            
+              <li class='list-none' ><a href="https://mukund58.github.io/project/vendorbridge/#project-at-a-glance" class="no-underline hover:underline dark:text-white text-black">Project at a Glance</a></li>
+            
+              <li class='list-none' ><a href="https://mukund58.github.io/project/vendorbridge/#introduction" class="no-underline hover:underline dark:text-white text-black">Introduction</a></li>
+            
+              <li class='list-none' ><a href="https://mukund58.github.io/project/vendorbridge/#why-asp-net-core" class="no-underline hover:underline dark:text-white text-black">Why ASP.NET Core?</a></li>
+            
+              <li class='list-none' ><a href="https://mukund58.github.io/project/vendorbridge/#why-this-project" class="no-underline hover:underline dark:text-white text-black">Why this project?</a></li>
+            
+              <li class='list-none' ><a href="https://mukund58.github.io/project/vendorbridge/#thinking-beyond-crud" class="no-underline hover:underline dark:text-white text-black">Thinking Beyond CRUD</a></li>
+            
+              <li class='list-none' ><a href="https://mukund58.github.io/project/vendorbridge/#challenges-i-faced" class="no-underline hover:underline dark:text-white text-black">Challenges I Faced</a></li>
+            
+              <li class='list-none' ><a href="https://mukund58.github.io/project/vendorbridge/#lessons-learned" class="no-underline hover:underline dark:text-white text-black">Lessons Learned</a></li>
+            
+              <li class='list-none' ><a href="https://mukund58.github.io/project/vendorbridge/#if-i-continued-this-project" class="no-underline hover:underline dark:text-white text-black">If I Continued This Project</a></li>
+            
+              <li class='list-none' ><a href="https://mukund58.github.io/project/vendorbridge/#tech-stack" class="no-underline hover:underline dark:text-white text-black">Tech Stack</a></li>
+            
+              <li class='list-none' ><a href="https://mukund58.github.io/project/vendorbridge/#production-oriented-features" class="no-underline hover:underline dark:text-white text-black">Production-Oriented Features</a></li>
+            
+              <li class='list-none' ><a href="https://mukund58.github.io/project/vendorbridge/#project-architecture" class="no-underline hover:underline dark:text-white text-black">Project Architecture</a></li>
+            
+              <li class='list-none' ><a href="https://mukund58.github.io/project/vendorbridge/#major-features" class="no-underline hover:underline dark:text-white text-black">Major Features</a></li>
+            
+              <li class='list-none' ><a href="https://mukund58.github.io/project/vendorbridge/#database-design" class="no-underline hover:underline dark:text-white text-black">Database Design</a></li>
+            
+              <li class='list-none' ><a href="https://mukund58.github.io/project/vendorbridge/#what-i-learned" class="no-underline hover:underline dark:text-white text-black">What I Learned</a></li>
+            
+              <li class='list-none' ><a href="https://mukund58.github.io/project/vendorbridge/#implementing-secure-authentication-using-jwt-taught-me-how-production-apis-protect-resources-while-supporting-different-user-roles" class="no-underline hover:underline dark:text-white text-black">Implementing secure authentication using JWT taught me how production APIs protect resources while supporting different user roles.</a></li>
+            
+              <li class='list-none' ><a href="https://mukund58.github.io/project/vendorbridge/#screenshots" class="no-underline hover:underline dark:text-white text-black">Screenshots</a></li>
+            
+              <li class='list-none' ><a href="https://mukund58.github.io/project/vendorbridge/#internship-outcomes" class="no-underline hover:underline dark:text-white text-black">Internship Outcomes</a></li>
+            
+              <li class='list-none' ><a href="https://mukund58.github.io/project/vendorbridge/#final-thoughts" class="no-underline hover:underline dark:text-white text-black">Final Thoughts</a></li>
+            
+          </ul>
+        
+      </li>
+    
+  </ul> -->
+  
+  <h2>Table of contents</h2>
+<ul>
+
+  <li class='list-none text-base'>
+  <a href="https://mukund58.github.io/project/vendorbridge/#building-vendorbridge"  class="no-underline hover:underline dark:text-white text-black ">Building VendorBridge</a>
+  
+    <ul>
+      
+        <li>
+        <a href="https://mukund58.github.io/project/vendorbridge/#project-at-a-glance"class="text-black dark:text-amber-200" >Project at a Glance</a>
+          <ul>
+          
+          </ul>
+        </li>
+      
+        <li>
+        <a href="https://mukund58.github.io/project/vendorbridge/#introduction"class="text-black dark:text-amber-200" >Introduction</a>
+          <ul>
+          
+          </ul>
+        </li>
+      
+        <li>
+        <a href="https://mukund58.github.io/project/vendorbridge/#why-asp-net-core"class="text-black dark:text-amber-200" >Why ASP.NET Core?</a>
+          <ul>
+          
+          </ul>
+        </li>
+      
+        <li>
+        <a href="https://mukund58.github.io/project/vendorbridge/#why-this-project"class="text-black dark:text-amber-200" >Why this project?</a>
+          <ul>
+          
+          </ul>
+        </li>
+      
+        <li>
+        <a href="https://mukund58.github.io/project/vendorbridge/#thinking-beyond-crud"class="text-black dark:text-amber-200" >Thinking Beyond CRUD</a>
+          <ul>
+          
+          </ul>
+        </li>
+      
+        <li>
+        <a href="https://mukund58.github.io/project/vendorbridge/#challenges-i-faced"class="text-black dark:text-amber-200" >Challenges I Faced</a>
+          <ul>
+          
+            <li>
+            <a href="https://mukund58.github.io/project/vendorbridge/#understanding-the-procurement-domain"class="text-black dark:text-amber-200" >Understanding the Procurement Domain</a>
+            </li>
+          
+          </ul>
+        </li>
+      
+        <li>
+        <a href="https://mukund58.github.io/project/vendorbridge/#lessons-learned"class="text-black dark:text-amber-200" >Lessons Learned</a>
+          <ul>
+          
+          </ul>
+        </li>
+      
+        <li>
+        <a href="https://mukund58.github.io/project/vendorbridge/#if-i-continued-this-project"class="text-black dark:text-amber-200" >If I Continued This Project</a>
+          <ul>
+          
+          </ul>
+        </li>
+      
+        <li>
+        <a href="https://mukund58.github.io/project/vendorbridge/#tech-stack"class="text-black dark:text-amber-200" >Tech Stack</a>
+          <ul>
+          
+            <li>
+            <a href="https://mukund58.github.io/project/vendorbridge/#backend"class="text-black dark:text-amber-200" >Backend</a>
+            </li>
+          
+            <li>
+            <a href="https://mukund58.github.io/project/vendorbridge/#frontend"class="text-black dark:text-amber-200" >Frontend</a>
+            </li>
+          
+            <li>
+            <a href="https://mukund58.github.io/project/vendorbridge/#tools"class="text-black dark:text-amber-200" >Tools</a>
+            </li>
+          
+          </ul>
+        </li>
+      
+        <li>
+        <a href="https://mukund58.github.io/project/vendorbridge/#production-oriented-features"class="text-black dark:text-amber-200" >Production-Oriented Features</a>
+          <ul>
+          
+          </ul>
+        </li>
+      
+        <li>
+        <a href="https://mukund58.github.io/project/vendorbridge/#project-architecture"class="text-black dark:text-amber-200" >Project Architecture</a>
+          <ul>
+          
+          </ul>
+        </li>
+      
+        <li>
+        <a href="https://mukund58.github.io/project/vendorbridge/#major-features"class="text-black dark:text-amber-200" >Major Features</a>
+          <ul>
+          
+            <li>
+            <a href="https://mukund58.github.io/project/vendorbridge/#authentication"class="text-black dark:text-amber-200" >Authentication</a>
+            </li>
+          
+            <li>
+            <a href="https://mukund58.github.io/project/vendorbridge/#vendor-management"class="text-black dark:text-amber-200" >Vendor Management</a>
+            </li>
+          
+            <li>
+            <a href="https://mukund58.github.io/project/vendorbridge/#request-for-quotations-rfq"class="text-black dark:text-amber-200" >Request For Quotations (RFQ)</a>
+            </li>
+          
+            <li>
+            <a href="https://mukund58.github.io/project/vendorbridge/#quotation-comparison"class="text-black dark:text-amber-200" >Quotation Comparison</a>
+            </li>
+          
+            <li>
+            <a href="https://mukund58.github.io/project/vendorbridge/#approval-workflow"class="text-black dark:text-amber-200" >Approval Workflow</a>
+            </li>
+          
+            <li>
+            <a href="https://mukund58.github.io/project/vendorbridge/#purchase-orders"class="text-black dark:text-amber-200" >Purchase Orders</a>
+            </li>
+          
+            <li>
+            <a href="https://mukund58.github.io/project/vendorbridge/#invoice-generation"class="text-black dark:text-amber-200" >Invoice Generation</a>
+            </li>
+          
+            <li>
+            <a href="https://mukund58.github.io/project/vendorbridge/#reports-analytics"class="text-black dark:text-amber-200" >Reports &amp; Analytics</a>
+            </li>
+          
+          </ul>
+        </li>
+      
+        <li>
+        <a href="https://mukund58.github.io/project/vendorbridge/#database-design"class="text-black dark:text-amber-200" >Database Design</a>
+          <ul>
+          
+          </ul>
+        </li>
+      
+        <li>
+        <a href="https://mukund58.github.io/project/vendorbridge/#what-i-learned"class="text-black dark:text-amber-200" >What I Learned</a>
+          <ul>
+          
+            <li>
+            <a href="https://mukund58.github.io/project/vendorbridge/#database-design-1"class="text-black dark:text-amber-200" >Database Design</a>
+            </li>
+          
+            <li>
+            <a href="https://mukund58.github.io/project/vendorbridge/#authentication-1"class="text-black dark:text-amber-200" >Authentication</a>
+            </li>
+          
+          </ul>
+        </li>
+      
+        <li>
+        <a href="https://mukund58.github.io/project/vendorbridge/#implementing-secure-authentication-using-jwt-taught-me-how-production-apis-protect-resources-while-supporting-different-user-roles"class="text-black dark:text-amber-200" >Implementing secure authentication using JWT taught me how production APIs protect resources while supporting different user roles.</a>
+          <ul>
+          
+            <li>
+            <a href="https://mukund58.github.io/project/vendorbridge/#database-design-2"class="text-black dark:text-amber-200" >Database Design</a>
+            </li>
+          
+            <li>
+            <a href="https://mukund58.github.io/project/vendorbridge/#authentication-2"class="text-black dark:text-amber-200" >Authentication</a>
+            </li>
+          
+          </ul>
+        </li>
+      
+        <li>
+        <a href="https://mukund58.github.io/project/vendorbridge/#screenshots"class="text-black dark:text-amber-200" >Screenshots</a>
+          <ul>
+          
+            <li>
+            <a href="https://mukund58.github.io/project/vendorbridge/#login"class="text-black dark:text-amber-200" >Login</a>
+            </li>
+          
+            <li>
+            <a href="https://mukund58.github.io/project/vendorbridge/#dashboard"class="text-black dark:text-amber-200" >Dashboard</a>
+            </li>
+          
+            <li>
+            <a href="https://mukund58.github.io/project/vendorbridge/#vendor-directory"class="text-black dark:text-amber-200" >Vendor Directory</a>
+            </li>
+          
+            <li>
+            <a href="https://mukund58.github.io/project/vendorbridge/#rfq-module"class="text-black dark:text-amber-200" >RFQ Module</a>
+            </li>
+          
+            <li>
+            <a href="https://mukund58.github.io/project/vendorbridge/#reports"class="text-black dark:text-amber-200" >Reports</a>
+            </li>
+          
+          </ul>
+        </li>
+      
+        <li>
+        <a href="https://mukund58.github.io/project/vendorbridge/#internship-outcomes"class="text-black dark:text-amber-200" >Internship Outcomes</a>
+          <ul>
+          
+          </ul>
+        </li>
+      
+        <li>
+        <a href="https://mukund58.github.io/project/vendorbridge/#final-thoughts"class="text-black dark:text-amber-200" >Final Thoughts</a>
+          <ul>
+          
+          </ul>
+        </li>
+      
+    </ul>
+  
+  </li>
+
+</ul>
+
+
+        <p class="subtitle">
+            <strong>
+                July 22, 2026
+            </strong>
+        </p>
+        <h1 id="building-vendorbridge">Building VendorBridge</h1>
+<p><strong>Company:</strong> Help Me Buddy IT Pvt. Ltd.</p>
+<p><strong>Duration:</strong> 18 May 2026 – 28 June 2026</p>
+<hr />
+<h2 id="project-at-a-glance">Project at a Glance</h2>
+<table><thead><tr><th>Item</th><th>Details</th></tr></thead><tbody>
+<tr><td>Duration</td><td>6 Weeks</td></tr>
+<tr><td>Company</td><td>Help Me Buddy IT Pvt. Ltd.</td></tr>
+<tr><td>Project</td><td>VendorBridge ERP</td></tr>
+<tr><td>Backend</td><td>ASP.NET Core Minimal API</td></tr>
+<tr><td>Frontend</td><td>React</td></tr>
+<tr><td>Database</td><td>PostgreSQL</td></tr>
+<tr><td>ORM</td><td>Entity Framework Core</td></tr>
+<tr><td>Authentication</td><td>JWT</td></tr>
+<tr><td>Architecture</td><td>Layered Architecture</td></tr>
+<tr><td>APIs</td><td>REST</td></tr>
+<tr><td>Documentation</td><td>Swagger</td></tr>
+</tbody></table>
+<h2 id="introduction">Introduction</h2>
+<p>During my summer internship at <strong>Help Me Buddy IT Pvt. Ltd.</strong>, I worked on a real-world ERP application called <strong>VendorBridge</strong>.</p>
+<p>VendorBridge is a Procurement &amp; Vendor Management ERP that helps organizations manage their complete procurement workflow digitally—from vendor registration to purchase orders and invoices.</p>
+<p>This internship was my first experience building a large-scale backend using <strong>ASP.NET Core Minimal APIs</strong> and <strong>Entity Framework Core</strong>.</p>
+<hr />
+<h2 id="why-asp-net-core">Why ASP.NET Core?</h2>
+<p>Before this internship, I had experimented with .NET but had never built a complete production-style application.</p>
+<p>I wanted to understand how modern backend systems are designed beyond simple CRUD applications.</p>
+<p>ASP.NET Core Minimal APIs appealed to me because they provide a lightweight approach to building REST services while still supporting dependency injection, middleware, authentication, validation, and Entity Framework Core.</p>
+<p>This internship gave me an opportunity to apply these technologies to a real business problem.</p>
+<h2 id="why-this-project">Why this project?</h2>
+<p>Many companies still manage procurement using Excel sheets, emails and paper documents.</p>
+<p>This creates several problems:</p>
+<ul>
+<li>Slow approval process</li>
+<li>Difficult vendor comparison</li>
+<li>Manual invoice generation</li>
+<li>No centralized records</li>
+<li>Lack of transparency</li>
+</ul>
+<p>VendorBridge solves these problems by bringing the entire procurement lifecycle into one application.</p>
+<h2 id="thinking-beyond-crud">Thinking Beyond CRUD</h2>
+<p>One of the biggest lessons from this internship was learning that software is not just about writing APIs.</p>
+<p>Every feature starts with understanding a business workflow.</p>
+<p>Instead of asking:</p>
+<blockquote>
+<p>“What tables do I need?”</p>
+</blockquote>
+<p>I learned to ask:</p>
+<blockquote>
+<p>“How does procurement actually work?”</p>
+</blockquote>
+<p>Understanding vendors, RFQs, quotations, approvals, purchase orders, and invoices helped me design a backend that reflected real-world business processes.</p>
+<h2 id="challenges-i-faced">Challenges I Faced</h2>
+<h3 id="understanding-the-procurement-domain">Understanding the Procurement Domain</h3>
+<p>The hardest part wasn’t writing code—it was understanding procurement itself.</p>
+<p>Terms like:</p>
+<ul>
+<li>RFQ</li>
+<li>Purchase Orders</li>
+<li>Quotations</li>
+<li>Vendor Categories</li>
+</ul>
+<p>were completely new to me.</p>
+<p>I spent the first few days learning the business process before implementing the database schema.</p>
+<h2 id="lessons-learned">Lessons Learned</h2>
+<p>This internship changed how I approach backend development.</p>
+<p>Some important lessons were:</p>
+<ul>
+<li>Design business workflows before designing tables.</li>
+<li>Keep APIs small and focused.</li>
+<li>Write clean code instead of clever code.</li>
+<li>Database design matters more than most beginners think.</li>
+<li>Documentation saves debugging time.</li>
+<li>Good architecture makes future features easier to build.</li>
+</ul>
+<h2 id="if-i-continued-this-project">If I Continued This Project</h2>
+<p>If I had more time, I would add several production-ready improvements.</p>
+<ul>
+<li>Redis caching</li>
+<li>Background jobs using Hangfire</li>
+<li>Docker Compose</li>
+<li>CI/CD with GitHub Actions</li>
+<li>Azure deployment</li>
+<li>Unit and Integration Testing</li>
+<li>SignalR for real-time notifications</li>
+<li>Audit history</li>
+<li>File storage using Azure Blob Storage</li>
+</ul>
+<hr />
+<h2 id="tech-stack">Tech Stack</h2>
+<h3 id="backend">Backend</h3>
+<ul>
+<li>ASP.NET Core 8 Minimal API</li>
+<li>Entity Framework Core</li>
+<li>PostgreSQL</li>
+<li>JWT Authentication</li>
+<li>Role-Based Authorization</li>
+<li>FluentValidation</li>
+<li>Dependency Injection</li>
+</ul>
+<h3 id="frontend">Frontend</h3>
+<ul>
+<li>React</li>
+<li>React Router</li>
+<li>Axios</li>
+</ul>
+<h3 id="tools">Tools</h3>
+<ul>
+<li>Git &amp; GitHub</li>
+<li>Swagger</li>
+<li>Postman</li>
+<li>Visual Studio Code</li>
+</ul>
+<hr />
+<h2 id="production-oriented-features">Production-Oriented Features</h2>
+<p>Rather than focusing only on CRUD operations, I tried to build features commonly found in production software.</p>
+<p>Some examples include:</p>
+<ul>
+<li>JWT Authentication</li>
+<li>Role-Based Authorization</li>
+<li>Global Exception Handling</li>
+<li>Validation</li>
+<li>Activity Logging</li>
+<li>RESTful API Design</li>
+<li>Swagger Documentation</li>
+<li>Layered Architecture</li>
+<li>Entity Framework Core</li>
+<li>PostgreSQL</li>
+</ul>
+<h2 id="project-architecture">Project Architecture</h2>
+<p>The backend follows a layered architecture.</p>
+<pre><code>
+React Frontend
+
+↓
+
+REST APIs
+
+↓
+
+Minimal API Endpoints
+
+↓
+
+Business Logic
+
+↓
+
+Entity Framework Core
+
+↓
+
+PostgreSQL
+
+</code></pre>
+<p>Keeping the application modular made it easier to maintain and extend.</p>
+<hr />
+<h2 id="major-features">Major Features</h2>
+<h3 id="authentication">Authentication</h3>
+<ul>
+<li>JWT Authentication</li>
+<li>Login</li>
+<li>Register</li>
+<li>Refresh Tokens</li>
+<li>Protected APIs</li>
+</ul>
+<hr />
+<h3 id="vendor-management">Vendor Management</h3>
+<ul>
+<li>Create Vendors</li>
+<li>Update Vendor Details</li>
+<li>Vendor Categories</li>
+<li>Search Vendors</li>
+</ul>
+<hr />
+<h3 id="request-for-quotations-rfq">Request For Quotations (RFQ)</h3>
+<p>Procurement officers can</p>
+<ul>
+<li>Create RFQs</li>
+<li>Publish RFQs</li>
+<li>Add Products</li>
+<li>Set Deadlines</li>
+</ul>
+<p>Vendors can submit quotations for published RFQs.</p>
+<hr />
+<h3 id="quotation-comparison">Quotation Comparison</h3>
+<p>One of my favorite modules.</p>
+<p>The system compares vendor quotations based on</p>
+<ul>
+<li>Price</li>
+<li>Delivery Time</li>
+<li>Vendor Rating</li>
+</ul>
+<p>making vendor selection much easier.</p>
+<hr />
+<h3 id="approval-workflow">Approval Workflow</h3>
+<p>Managers review procurement requests before purchase orders are generated.</p>
+<p>This creates a proper approval chain inside the organization.</p>
+<hr />
+<h3 id="purchase-orders">Purchase Orders</h3>
+<p>After approval,</p>
+<ul>
+<li>Purchase Orders are generated</li>
+<li>Vendors receive updates</li>
+<li>Procurement history is maintained</li>
+</ul>
+<hr />
+<h3 id="invoice-generation">Invoice Generation</h3>
+<p>The ERP automatically creates invoices which can later be exported as PDF.</p>
+<hr />
+<h3 id="reports-analytics">Reports &amp; Analytics</h3>
+<p>The dashboard provides</p>
+<ul>
+<li>Procurement Trends</li>
+<li>Vendor Performance</li>
+<li>Monthly Spending</li>
+<li>Purchase Statistics</li>
+</ul>
+<p>which helps management take better decisions.</p>
+<hr />
+<h2 id="database-design">Database Design</h2>
+<p>The project contains multiple interconnected tables including</p>
+<ul>
+<li>Users</li>
+<li>Roles</li>
+<li>Vendors</li>
+<li>Vendor Categories</li>
+<li>RFQs</li>
+<li>Quotations</li>
+<li>Purchase Orders</li>
+<li>Invoices</li>
+<li>Activity Logs</li>
+</ul>
+<p>Entity Framework Core handled relationships and migrations efficiently.</p>
+<hr />
+<h2 id="what-i-learned">What I Learned</h2>
+<p>This internship taught me much more than simply writing APIs.</p>
+<p>I learned</p>
+<ul>
+<li>Designing scalable REST APIs</li>
+<li>Database modelling</li>
+<li>Clean project organization</li>
+<li>JWT Authentication</li>
+<li>Role Based Authorization</li>
+<li>Entity Framework Core</li>
+<li>PostgreSQL</li>
+<li>API testing using Swagger</li>
+<li>Git workflow</li>
+<li>Debugging production-like issues</li>
+</ul>
+<hr />
+<h3 id="database-design-1">Database Design</h3>
+<p>Designing relationships was much harder than writing controllers.</p>
+<p>Choosing where to place foreign keys, handling cascading deletes, and modelling approval workflows required several iterations before arriving at a clean design.</p>
+<hr />
+<h3 id="authentication-1">Authentication</h3>
+<h2 id="implementing-secure-authentication-using-jwt-taught-me-how-production-apis-protect-resources-while-supporting-different-user-roles">Implementing secure authentication using JWT taught me how production APIs protect resources while supporting different user roles.</h2>
+<h3 id="database-design-2">Database Design</h3>
+<p>Designing relationships between multiple modules was challenging.</p>
+<p>Thinking through foreign keys and business rules took much longer than writing CRUD APIs.</p>
+<hr />
+<h3 id="authentication-2">Authentication</h3>
+<p>Implementing secure authentication with JWT and role-based authorization helped me understand how modern backend applications protect APIs.</p>
+<hr />
+<h2 id="screenshots">Screenshots</h2>
+<h3 id="login">Login</h3>
+
+
+
+
+
+<a href="/images&#x2F;vendorbridge&#x2F;login.png" data-lightbox="blog-img" data-title="Sample image">
+    <img src="https:&#x2F;&#x2F;mukund58.github.io&#x2F;processed_images&#x2F;login.ec809521cf604c02.png"
+         srcset="/images&#x2F;vendorbridge&#x2F;login.png 2x"
+         width="724"
+         height="481"
+         alt="Sample image"
+         loading="lazy"
+         style="max-width: 100%; height: auto; border-radius: 6px;" />
+</a>
+<hr />
+<h3 id="dashboard">Dashboard</h3>
+
+
+
+
+
+<a href="/images&#x2F;vendorbridge&#x2F;dashboard.png" data-lightbox="blog-img" data-title="Sample image">
+    <img src="https:&#x2F;&#x2F;mukund58.github.io&#x2F;processed_images&#x2F;dashboard.5737e52902e057f6.png"
+         srcset="/images&#x2F;vendorbridge&#x2F;dashboard.png 2x"
+         width="641"
+         height="357"
+         alt="Sample image"
+         loading="lazy"
+         style="max-width: 100%; height: auto; border-radius: 6px;" />
+</a>
+<hr />
+<h3 id="vendor-directory">Vendor Directory</h3>
+
+
+
+
+
+<a href="/images&#x2F;vendorbridge&#x2F;vendors.png" data-lightbox="blog-img" data-title="Sample image">
+    <img src="https:&#x2F;&#x2F;mukund58.github.io&#x2F;processed_images&#x2F;vendors.ed8648f9088dc5cf.png"
+         srcset="/images&#x2F;vendorbridge&#x2F;vendors.png 2x"
+         width="641"
+         height="357"
+         alt="Sample image"
+         loading="lazy"
+         style="max-width: 100%; height: auto; border-radius: 6px;" />
+</a>
+<hr />
+<h3 id="rfq-module">RFQ Module</h3>
+
+
+
+
+
+<a href="/images&#x2F;vendorbridge&#x2F;rfq.png" data-lightbox="blog-img" data-title="Sample image">
+    <img src="https:&#x2F;&#x2F;mukund58.github.io&#x2F;processed_images&#x2F;rfq.9faa51d9ceccc139.png"
+         srcset="/images&#x2F;vendorbridge&#x2F;rfq.png 2x"
+         width="642"
+         height="357"
+         alt="Sample image"
+         loading="lazy"
+         style="max-width: 100%; height: auto; border-radius: 6px;" />
+</a>
+<hr />
+<h3 id="reports">Reports</h3>
+
+
+
+
+
+<a href="/images&#x2F;vendorbridge&#x2F;reports.png" data-lightbox="blog-img" data-title="Sample image">
+    <img src="https:&#x2F;&#x2F;mukund58.github.io&#x2F;processed_images&#x2F;reports.6bb56df85bc7c4c8.png"
+         srcset="/images&#x2F;vendorbridge&#x2F;reports.png 2x"
+         width="620"
+         height="345"
+         alt="Sample image"
+         loading="lazy"
+         style="max-width: 100%; height: auto; border-radius: 6px;" />
+</a>
+<hr />
+<h2 id="internship-outcomes">Internship Outcomes</h2>
+<p>By the end of the internship I had built a complete backend application using modern Microsoft technologies.</p>
+<p>More importantly, I became comfortable with</p>
+<ul>
+<li>ASP.NET Core</li>
+<li>Minimal APIs</li>
+<li>Entity Framework Core</li>
+<li>PostgreSQL</li>
+<li>Authentication</li>
+<li>Authorization</li>
+<li>REST APIs</li>
+<li>ERP domain modelling</li>
+</ul>
+<p>This project gave me confidence to build larger backend systems in the future.</p>
+<hr />
+<h2 id="final-thoughts">Final Thoughts</h2>
+<p>When I started this internship, I thought backend development was mostly about writing CRUD APIs.</p>
+<p>By the end, I realized that backend engineering is really about solving business problems through software design.</p>
+<p>Building VendorBridge taught me how authentication, database modelling, API design, and business workflows fit together to create a complete application.</p>
+<p>This internship strengthened my interest in backend engineering and gave me confidence to build larger systems using the .NET ecosystem.</p>
+
+    </div>
+    <p class="tags-data">
+      
+      
+      <a href="/tags/asp-net-core">&#47;ASP.NET Core&#47;</a>
+      
+      <a href="/tags/react">&#47;React&#47;</a>
+      
+      <a href="/tags/postgresql">&#47;PostgreSQL&#47;</a>
+      
+      <a href="/tags/internship">&#47;Internship&#47;</a>
+      
+      <a href="/tags/erp">&#47;ERP&#47;</a>
+      
+      <a href="/tags/minimal-api">&#47;Minimal API&#47;</a>
+      
+      
+      </p>
+
+        </section>
+    </body>
+</html>

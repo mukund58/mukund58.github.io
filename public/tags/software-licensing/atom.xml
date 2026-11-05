@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>Mukund Parmar - Full Stack Web Developer &amp; Software Engineer - Software Licensing</title>
+    <subtitle>Portfolio of Mukund Parmar, a passionate Full Stack Web Developer specializing in MERN Stack, DevOps, and Competitive Programming. View my projects and experience.</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://mukund58.github.io/tags/software-licensing/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://mukund58.github.io/"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2025-09-10T00:00:00+00:00</updated>
+    <id>https://mukund58.github.io/tags/software-licensing/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Why I Use the GPL</title>
+        <published>2025-09-10T00:00:00+00:00</published>
+        <updated>2025-09-10T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://mukund58.github.io/blog/why-i-use-the-gpl/"/>
+        <id>https://mukund58.github.io/blog/why-i-use-the-gpl/</id>
+        
+        <content type="html" xml:base="https://mukund58.github.io/blog/why-i-use-the-gpl/">&lt;h1 id=&quot;why-i-use-the-gpl-and-how-it-protects-my-code&quot;&gt;Why I Use the GPL (and How It Protects My Code)&lt;&#x2F;h1&gt;
+&lt;p&gt;As a developer, one of the most important decisions you make when publishing code is &lt;strong&gt;which license to use&lt;&#x2F;strong&gt;. Personally, I choose the &lt;strong&gt;GNU General Public License v3 (GPLv3)&lt;&#x2F;strong&gt; for nearly all of my projects.&lt;&#x2F;p&gt;
+&lt;p&gt;Here’s why, and what you can do if someone tries to steal your code or claim it as their own.&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;h2 id=&quot;why-the-gpl&quot;&gt;Why the GPL?&lt;&#x2F;h2&gt;
+&lt;p&gt;The GPL is a &lt;strong&gt;copyleft license&lt;&#x2F;strong&gt;. That means:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Anyone can run, study, modify, and share your code.&lt;&#x2F;li&gt;
+&lt;li&gt;But if they &lt;strong&gt;redistribute&lt;&#x2F;strong&gt; it (modified or not), they must:
+&lt;ul&gt;
+&lt;li&gt;Keep your copyright and license notice.&lt;&#x2F;li&gt;
+&lt;li&gt;Release their modifications under the GPL as well.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;This ensures that your work &lt;strong&gt;stays free and open source forever&lt;&#x2F;strong&gt;. No company can legally close-source it, rebrand it, and sell it back to you.&lt;&#x2F;p&gt;
+&lt;p&gt;By contrast, &lt;strong&gt;permissive licenses&lt;&#x2F;strong&gt; (MIT, BSD, Apache, etc.) allow redistribution without that requirement. Someone can take your code, hide the source, and profit from it without giving anything back.&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;p&gt;you can read the full GPLv3 text here:
+https:&#x2F;&#x2F;www.gnu.org&#x2F;licenses&#x2F;gpl-3.0.en.html&lt;&#x2F;p&gt;
+&lt;p&gt;also check lukesmith.xyz article on
+&lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;lukesmith.xyz&#x2F;articles&#x2F;why-i-use-the-gpl-and-not-cuck-licenses&#x2F;&quot;&gt;why he uses gpl&lt;&#x2F;a&gt;
+i have added some points from his article below&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;why-not-mit-bsd-inspired-by-luke-smith-s-cuck-licenses-essay&quot;&gt;Why Not MIT&#x2F;BSD? (Inspired by Luke Smith’s “Cuck Licenses” Essay)&lt;&#x2F;h2&gt;
+&lt;p&gt;Permissive licenses (commonly referred to as “cuck licenses”) like the MIT license allow others to modify your software and release it under an unfree license. Copyleft licenses (like the Gnu General Public License) mandate that all derivative works remain free.&lt;&#x2F;p&gt;
+&lt;a href=&quot;https:&amp;#x2F;&amp;#x2F;preview.redd.it&amp;#x2F;gpl-gigachad-v0-lfsxe7pwpgda1.jpg?width=640&amp;amp;crop=smart&amp;amp;auto=webp&amp;amp;s=f72b1d0db28eed57a3670ab3ccfe9d4602ebdfea&quot; data-lightbox=&quot;blog-img&quot; data-title=&quot;Meme&quot;&gt;
+  &lt;img src=&quot;https:&amp;#x2F;&amp;#x2F;preview.redd.it&amp;#x2F;gpl-gigachad-v0-lfsxe7pwpgda1.jpg?width=640&amp;amp;crop=smart&amp;amp;auto=webp&amp;amp;s=f72b1d0db28eed57a3670ab3ccfe9d4602ebdfea&quot;
+       alt=&quot;Meme&quot;
+       loading=&quot;lazy&quot;
+       style=&quot;max-width: 100%; height: auto; border-radius: 6px;&quot; &#x2F;&gt;
+&lt;&#x2F;a&gt;
+&lt;p&gt;Some developers argue that MIT or BSD licenses are “freer” because they impose fewer restrictions.&lt;br &#x2F;&gt;
+But as Luke Smith argued in his well-known essay &lt;em&gt;“Why I Use the GPL and Not Cuck Licenses”&lt;&#x2F;em&gt;, permissive licenses often end up serving corporations rather than communities.&lt;&#x2F;p&gt;
+&lt;p&gt;Key takeaways from his perspective:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;MIT&#x2F;BSD are corporate-friendly&lt;&#x2F;strong&gt; – They let companies take your code, close it, and profit without giving anything back.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;GPL enforces reciprocity&lt;&#x2F;strong&gt; – If someone improves your work, they must share it under the same license.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Freedom vs exploitation&lt;&#x2F;strong&gt; – MIT&#x2F;BSD give companies the freedom to exploit, while GPL ensures users’ freedom to study, share, and improve software.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Real-world consequences&lt;&#x2F;strong&gt; – For example, MINIX (released under BSD) was silently used inside Intel processors for their Management Engine, now seen as a security risk. If it had been GPL, Intel would’ve had to release the source.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Respect and protection&lt;&#x2F;strong&gt; – GPL enforces credit and sharing. MIT&#x2F;BSD only rely on goodwill.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;a href=&quot;https:&amp;#x2F;&amp;#x2F;lemmy.world&amp;#x2F;pictrs&amp;#x2F;image&amp;#x2F;9a59b61d-20a4-4f40-9c30-bc273a20dfdd.webp?format=webp&quot; data-lightbox=&quot;blog-img&quot; data-title=&quot;Meme&quot;&gt;
+  &lt;img src=&quot;https:&amp;#x2F;&amp;#x2F;lemmy.world&amp;#x2F;pictrs&amp;#x2F;image&amp;#x2F;9a59b61d-20a4-4f40-9c30-bc273a20dfdd.webp?format=webp&quot;
+       alt=&quot;Meme&quot;
+       loading=&quot;lazy&quot;
+       style=&quot;max-width: 100%; height: auto; border-radius: 6px;&quot; &#x2F;&gt;
+&lt;&#x2F;a&gt;
+&lt;p&gt;Context:&lt;&#x2F;p&gt;
+&lt;p&gt;Andrew Tanenbaum developed MINIX, a modular operating system kernel. Intel went ahead and used it to build Management Engine, arguably one of the most widespread and invasive pieces of malware in the world, without even as much as telling him. There’s nothing Tanenbaum could do, since the MIT license allows this.&lt;&#x2F;p&gt;
+&lt;p&gt;Erik Andersen is one of the developers of Busybox, a minimal implementation of that’s suited for embedded systems. Many companies tried to steal his code and distribute it with their unfree products, but since it’s protected under the GPL, Busybox developers &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;BusyBox#GPL_lawsuits&quot;&gt;were able to sue&lt;&#x2F;a&gt; them and gain some money in the process.&lt;&#x2F;p&gt;
+&lt;p&gt;Interestingly enough, Tanenbaum &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.cs.vu.nl&#x2F;~ast&#x2F;intel&#x2F;&quot;&gt;doesn’t seem to mind&lt;&#x2F;a&gt; what intel did. But there are &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;donatstudios.com&#x2F;License-Grumbles&quot;&gt;some examples&lt;&#x2F;a&gt; out there of people regretting releasing their work under a permissive license.&lt;&#x2F;p&gt;
+&lt;p&gt;References:
+https:&#x2F;&#x2F;lemmy.world&#x2F;comment&#x2F;10690861&lt;&#x2F;p&gt;
+&lt;p&gt;In short: permissive licenses can look generous, but they make it easier for your work to be absorbed into proprietary systems. GPL prevents that.&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;h2 id=&quot;what-if-someone-claims-my-code-as-theirs&quot;&gt;What If Someone Claims My Code as Theirs?&lt;&#x2F;h2&gt;
+&lt;p&gt;This isn’t really “software piracy” — it’s &lt;strong&gt;plagiarism or license violation&lt;&#x2F;strong&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;Fortunately, both GPL and MIT&#x2F;BSD already protect you:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;GPL:&lt;&#x2F;strong&gt; They must keep your name and license notice. Removing it = license violation.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;MIT&#x2F;BSD:&lt;&#x2F;strong&gt; They must credit you too. If they remove attribution, that’s also a violation.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;No license&#x2F;public domain:&lt;&#x2F;strong&gt; You have no protection; anyone can claim it.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;So as long as you choose a license, you’re covered.&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;h2 id=&quot;shield-what-actions-can-you-take&quot;&gt;🛡️ What Actions Can You Take?&lt;&#x2F;h2&gt;
+&lt;p&gt;Here’s a step-by-step &lt;strong&gt;action checklist&lt;&#x2F;strong&gt; if you find a violation:&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;step-1-gather-evidence&quot;&gt;Step 1: Gather Evidence&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Save screenshots of your repo with timestamps.&lt;&#x2F;li&gt;
+&lt;li&gt;Save screenshots&#x2F;links of the infringing project.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;step-2-contact-them&quot;&gt;Step 2: Contact Them&lt;&#x2F;h3&gt;
+&lt;p&gt;Send a polite but firm notice. Example:&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;“Your project [link] uses my code from [link] but does not comply with GPLv3. Please restore attribution and comply with the license within 7 days.”&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;h3 id=&quot;step-3-public-exposure&quot;&gt;Step 3: Public Exposure&lt;&#x2F;h3&gt;
+&lt;p&gt;If ignored, make it public. Post an issue or blog about the violation. Communities often side with the original author.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;step-4-dmca-takedown&quot;&gt;Step 4: DMCA Takedown&lt;&#x2F;h3&gt;
+&lt;p&gt;File a takedown with the hosting platform (GitHub, GitLab, etc.).&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;GitHub DMCA portal: https:&#x2F;&#x2F;github.com&#x2F;github&#x2F;dmca&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;step-5-legal-enforcement&quot;&gt;Step 5: Legal Enforcement&lt;&#x2F;h3&gt;
+&lt;p&gt;If it’s a company profiting from your work:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Send a &lt;strong&gt;cease-and-desist letter&lt;&#x2F;strong&gt;.&lt;&#x2F;li&gt;
+&lt;li&gt;If needed, escalate to a copyright infringement lawsuit.&lt;&#x2F;li&gt;
+&lt;li&gt;The &lt;strong&gt;Free Software Foundation (FSF)&lt;&#x2F;strong&gt; can sometimes assist with GPL cases: https:&#x2F;&#x2F;www.fsf.org&#x2F;licensing&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;hr &#x2F;&gt;
+&lt;h2 id=&quot;ready-to-use-templates&quot;&gt;Ready-to-Use Templates&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;email-to-violator&quot;&gt;Email to Violator&lt;&#x2F;h3&gt;
+&lt;pre&gt;&lt;code data-lang=&quot;text&quot;&gt;Subject: License Violation Notice – [Your Project Name]
+
+Hello [Name&#x2F;Team],
+
+I am the copyright holder of [Project Name], published at [repo link].  
+Your project [violating project link] uses my code but does not comply with [GPLv3&#x2F;MIT].  
+
+Please restore attribution and comply with the license within 7 days.  
+If not, I will escalate with a DMCA request and legal action.  
+
+Sincerely,  
+[Your Name]
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;dmca-takedown-request&quot;&gt;DMCA Takedown Request&lt;&#x2F;h3&gt;
+&lt;pre&gt;&lt;code data-lang=&quot;text&quot;&gt;To: [Hosting Platform DMCA Email]
+Subject: DMCA Takedown Request – Unauthorized Use of [Project Name]
+
+I am the copyright holder of [Project Name], originally at [repo link].  
+The repository [infringing link] contains my code without license compliance.  
+
+I request removal of this repository.  
+This claim is made in good faith and under penalty of perjury.  
+
+Name: [Your Full Name]  
+Email: [Your Email]  
+Signature: [Your Name]
+Date: [Date]
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;&#x2F;h2&gt;
+&lt;p&gt;Choosing the GPL is not just about protecting yourself — it’s about protecting users’ freedom.&lt;&#x2F;p&gt;
+&lt;p&gt;With GPL, your work remains open, and violators risk real legal consequences.&lt;&#x2F;p&gt;
+&lt;p&gt;With MIT&#x2F;BSD, your name must stay, but your code can still be locked away inside proprietary software.&lt;&#x2F;p&gt;
+&lt;p&gt;With no license, you give up all control.&lt;&#x2F;p&gt;
+&lt;pre&gt;&lt;code&gt;If you value freedom, recognition, and fairness in software, the GPL is your strongest tool.
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+</content>
+        
+    </entry>
+</feed>

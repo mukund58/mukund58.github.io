@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>Mukund Parmar - Full Stack Web Developer &amp; Software Engineer - editor</title>
+    <subtitle>Portfolio of Mukund Parmar, a passionate Full Stack Web Developer specializing in MERN Stack, DevOps, and Competitive Programming. View my projects and experience.</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://mukund58.github.io/tags/editor/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://mukund58.github.io/"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2025-09-18T00:00:00+00:00</updated>
+    <id>https://mukund58.github.io/tags/editor/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Configure neovim from Scratch</title>
+        <published>2025-09-18T00:00:00+00:00</published>
+        <updated>2025-09-18T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://mukund58.github.io/blog/how-to-config-neovim/"/>
+        <id>https://mukund58.github.io/blog/how-to-config-neovim/</id>
+        
+        <content type="html" xml:base="https://mukund58.github.io/blog/how-to-config-neovim/">&lt;h4 id=&quot;how-to-install&quot;&gt;How to install&lt;&#x2F;h4&gt;
+&lt;p&gt;To install simply just type&lt;&#x2F;p&gt;
+&lt;pre&gt;&lt;code data-lang=&quot;bash&quot;&gt;sudo pacman -S neovim
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Now make a directory in .config&lt;&#x2F;p&gt;
+&lt;pre&gt;&lt;code data-lang=&quot;bash&quot;&gt;mkdir ~&#x2F;.config&#x2F;nvim
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;then go to that directory and open nvim&lt;&#x2F;p&gt;
+&lt;pre&gt;&lt;code data-lang=&quot;bash&quot;&gt;cd ~&#x2F;.config&#x2F;nvim
+nvim .
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;here this type of interface popup&lt;&#x2F;p&gt;
+&lt;a href=&quot;https:&amp;#x2F;&amp;#x2F;blogger.googleusercontent.com&amp;#x2F;img&amp;#x2F;b&amp;#x2F;R29vZ2xl&amp;#x2F;AVvXsEhlEccoDEj5CZgXVd6CiweqhVczEQRHgki0We_MffmX2BqDx3B5HnaY0dc6Sjgg8UhUmgDqDSGvXY-2BFVDqHv_qf5ZoDLFaICZGwVfN4EMGUiRIQGon5F2VIoo2DNEs2RfyTKr14gLWaSYFUSR7RdvoLBhoJZ-GHK56EEyCqxkPzU1iuIBjqQNU-MZMfqj&amp;#x2F;s1364&amp;#x2F;pic-window-240913-1743-56.png&quot; data-lightbox=&quot;blog-img&quot; data-title=&quot;Screenshot&quot;&gt;
+  &lt;img src=&quot;https:&amp;#x2F;&amp;#x2F;blogger.googleusercontent.com&amp;#x2F;img&amp;#x2F;b&amp;#x2F;R29vZ2xl&amp;#x2F;AVvXsEhlEccoDEj5CZgXVd6CiweqhVczEQRHgki0We_MffmX2BqDx3B5HnaY0dc6Sjgg8UhUmgDqDSGvXY-2BFVDqHv_qf5ZoDLFaICZGwVfN4EMGUiRIQGon5F2VIoo2DNEs2RfyTKr14gLWaSYFUSR7RdvoLBhoJZ-GHK56EEyCqxkPzU1iuIBjqQNU-MZMfqj&amp;#x2F;s1364&amp;#x2F;pic-window-240913-1743-56.png&quot;
+       alt=&quot;Screenshot&quot;
+       loading=&quot;lazy&quot;
+       style=&quot;max-width: 100%; height: auto; border-radius: 6px;&quot; &#x2F;&gt;
+&lt;&#x2F;a&gt;
+&lt;h4 id=&quot;how-to-configure&quot;&gt;How to configure&lt;&#x2F;h4&gt;
+&lt;p&gt;Now press &lt;code&gt;:&lt;&#x2F;code&gt; and type&lt;&#x2F;p&gt;
+&lt;pre&gt;&lt;code&gt;:h rtp
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;here you can see &lt;code&gt;default $XDG_CONFIG_HOME&#x2F;nvim&lt;&#x2F;code&gt; is our main directory where we put all our config files.
+&lt;a href=&quot;https:&amp;#x2F;&amp;#x2F;blogger.googleusercontent.com&amp;#x2F;img&amp;#x2F;b&amp;#x2F;R29vZ2xl&amp;#x2F;AVvXsEgxIXHocnkLhtvxZN4rIk7xEVAH1fjw809GNTUtNZZ3TzGUT0f1M3OXuUCDi2658gGYym7XHirlKi2ZCjdO4AIN80Fl7Mp985hdHtjlLXtw0qKMSzVNngVe2gs2iQY_Ln3JQWQzRwL05Ja_Se7L-J4mwMx4eh32LBsVaBlfvyw0Pvva25TNJQdWshF0Ym55&amp;#x2F;s1364&amp;#x2F;pic-window-240913-1748-25.png&quot; data-lightbox=&quot;blog-img&quot; data-title=&quot;Screenshot&quot;&gt;
+  &lt;img src=&quot;https:&amp;#x2F;&amp;#x2F;blogger.googleusercontent.com&amp;#x2F;img&amp;#x2F;b&amp;#x2F;R29vZ2xl&amp;#x2F;AVvXsEgxIXHocnkLhtvxZN4rIk7xEVAH1fjw809GNTUtNZZ3TzGUT0f1M3OXuUCDi2658gGYym7XHirlKi2ZCjdO4AIN80Fl7Mp985hdHtjlLXtw0qKMSzVNngVe2gs2iQY_Ln3JQWQzRwL05Ja_Se7L-J4mwMx4eh32LBsVaBlfvyw0Pvva25TNJQdWshF0Ym55&amp;#x2F;s1364&amp;#x2F;pic-window-240913-1748-25.png&quot;
+       alt=&quot;Screenshot&quot;
+       loading=&quot;lazy&quot;
+       style=&quot;max-width: 100%; height: auto; border-radius: 6px;&quot; &#x2F;&gt;
+&lt;&#x2F;a&gt;
+&lt;&#x2F;p&gt;
+&lt;p&gt;Now exit from that your interface should look like this&lt;&#x2F;p&gt;
+&lt;a href=&quot;https:&amp;#x2F;&amp;#x2F;blogger.googleusercontent.com&amp;#x2F;img&amp;#x2F;b&amp;#x2F;R29vZ2xl&amp;#x2F;AVvXsEhSAZcEnzH-SOXjVUgO_v2YnV2Dyw85kIKMAJp6iVlgJHk1rkfqtybFvjD2MgTh9o0HiQLGgiJ_ycv7MRV2G9i4ChN2ksg-_qEfdTyMk-xsWboqPaPLLyc-gtedBURYFw7S9jpZtfknIPT1J0k5TEQs3EvW666VX34ERuegZp1kKMZ-XXbyIpxV41HabjNZ&amp;#x2F;s1364&amp;#x2F;pic-window-240913-1743-56.png&quot; data-lightbox=&quot;blog-img&quot; data-title=&quot;Screenshot&quot;&gt;
+  &lt;img src=&quot;https:&amp;#x2F;&amp;#x2F;blogger.googleusercontent.com&amp;#x2F;img&amp;#x2F;b&amp;#x2F;R29vZ2xl&amp;#x2F;AVvXsEhSAZcEnzH-SOXjVUgO_v2YnV2Dyw85kIKMAJp6iVlgJHk1rkfqtybFvjD2MgTh9o0HiQLGgiJ_ycv7MRV2G9i4ChN2ksg-_qEfdTyMk-xsWboqPaPLLyc-gtedBURYFw7S9jpZtfknIPT1J0k5TEQs3EvW666VX34ERuegZp1kKMZ-XXbyIpxV41HabjNZ&amp;#x2F;s1364&amp;#x2F;pic-window-240913-1743-56.png&quot;
+       alt=&quot;Screenshot&quot;
+       loading=&quot;lazy&quot;
+       style=&quot;max-width: 100%; height: auto; border-radius: 6px;&quot; &#x2F;&gt;
+&lt;&#x2F;a&gt;
+&lt;p&gt;Now press % and give file name &lt;code&gt;init.lua&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;a href=&quot;https:&amp;#x2F;&amp;#x2F;blogger.googleusercontent.com&amp;#x2F;img&amp;#x2F;b&amp;#x2F;R29vZ2xl&amp;#x2F;AVvXsEhBh7cr8aFVY-ds0dN_xYKfcNph1WL-UM5aY7ESQaqsCbUQ_ZDiH5-djUKqEt_izHkHnmjnPOdw1k2xvR1PhiWhwFkzvwxw3sinknaf5z3XYqCmFskUD-IdLh_F9ltbk7j8c_DQyi08Y822w-FPwpQ_mb_fluP4t9RW8Bmk2Qgx7bTW8bTm-plN11bdqlCb&amp;#x2F;s501&amp;#x2F;pic-selected-240913-1812-12.png&quot; data-lightbox=&quot;blog-img&quot; data-title=&quot;Screenshot&quot;&gt;
+  &lt;img src=&quot;https:&amp;#x2F;&amp;#x2F;blogger.googleusercontent.com&amp;#x2F;img&amp;#x2F;b&amp;#x2F;R29vZ2xl&amp;#x2F;AVvXsEhBh7cr8aFVY-ds0dN_xYKfcNph1WL-UM5aY7ESQaqsCbUQ_ZDiH5-djUKqEt_izHkHnmjnPOdw1k2xvR1PhiWhwFkzvwxw3sinknaf5z3XYqCmFskUD-IdLh_F9ltbk7j8c_DQyi08Y822w-FPwpQ_mb_fluP4t9RW8Bmk2Qgx7bTW8bTm-plN11bdqlCb&amp;#x2F;s501&amp;#x2F;pic-selected-240913-1812-12.png&quot;
+       alt=&quot;Screenshot&quot;
+       loading=&quot;lazy&quot;
+       style=&quot;max-width: 100%; height: auto; border-radius: 6px;&quot; &#x2F;&gt;
+&lt;&#x2F;a&gt;
+&lt;p&gt;To type something press &lt;code&gt;i&lt;&#x2F;code&gt; (insert) or &lt;code&gt;a&lt;&#x2F;code&gt;(append)
+type this
+&lt;a href=&quot;https:&amp;#x2F;&amp;#x2F;blogger.googleusercontent.com&amp;#x2F;img&amp;#x2F;b&amp;#x2F;R29vZ2xl&amp;#x2F;AVvXsEhaQ98ctWxLs-7I6zb9ZJge3X8_qn9f4rlyiQ-7KlwDW8u7DruJ5YtXDisDVBWh_nkzteZQpmrARbSlqwFEFop5SBlB4mewx1U03kNvEFyn9I2TnpT6ams3qdqSJKw923wByoOCPxWJ6qW_oqzKTn30LErGIaXfzSgpXF9bSAkPN-RuOXa8e1YXUFOmSbgT&amp;#x2F;s368&amp;#x2F;pic-selected-240913-1815-40.png&quot; data-lightbox=&quot;blog-img&quot; data-title=&quot;Screenshot&quot;&gt;
+  &lt;img src=&quot;https:&amp;#x2F;&amp;#x2F;blogger.googleusercontent.com&amp;#x2F;img&amp;#x2F;b&amp;#x2F;R29vZ2xl&amp;#x2F;AVvXsEhaQ98ctWxLs-7I6zb9ZJge3X8_qn9f4rlyiQ-7KlwDW8u7DruJ5YtXDisDVBWh_nkzteZQpmrARbSlqwFEFop5SBlB4mewx1U03kNvEFyn9I2TnpT6ams3qdqSJKw923wByoOCPxWJ6qW_oqzKTn30LErGIaXfzSgpXF9bSAkPN-RuOXa8e1YXUFOmSbgT&amp;#x2F;s368&amp;#x2F;pic-selected-240913-1815-40.png&quot;
+       alt=&quot;Screenshot&quot;
+       loading=&quot;lazy&quot;
+       style=&quot;max-width: 100%; height: auto; border-radius: 6px;&quot; &#x2F;&gt;
+&lt;&#x2F;a&gt;
+&lt;&#x2F;p&gt;
+&lt;p&gt;now exit from insert mode by pressing &lt;code&gt;Esc&lt;&#x2F;code&gt; or &lt;code&gt;ctrl + c&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;After to save this file press &lt;code&gt;:&lt;&#x2F;code&gt; and type &lt;code&gt;w&lt;&#x2F;code&gt;(write) or &lt;code&gt;wq&lt;&#x2F;code&gt;(write and quiet)&lt;&#x2F;p&gt;
+&lt;a href=&quot;https:&amp;#x2F;&amp;#x2F;blogger.googleusercontent.com&amp;#x2F;img&amp;#x2F;b&amp;#x2F;R29vZ2xl&amp;#x2F;AVvXsEjpdOezSW67-NQy0aDlGu0Kwjbd8syUv59SArftXhIdej2_8t9F6j_ZAcQYZSV1jmwDHaHvz4j_oNmsFtSrwQgr5rbUQJZtGVkQKuWcoDw4YQkwBF0A2WMaLRD4gN7ELO0eyX8qB6UqcF4iXwebBCuw8dmGTx7BTj2vWki6rsZOjnp3W_GzpYHOnsYh4yP4&amp;#x2F;s421&amp;#x2F;pic-selected-240913-1823-04.png&quot; data-lightbox=&quot;blog-img&quot; data-title=&quot;Screenshot&quot;&gt;
+  &lt;img src=&quot;https:&amp;#x2F;&amp;#x2F;blogger.googleusercontent.com&amp;#x2F;img&amp;#x2F;b&amp;#x2F;R29vZ2xl&amp;#x2F;AVvXsEjpdOezSW67-NQy0aDlGu0Kwjbd8syUv59SArftXhIdej2_8t9F6j_ZAcQYZSV1jmwDHaHvz4j_oNmsFtSrwQgr5rbUQJZtGVkQKuWcoDw4YQkwBF0A2WMaLRD4gN7ELO0eyX8qB6UqcF4iXwebBCuw8dmGTx7BTj2vWki6rsZOjnp3W_GzpYHOnsYh4yP4&amp;#x2F;s421&amp;#x2F;pic-selected-240913-1823-04.png&quot;
+       alt=&quot;Screenshot&quot;
+       loading=&quot;lazy&quot;
+       style=&quot;max-width: 100%; height: auto; border-radius: 6px;&quot; &#x2F;&gt;
+&lt;&#x2F;a&gt;
+&lt;p&gt;Again go to nvim&lt;&#x2F;p&gt;
+&lt;pre&gt;&lt;code&gt;nvim .
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;here you can notice that our file is created and bottom left you can see hello.&lt;&#x2F;p&gt;
+&lt;a href=&quot;https:&amp;#x2F;&amp;#x2F;blogger.googleusercontent.com&amp;#x2F;img&amp;#x2F;b&amp;#x2F;R29vZ2xl&amp;#x2F;AVvXsEjMB3Opt0bRBdhmPvygfl9gno_5qNKMYS0L9e2L1xZ7bypb06yaCcNM7jYwnrRCL5R-XhnV9nCMRXtgjuSSLQAZGAwjc342wyQKptP02zPURy90YhXAFDL8Kt5YPhWuS1wTQ_LPNrruEtf50tki2t0fUde7R4YXn2Suf_UzA-4m-4F76od5_Ms9qWu2TpLM&amp;#x2F;s1364&amp;#x2F;pic-window-240913-1833-48.png&quot; data-lightbox=&quot;blog-img&quot; data-title=&quot;Screenshot&quot;&gt;
+  &lt;img src=&quot;https:&amp;#x2F;&amp;#x2F;blogger.googleusercontent.com&amp;#x2F;img&amp;#x2F;b&amp;#x2F;R29vZ2xl&amp;#x2F;AVvXsEjMB3Opt0bRBdhmPvygfl9gno_5qNKMYS0L9e2L1xZ7bypb06yaCcNM7jYwnrRCL5R-XhnV9nCMRXtgjuSSLQAZGAwjc342wyQKptP02zPURy90YhXAFDL8Kt5YPhWuS1wTQ_LPNrruEtf50tki2t0fUde7R4YXn2Suf_UzA-4m-4F76od5_Ms9qWu2TpLM&amp;#x2F;s1364&amp;#x2F;pic-window-240913-1833-48.png&quot;
+       alt=&quot;Screenshot&quot;
+       loading=&quot;lazy&quot;
+       style=&quot;max-width: 100%; height: auto; border-radius: 6px;&quot; &#x2F;&gt;
+&lt;&#x2F;a&gt;
+&lt;p&gt;Now press &lt;code&gt;d&lt;&#x2F;code&gt; to create directory and give name &lt;code&gt;lua&lt;&#x2F;code&gt;
+&lt;a href=&quot;https:&amp;#x2F;&amp;#x2F;blogger.googleusercontent.com&amp;#x2F;img&amp;#x2F;b&amp;#x2F;R29vZ2xl&amp;#x2F;AVvXsEi8NXHzCnitR7Xo4yNijWhiskByVxuySeYQefEIMfgtcAE_Xw9RrsUW4fXPHYWo8kyDoAv6EO2_skts5Tp8ZW-SuyfynQr-mqYU1-Ptk-X6CSoSHJNl2I5i5FNoxPKYQ9rrRhWAyQ-uA5exKwZiJvl0rs5w3YhoE-I1VKG6ECR2EhzYX80D39zVEIwbIzT6&amp;#x2F;s1364&amp;#x2F;pic-window-240913-1844-33.png&quot; data-lightbox=&quot;blog-img&quot; data-title=&quot;Screenshot&quot;&gt;
+  &lt;img src=&quot;https:&amp;#x2F;&amp;#x2F;blogger.googleusercontent.com&amp;#x2F;img&amp;#x2F;b&amp;#x2F;R29vZ2xl&amp;#x2F;AVvXsEi8NXHzCnitR7Xo4yNijWhiskByVxuySeYQefEIMfgtcAE_Xw9RrsUW4fXPHYWo8kyDoAv6EO2_skts5Tp8ZW-SuyfynQr-mqYU1-Ptk-X6CSoSHJNl2I5i5FNoxPKYQ9rrRhWAyQ-uA5exKwZiJvl0rs5w3YhoE-I1VKG6ECR2EhzYX80D39zVEIwbIzT6&amp;#x2F;s1364&amp;#x2F;pic-window-240913-1844-33.png&quot;
+       alt=&quot;Screenshot&quot;
+       loading=&quot;lazy&quot;
+       style=&quot;max-width: 100%; height: auto; border-radius: 6px;&quot; &#x2F;&gt;
+&lt;&#x2F;a&gt;
+&lt;&#x2F;p&gt;
+&lt;p&gt;Go to lua directory and create a whatever named directory
+&lt;a href=&quot;https:&amp;#x2F;&amp;#x2F;blogger.googleusercontent.com&amp;#x2F;img&amp;#x2F;b&amp;#x2F;R29vZ2xl&amp;#x2F;AVvXsEiJ7bK9EGUlpO1Dco4fQgqA4Xdt-6v_hGy1GAlPHNGz66hSlsVycc-TSvM7FLa4pGIktsm3_-af8u6HnrR5YrH84_MPZvp7Y7NFKfgzfqEMZBg6HtBlnH2MPejwMn79jdBoP-OFTOFn-t806JABVJYnDjFTLbd2oXIw1kVgKeKKnQfrDtCsz4PbVtqyZeXt&amp;#x2F;s1364&amp;#x2F;pic-window-240913-1911-55.png&quot; data-lightbox=&quot;blog-img&quot; data-title=&quot;Screenshot&quot;&gt;
+  &lt;img src=&quot;https:&amp;#x2F;&amp;#x2F;blogger.googleusercontent.com&amp;#x2F;img&amp;#x2F;b&amp;#x2F;R29vZ2xl&amp;#x2F;AVvXsEiJ7bK9EGUlpO1Dco4fQgqA4Xdt-6v_hGy1GAlPHNGz66hSlsVycc-TSvM7FLa4pGIktsm3_-af8u6HnrR5YrH84_MPZvp7Y7NFKfgzfqEMZBg6HtBlnH2MPejwMn79jdBoP-OFTOFn-t806JABVJYnDjFTLbd2oXIw1kVgKeKKnQfrDtCsz4PbVtqyZeXt&amp;#x2F;s1364&amp;#x2F;pic-window-240913-1911-55.png&quot;
+       alt=&quot;Screenshot&quot;
+       loading=&quot;lazy&quot;
+       style=&quot;max-width: 100%; height: auto; border-radius: 6px;&quot; &#x2F;&gt;
+&lt;&#x2F;a&gt;
+&lt;&#x2F;p&gt;
+&lt;p&gt;And go to that directory and create file &lt;code&gt;init.lua&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;for testing type this in your file:&lt;&#x2F;p&gt;
+&lt;a href=&quot;https:&amp;#x2F;&amp;#x2F;blogger.googleusercontent.com&amp;#x2F;img&amp;#x2F;b&amp;#x2F;R29vZ2xl&amp;#x2F;AVvXsEiyM5KXuvn-gep8cjwaEVplNJQlLORxU02KLEZ_Z_4vjFtsKsgjPp_fnlvJYDHRcrVkBv07YJmkBA0L_PcdSsySEw4l8i0lHyTZ431SHcQ7-YN0ciWIq5ZZbboR6A-_axsPJh11OXWKTpkBvlf8I6zLzn-pDlN1bVxbgIV2_RQ2KU_8pr9a-kcjRdssrO7W&amp;#x2F;s421&amp;#x2F;pic-selected-240913-1924-20.png&quot; data-lightbox=&quot;blog-img&quot; data-title=&quot;Screenshot&quot;&gt;
+  &lt;img src=&quot;https:&amp;#x2F;&amp;#x2F;blogger.googleusercontent.com&amp;#x2F;img&amp;#x2F;b&amp;#x2F;R29vZ2xl&amp;#x2F;AVvXsEiyM5KXuvn-gep8cjwaEVplNJQlLORxU02KLEZ_Z_4vjFtsKsgjPp_fnlvJYDHRcrVkBv07YJmkBA0L_PcdSsySEw4l8i0lHyTZ431SHcQ7-YN0ciWIq5ZZbboR6A-_axsPJh11OXWKTpkBvlf8I6zLzn-pDlN1bVxbgIV2_RQ2KU_8pr9a-kcjRdssrO7W&amp;#x2F;s421&amp;#x2F;pic-selected-240913-1924-20.png&quot;
+       alt=&quot;Screenshot&quot;
+       loading=&quot;lazy&quot;
+       style=&quot;max-width: 100%; height: auto; border-radius: 6px;&quot; &#x2F;&gt;
+&lt;&#x2F;a&gt;
+&lt;p&gt;Again press &lt;code&gt;:&lt;&#x2F;code&gt; to go explore mode &lt;code&gt;Ex&lt;&#x2F;code&gt;
+and go to previous directory &lt;code&gt;..&#x2F;&lt;&#x2F;code&gt;  where our first file created&lt;&#x2F;p&gt;
+&lt;p&gt;open that file &lt;code&gt;~&#x2F;.config&#x2F;nvim&#x2F;init.lua&lt;&#x2F;code&gt; and type this&lt;&#x2F;p&gt;
+&lt;a href=&quot;https:&amp;#x2F;&amp;#x2F;blogger.googleusercontent.com&amp;#x2F;img&amp;#x2F;b&amp;#x2F;R29vZ2xl&amp;#x2F;AVvXsEiT6b3sAVAiFr1U1ppFdb-bByHxALCEixxo3sBAMnEcAW4SJoOgChureVhKI9cAOE4hdhrWbgiC5xIqG1mguQRwYt73-NLjELafCnbrnj6cwsuau2QNjlG6HfLFCUeJy7ehN8BSHinkkUgmUy0LTEdAY1XxD73IKWOTeStmkPPrtPltedD-9M_HZ-qImK7J&amp;#x2F;s437&amp;#x2F;pic-selected-240913-2120-00.png&quot; data-lightbox=&quot;blog-img&quot; data-title=&quot;Screenshot&quot;&gt;
+  &lt;img src=&quot;https:&amp;#x2F;&amp;#x2F;blogger.googleusercontent.com&amp;#x2F;img&amp;#x2F;b&amp;#x2F;R29vZ2xl&amp;#x2F;AVvXsEiT6b3sAVAiFr1U1ppFdb-bByHxALCEixxo3sBAMnEcAW4SJoOgChureVhKI9cAOE4hdhrWbgiC5xIqG1mguQRwYt73-NLjELafCnbrnj6cwsuau2QNjlG6HfLFCUeJy7ehN8BSHinkkUgmUy0LTEdAY1XxD73IKWOTeStmkPPrtPltedD-9M_HZ-qImK7J&amp;#x2F;s437&amp;#x2F;pic-selected-240913-2120-00.png&quot;
+       alt=&quot;Screenshot&quot;
+       loading=&quot;lazy&quot;
+       style=&quot;max-width: 100%; height: auto; border-radius: 6px;&quot; &#x2F;&gt;
+&lt;&#x2F;a&gt;
+&lt;p&gt;now exit from nvim by pressing &lt;code&gt;:wq&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Again open nvim&lt;&#x2F;p&gt;
+&lt;p&gt;pwd :- ~&#x2F;.config&#x2F;nvim&lt;&#x2F;p&gt;
+&lt;pre&gt;&lt;code&gt;nvim .
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;A message like this will show when you open nvim&lt;&#x2F;p&gt;
+&lt;p&gt;congrats if this type of  message will shows so you go further and lets make nvim usable.
+&lt;a href=&quot;https:&amp;#x2F;&amp;#x2F;blogger.googleusercontent.com&amp;#x2F;img&amp;#x2F;b&amp;#x2F;R29vZ2xl&amp;#x2F;AVvXsEhYrqlA4oWINyvo_eBhS9rQhy0Hyxje-okrf72B1grUz9KcNLu-OHtkUEa6reFmY5QtY3PadNvt-8rX_fq9lxQjxBB8l9IA04sapSjgAZvvPigHQBX_vYbEsDl_Cy3MjOjgyCiiUEeCmJnxrTqGfDOCuBdy3JkTTBr4IuFnGEMpNRJvfpLIearaiJKDPxB-&amp;#x2F;s566&amp;#x2F;pic-selected-240913-2125-02.png&quot; data-lightbox=&quot;blog-img&quot; data-title=&quot;Screenshot&quot;&gt;
+  &lt;img src=&quot;https:&amp;#x2F;&amp;#x2F;blogger.googleusercontent.com&amp;#x2F;img&amp;#x2F;b&amp;#x2F;R29vZ2xl&amp;#x2F;AVvXsEhYrqlA4oWINyvo_eBhS9rQhy0Hyxje-okrf72B1grUz9KcNLu-OHtkUEa6reFmY5QtY3PadNvt-8rX_fq9lxQjxBB8l9IA04sapSjgAZvvPigHQBX_vYbEsDl_Cy3MjOjgyCiiUEeCmJnxrTqGfDOCuBdy3JkTTBr4IuFnGEMpNRJvfpLIearaiJKDPxB-&amp;#x2F;s566&amp;#x2F;pic-selected-240913-2125-02.png&quot;
+       alt=&quot;Screenshot&quot;
+       loading=&quot;lazy&quot;
+       style=&quot;max-width: 100%; height: auto; border-radius: 6px;&quot; &#x2F;&gt;
+&lt;&#x2F;a&gt;
+&lt;&#x2F;p&gt;
+&lt;h4 id=&quot;creating-some-shortcuts&quot;&gt;Creating some shortcuts&lt;&#x2F;h4&gt;
+&lt;p&gt;Now lets make some shortcuts
+first you have to create a remap.lua file in
+~&#x2F;.config&#x2F;nvim&#x2F;lua&#x2F;soul&#x2F;remap.lua&lt;&#x2F;p&gt;
+&lt;p&gt;here &lt;code&gt;vim.g.leader&lt;&#x2F;code&gt; is name where you can assign a keybutton&lt;&#x2F;p&gt;
+&lt;p&gt;in second line you can see &lt;code&gt;vim.keymap.set&lt;&#x2F;code&gt; is used for set keyboard shortcuts of vim command&lt;&#x2F;p&gt;
+&lt;p&gt;here we can directly execute this command  &lt;code&gt;Ex&lt;&#x2F;code&gt; by &lt;code&gt;spacebar pv&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;a href=&quot;https:&amp;#x2F;&amp;#x2F;blogger.googleusercontent.com&amp;#x2F;img&amp;#x2F;b&amp;#x2F;R29vZ2xl&amp;#x2F;AVvXsEgkIWoYFI1FDCInDmElLLTNXJg5RMNWMcl9lr5fyd2hkMuc9JgP455kQ5o-vDAfumfGmkp6vkN4lsOAYMPJUOOnVJmLUCGc2rVNvS30WZggCV56L1XGMgLT_tBNO7of3YWbSKnTIGPkNhxcs3CVUEcaXtzVmso30lxwH2nSVH_u72Wz5wyiLg6HeyBQMNKe&amp;#x2F;s722&amp;#x2F;pic-selected-240913-2136-46.png&quot; data-lightbox=&quot;blog-img&quot; data-title=&quot;Screenshot&quot;&gt;
+  &lt;img src=&quot;https:&amp;#x2F;&amp;#x2F;blogger.googleusercontent.com&amp;#x2F;img&amp;#x2F;b&amp;#x2F;R29vZ2xl&amp;#x2F;AVvXsEgkIWoYFI1FDCInDmElLLTNXJg5RMNWMcl9lr5fyd2hkMuc9JgP455kQ5o-vDAfumfGmkp6vkN4lsOAYMPJUOOnVJmLUCGc2rVNvS30WZggCV56L1XGMgLT_tBNO7of3YWbSKnTIGPkNhxcs3CVUEcaXtzVmso30lxwH2nSVH_u72Wz5wyiLg6HeyBQMNKe&amp;#x2F;s722&amp;#x2F;pic-selected-240913-2136-46.png&quot;
+       alt=&quot;Screenshot&quot;
+       loading=&quot;lazy&quot;
+       style=&quot;max-width: 100%; height: auto; border-radius: 6px;&quot; &#x2F;&gt;
+&lt;&#x2F;a&gt;
+&lt;p&gt;save this file &lt;code&gt;:w&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;after press &lt;code&gt;:so&lt;&#x2F;code&gt; hit Enter (it will complie the source)
+now you can press &lt;code&gt;spacebar pv&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;here when you exit from nvim you have to complie again
+so to solve this problem
+we have to type this in our init.lua&lt;&#x2F;p&gt;
+&lt;p&gt;pwd:- ~&#x2F;.config&#x2F;nvim&#x2F;lua&#x2F;soul&#x2F;init.lua&lt;&#x2F;p&gt;
+&lt;a href=&quot;https:&amp;#x2F;&amp;#x2F;blogger.googleusercontent.com&amp;#x2F;img&amp;#x2F;b&amp;#x2F;R29vZ2xl&amp;#x2F;AVvXsEgUOFsyOZKl6t6RgG0Husli4wsPs3SQ-x0RuOLF8usuHSbk-5qqaL1Lgjv5VsCPvSihfZK8op-EHFw2YdaZBkiE0ITJXQRCCPzA80pNNQn1iGaxKbFtLQ6xVVDLg4hkj_Vyz2mHRbQsDMv2v3IUxJaMQYwwrd1lbkj5JBGQTDlyrH4ks-1I-bGXP8RMUoRa&amp;#x2F;s722&amp;#x2F;pic-selected-240913-2204-18.png&quot; data-lightbox=&quot;blog-img&quot; data-title=&quot;Screenshot&quot;&gt;
+  &lt;img src=&quot;https:&amp;#x2F;&amp;#x2F;blogger.googleusercontent.com&amp;#x2F;img&amp;#x2F;b&amp;#x2F;R29vZ2xl&amp;#x2F;AVvXsEgUOFsyOZKl6t6RgG0Husli4wsPs3SQ-x0RuOLF8usuHSbk-5qqaL1Lgjv5VsCPvSihfZK8op-EHFw2YdaZBkiE0ITJXQRCCPzA80pNNQn1iGaxKbFtLQ6xVVDLg4hkj_Vyz2mHRbQsDMv2v3IUxJaMQYwwrd1lbkj5JBGQTDlyrH4ks-1I-bGXP8RMUoRa&amp;#x2F;s722&amp;#x2F;pic-selected-240913-2204-18.png&quot;
+       alt=&quot;Screenshot&quot;
+       loading=&quot;lazy&quot;
+       style=&quot;max-width: 100%; height: auto; border-radius: 6px;&quot; &#x2F;&gt;
+&lt;&#x2F;a&gt;
+&lt;p&gt;Now you everytime you open your nvim it will compile automatically&lt;&#x2F;p&gt;
+&lt;h4 id=&quot;add-pulgin-manger-packer&quot;&gt;Add pulgin-manger(packer)&lt;&#x2F;h4&gt;
+&lt;p&gt;Go to this repo &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;wbthomason&#x2F;packer.nvim&quot;&gt;packer.nvim&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;clone this repo in your ~&#x2F;.config&lt;&#x2F;p&gt;
+&lt;pre&gt;&lt;code data-lang=&quot;bash&quot;&gt;git clone --depth 1 https:&#x2F;&#x2F;github.com&#x2F;wbthomason&#x2F;packer.nvim\
+ ~&#x2F;.local&#x2F;share&#x2F;nvim&#x2F;site&#x2F;pack&#x2F;packer&#x2F;start&#x2F;packer.nvim
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Now copy this from that repo&lt;&#x2F;p&gt;
+&lt;pre&gt;&lt;code data-lang=&quot;lua&quot;&gt;vim.cmd [[packadd packer.nvim]]
+
+return require(&amp;#39;packer&amp;#39;).startup(function(use)
+  -- Packer can manage itself
+  use &amp;#39;wbthomason&#x2F;packer.nvim&amp;#39;
+end)
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;paste it in
+~&#x2F;.config&#x2F;nvim&#x2F;lua&#x2F;soul&#x2F;packer.lua&lt;&#x2F;p&gt;
+&lt;p&gt;now complie it &lt;code&gt;:so&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;now can able to type this &lt;code&gt;:PackerSync&lt;&#x2F;code&gt;
+it will look like this&lt;&#x2F;p&gt;
+&lt;p&gt;if the option is not available you  can restart your nvim and recomplie it .&lt;&#x2F;p&gt;
+&lt;a href=&quot;https:&amp;#x2F;&amp;#x2F;blogger.googleusercontent.com&amp;#x2F;img&amp;#x2F;b&amp;#x2F;R29vZ2xl&amp;#x2F;AVvXsEgh375U-HZtX-coZhrI3CWI-Js40-XB3U4NZs98O2rFTKdEcesOj7uu1o3U5vWleZgWs5M5ElorMuVQYJ-PeLND3yImfUfsnZ9ODEz0gQQRHHO6DTQiN7UcZTCxWtAlcjQBuxXHr0O6P4XXVoQZHRxeiGAXnchpmbhA9l7Bn2U4vHo465XCjjJzfrYp19pO&amp;#x2F;s1364&amp;#x2F;pic-window-240913-2238-51.png&quot; data-lightbox=&quot;blog-img&quot; data-title=&quot;Screenshot&quot;&gt;
+  &lt;img src=&quot;https:&amp;#x2F;&amp;#x2F;blogger.googleusercontent.com&amp;#x2F;img&amp;#x2F;b&amp;#x2F;R29vZ2xl&amp;#x2F;AVvXsEgh375U-HZtX-coZhrI3CWI-Js40-XB3U4NZs98O2rFTKdEcesOj7uu1o3U5vWleZgWs5M5ElorMuVQYJ-PeLND3yImfUfsnZ9ODEz0gQQRHHO6DTQiN7UcZTCxWtAlcjQBuxXHr0O6P4XXVoQZHRxeiGAXnchpmbhA9l7Bn2U4vHo465XCjjJzfrYp19pO&amp;#x2F;s1364&amp;#x2F;pic-window-240913-2238-51.png&quot;
+       alt=&quot;Screenshot&quot;
+       loading=&quot;lazy&quot;
+       style=&quot;max-width: 100%; height: auto; border-radius: 6px;&quot; &#x2F;&gt;
+&lt;&#x2F;a&gt;
+&lt;p&gt;congrats you come this far you have succesfully installed pulgin-manger.&lt;&#x2F;p&gt;
+&lt;h5 id=&quot;add-pulgin-fuzzy-finder&quot;&gt;Add Pulgin(fuzzy finder)&lt;&#x2F;h5&gt;
+&lt;p&gt;Now lets add some pulgin&lt;&#x2F;p&gt;
+&lt;p&gt;go to repo &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;nvim-telescope&#x2F;telescope.nvim&quot;&gt;telescope.nvim&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;copy this from that repo&lt;&#x2F;p&gt;
+&lt;pre&gt;&lt;code data-lang=&quot;lua&quot;&gt;use {
+  &amp;#39;nvim-telescope&#x2F;telescope.nvim&amp;#39;, tag = &amp;#39;0.1.8&amp;#39;,
+-- or                            , branch = &amp;#39;0.1.x&amp;#39;,
+  requires = { {&amp;#39;nvim-lua&#x2F;plenary.nvim&amp;#39;} }
+}
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;paste in your packer.lua
+it should be look like this
+&lt;a href=&quot;https:&amp;#x2F;&amp;#x2F;blogger.googleusercontent.com&amp;#x2F;img&amp;#x2F;b&amp;#x2F;R29vZ2xl&amp;#x2F;AVvXsEiYndla32ASmdYaPT8Hei_O37y4CWg60XD-Iq3T3e_-_6NYKpYTqsh2pc8YN7wc_XG7dgKnQ_iX6y5EkBxmHAn2KM-cpeKE31BElAb0P1hxtYo3_kO1lkUOGrU8doI3ozwy7tIHtSzmK2kLpkpgj0EKQG2zFnfMS_gnkhVQE6Mog12IdVM-SclNdXx5ndvl&amp;#x2F;s617&amp;#x2F;pic-selected-240913-2258-47.png&quot; data-lightbox=&quot;blog-img&quot; data-title=&quot;Screenshot&quot;&gt;
+  &lt;img src=&quot;https:&amp;#x2F;&amp;#x2F;blogger.googleusercontent.com&amp;#x2F;img&amp;#x2F;b&amp;#x2F;R29vZ2xl&amp;#x2F;AVvXsEiYndla32ASmdYaPT8Hei_O37y4CWg60XD-Iq3T3e_-_6NYKpYTqsh2pc8YN7wc_XG7dgKnQ_iX6y5EkBxmHAn2KM-cpeKE31BElAb0P1hxtYo3_kO1lkUOGrU8doI3ozwy7tIHtSzmK2kLpkpgj0EKQG2zFnfMS_gnkhVQE6Mog12IdVM-SclNdXx5ndvl&amp;#x2F;s617&amp;#x2F;pic-selected-240913-2258-47.png&quot;
+       alt=&quot;Screenshot&quot;
+       loading=&quot;lazy&quot;
+       style=&quot;max-width: 100%; height: auto; border-radius: 6px;&quot; &#x2F;&gt;
+&lt;&#x2F;a&gt;
+&lt;&#x2F;p&gt;
+&lt;p&gt;Now press &lt;code&gt;:w&lt;&#x2F;code&gt;, &lt;code&gt;:so&lt;&#x2F;code&gt; and after that &lt;code&gt;:PackerSync&lt;&#x2F;code&gt;
+it will start to install that pulgin&lt;&#x2F;p&gt;
+&lt;a href=&quot;https:&amp;#x2F;&amp;#x2F;blogger.googleusercontent.com&amp;#x2F;img&amp;#x2F;b&amp;#x2F;R29vZ2xl&amp;#x2F;AVvXsEihJpdFhxgTfc0yMf4doskm_O3ow39JywjDig4GljqgfXrRcFOHouxfLts4TNX3t-pki0FbA-_miGjCY7XfuMsNISkFvd7SQSvo2O3o8K01vz3X470k64m3HUj_Lleity-hWBDM1kPhyphenhyphenZ_N-AHWhr4vbPQYOtOSnri4iWxUz9nlOBqgT_q44Zkgg7X7OpPm&amp;#x2F;s1364&amp;#x2F;pic-window-240913-2302-39.png&quot; data-lightbox=&quot;blog-img&quot; data-title=&quot;Screenshot&quot;&gt;
+  &lt;img src=&quot;https:&amp;#x2F;&amp;#x2F;blogger.googleusercontent.com&amp;#x2F;img&amp;#x2F;b&amp;#x2F;R29vZ2xl&amp;#x2F;AVvXsEihJpdFhxgTfc0yMf4doskm_O3ow39JywjDig4GljqgfXrRcFOHouxfLts4TNX3t-pki0FbA-_miGjCY7XfuMsNISkFvd7SQSvo2O3o8K01vz3X470k64m3HUj_Lleity-hWBDM1kPhyphenhyphenZ_N-AHWhr4vbPQYOtOSnri4iWxUz9nlOBqgT_q44Zkgg7X7OpPm&amp;#x2F;s1364&amp;#x2F;pic-window-240913-2302-39.png&quot;
+       alt=&quot;Screenshot&quot;
+       loading=&quot;lazy&quot;
+       style=&quot;max-width: 100%; height: auto; border-radius: 6px;&quot; &#x2F;&gt;
+&lt;&#x2F;a&gt;
+&lt;p&gt;Now copy this line
+paste it in  ~&#x2F;.config&#x2F;nvim&#x2F;after&#x2F;pulgin&#x2F;telescope.lua
+here create respective directory&lt;&#x2F;p&gt;
+&lt;pre&gt;&lt;code data-lang=&quot;lua&quot;&gt;local builtin = require(&amp;#39;telescope.builtin&amp;#39;)
+vim.keymap.set(&amp;#39;n&amp;#39;, &amp;#39;&amp;lt;leader&amp;gt;pf&amp;#39;, builtin.find_files, {})
+vim.keymap.set(&amp;#39;n&amp;#39;, &amp;#39;C-p&amp;#39;, builtin.git_files, {})
+vim.keymap.set(&amp;#39;n&amp;#39;, &amp;#39;&amp;lt;leader&amp;gt;ps&amp;#39;, function()
+	builtin.grep_string({ search = vim.fn.input(&amp;quot;Grep &amp;gt; &amp;quot;)});
+end)
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Now press &lt;code&gt;:w&lt;&#x2F;code&gt; &lt;code&gt;:so&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;now you can use fuzzy finder
+press &lt;code&gt;spacebar pf or ps&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;a href=&quot;https:&amp;#x2F;&amp;#x2F;blogger.googleusercontent.com&amp;#x2F;img&amp;#x2F;b&amp;#x2F;R29vZ2xl&amp;#x2F;AVvXsEgZmYnHq8oVAFiA4PIhNFusfq1XP2EeWEdXAJSHLkrjEK8-mLU2SpM1N0_-UCAhCXVSG-WfhibauYrrn-fxgxQY48WxW-qyeW8YMJ2nP6qh3Eha6TX1oHmPjt69pL-GLpaXNwVtUZfZyFsnN4N3kS8dMt8iWcG4-rEcrh8yvvmWSQTzHeumTqpIxlfxug0-&amp;#x2F;s1364&amp;#x2F;pic-window-240913-2355-48.png&quot; data-lightbox=&quot;blog-img&quot; data-title=&quot;Screenshot&quot;&gt;
+  &lt;img src=&quot;https:&amp;#x2F;&amp;#x2F;blogger.googleusercontent.com&amp;#x2F;img&amp;#x2F;b&amp;#x2F;R29vZ2xl&amp;#x2F;AVvXsEgZmYnHq8oVAFiA4PIhNFusfq1XP2EeWEdXAJSHLkrjEK8-mLU2SpM1N0_-UCAhCXVSG-WfhibauYrrn-fxgxQY48WxW-qyeW8YMJ2nP6qh3Eha6TX1oHmPjt69pL-GLpaXNwVtUZfZyFsnN4N3kS8dMt8iWcG4-rEcrh8yvvmWSQTzHeumTqpIxlfxug0-&amp;#x2F;s1364&amp;#x2F;pic-window-240913-2355-48.png&quot;
+       alt=&quot;Screenshot&quot;
+       loading=&quot;lazy&quot;
+       style=&quot;max-width: 100%; height: auto; border-radius: 6px;&quot; &#x2F;&gt;
+&lt;&#x2F;a&gt;
+&lt;h5 id=&quot;add-pulgin-rose-pine&quot;&gt;Add pulgin (Rosé Pine)&lt;&#x2F;h5&gt;
+&lt;p&gt;Now go to this repo &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;will&#x2F;rose-pine-neovim&quot;&gt;Rosé Pine&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;copy this line
+paste it in ~&#x2F;.config&#x2F;nvim&#x2F;lua&#x2F;soul&#x2F;packer.lua&lt;&#x2F;p&gt;
+&lt;pre&gt;&lt;code data-lang=&quot;lua&quot;&gt;use({ &amp;#39;rose-pine&#x2F;neovim&amp;#39;, as = &amp;#39;rose-pine&amp;#39; })
+
+vim.cmd(&amp;#39;colorscheme rose-pine&amp;#39;)
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Now you can change it colorschema &lt;code&gt;:coloschema rose-pine-main&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;a href=&quot;https:&amp;#x2F;&amp;#x2F;blogger.googleusercontent.com&amp;#x2F;img&amp;#x2F;b&amp;#x2F;R29vZ2xl&amp;#x2F;AVvXsEgejqL4HwbMUBTGYfUMEqH5z7FfGzzfszcrfdyqJb4bnlt9XjdX11z7LfPIifCg7zudPcvF9GifS0E35o1uCSVJxFuO_HjUWNO96nWBr2Xn4q2oGoo9fyDrEqGdEaG5A2wkZ2MSwDKSGru7mmB2FRPhQtrkqrIybQAuHhfQYdqCRFf7vXUGCCiCrU7z-Nth&amp;#x2F;s1364&amp;#x2F;pic-window-240914-0003-57.png&quot; data-lightbox=&quot;blog-img&quot; data-title=&quot;Screenshot&quot;&gt;
+  &lt;img src=&quot;https:&amp;#x2F;&amp;#x2F;blogger.googleusercontent.com&amp;#x2F;img&amp;#x2F;b&amp;#x2F;R29vZ2xl&amp;#x2F;AVvXsEgejqL4HwbMUBTGYfUMEqH5z7FfGzzfszcrfdyqJb4bnlt9XjdX11z7LfPIifCg7zudPcvF9GifS0E35o1uCSVJxFuO_HjUWNO96nWBr2Xn4q2oGoo9fyDrEqGdEaG5A2wkZ2MSwDKSGru7mmB2FRPhQtrkqrIybQAuHhfQYdqCRFf7vXUGCCiCrU7z-Nth&amp;#x2F;s1364&amp;#x2F;pic-window-240914-0003-57.png&quot;
+       alt=&quot;Screenshot&quot;
+       loading=&quot;lazy&quot;
+       style=&quot;max-width: 100%; height: auto; border-radius: 6px;&quot; &#x2F;&gt;
+&lt;&#x2F;a&gt;
+&lt;h4 id=&quot;transparent-background&quot;&gt;Transparent Background&lt;&#x2F;h4&gt;
+&lt;p&gt;here i want traspraent background&lt;&#x2F;p&gt;
+&lt;p&gt;create a file colors.lua
+at ~&#x2F;.config&#x2F;nvim&#x2F;after&#x2F;pulgin&#x2F;colors.lua&lt;&#x2F;p&gt;
+&lt;pre&gt;&lt;code data-lang=&quot;lua&quot;&gt;function ColorMyPencils(color)
+            color = color or &amp;quot;rose-pine&amp;quot;
+            vim.cmd.colorscheme(color)
+            vim.api.nvim_set_hl(0,&amp;quot;Normal&amp;quot;,{bg = &amp;quot;none&amp;quot;})
+            vim.api.nvim_set_hl(0,&amp;quot;NormalFloat&amp;quot;,{bg = &amp;quot;none&amp;quot;})
+end
+
+ColorMyPencils()
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;After transparenting  background .
+it will look beautiful &lt;code&gt;&amp;gt;&amp;lt;&lt;&#x2F;code&gt;.&lt;&#x2F;p&gt;
+&lt;a href=&quot;https:&amp;#x2F;&amp;#x2F;blogger.googleusercontent.com&amp;#x2F;img&amp;#x2F;b&amp;#x2F;R29vZ2xl&amp;#x2F;AVvXsEhOsNuiNiR_5Veu1EeTXOMG7VpQyxUUZS2QHeTzo24faCL6KEfAyjYuKglYez31zHjxtAh_n13I9cKNDOnFJQLGK5bmQVe_VAa6vYorLG4eCpRhxYmUIy7CEWH54yZLw9RzQG2ceSDzFnHS1WnaqMkeJTrGUEpqFDuTYPyL4LNC97rM-WlDsM47w8wD5yyF&amp;#x2F;s1365&amp;#x2F;pic-selected-240914-1406-41.png&quot; data-lightbox=&quot;blog-img&quot; data-title=&quot;Screenshot&quot;&gt;
+  &lt;img src=&quot;https:&amp;#x2F;&amp;#x2F;blogger.googleusercontent.com&amp;#x2F;img&amp;#x2F;b&amp;#x2F;R29vZ2xl&amp;#x2F;AVvXsEhOsNuiNiR_5Veu1EeTXOMG7VpQyxUUZS2QHeTzo24faCL6KEfAyjYuKglYez31zHjxtAh_n13I9cKNDOnFJQLGK5bmQVe_VAa6vYorLG4eCpRhxYmUIy7CEWH54yZLw9RzQG2ceSDzFnHS1WnaqMkeJTrGUEpqFDuTYPyL4LNC97rM-WlDsM47w8wD5yyF&amp;#x2F;s1365&amp;#x2F;pic-selected-240914-1406-41.png&quot;
+       alt=&quot;Screenshot&quot;
+       loading=&quot;lazy&quot;
+       style=&quot;max-width: 100%; height: auto; border-radius: 6px;&quot; &#x2F;&gt;
+&lt;&#x2F;a&gt;
+&lt;h4 id=&quot;add-tree-sitter&quot;&gt;Add tree sitter&lt;&#x2F;h4&gt;
+&lt;p&gt;Add this line in your packer.lua&lt;&#x2F;p&gt;
+&lt;pre&gt;&lt;code data-lang=&quot;lua&quot;&gt;use( &amp;#39;nvim-treesitter&#x2F;nvim-treesitter&amp;#39;, { run = &amp;#39;:TSUpdate&amp;#39;})
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Save the file &lt;code&gt;:w&lt;&#x2F;code&gt; and comple it &lt;code&gt;:so&lt;&#x2F;code&gt; and run Packer &lt;code&gt;:PackerSync&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;copy this line and paste it in
+~&#x2F;.config&#x2F;nvim&#x2F;after&#x2F;pulgin&#x2F;tree-sitter.lua&lt;&#x2F;p&gt;
+&lt;pre&gt;&lt;code data-lang=&quot;lua&quot;&gt;require&amp;#39;nvim-treesitter.configs&amp;#39;.setup {
+  -- A list of parser names, or &amp;quot;all&amp;quot; (the listed parsers MUST always be installed)
+  ensure_installed = { &amp;quot;c&amp;quot;, &amp;quot;lua&amp;quot;, &amp;quot;vim&amp;quot;, &amp;quot;vimdoc&amp;quot;, &amp;quot;query&amp;quot;, &amp;quot;markdown&amp;quot;, &amp;quot;markdown_inline&amp;quot;, &amp;quot;javascript&amp;quot;, &amp;quot;rust&amp;quot;, &amp;quot;typescript&amp;quot;  },
+
+  -- Install parsers synchronously (only applied to `ensure_installed`)
+  sync_install = false,
+
+  -- Automatically install missing parsers when entering buffer
+  -- Recommendation: set to false if you don&amp;#39;t have `tree-sitter` CLI installed locally
+  auto_install = true,
+  highlight = {
+    enable = true,
+    -- Setting this to true will run `:h syntax` and tree-sitter at the same time.
+    -- Set this to `true` if you depend on &amp;#39;syntax&amp;#39; being enabled (like for indentation).
+    -- Using this option may slow down your editor, and you may see some duplicate highlights.
+    -- Instead of true it can also be a list of languages
+    additional_vim_regex_highlighting = false,
+  },
+}
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Save the file &lt;code&gt;:w&lt;&#x2F;code&gt; and comple it &lt;code&gt;:so&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Add this line in your packer.lua&lt;&#x2F;p&gt;
+&lt;pre&gt;&lt;code data-lang=&quot;lua&quot;&gt;use( &amp;#39;nvim-treesitter&#x2F;playground&amp;#39;)
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Save the file &lt;code&gt;:w&lt;&#x2F;code&gt; and comple it &lt;code&gt;:so&lt;&#x2F;code&gt; and run packer &lt;code&gt;PackerSync&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;you can able to run &lt;code&gt;:TSPlaygroundToggle&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;h4 id=&quot;add-harrpon&quot;&gt;Add harrpon&lt;&#x2F;h4&gt;
+&lt;p&gt;Add this line in you Packer&lt;&#x2F;p&gt;
+&lt;pre&gt;&lt;code data-lang=&quot;lua&quot;&gt;use( &amp;#39;ThePrimeagen&#x2F;harpoon&amp;#39;)
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;same as above&lt;&#x2F;p&gt;
+&lt;p&gt;Now create a file harpoon.lua
+at ~&#x2F;.config&#x2F;nvim&#x2F;after&#x2F;harpoon.lua
+paste this&lt;&#x2F;p&gt;
+&lt;pre&gt;&lt;code data-lang=&quot;lua&quot;&gt;local mark = require(&amp;quot;harpoon.mark&amp;quot;)
+local ui = require(&amp;quot;harpoon.ui&amp;quot;)
+vim.keymap.set(&amp;quot;n&amp;quot;, &amp;quot;&amp;lt;leader&amp;gt;a&amp;quot;, mark.add_file)
+vim.keymap.set(&amp;quot;n&amp;quot;, &amp;quot;&amp;lt;leader&amp;gt;as&amp;quot;, ui.toggle_quick_menu)
+
+vim.keymap.set(&amp;quot;n&amp;quot;, &amp;quot;&amp;lt;C-a&amp;gt;&amp;quot;, function () ui.nav_file(1) end)
+vim.keymap.set(&amp;quot;n&amp;quot;, &amp;quot;&amp;lt;C-s&amp;gt;&amp;quot;, function () ui.nav_file(2) end)
+vim.keymap.set(&amp;quot;n&amp;quot;, &amp;quot;&amp;lt;C-u&amp;gt;&amp;quot;, function () ui.nav_file(3) end)
+vim.keymap.set(&amp;quot;n&amp;quot;, &amp;quot;&amp;lt;C-i&amp;gt;&amp;quot;, function () ui.nav_file(4) end)
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;and save it and complie it
+Now can switch one file to another very fast&lt;&#x2F;p&gt;
+&lt;p&gt;Here How ?&lt;&#x2F;p&gt;
+&lt;p&gt;when i press &lt;code&gt;spacebar a&lt;&#x2F;code&gt; means to add  file in nav
+now press &lt;code&gt;spacebar pf&lt;&#x2F;code&gt; serach file you want to access and go to that file and&lt;&#x2F;p&gt;
+&lt;a href=&quot;https:&amp;#x2F;&amp;#x2F;blogger.googleusercontent.com&amp;#x2F;img&amp;#x2F;b&amp;#x2F;R29vZ2xl&amp;#x2F;AVvXsEgcP_RVinVABBKu0SGZlujBo_Q23zkXH8HVQDQ2OKUDblsV4wnF12o3twD_BeGHrUTx3lBY5FNTwVIGn5vndjd68MY7NX3D3llE8bLmHwn52PyMJAWP9M-qiLBm873TiwvL5T4E-jdIa2G-cv7M_wNgQv7WZ3_RQn89nemPZVgMTCXj_byvkmyW1kwTLt5F&amp;#x2F;s1366&amp;#x2F;pic-window-240914-1648-01.png&quot; data-lightbox=&quot;blog-img&quot; data-title=&quot;Screenshot&quot;&gt;
+  &lt;img src=&quot;https:&amp;#x2F;&amp;#x2F;blogger.googleusercontent.com&amp;#x2F;img&amp;#x2F;b&amp;#x2F;R29vZ2xl&amp;#x2F;AVvXsEgcP_RVinVABBKu0SGZlujBo_Q23zkXH8HVQDQ2OKUDblsV4wnF12o3twD_BeGHrUTx3lBY5FNTwVIGn5vndjd68MY7NX3D3llE8bLmHwn52PyMJAWP9M-qiLBm873TiwvL5T4E-jdIa2G-cv7M_wNgQv7WZ3_RQn89nemPZVgMTCXj_byvkmyW1kwTLt5F&amp;#x2F;s1366&amp;#x2F;pic-window-240914-1648-01.png&quot;
+       alt=&quot;Screenshot&quot;
+       loading=&quot;lazy&quot;
+       style=&quot;max-width: 100%; height: auto; border-radius: 6px;&quot; &#x2F;&gt;
+&lt;&#x2F;a&gt;
+&lt;p&gt;press &lt;code&gt;spacebar a&lt;&#x2F;code&gt; now press &lt;code&gt;spacebar as&lt;&#x2F;code&gt; now and see two file that you selected&lt;&#x2F;p&gt;
+&lt;a href=&quot;https:&amp;#x2F;&amp;#x2F;blogger.googleusercontent.com&amp;#x2F;img&amp;#x2F;b&amp;#x2F;R29vZ2xl&amp;#x2F;AVvXsEi2xPB2PCKSyBSns_7B_oul-uwHJ47D7RgN2RW-mqKCFVs6aAOt6pMzLqjJ0qpPZH3qPpsHwb00YSCBtV5yoN0Q1MXr2Xsah0EidZBbXJnB-Ulls-D1VQms6yI5Y7e4FUorI8nLiJ6yjk07nwE9dQQFcnRz2i45d8fsFMszRdUy-hGv4nUjcDi6nJrp24Sp&amp;#x2F;s1363&amp;#x2F;pic-selected-240914-1652-13.png&quot; data-lightbox=&quot;blog-img&quot; data-title=&quot;Screenshot&quot;&gt;
+  &lt;img src=&quot;https:&amp;#x2F;&amp;#x2F;blogger.googleusercontent.com&amp;#x2F;img&amp;#x2F;b&amp;#x2F;R29vZ2xl&amp;#x2F;AVvXsEi2xPB2PCKSyBSns_7B_oul-uwHJ47D7RgN2RW-mqKCFVs6aAOt6pMzLqjJ0qpPZH3qPpsHwb00YSCBtV5yoN0Q1MXr2Xsah0EidZBbXJnB-Ulls-D1VQms6yI5Y7e4FUorI8nLiJ6yjk07nwE9dQQFcnRz2i45d8fsFMszRdUy-hGv4nUjcDi6nJrp24Sp&amp;#x2F;s1363&amp;#x2F;pic-selected-240914-1652-13.png&quot;
+       alt=&quot;Screenshot&quot;
+       loading=&quot;lazy&quot;
+       style=&quot;max-width: 100%; height: auto; border-radius: 6px;&quot; &#x2F;&gt;
+&lt;&#x2F;a&gt;
+&lt;p&gt;now you can switch using &lt;code&gt;Ctrl + a&lt;&#x2F;code&gt; and &lt;code&gt;Ctrl + s&lt;&#x2F;code&gt; and thats very quick&lt;&#x2F;p&gt;
+&lt;p&gt;or you can use &lt;code&gt;spacebar as&lt;&#x2F;code&gt; to switch&lt;&#x2F;p&gt;
+&lt;h4 id=&quot;add-undotree&quot;&gt;Add undotree&lt;&#x2F;h4&gt;
+&lt;p&gt;add this line in your packer&lt;&#x2F;p&gt;
+&lt;pre&gt;&lt;code data-lang=&quot;lua&quot;&gt;use (&amp;#39;mbbill&#x2F;undotree&amp;#39;)
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;then save it and complie it&lt;&#x2F;p&gt;
+&lt;p&gt;now create a file undotree.lua
+~&#x2F;.config&#x2F;nvim&#x2F;after&#x2F;plugin&#x2F;undotree.lua&lt;&#x2F;p&gt;
+&lt;pre&gt;&lt;code data-lang=&quot;lua&quot;&gt;vim.keymap.set(&amp;#39;n&amp;#39;, &amp;#39;&amp;lt;leader&amp;gt;u&amp;#39;, vim.cmd.UndotreeToggle)
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;save this file and complie it&lt;&#x2F;p&gt;
+&lt;h4 id=&quot;conclusion&quot;&gt;Conclusion&lt;&#x2F;h4&gt;
+&lt;p&gt;Hope this helps you to understand who things works
+I also want to add lsp but i still confuse how to configure so if i fully understand then i will update it.&lt;&#x2F;p&gt;
+&lt;p&gt;I try my best to make things simple
+see you in another blog :)&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+</feed>

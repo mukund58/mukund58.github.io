@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>Mukund Parmar - Full Stack Web Developer &amp; Software Engineer - Multi Threaded</title>
+    <subtitle>Portfolio of Mukund Parmar, a passionate Full Stack Web Developer specializing in MERN Stack, DevOps, and Competitive Programming. View my projects and experience.</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://mukund58.github.io/tags/multi-threaded/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://mukund58.github.io/"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2024-10-09T00:00:00+00:00</updated>
+    <id>https://mukund58.github.io/tags/multi-threaded/atom.xml</id>
+    <entry xml:lang="en">
+        <title>JavaScript notes</title>
+        <published>2024-10-09T00:00:00+00:00</published>
+        <updated>2024-10-09T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://mukund58.github.io/notes/how-javascript-works/"/>
+        <id>https://mukund58.github.io/notes/how-javascript-works/</id>
+        
+        <content type="html" xml:base="https://mukund58.github.io/notes/how-javascript-works/">&lt;h4 id=&quot;how-javascript-works&quot;&gt;How JavaScript Works&lt;&#x2F;h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Everything in JavaScript happen inside an Execution context&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h5 id=&quot;execution-context&quot;&gt;Execution context&lt;&#x2F;h5&gt;
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Memory&lt;&#x2F;th&gt;&lt;th style=&quot;text-align: center&quot;&gt;code&lt;&#x2F;th&gt;&lt;&#x2F;tr&gt;&lt;&#x2F;thead&gt;&lt;tbody&gt;
+&lt;tr&gt;&lt;td&gt;Variable Environment&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;Thread Of Execution&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;Key Value&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;Your Programs&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;a:10&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;Where code line by line Execute&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;fn:{…}&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;&#x2F;tbody&gt;&lt;&#x2F;table&gt;
+&lt;p&gt;&lt;code&gt;JavaScript Is a Synchronous Single-Threaded Language&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Single-Threaded Language - Executed code line by line&lt;br &#x2F;&gt;
+Synchronous Single-Threaded Language - Executed code line by line but at specific order&lt;&#x2F;p&gt;
+&lt;h5 id=&quot;what-happen-when-you-run-javascript-code&quot;&gt;What happen when You run JavaScript code ?&lt;&#x2F;h5&gt;
+&lt;p&gt;let take a JavaScript Programs&lt;&#x2F;p&gt;
+&lt;pre&gt;&lt;code data-lang=&quot;JavaScript&quot;&gt;1 var n = 2;
+2 function square(num) {
+3  var ans = num * num;
+4  return ans;
+4 }
+5 var square2 = square(n);
+6 var square4 = square(4);
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;When Code is Executed it has two phase&lt;&#x2F;p&gt;
+&lt;h5 id=&quot;1-memory-allocation-phase&quot;&gt;1.Memory Allocation phase&lt;&#x2F;h5&gt;
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Memory&lt;&#x2F;th&gt;&lt;th style=&quot;text-align: center&quot;&gt;code&lt;&#x2F;th&gt;&lt;&#x2F;tr&gt;&lt;&#x2F;thead&gt;&lt;tbody&gt;
+&lt;tr&gt;&lt;td&gt;n : undefined&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;at line 1&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;square:{store whole code of the function}&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;skip 2 to 5&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;square2:undefined&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;At 6 Function Invocation&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;square4:undefined&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;In 1st phase of Memory allocation  we were allocating memory to variable and function inside the global space (whole program) and we allocated the memory to variable which is undefined in case of function we totally store whole functions code into the memory&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;&#x2F;tbody&gt;&lt;&#x2F;table&gt;
+&lt;h5 id=&quot;2-code-execution-phase&quot;&gt;2.Code Execution phase&lt;&#x2F;h5&gt;
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Memory&lt;&#x2F;th&gt;&lt;th style=&quot;text-align: center&quot;&gt;code&lt;&#x2F;th&gt;&lt;&#x2F;tr&gt;&lt;&#x2F;thead&gt;&lt;tbody&gt;
+&lt;tr&gt;&lt;td&gt;n : 2&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;at line 1&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;square:{store whole code of the function}&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;skip 2 to 5&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;square2:4&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;At 6 Function Invocation&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;square4:16&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;In 2nd Phase which is Code Execution Phase Now it executed code line by line and&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;it goes to first line allocate value to it variable and&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;as control goes to line number 6 ,it’ll invoke the function so when you invoke the function Execution context is created and as it is there 1st Memory allocation num and ans is allocated to memeory and 2nd in Code Execution whole function will run here num * num it store into ans and return statement is executed.In return statement we take back the control over at line number 6 and now square2 will store new value which is coming from function invocation which was the ans&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;&#x2F;tbody&gt;&lt;&#x2F;table&gt;
+&lt;h5 id=&quot;what-do-you-mean-by-function-invocation&quot;&gt;What Do you mean by Function Invocation&lt;&#x2F;h5&gt;
+&lt;p&gt;It means that function is now begin executed&lt;&#x2F;p&gt;
+&lt;pre&gt;&lt;code data-lang=&quot;js&quot;&gt;var square2 = square(n);
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Everytime when Function Invoaction there a new Execution Context has been created&lt;&#x2F;p&gt;
+&lt;a href=&quot;https:&amp;#x2F;&amp;#x2F;blogger.googleusercontent.com&amp;#x2F;img&amp;#x2F;b&amp;#x2F;R29vZ2xl&amp;#x2F;AVvXsEim3XmMyXtIw7xgiECdqHePh2dkJN6LPqcydmj0LDhjY1Gtn-HuqqczqBkiLJC395xn3b5JCnee0uhUjmeeOPtvzJdZzipPRmRCk3SJtwWezplF6szNw6QXjBeO2Ynjv85-rB3m1UJagAbnfKIcvU369M3IU0pYVXIsdn6CVNnTC6gBrGG-SlqB8hqKw4Xp&amp;#x2F;s16000&amp;#x2F;09-02-2025+16:45:36.png&quot; data-lightbox=&quot;blog-img&quot; data-title=&quot;Screenshot&quot;&gt;
+  &lt;img src=&quot;https:&amp;#x2F;&amp;#x2F;blogger.googleusercontent.com&amp;#x2F;img&amp;#x2F;b&amp;#x2F;R29vZ2xl&amp;#x2F;AVvXsEim3XmMyXtIw7xgiECdqHePh2dkJN6LPqcydmj0LDhjY1Gtn-HuqqczqBkiLJC395xn3b5JCnee0uhUjmeeOPtvzJdZzipPRmRCk3SJtwWezplF6szNw6QXjBeO2Ynjv85-rB3m1UJagAbnfKIcvU369M3IU0pYVXIsdn6CVNnTC6gBrGG-SlqB8hqKw4Xp&amp;#x2F;s16000&amp;#x2F;09-02-2025+16:45:36.png&quot;
+       alt=&quot;Screenshot&quot;
+       loading=&quot;lazy&quot;
+       style=&quot;max-width: 100%; height: auto; border-radius: 6px;&quot; &#x2F;&gt;
+&lt;&#x2F;a&gt;
+&lt;p&gt;As soon as you run the code there a global Execution context is created and&lt;&#x2F;p&gt;
+&lt;p&gt;In 1st phase of Memory allocation  we were allocating memory to variable and function inside the global space (whole program) and we allocated the memory to variable which is undefined in case of function we totally store whole functions code into the memory&lt;&#x2F;p&gt;
+&lt;p&gt;Now in 2nd Phase which is Code Execution Phase Now it executed code line by line and
+it goes to first line allocate value to it variable and&lt;&#x2F;p&gt;
+&lt;p&gt;as control goes to line number 6 ,it’ll invoke the function so when you invoke the function Execution context is created and as it is there 1st Memory allocation num and ans is allocated to memeory and 2nd in Code Execution whole function will run here num * num it store into ans and return statement is executed.In return statement we take back the control over at line number 6 and now square2 will store new value which is coming from function invocation which was the ans&lt;&#x2F;p&gt;
+&lt;h5 id=&quot;how-javascript-engine-handle-all-this-execution-context-creation-deletion-and-control&quot;&gt;How javascript Engine handle all this execution context creation,deletion and control&lt;&#x2F;h5&gt;
+&lt;ul&gt;
+&lt;li&gt;It Manages a Call Stack&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;It is stack where a whole(Global) execution context is pushed inside the stack(GEC).
+&lt;a href=&quot;https:&amp;#x2F;&amp;#x2F;blogger.googleusercontent.com&amp;#x2F;img&amp;#x2F;b&amp;#x2F;R29vZ2xl&amp;#x2F;AVvXsEiNgv7cIqJ7TynCvJSFwU19lFliThp1fHyFYVxeENPomHa5CJxJFX11lB86MIGmVE70PZZoqDAXhd6QoWR4-YmY-KcNKt7Fu7r8KmEQejYuGo-lPNoqBPUKCwK5HV0BM-uUYu2VBG8TIakNtLMGF7ihXaxwqIaIIx23myQXqhpvg6gJ3nDBMJjuzQbkfN3v&amp;#x2F;s1600&amp;#x2F;09-02-2025+21:29:51.png&quot; data-lightbox=&quot;blog-img&quot; data-title=&quot;Screenshot&quot;&gt;
+  &lt;img src=&quot;https:&amp;#x2F;&amp;#x2F;blogger.googleusercontent.com&amp;#x2F;img&amp;#x2F;b&amp;#x2F;R29vZ2xl&amp;#x2F;AVvXsEiNgv7cIqJ7TynCvJSFwU19lFliThp1fHyFYVxeENPomHa5CJxJFX11lB86MIGmVE70PZZoqDAXhd6QoWR4-YmY-KcNKt7Fu7r8KmEQejYuGo-lPNoqBPUKCwK5HV0BM-uUYu2VBG8TIakNtLMGF7ihXaxwqIaIIx23myQXqhpvg6gJ3nDBMJjuzQbkfN3v&amp;#x2F;s1600&amp;#x2F;09-02-2025+21:29:51.png&quot;
+       alt=&quot;Screenshot&quot;
+       loading=&quot;lazy&quot;
+       style=&quot;max-width: 100%; height: auto; border-radius: 6px;&quot; &#x2F;&gt;
+&lt;&#x2F;a&gt;
+&lt;&#x2F;p&gt;
+&lt;p&gt;when control goes to function invoaction it create new execution context 1. Which is pushed into stack e.g E1 Once we are done with executing function, we return the ans and poped out E1 and
+&lt;a href=&quot;https:&amp;#x2F;&amp;#x2F;blogger.googleusercontent.com&amp;#x2F;img&amp;#x2F;b&amp;#x2F;R29vZ2xl&amp;#x2F;AVvXsEhrRsXvWFsJF8diu93CipTdGVnmLRKr5veGckgDcNMHdXdgdg5Hmjomi2tFDid8AqQpqsVy1YGOrwH-QWom5pvwMiphlHJOKM250RMLwHmIcO9-volynANnINnX4CbNphC00gcy_TPLywxMHBmrPastjRhYOjmyw1w0n60AeYPYxEcJZID2DpbN8ivQbnmj&amp;#x2F;s1600&amp;#x2F;09-02-2025+21:19:55.png&quot; data-lightbox=&quot;blog-img&quot; data-title=&quot;Screenshot&quot;&gt;
+  &lt;img src=&quot;https:&amp;#x2F;&amp;#x2F;blogger.googleusercontent.com&amp;#x2F;img&amp;#x2F;b&amp;#x2F;R29vZ2xl&amp;#x2F;AVvXsEhrRsXvWFsJF8diu93CipTdGVnmLRKr5veGckgDcNMHdXdgdg5Hmjomi2tFDid8AqQpqsVy1YGOrwH-QWom5pvwMiphlHJOKM250RMLwHmIcO9-volynANnINnX4CbNphC00gcy_TPLywxMHBmrPastjRhYOjmyw1w0n60AeYPYxEcJZID2DpbN8ivQbnmj&amp;#x2F;s1600&amp;#x2F;09-02-2025+21:19:55.png&quot;
+       alt=&quot;Screenshot&quot;
+       loading=&quot;lazy&quot;
+       style=&quot;max-width: 100%; height: auto; border-radius: 6px;&quot; &#x2F;&gt;
+&lt;&#x2F;a&gt;
+
+control goes back to GEC where it left&lt;br &#x2F;&gt;
+then we move on line numeber 7,Where the new function is invoked and new execution context is created e.g E2…
+After executing function, we return the ans and poped out E2 and control goes back to GEC where it left&lt;&#x2F;p&gt;
+&lt;p&gt;after all code is executed Whole stack become empty
+&lt;a href=&quot;https:&amp;#x2F;&amp;#x2F;blogger.googleusercontent.com&amp;#x2F;img&amp;#x2F;b&amp;#x2F;R29vZ2xl&amp;#x2F;AVvXsEi8r4M3GWmCQlsMng-ycQkPZkCoTfMfAejzkoSmQeqgfy2MkTyJ1ffqJfQeGxY5VB2eOT9ncti3uDT_0Ump8MgKNCfWJxJY5MbuesEb3Wfmrydhe7ycIgcqxgUo0lHyOQoHbCpHswsPdL0wFdMeTkoyaIi_hrDBKmYYv7t70DeBbqVZSNOfvO5MlmJiqKvx&amp;#x2F;s1600&amp;#x2F;09-02-2025+21:28:08.png&quot; data-lightbox=&quot;blog-img&quot; data-title=&quot;Screenshot&quot;&gt;
+  &lt;img src=&quot;https:&amp;#x2F;&amp;#x2F;blogger.googleusercontent.com&amp;#x2F;img&amp;#x2F;b&amp;#x2F;R29vZ2xl&amp;#x2F;AVvXsEi8r4M3GWmCQlsMng-ycQkPZkCoTfMfAejzkoSmQeqgfy2MkTyJ1ffqJfQeGxY5VB2eOT9ncti3uDT_0Ump8MgKNCfWJxJY5MbuesEb3Wfmrydhe7ycIgcqxgUo0lHyOQoHbCpHswsPdL0wFdMeTkoyaIi_hrDBKmYYv7t70DeBbqVZSNOfvO5MlmJiqKvx&amp;#x2F;s1600&amp;#x2F;09-02-2025+21:28:08.png&quot;
+       alt=&quot;Screenshot&quot;
+       loading=&quot;lazy&quot;
+       style=&quot;max-width: 100%; height: auto; border-radius: 6px;&quot; &#x2F;&gt;
+&lt;&#x2F;a&gt;
+&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;code&gt;Call Stack Maintain the order of execution of execution context&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;ALt Names of Call Stack&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;1.call Stack&lt;&#x2F;li&gt;
+&lt;li&gt;2.Execution Context Stack&lt;&#x2F;li&gt;
+&lt;li&gt;3.Program Stack&lt;&#x2F;li&gt;
+&lt;li&gt;4.Runtime Stack&lt;&#x2F;li&gt;
+&lt;li&gt;5.Machine Stack&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h4 id=&quot;synchronous-or-asynchronous&quot;&gt;Synchronous OR Asynchronous&lt;&#x2F;h4&gt;
+&lt;h4 id=&quot;single-threaded-or-multi-threaded&quot;&gt;Single Threaded OR Multi-Threaded&lt;&#x2F;h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;Thank You For Your Time :)&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+</feed>

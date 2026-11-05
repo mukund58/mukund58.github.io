@@ -1,0 +1,848 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="UTF-8" />
+        <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+        <meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, user-scalable=no"
+        />
+        <meta name="robots" content="index, follow" />
+
+        <!-- Google tag (gtag.js) -->
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-RPWLQR6JQ1"
+        ></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
+
+            gtag("config", "G-RPWLQR6JQ1");
+        </script>
+
+        <!-- Dynamic Title -->
+        <title>Wireframe Tool | Mukund Parmar</title>
+
+        <!-- Meta Description -->
+        <meta
+            name="description"
+            content="web-based application for designer"
+        />
+
+        <!-- Keywords -->
+        <meta
+            name="keywords"
+            content="DevOps, Wireframe, Design, PHP, MySQL"
+        />
+
+        <!-- Author -->
+        <meta name="author" content="Mukund Parmar" />
+
+        <!-- Canonical URL -->
+        <link
+            rel="canonical"
+            href="https:&#x2F;&#x2F;mukund58.github.io&#x2F;project&#x2F;wireframe&#x2F;"
+        />
+
+        <!-- Open Graph Meta Tags -->
+        <meta
+            property="og:title"
+            content="Wireframe Tool"
+        />
+        <meta
+            property="og:description"
+            content="web-based application for designer"
+        />
+        <meta property="og:type" content="article" />
+        <meta
+            property="og:url"
+            content="https:&#x2F;&#x2F;mukund58.github.io&#x2F;project&#x2F;wireframe&#x2F;"
+        />
+        <meta
+            property="og:image"
+            content="/images/wireframePage.png"
+        />
+        <meta property="og:site_name" content="Mukund Parmar" />
+
+        <!-- X (Twitter) -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+            name="twitter:title"
+            content="Wireframe Tool"
+        />
+        <meta
+            name="twitter:description"
+            content="web-based application for designer"
+        />
+        <meta
+            name="twitter:image"
+            content="/images/wireframePage.png"
+        />
+
+        
+
+        <link rel="icon" href="https://mukund58.github.io/images/logo.jpg" />
+        <link
+            href="https://cdn.boxicons.com/fonts/basic/boxicons.min.css"
+            rel="stylesheet"
+        />
+        <link
+            href="https://cdn.boxicons.com/fonts/brands/boxicons-brands.min.css"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://mukund58.github.io/asserts/css/style.css"
+        />
+        <!-- <link rel="stylesheet"  href="https://mukund58.github.io/asserts/css/output.css"> -->
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script src="https://unpkg.com/@boxicons/js@latest"></script>
+        <script defer src="https://mukund58.github.io/asserts/js/script.js"></script>
+        <!-- <script  defer src="https://mukund58.github.io/asserts/js/tailwind.config.js"></script> -->
+        <script defer>
+            tailwind.config = {
+                corePlugins: {
+                    preflight: false,
+                },
+                darkMode: "class",
+            };
+        </script>
+
+    </head>
+
+    <body
+        class="bg-white dark:bg-[#1c1917] dark:text-white transition-all duration-300 fade-in-1s"
+    >
+        <nav class="bg-white text-2xl dark:bg-[#1c1917] shadow">
+            <div
+                class="mx-auto px-4 py-3 flex justify-around flex-col sm:flex-row items-center text-base md:text-lg"
+            >
+                <a
+                    href="/"
+                    class="dark:filter-none dark:mix-blend-lighten bg-transparent mix-blend-hard-light font-bold text-gray-900 dark:text-white md:space-y-0 md:space-x-4 mt-4 md:mt-0"
+                >
+                    <img
+                        src="https://mukund58.github.io/images/logo.jpg"
+                        class="w-12"
+                        alt=""
+                    />
+                </a>
+
+                <!-- Navigation links -->
+                <div
+                    id="menu"
+                    class="text-xl whitespace-nowrap md:flex flex-col grid grid-cols-3 md:grid-cols-5 md:flex-row md:items-center md:space-y-0 md:space-x-4 mt-4 md:mt-0"
+                >
+                    <a
+                        href="/"
+                        class="text-gray-700 dark:text-gray-300 no-underline hover:underline"
+                        >~/home</a
+                    >
+                    <a
+                        href="/about"
+                        class="text-gray-700 dark:text-gray-300 no-underline hover:underline"
+                        >~/about</a
+                    >
+                    <a
+                        href="/project"
+                        class="text-gray-700 dark:text-gray-300 no-underline hover:underline"
+                        >~/projects</a
+                    >
+                    <a
+                        href="/notes"
+                        class="text-gray-700 dark:text-gray-300 no-underline hover:underline"
+                        >~/notes</a
+                    >
+                    <a
+                        href="/blog"
+                        class="text-gray-700 dark:text-gray-300 no-underline hover:underline"
+                        >~/blog</a
+                    >
+                    <!-- Dark Mode Toggle -->
+                    <button
+                        id="theme-toggle"
+                        class="bg-inherit text-white border-none text-lg"
+                    >
+                        <i class="bxr bx-moon text-black"></i>
+                        <audio
+                            id="toggle-sound"
+                            src="https://mukund58.github.io/sounds/toggle-button.mp3"
+                            preload="auto"
+                        ></audio>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Optional script for mobile toggle -->
+        </nav>
+
+        <section class="section w-full">
+            
+<div class="max-w-5xl m-auto mt-4">
+
+  <div class=""><a href=".."class="text-black dark:text-amber-200" ><-- Back </a><span class="accent-data">wireframe</span></div>
+  <time datetime="2025-06-20">Published on: <span class="accent-data">2025-06-20</span></time>
+  
+  <address rel="author">By <span class="accent-data">Mukund Parmar</span></address>
+  
+</div>
+
+    <div class="wrapper max-w-5xl m-auto">
+        <h1 class="title">
+            Wireframe Tool
+        </h1>
+         
+  <!-- <ul>
+    
+      <li class='list-none text-xl'><a href="https://mukund58.github.io/project/wireframe/#wireframe-tool-project-report" class="no-underline hover:underline dark:text-white text-black>Wireframe Tool Project Report</a>
+        
+      </li>
+    
+      <li class='list-none text-xl'><a href="https://mukund58.github.io/project/wireframe/#snapshots" class="no-underline hover:underline dark:text-white text-black>Snapshots</a>
+        
+          <ul >
+            
+              <li class='list-none' ><a href="https://mukund58.github.io/project/wireframe/#home-page" class="no-underline hover:underline dark:text-white text-black">Home Page</a></li>
+            
+              <li class='list-none' ><a href="https://mukund58.github.io/project/wireframe/#login-and-signup-page" class="no-underline hover:underline dark:text-white text-black">Login and Signup Page</a></li>
+            
+              <li class='list-none' ><a href="https://mukund58.github.io/project/wireframe/#dashboard-page" class="no-underline hover:underline dark:text-white text-black">Dashboard Page</a></li>
+            
+              <li class='list-none' ><a href="https://mukund58.github.io/project/wireframe/#editor-page" class="no-underline hover:underline dark:text-white text-black">Editor Page</a></li>
+            
+          </ul>
+        
+      </li>
+    
+      <li class='list-none text-xl'><a href="https://mukund58.github.io/project/wireframe/#1-introduction" class="no-underline hover:underline dark:text-white text-black>1. Introduction</a>
+        
+      </li>
+    
+      <li class='list-none text-xl'><a href="https://mukund58.github.io/project/wireframe/#2-purpose" class="no-underline hover:underline dark:text-white text-black>2. Purpose</a>
+        
+          <ul >
+            
+              <li class='list-none' ><a href="https://mukund58.github.io/project/wireframe/#what-is-a-wireframe" class="no-underline hover:underline dark:text-white text-black">What is a Wireframe?</a></li>
+            
+              <li class='list-none' ><a href="https://mukund58.github.io/project/wireframe/#why-use-wireframes" class="no-underline hover:underline dark:text-white text-black">Why Use Wireframes?</a></li>
+            
+              <li class='list-none' ><a href="https://mukund58.github.io/project/wireframe/#benefits-of-using-wireframes" class="no-underline hover:underline dark:text-white text-black">Benefits of Using Wireframes</a></li>
+            
+              <li class='list-none' ><a href="https://mukund58.github.io/project/wireframe/#objectives" class="no-underline hover:underline dark:text-white text-black">Objectives</a></li>
+            
+          </ul>
+        
+      </li>
+    
+      <li class='list-none text-xl'><a href="https://mukund58.github.io/project/wireframe/#3-modules" class="no-underline hover:underline dark:text-white text-black>3. Modules</a>
+        
+          <ul >
+            
+              <li class='list-none' ><a href="https://mukund58.github.io/project/wireframe/#3-1-user-authentication-module" class="no-underline hover:underline dark:text-white text-black">3.1 User Authentication Module</a></li>
+            
+              <li class='list-none' ><a href="https://mukund58.github.io/project/wireframe/#3-2-wireframe-design-module" class="no-underline hover:underline dark:text-white text-black">3.2 Wireframe Design Module</a></li>
+            
+              <li class='list-none' ><a href="https://mukund58.github.io/project/wireframe/#3-3-collaboration-module" class="no-underline hover:underline dark:text-white text-black">3.3 Collaboration Module</a></li>
+            
+              <li class='list-none' ><a href="https://mukund58.github.io/project/wireframe/#3-4-storage-and-database-module" class="no-underline hover:underline dark:text-white text-black">3.4 Storage and Database Module</a></li>
+            
+              <li class='list-none' ><a href="https://mukund58.github.io/project/wireframe/#3-5-export-and-sharing-module" class="no-underline hover:underline dark:text-white text-black">3.5 Export and Sharing Module</a></li>
+            
+          </ul>
+        
+      </li>
+    
+      <li class='list-none text-xl'><a href="https://mukund58.github.io/project/wireframe/#4-functional-requirements" class="no-underline hover:underline dark:text-white text-black>4. Functional Requirements</a>
+        
+          <ul >
+            
+              <li class='list-none' ><a href="https://mukund58.github.io/project/wireframe/#4-1-user-authentication" class="no-underline hover:underline dark:text-white text-black">4.1 User Authentication</a></li>
+            
+              <li class='list-none' ><a href="https://mukund58.github.io/project/wireframe/#4-2-wireframe-creation" class="no-underline hover:underline dark:text-white text-black">4.2 Wireframe Creation</a></li>
+            
+              <li class='list-none' ><a href="https://mukund58.github.io/project/wireframe/#4-3-collaboration" class="no-underline hover:underline dark:text-white text-black">4.3 Collaboration</a></li>
+            
+              <li class='list-none' ><a href="https://mukund58.github.io/project/wireframe/#4-4-data-storage-and-retrieval" class="no-underline hover:underline dark:text-white text-black">4.4 Data Storage and Retrieval</a></li>
+            
+              <li class='list-none' ><a href="https://mukund58.github.io/project/wireframe/#4-5-export-and-sharing" class="no-underline hover:underline dark:text-white text-black">4.5 Export and Sharing</a></li>
+            
+          </ul>
+        
+      </li>
+    
+      <li class='list-none text-xl'><a href="https://mukund58.github.io/project/wireframe/#additional-functional-requirements" class="no-underline hover:underline dark:text-white text-black>Additional Functional Requirements</a>
+        
+          <ul >
+            
+              <li class='list-none' ><a href="https://mukund58.github.io/project/wireframe/#1-user-management" class="no-underline hover:underline dark:text-white text-black">1. User Management</a></li>
+            
+              <li class='list-none' ><a href="https://mukund58.github.io/project/wireframe/#2-draft-management" class="no-underline hover:underline dark:text-white text-black">2. Draft Management</a></li>
+            
+              <li class='list-none' ><a href="https://mukund58.github.io/project/wireframe/#3-asset-management-admin" class="no-underline hover:underline dark:text-white text-black">3. Asset Management (Admin)</a></li>
+            
+              <li class='list-none' ><a href="https://mukund58.github.io/project/wireframe/#4-draft-asset-relationship" class="no-underline hover:underline dark:text-white text-black">4. Draft-Asset Relationship</a></li>
+            
+              <li class='list-none' ><a href="https://mukund58.github.io/project/wireframe/#5-security-authorization" class="no-underline hover:underline dark:text-white text-black">5. Security &amp; Authorization</a></li>
+            
+              <li class='list-none' ><a href="https://mukund58.github.io/project/wireframe/#6-database-constraints" class="no-underline hover:underline dark:text-white text-black">6. Database Constraints</a></li>
+            
+              <li class='list-none' ><a href="https://mukund58.github.io/project/wireframe/#7-import-export" class="no-underline hover:underline dark:text-white text-black">7. Import&#x2F;Export</a></li>
+            
+          </ul>
+        
+      </li>
+    
+      <li class='list-none text-xl'><a href="https://mukund58.github.io/project/wireframe/#er-model" class="no-underline hover:underline dark:text-white text-black>ER Model</a>
+        
+      </li>
+    
+      <li class='list-none text-xl'><a href="https://mukund58.github.io/project/wireframe/#relational-schema" class="no-underline hover:underline dark:text-white text-black>Relational Schema</a>
+        
+      </li>
+    
+  </ul> -->
+  
+  <h2>Table of contents</h2>
+<ul>
+
+  <li class='list-none text-base'>
+  <a href="https://mukund58.github.io/project/wireframe/#wireframe-tool-project-report"  class="no-underline hover:underline dark:text-white text-black ">Wireframe Tool Project Report</a>
+  
+  </li>
+
+  <li class='list-none text-base'>
+  <a href="https://mukund58.github.io/project/wireframe/#snapshots"  class="no-underline hover:underline dark:text-white text-black ">Snapshots</a>
+  
+    <ul>
+      
+        <li>
+        <a href="https://mukund58.github.io/project/wireframe/#home-page"class="text-black dark:text-amber-200" >Home Page</a>
+          <ul>
+          
+          </ul>
+        </li>
+      
+        <li>
+        <a href="https://mukund58.github.io/project/wireframe/#login-and-signup-page"class="text-black dark:text-amber-200" >Login and Signup Page</a>
+          <ul>
+          
+          </ul>
+        </li>
+      
+        <li>
+        <a href="https://mukund58.github.io/project/wireframe/#dashboard-page"class="text-black dark:text-amber-200" >Dashboard Page</a>
+          <ul>
+          
+          </ul>
+        </li>
+      
+        <li>
+        <a href="https://mukund58.github.io/project/wireframe/#editor-page"class="text-black dark:text-amber-200" >Editor Page</a>
+          <ul>
+          
+          </ul>
+        </li>
+      
+    </ul>
+  
+  </li>
+
+  <li class='list-none text-base'>
+  <a href="https://mukund58.github.io/project/wireframe/#1-introduction"  class="no-underline hover:underline dark:text-white text-black ">1. Introduction</a>
+  
+  </li>
+
+  <li class='list-none text-base'>
+  <a href="https://mukund58.github.io/project/wireframe/#2-purpose"  class="no-underline hover:underline dark:text-white text-black ">2. Purpose</a>
+  
+    <ul>
+      
+        <li>
+        <a href="https://mukund58.github.io/project/wireframe/#what-is-a-wireframe"class="text-black dark:text-amber-200" >What is a Wireframe?</a>
+          <ul>
+          
+          </ul>
+        </li>
+      
+        <li>
+        <a href="https://mukund58.github.io/project/wireframe/#why-use-wireframes"class="text-black dark:text-amber-200" >Why Use Wireframes?</a>
+          <ul>
+          
+          </ul>
+        </li>
+      
+        <li>
+        <a href="https://mukund58.github.io/project/wireframe/#benefits-of-using-wireframes"class="text-black dark:text-amber-200" >Benefits of Using Wireframes</a>
+          <ul>
+          
+          </ul>
+        </li>
+      
+        <li>
+        <a href="https://mukund58.github.io/project/wireframe/#objectives"class="text-black dark:text-amber-200" >Objectives</a>
+          <ul>
+          
+          </ul>
+        </li>
+      
+    </ul>
+  
+  </li>
+
+  <li class='list-none text-base'>
+  <a href="https://mukund58.github.io/project/wireframe/#3-modules"  class="no-underline hover:underline dark:text-white text-black ">3. Modules</a>
+  
+    <ul>
+      
+        <li>
+        <a href="https://mukund58.github.io/project/wireframe/#3-1-user-authentication-module"class="text-black dark:text-amber-200" >3.1 User Authentication Module</a>
+          <ul>
+          
+          </ul>
+        </li>
+      
+        <li>
+        <a href="https://mukund58.github.io/project/wireframe/#3-2-wireframe-design-module"class="text-black dark:text-amber-200" >3.2 Wireframe Design Module</a>
+          <ul>
+          
+          </ul>
+        </li>
+      
+        <li>
+        <a href="https://mukund58.github.io/project/wireframe/#3-3-collaboration-module"class="text-black dark:text-amber-200" >3.3 Collaboration Module</a>
+          <ul>
+          
+          </ul>
+        </li>
+      
+        <li>
+        <a href="https://mukund58.github.io/project/wireframe/#3-4-storage-and-database-module"class="text-black dark:text-amber-200" >3.4 Storage and Database Module</a>
+          <ul>
+          
+          </ul>
+        </li>
+      
+        <li>
+        <a href="https://mukund58.github.io/project/wireframe/#3-5-export-and-sharing-module"class="text-black dark:text-amber-200" >3.5 Export and Sharing Module</a>
+          <ul>
+          
+          </ul>
+        </li>
+      
+    </ul>
+  
+  </li>
+
+  <li class='list-none text-base'>
+  <a href="https://mukund58.github.io/project/wireframe/#4-functional-requirements"  class="no-underline hover:underline dark:text-white text-black ">4. Functional Requirements</a>
+  
+    <ul>
+      
+        <li>
+        <a href="https://mukund58.github.io/project/wireframe/#4-1-user-authentication"class="text-black dark:text-amber-200" >4.1 User Authentication</a>
+          <ul>
+          
+          </ul>
+        </li>
+      
+        <li>
+        <a href="https://mukund58.github.io/project/wireframe/#4-2-wireframe-creation"class="text-black dark:text-amber-200" >4.2 Wireframe Creation</a>
+          <ul>
+          
+          </ul>
+        </li>
+      
+        <li>
+        <a href="https://mukund58.github.io/project/wireframe/#4-3-collaboration"class="text-black dark:text-amber-200" >4.3 Collaboration</a>
+          <ul>
+          
+          </ul>
+        </li>
+      
+        <li>
+        <a href="https://mukund58.github.io/project/wireframe/#4-4-data-storage-and-retrieval"class="text-black dark:text-amber-200" >4.4 Data Storage and Retrieval</a>
+          <ul>
+          
+          </ul>
+        </li>
+      
+        <li>
+        <a href="https://mukund58.github.io/project/wireframe/#4-5-export-and-sharing"class="text-black dark:text-amber-200" >4.5 Export and Sharing</a>
+          <ul>
+          
+          </ul>
+        </li>
+      
+    </ul>
+  
+  </li>
+
+  <li class='list-none text-base'>
+  <a href="https://mukund58.github.io/project/wireframe/#additional-functional-requirements"  class="no-underline hover:underline dark:text-white text-black ">Additional Functional Requirements</a>
+  
+    <ul>
+      
+        <li>
+        <a href="https://mukund58.github.io/project/wireframe/#1-user-management"class="text-black dark:text-amber-200" >1. User Management</a>
+          <ul>
+          
+          </ul>
+        </li>
+      
+        <li>
+        <a href="https://mukund58.github.io/project/wireframe/#2-draft-management"class="text-black dark:text-amber-200" >2. Draft Management</a>
+          <ul>
+          
+          </ul>
+        </li>
+      
+        <li>
+        <a href="https://mukund58.github.io/project/wireframe/#3-asset-management-admin"class="text-black dark:text-amber-200" >3. Asset Management (Admin)</a>
+          <ul>
+          
+          </ul>
+        </li>
+      
+        <li>
+        <a href="https://mukund58.github.io/project/wireframe/#4-draft-asset-relationship"class="text-black dark:text-amber-200" >4. Draft-Asset Relationship</a>
+          <ul>
+          
+          </ul>
+        </li>
+      
+        <li>
+        <a href="https://mukund58.github.io/project/wireframe/#5-security-authorization"class="text-black dark:text-amber-200" >5. Security &amp; Authorization</a>
+          <ul>
+          
+          </ul>
+        </li>
+      
+        <li>
+        <a href="https://mukund58.github.io/project/wireframe/#6-database-constraints"class="text-black dark:text-amber-200" >6. Database Constraints</a>
+          <ul>
+          
+          </ul>
+        </li>
+      
+        <li>
+        <a href="https://mukund58.github.io/project/wireframe/#7-import-export"class="text-black dark:text-amber-200" >7. Import&#x2F;Export</a>
+          <ul>
+          
+          </ul>
+        </li>
+      
+    </ul>
+  
+  </li>
+
+  <li class='list-none text-base'>
+  <a href="https://mukund58.github.io/project/wireframe/#er-model"  class="no-underline hover:underline dark:text-white text-black ">ER Model</a>
+  
+  </li>
+
+  <li class='list-none text-base'>
+  <a href="https://mukund58.github.io/project/wireframe/#relational-schema"  class="no-underline hover:underline dark:text-white text-black ">Relational Schema</a>
+  
+  </li>
+
+</ul>
+
+
+        <p class="subtitle">
+            <strong>
+                June 20, 2025
+            </strong>
+        </p>
+        <h2 id="wireframe-tool-project-report">Wireframe Tool Project Report</h2>
+<p><strong>Institute:</strong> Birla Vishvakarma Mahavidyalaya<br />
+<a rel="noopener external" target="_blank" href="https://github.com/mukund58/Wireframe-tool">Project Repo</a></p>
+<p><strong>Group Members:</strong></p>
+<ul>
+<li>Mukund Parmar (23CP014)</li>
+<li>Jaivik Prajapati (23CP002)</li>
+</ul>
+<h2 id="snapshots">Snapshots</h2>
+<h3 id="home-page">Home Page</h3>
+
+
+
+
+
+<a href="/images&#x2F;project.png" data-lightbox="blog-img" data-title="Sample image">
+    <img src="https:&#x2F;&#x2F;mukund58.github.io&#x2F;processed_images&#x2F;project.924513388348b469.png"
+         srcset="/images&#x2F;project.png 2x"
+         width="675"
+         height="921"
+         alt="Sample image"
+         loading="lazy"
+         style="max-width: 100%; height: auto; border-radius: 6px;" />
+</a>
+<h3 id="login-and-signup-page">Login and Signup Page</h3>
+<p>
+
+
+
+
+<a href="/images&#x2F;project-login.png" data-lightbox="blog-img" data-title="Sample image">
+    <img src="https:&#x2F;&#x2F;mukund58.github.io&#x2F;processed_images&#x2F;project-login.18800b93816dc9a8.png"
+         srcset="/images&#x2F;project-login.png 2x"
+         width="675"
+         height="306"
+         alt="Sample image"
+         loading="lazy"
+         style="max-width: 100%; height: auto; border-radius: 6px;" />
+</a>
+
+
+
+
+
+
+<a href="/images&#x2F;project-signup.png" data-lightbox="blog-img" data-title="Sample image">
+    <img src="https:&#x2F;&#x2F;mukund58.github.io&#x2F;processed_images&#x2F;project-signup.3a9e4b3783c69830.png"
+         srcset="/images&#x2F;project-signup.png 2x"
+         width="675"
+         height="306"
+         alt="Sample image"
+         loading="lazy"
+         style="max-width: 100%; height: auto; border-radius: 6px;" />
+</a>
+</p>
+<h3 id="dashboard-page">Dashboard Page</h3>
+<ul>
+<li>Send verification email</li>
+<li>Edit or delete draft</li>
+<li>Create new drafts</li>
+</ul>
+<p>
+
+
+
+
+<a href="/images&#x2F;project-dashborad.png" data-lightbox="blog-img" data-title="Sample image">
+    <img src="https:&#x2F;&#x2F;mukund58.github.io&#x2F;processed_images&#x2F;project-dashborad.bd04a0222b6ec3b3.png"
+         srcset="/images&#x2F;project-dashborad.png 2x"
+         width="675"
+         height="356"
+         alt="Sample image"
+         loading="lazy"
+         style="max-width: 100%; height: auto; border-radius: 6px;" />
+</a>
+
+
+
+
+
+
+<a href="/images&#x2F;project-DashboardDraft.png" data-lightbox="blog-img" data-title="Sample image">
+    <img src="https:&#x2F;&#x2F;mukund58.github.io&#x2F;processed_images&#x2F;project-DashboardDraft.7cf545200223c93e.png"
+         srcset="/images&#x2F;project-DashboardDraft.png 2x"
+         width="675"
+         height="385"
+         alt="Sample image"
+         loading="lazy"
+         style="max-width: 100%; height: auto; border-radius: 6px;" />
+</a>
+</p>
+<h3 id="editor-page">Editor Page</h3>
+<ul>
+<li>Name and create drafts</li>
+<li>View/search all drafts</li>
+</ul>
+
+
+
+
+
+<a href="/images&#x2F;project-editor.png" data-lightbox="blog-img" data-title="Sample image">
+    <img src="https:&#x2F;&#x2F;mukund58.github.io&#x2F;processed_images&#x2F;project-editor.f06ead22fd3643da.png"
+         srcset="/images&#x2F;project-editor.png 2x"
+         width="675"
+         height="306"
+         alt="Sample image"
+         loading="lazy"
+         style="max-width: 100%; height: auto; border-radius: 6px;" />
+</a>
+<h2 id="1-introduction">1. Introduction</h2>
+<p>The <strong>Wireframe Tool</strong> is a web-based application designed to assist UI/UX designers in creating wireframes efficiently. The tool provides an infinite canvas where users can collaboratively design, modify, and share wireframes. It is developed using the LAMP stack (Linux, Apache, MySQL, PHP) and aims to streamline the design process with real-time collaboration features.</p>
+<h2 id="2-purpose">2. Purpose</h2>
+<p>The primary goal of this project is to create an intuitive and feature-rich wireframe design tool that allows users to design interfaces collaboratively.</p>
+<h3 id="what-is-a-wireframe">What is a Wireframe?</h3>
+<p>A wireframe is a simple sketch or blueprint that shows the basic layout of a website or app.</p>
+<h3 id="why-use-wireframes">Why Use Wireframes?</h3>
+<ul>
+<li>Clarify ideas.</li>
+<li>Get early feedback.</li>
+<li>Save time.</li>
+<li>Focus on function.</li>
+</ul>
+<h3 id="benefits-of-using-wireframes">Benefits of Using Wireframes</h3>
+<ul>
+<li>Improves user experience.</li>
+<li>Faster changes.</li>
+<li>Clearer development.</li>
+<li>Saves costs.</li>
+</ul>
+<h3 id="objectives">Objectives</h3>
+<ul>
+<li>Provide an infinite canvas for designing wireframes.</li>
+<li>Enable real-time collaboration through link-based sharing.</li>
+<li>Store and retrieve wireframe data efficiently.</li>
+<li>Offer an easy-to-use UI without coding knowledge.</li>
+</ul>
+<h2 id="3-modules">3. Modules</h2>
+<h3 id="3-1-user-authentication-module">3.1 User Authentication Module</h3>
+<ul>
+<li>Registration and login</li>
+<li>Secure session handling</li>
+<li>Password encryption and reset</li>
+</ul>
+<h3 id="3-2-wireframe-design-module">3.2 Wireframe Design Module</h3>
+<ul>
+<li>Infinite canvas</li>
+<li>Drag-and-drop UI elements</li>
+<li>Layered object management</li>
+</ul>
+<h3 id="3-3-collaboration-module">3.3 Collaboration Module</h3>
+<ul>
+<li>Shareable links</li>
+<li>Real-time sync via WebSockets/AJAX</li>
+<li>View/edit permission management</li>
+</ul>
+<h3 id="3-4-storage-and-database-module">3.4 Storage and Database Module</h3>
+<ul>
+<li>MySQL storage and retrieval</li>
+<li>Load previous designs</li>
+<li>Optimized queries</li>
+</ul>
+<h3 id="3-5-export-and-sharing-module">3.5 Export and Sharing Module</h3>
+<ul>
+<li>Export to PDF/PNG/SVG</li>
+<li>Unique sharing links</li>
+<li>Print-ready outputs</li>
+</ul>
+<h2 id="4-functional-requirements">4. Functional Requirements</h2>
+<h3 id="4-1-user-authentication">4.1 User Authentication</h3>
+<ul>
+<li>Secure login/logout</li>
+<li>Password hashing</li>
+<li>Session management</li>
+</ul>
+<h3 id="4-2-wireframe-creation">4.2 Wireframe Creation</h3>
+<ul>
+<li>Drag and drop elements</li>
+<li>Resize, move, delete</li>
+<li>Undo/redo support</li>
+</ul>
+<h3 id="4-3-collaboration">4.3 Collaboration</h3>
+<ul>
+<li>Invite via link</li>
+<li>Real-time updates</li>
+<li>Shared views for all collaborators</li>
+</ul>
+<h3 id="4-4-data-storage-and-retrieval">4.4 Data Storage and Retrieval</h3>
+<ul>
+<li>Save wireframes in DB</li>
+<li>Access previous work</li>
+<li>Autosave support</li>
+</ul>
+<h3 id="4-5-export-and-sharing">4.5 Export and Sharing</h3>
+<ul>
+<li>Export to standard formats</li>
+<li>Shareable links</li>
+<li>Print options</li>
+</ul>
+<h2 id="additional-functional-requirements">Additional Functional Requirements</h2>
+<h3 id="1-user-management">1. User Management</h3>
+<ul>
+<li>Register with email, username, password</li>
+<li>Role-based access (admin/user)</li>
+<li>Update profile info</li>
+</ul>
+<h3 id="2-draft-management">2. Draft Management</h3>
+<ul>
+<li>Create/view/edit/delete drafts</li>
+<li>Use assets in drafts</li>
+</ul>
+<h3 id="3-asset-management-admin">3. Asset Management (Admin)</h3>
+<ul>
+<li>Add/update/delete assets</li>
+<li>Assets linked to drafts</li>
+<li>Access control</li>
+</ul>
+<h3 id="4-draft-asset-relationship">4. Draft-Asset Relationship</h3>
+<ul>
+<li>Multiple assets per draft</li>
+</ul>
+<h3 id="5-security-authorization">5. Security &amp; Authorization</h3>
+<ul>
+<li>Only authenticated users can access features</li>
+<li>Hashed passwords</li>
+</ul>
+<h3 id="6-database-constraints">6. Database Constraints</h3>
+<ul>
+<li>Valid user-draft relationship</li>
+</ul>
+<h3 id="7-import-export">7. Import/Export</h3>
+<ul>
+<li>Drafts as JSON import/export</li>
+</ul>
+<h2 id="er-model">ER Model</h2>
+
+
+
+
+
+<a href="/images&#x2F;ER.png" data-lightbox="blog-img" data-title="Sample image">
+    <img src="https:&#x2F;&#x2F;mukund58.github.io&#x2F;processed_images&#x2F;ER.3df21119eb03ca3c.png"
+         srcset="/images&#x2F;ER.png 2x"
+         width="402"
+         height="156"
+         alt="Sample image"
+         loading="lazy"
+         style="max-width: 100%; height: auto; border-radius: 6px;" />
+</a>
+<h2 id="relational-schema">Relational Schema</h2>
+
+
+
+
+
+<a href="/images&#x2F;RS.png" data-lightbox="blog-img" data-title="Sample image">
+    <img src="https:&#x2F;&#x2F;mukund58.github.io&#x2F;processed_images&#x2F;RS.2cd053587c4e7278.png"
+         srcset="/images&#x2F;RS.png 2x"
+         width="411"
+         height="193"
+         alt="Sample image"
+         loading="lazy"
+         style="max-width: 100%; height: auto; border-radius: 6px;" />
+</a>
+<hr />
+
+    </div>
+    <p class="tags-data">
+      
+      
+      <a href="/tags/devops">&#47;DevOps&#47;</a>
+      
+      <a href="/tags/wireframe">&#47;Wireframe&#47;</a>
+      
+      <a href="/tags/design">&#47;Design&#47;</a>
+      
+      <a href="/tags/php">&#47;PHP&#47;</a>
+      
+      <a href="/tags/mysql">&#47;MySQL&#47;</a>
+      
+      
+      </p>
+
+        </section>
+    </body>
+</html>

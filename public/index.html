@@ -1,0 +1,906 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="UTF-8" />
+        <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+        <meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, user-scalable=no"
+        />
+        <meta name="robots" content="index, follow" />
+
+        <!-- Google tag (gtag.js) -->
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-RPWLQR6JQ1"
+        ></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
+
+            gtag("config", "G-RPWLQR6JQ1");
+        </script>
+
+        <!-- Dynamic Title -->
+        <title>Mukund Parmar - Full Stack Web Developer Portfolio</title>
+
+        <!-- Meta Description -->
+        <meta
+            name="description"
+            content="Welcome to Mukund Parmar's portfolio. Full Stack Web Developer specializing in MERN Stack,
+DevOps, and Backend Development. View my projects and work experience."
+        />
+
+        <!-- Keywords -->
+        <meta
+            name="keywords"
+            content="Web Developer, Full Stack Developer, MERN Stack, DevOps, Portfolio, Software Engineer"
+        />
+
+        <!-- Author -->
+        <meta name="author" content="Mukund Parmar" />
+
+        <!-- Canonical URL -->
+        <link
+            rel="canonical"
+            href="https:&#x2F;&#x2F;mukund58.github.io&#x2F;"
+        />
+
+        <!-- Open Graph Meta Tags -->
+        <meta
+            property="og:title"
+            content="Mukund Parmar - Full Stack Web Developer &amp; Software Engineer"
+        />
+        <meta
+            property="og:description"
+            content="Portfolio of Mukund Parmar, a passionate Full Stack Web Developer specializing in MERN Stack, DevOps, and Competitive Programming. View my projects and experience."
+        />
+        <meta property="og:type" content="website" />
+        <meta
+            property="og:url"
+            content="https:&#x2F;&#x2F;mukund58.github.io&#x2F;"
+        />
+        <meta
+            property="og:image"
+            content="https://mukund58.github.io/images/logo.jpg"
+        />
+        <meta property="og:site_name" content="Mukund Parmar" />
+
+        <!-- X (Twitter) -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+            name="twitter:title"
+            content="Mukund Parmar - Full Stack Web Developer &amp; Software Engineer"
+        />
+        <meta
+            name="twitter:description"
+            content="Portfolio of Mukund Parmar, a passionate Full Stack Web Developer specializing in MERN Stack, DevOps, and Competitive Programming. View my projects and experience."
+        />
+        <meta
+            name="twitter:image"
+            content="https://mukund58.github.io/images/logo.jpg"
+        />
+
+        
+
+        <link rel="icon" href="https://mukund58.github.io/images/logo.jpg" />
+        <link
+            href="https://cdn.boxicons.com/fonts/basic/boxicons.min.css"
+            rel="stylesheet"
+        />
+        <link
+            href="https://cdn.boxicons.com/fonts/brands/boxicons-brands.min.css"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://mukund58.github.io/asserts/css/style.css"
+        />
+        <!-- <link rel="stylesheet"  href="https://mukund58.github.io/asserts/css/output.css"> -->
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script src="https://unpkg.com/@boxicons/js@latest"></script>
+        <script defer src="https://mukund58.github.io/asserts/js/script.js"></script>
+        <!-- <script  defer src="https://mukund58.github.io/asserts/js/tailwind.config.js"></script> -->
+        <script defer>
+            tailwind.config = {
+                corePlugins: {
+                    preflight: false,
+                },
+                darkMode: "class",
+            };
+        </script>
+
+    </head>
+
+    <body
+        class="bg-white dark:bg-[#1c1917] dark:text-white transition-all duration-300 fade-in-1s"
+    >
+        <nav class="bg-white text-2xl dark:bg-[#1c1917] shadow">
+            <div
+                class="mx-auto px-4 py-3 flex justify-around flex-col sm:flex-row items-center text-base md:text-lg"
+            >
+                <a
+                    href="/"
+                    class="dark:filter-none dark:mix-blend-lighten bg-transparent mix-blend-hard-light font-bold text-gray-900 dark:text-white md:space-y-0 md:space-x-4 mt-4 md:mt-0"
+                >
+                    <img
+                        src="https://mukund58.github.io/images/logo.jpg"
+                        class="w-12"
+                        alt=""
+                    />
+                </a>
+
+                <!-- Navigation links -->
+                <div
+                    id="menu"
+                    class="text-xl whitespace-nowrap md:flex flex-col grid grid-cols-3 md:grid-cols-5 md:flex-row md:items-center md:space-y-0 md:space-x-4 mt-4 md:mt-0"
+                >
+                    <a
+                        href="/"
+                        class="text-gray-700 dark:text-gray-300 no-underline hover:underline"
+                        >~/home</a
+                    >
+                    <a
+                        href="/about"
+                        class="text-gray-700 dark:text-gray-300 no-underline hover:underline"
+                        >~/about</a
+                    >
+                    <a
+                        href="/project"
+                        class="text-gray-700 dark:text-gray-300 no-underline hover:underline"
+                        >~/projects</a
+                    >
+                    <a
+                        href="/notes"
+                        class="text-gray-700 dark:text-gray-300 no-underline hover:underline"
+                        >~/notes</a
+                    >
+                    <a
+                        href="/blog"
+                        class="text-gray-700 dark:text-gray-300 no-underline hover:underline"
+                        >~/blog</a
+                    >
+                    <!-- Dark Mode Toggle -->
+                    <button
+                        id="theme-toggle"
+                        class="bg-inherit text-white border-none text-lg"
+                    >
+                        <i class="bxr bx-moon text-black"></i>
+                        <audio
+                            id="toggle-sound"
+                            src="https://mukund58.github.io/sounds/toggle-button.mp3"
+                            preload="auto"
+                        ></audio>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Optional script for mobile toggle -->
+        </nav>
+
+        <section class="section w-full">
+            
+
+
+<section
+    class="transition-color  duration-300  flex w-58 items-center justify-center gap-8 p-6 md:p-16 dark:bg-stone-900 dak:text-white  shadow-lg mb-10 fade-in-1s">
+    <div class="wrap max-w-[53rem] flex  flex-col-reverse md:flex-row">
+
+        <div class="content ">
+            <h1 class="text-3xl font-bold mb-4 fade-in-4s">Mukund Parmar</h1>
+            <p class="text-lg leading-relaxed fade-in-4s">
+                I am Mukund and Web Developer. I'm into anything DevOps, Backend, Competitive Programming, and anything
+                else to do with web development.
+            </p>
+            <div class="links fade-in-4s flex flex-col md:flex-row align-center gap-[.5rem] ">
+                <a href="https://github.com/mukund58/" class="  no-underline  dark:text-white text-[#1c1917]"
+                    target="_blank">
+                    <div class="github flex items-center gap-[.5rem]">
+                        <i class="bxl bx-github text-3xl "></i>
+                        <span class=" mg-auto hover:underline">mukund58</span>
+                    </div>
+                </a>
+                <a href="mailto:parmarmukund2005@gmail.com"
+                    class="  gap-[.5rem] no-underline  dark:text-white text-[#1c1917]" target="_blank">
+                    <div class="github flex items-center gap-[.5rem]">
+                        <i class='bx  bx-at text-3xl'></i>
+                        <span class=" mg-auto hover:underline">parmarmukund2005@gmail.com</span>
+                    </div>
+                </a>
+                </a>
+                <a href="https://www.linkedin.com/in/parmarmukund"
+                    class=" gap-[.5rem] no-underline  dark:text-white text-[#1c1917]" target="_blank">
+                    <div class="github flex items-center gap-[.5rem]">
+                        <i class='bxl  bx-linkedin-square text-3xl'></i>
+                        <span class=" mg-auto hover:underline">parmarmukund</span>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+
+        <div class="profile md:w-1/3 flex justify-center align-center">
+            <div class="rounded">
+                <img class="border-[.2rem] border-solid border-[#bbb] rounded-full aspect-square block w-40 md:w-40 p-1"
+                    src="images/profile.png" rel="preload" alt="Profile" />
+            </div>
+        </div>
+    </div>
+</section>
+
+<section
+    class="transition-color rounded-lg object-cover object-center shadow-xl shadow-blue-gray-900/50  duration-300  flex flex-col  w-58 items-center justify-center  p-6 md:p-16 dark:bg-stone-900 dak:text-white  shadow-lg mb-10 fade-in-1s">
+    <!-- component -->
+    <section
+        class="transition-color rounded-lg object-cover object-center  duration-300 flex flex-col w-full items-center justify-center  text-black dark:bg-stone-900 dark:text-white  mb-10 fade-in-1s max-w-[53rem]">
+        <h1 class="text-3xl font-bold mb-6">Work Experience</h1>
+
+        <div class="py-10 container mx-auto px-5">
+            <div class="relative ">
+                <div class="border-r-4  bg-black dark:bg-white  absolute h-full top-0 z-0" style="left: 9px;"></div>
+                <div class="absolute inset-y-0 left-[9px] w-1 bg-black dark:bg-white z-0"></div>
+                <ul class="list-none m-0 p-0 min-h-[300px]">
+
+                    <li class="mb-5">
+                        <div class="flex group items-center">
+                            <div
+                                class="bg-black group-hover:bg-white dark:bg-white dark:group-hover:bg-black z-10 rounded-full border-4 border-white h-5 w-5">
+                                <div class=" bg-black dark:bg-white  rounded-l-lg h-1 w-5 ml-4 mt-[0.55rem]"></div>
+                            </div>
+                            <div class="flex-1 ml-4 z-10 font-medium">
+                                <div
+                                    class="order-1 space-y-2 hover:bg-gray-100 dark:hover:bg-[#37322e] border-solid border-black dark:border-white rounded-lg shadow transition ease-in-out lg:w-5/10 px-6 py-4">
+                                    <h3 class="mb-3 font-bold  text-2xl">FullStack (MERN) Internship</h3>
+                                    <p class="pb-4 text-sm ">Birla Vishvakarma Mahavidyalaya
+                                        <i class="text-gray-500">Engineering College</i>
+                                        <br>(26th May to 7th June 2025)
+                                    </p> <i class="text-gray-500">15 Days</i>
+                                    <hr />
+                                    <p class="text-sm font-medium "> Built and maintained web modules using the MERN
+                                        stack. </p>
+                                    <p class="text-sm font-medium ">
+                                        Collaborated on frontend and backend integration tasks.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="mb-5">
+                        <div class="flex group items-center">
+                            <div
+                                class="bg-black group-hover:bg-white dark:bg-white dark:group-hover:bg-black z-10 rounded-full border-4 border-white h-5 w-5">
+                                <div class=" bg-black dark:bg-white  rounded-l-lg h-1 w-5 ml-4 mt-[0.55rem]"></div>
+                            </div>
+                            <div class="flex-1 ml-4 z-10 font-medium">
+                                <div
+                                    class="order-1 space-y-2 hover:bg-gray-100 dark:hover:bg-[#37322e] border-solid border-black dark:border-white rounded-lg shadow transition ease-in-out lg:w-5/10 px-6 py-4">
+                                    <h3 class="mb-3 font-bold  text-2xl">Backend Development (Asp.NET) Internship</h3>
+                                    <p class="pb-4 text-sm ">Help Me Buddy IT Pvt. Ltd.
+                                        <i class="text-gray-500">Expanding IT Solutions Indefinite</i>
+                                        <br>(18th May to 27th June 2026)
+                                    </p> <i class="text-gray-500">40 days</i>
+                                    <hr />
+                                    <p class="text-sm font-medium ">The internship provided valuable exposure to modern
+                                        web application development and industry standard software engineering
+                                        practices.
+                                    </p>
+                                    <p class="text-sm font-medium "> During the internship, a Procurement & Vendor
+                                        Management ERP was designed and developed to digitize grain trading and improve
+                                        transparency between vendor, manager, and administrators.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- You can add more list items here -->
+                </ul>
+            </div>
+        </div>
+    </section>
+
+</section>
+<section
+    class="transition-color rounded-lg duration-300 flex flex-col w-full items-center justify-center p-6 md:p-12 dark:bg-stone-900 dark:text-white shadow-lg mb-10 fade-in-1s">
+    
+    
+    <div class="w-full max-w-[106rem] flex flex-col items-center">
+        <h1 class="text-3xl font-bold mb-8">Projects</h1>
+
+        <!-- Project 1: ShreeAnna -->
+        <div
+            class="w-full bg-white dark:bg-[#252220] border border-solid border-gray-200 dark:border-gray-700 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 mb-6 overflow-hidden">
+            <div class="flex flex-col md:flex-row md:items-stretch">
+                <a href="https://github.com/mukund58/taskflow-dotnet/blob/master/README.md" target="_blank"
+                    class="block w-full md:w-[320px] lg:w-[350px] h-52 sm:h-60 md:h-auto shrink-0 bg-gray-50 dark:bg-stone-800 overflow-hidden group">
+                    <img rel="preload"
+                        class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-300"
+                        src="images/ShreeAnna.png" alt="ShreeAnna">
+                </a>
+                <div class="flex flex-col justify-between p-5 md:p-6 flex-1 min-w-0">
+                    <div>
+                        <div class="flex items-start justify-between gap-4 mb-2">
+                            <div>
+                                <h3
+                                    class="text-xl md:text-2xl font-bold tracking-tight text-gray-900 dark:text-white hover:text-[#bc4a3c] dark:hover:text-[#bc4a3c] transition-colors">
+                                    <a href="https://github.com/mukund58/taskflow-dotnet/blob/master/README.md"
+                                        target="_blank">ShreeAnna</a>
+                                </h3>
+                                <div class="flex items-center gap-1.5 text-xs md:text-sm text-gray-500 dark:text-gray-400 mt-1">
+                                    <i class="bx bx-calendar"></i>
+                                    <span>November 2026</span>
+                                </div>
+                            </div>
+                            <a href="https://github.com/mukund58/taskflow-dotnet" target="_blank"
+                                rel="noopener noreferrer"
+                                class="text-gray-600 hover:text-black dark:text-gray-300 dark:hover:text-white transition-colors p-1"
+                                title="View Source on GitHub">
+                                <i class="bxl bx-github text-2xl md:text-3xl"></i>
+                            </a>
+                        </div>
+                        <p class="text-sm md:text-base text-gray-600 dark:text-gray-300 leading-relaxed mb-4">
+                            ShreeAnna gives smallholder farmers real-time transparency across their entire procurement
+                            lifecycle from harvest submission, NABL quality testing, and digital agreement signing to
+                            direct bank settlement.
+                        </p>
+                    </div>
+                    <div
+                        class="flex flex-wrap items-center gap-2 pt-3 border-t border-gray-100 dark:border-gray-700/60">
+                        <span
+                            class="inline-flex items-center justify-center w-9 h-9 rounded-lg bg-red-50 text-[#bc4a3c] dark:bg-stone-800"
+                            title="PostgreSQL">
+                            <i class="bxl bx-postgresql text-2xl"></i>
+                        </span>
+                        <span
+                            class="inline-flex items-center justify-center w-9 h-9 rounded-lg bg-red-50 text-[#bc4a3c] dark:bg-stone-800"
+                            title="Docker">
+                            <i class="bxl bx-docker text-2xl"></i>
+                        </span>
+                        <span
+                            class="inline-flex items-center justify-center w-9 h-9 rounded-lg bg-red-50 text-[#bc4a3c] dark:bg-stone-800"
+                            title="Next.js">
+                            <i class="bxl bx-next-js text-2xl"></i>
+                        </span>
+                        <span
+                            class="inline-flex items-center justify-center w-9 h-9 rounded-lg bg-[#bc4a3c] text-white font-bold text-xs tracking-tighter"
+                            title=".NET">
+                            .NET
+                        </span>
+                        <span
+                            class="inline-flex items-center justify-center w-9 h-9 rounded-lg bg-red-50 text-[#bc4a3c] dark:bg-stone-800"
+                            title="JavaScript">
+                            <i class="bxl bx-javascript text-2xl"></i>
+                        </span>
+                        <span
+                            class="inline-flex items-center justify-center w-9 h-9 rounded-lg bg-red-50 text-[#bc4a3c] dark:bg-stone-800"
+                            title="Redis">
+                            <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+                                <path fill="#A41E11"
+                                    d="M121.8 93.1c-6.7 3.5-41.4 17.7-48.8 21.6-7.4 3.9-11.5 3.8-17.3 1S13 98.1 6.3 94.9c-3.3-1.6-5-2.9-5-4.2V78s48-10.5 55.8-13.2c7.8-2.8 10.4-2.9 17-.5s46.1 9.5 52.6 11.9v12.5c0 1.3-1.5 2.7-4.9 4.4z" />
+                                <path fill="#D82C20"
+                                    d="M121.8 80.5C115.1 84 80.4 98.2 73 102.1c-7.4 3.9-11.5 3.8-17.3 1-5.8-2.8-42.7-17.7-49.4-20.9C-.3 79-.5 76.8 6 74.3c6.5-2.6 43.2-17 51-19.7 7.8-2.8 10.4-2.9 17-.5s41.1 16.1 47.6 18.5c6.7 2.4 6.9 4.4.2 7.9z" />
+                                <path fill="#A41E11"
+                                    d="M121.8 72.5C115.1 76 80.4 90.2 73 94.1c-7.4 3.8-11.5 3.8-17.3 1C49.9 92.3 13 77.4 6.3 74.2c-3.3-1.6-5-2.9-5-4.2V57.3s48-10.5 55.8-13.2c7.8-2.8 10.4-2.9 17-.5s46.1 9.5 52.6 11.9V68c0 1.3-1.5 2.7-4.9 4.5z" />
+                                <path fill="#D82C20"
+                                    d="M121.8 59.8c-6.7 3.5-41.4 17.7-48.8 21.6-7.4 3.8-11.5 3.8-17.3 1C49.9 79.6 13 64.7 6.3 61.5s-6.8-5.4-.3-7.9c6.5-2.6 43.2-17 51-19.7 7.8-2.8 10.4-2.9 17-.5s41.1 16.1 47.6 18.5c6.7 2.4 6.9 4.4.2 7.9z" />
+                                <path fill="#A41E11"
+                                    d="M121.8 51c-6.7 3.5-41.4 17.7-48.8 21.6-7.4 3.8-11.5 3.8-17.3 1C49.9 70.9 13 56 6.3 52.8c-3.3-1.6-5.1-2.9-5.1-4.2V35.9s48-10.5 55.8-13.2c7.8-2.8 10.4-2.9 17-.5s46.1 9.5 52.6 11.9v12.5c.1 1.3-1.4 2.6-4.8 4.4z" />
+                                <path fill="#D82C20"
+                                    d="M121.8 38.3C115.1 41.8 80.4 56 73 59.9c-7.4 3.8-11.5 3.8-17.3 1S13 43.3 6.3 40.1s-6.8-5.4-.3-7.9c6.5-2.6 43.2-17 51-19.7 7.8-2.8 10.4-2.9 17-.5s41.1 16.1 47.6 18.5c6.7 2.4 6.9 4.4.2 7.8z" />
+                                <path fill="#fff"
+                                    d="M80.4 26.1l-10.8 1.2-2.5 5.8-3.9-6.5-12.5-1.1 9.3-3.4-2.8-5.2 8.8 3.4 8.2-2.7L72 23zM66.5 54.5l-20.3-8.4 29.1-4.4z" />
+                                <ellipse fill="#fff" cx="38.4" cy="35.4" rx="15.5" ry="6" />
+                                <path fill="#7A0C00" d="M93.3 27.7l17.2 6.8-17.2 6.8z" />
+                                <path fill="#AD2115" d="M74.3 35.3l19-7.6v13.6l-1.9.8z" />
+                            </svg>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project 2: Project Management System -->
+        <div
+            class="w-full bg-white dark:bg-[#252220] border border-solid border-gray-200 dark:border-gray-700 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 mb-6 overflow-hidden">
+            <div class="flex flex-col md:flex-row md:items-stretch">
+                <a href="https://github.com/mukund58/taskflow-dotnet/blob/master/README.md" target="_blank"
+                    class="block w-full md:w-[320px] lg:w-[350px] h-52 sm:h-60 md:h-auto shrink-0 bg-gray-50 dark:bg-stone-800 overflow-hidden group">
+                    <img rel="preload"
+                        class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-300"
+                        src="images/jira.png" alt="Project Management System">
+                </a>
+                <div class="flex flex-col justify-between p-5 md:p-6 flex-1 min-w-0">
+                    <div>
+                        <div class="flex items-start justify-between gap-4 mb-2">
+                            <div>
+                                <h3
+                                    class="text-xl md:text-2xl font-bold tracking-tight text-gray-900 dark:text-white hover:text-[#bc4a3c] dark:hover:text-[#bc4a3c] transition-colors">
+                                    <a href="https://github.com/mukund58/taskflow-dotnet/blob/master/README.md"
+                                        target="_blank">Project Management System</a>
+                                </h3>
+                                <div class="flex items-center gap-1.5 text-xs md:text-sm text-gray-500 dark:text-gray-400 mt-1">
+                                    <i class="bx bx-calendar"></i>
+                                    <span>May 2026</span>
+                                </div>
+                            </div>
+                            <a href="https://github.com/mukund58/taskflow-dotnet" target="_blank"
+                                rel="noopener noreferrer"
+                                class="text-gray-600 hover:text-black dark:text-gray-300 dark:hover:text-white transition-colors p-1"
+                                title="View Source on GitHub">
+                                <i class="bxl bx-github text-2xl md:text-3xl"></i>
+                            </a>
+                        </div>
+                        <p class="text-sm md:text-base text-gray-600 dark:text-gray-300 leading-relaxed mb-4">
+                            It is Jira like project management system designed to assist teams in planning, tracking,
+                            and managing their projects effectively.
+                        </p>
+                    </div>
+                    <div
+                        class="flex flex-wrap items-center gap-2 pt-3 border-t border-gray-100 dark:border-gray-700/60">
+                        <span
+                            class="inline-flex items-center justify-center w-9 h-9 rounded-lg bg-red-50 text-[#bc4a3c] dark:bg-stone-800"
+                            title="PostgreSQL">
+                            <i class="bxl bx-postgresql text-2xl"></i>
+                        </span>
+                        <span
+                            class="inline-flex items-center justify-center w-9 h-9 rounded-lg bg-red-50 text-[#bc4a3c] dark:bg-stone-800"
+                            title="Docker">
+                            <i class="bxl bx-docker text-2xl"></i>
+                        </span>
+                        <span
+                            class="inline-flex items-center justify-center w-9 h-9 rounded-lg bg-red-50 text-[#bc4a3c] dark:bg-stone-800"
+                            title="Next.js">
+                            <i class="bxl bx-next-js text-2xl"></i>
+                        </span>
+                        <span
+                            class="inline-flex items-center justify-center w-9 h-9 rounded-lg bg-[#bc4a3c] text-white font-bold text-xs tracking-tighter"
+                            title=".NET">
+                            .NET
+                        </span>
+                        <span
+                            class="inline-flex items-center justify-center w-9 h-9 rounded-lg bg-red-50 text-[#bc4a3c] dark:bg-stone-800"
+                            title="JavaScript">
+                            <i class="bxl bx-javascript text-2xl"></i>
+                        </span>
+                        <span
+                            class="inline-flex items-center justify-center w-9 h-9 rounded-lg bg-red-50 text-[#bc4a3c] dark:bg-stone-800"
+                            title="Redis">
+                            <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+                                <path fill="#A41E11"
+                                    d="M121.8 93.1c-6.7 3.5-41.4 17.7-48.8 21.6-7.4 3.9-11.5 3.8-17.3 1S13 98.1 6.3 94.9c-3.3-1.6-5-2.9-5-4.2V78s48-10.5 55.8-13.2c7.8-2.8 10.4-2.9 17-.5s46.1 9.5 52.6 11.9v12.5c0 1.3-1.5 2.7-4.9 4.4z" />
+                                <path fill="#D82C20"
+                                    d="M121.8 80.5C115.1 84 80.4 98.2 73 102.1c-7.4 3.9-11.5 3.8-17.3 1-5.8-2.8-42.7-17.7-49.4-20.9C-.3 79-.5 76.8 6 74.3c6.5-2.6 43.2-17 51-19.7 7.8-2.8 10.4-2.9 17-.5s41.1 16.1 47.6 18.5c6.7 2.4 6.9 4.4.2 7.9z" />
+                                <path fill="#A41E11"
+                                    d="M121.8 72.5C115.1 76 80.4 90.2 73 94.1c-7.4 3.8-11.5 3.8-17.3 1C49.9 92.3 13 77.4 6.3 74.2c-3.3-1.6-5-2.9-5-4.2V57.3s48-10.5 55.8-13.2c7.8-2.8 10.4-2.9 17-.5s46.1 9.5 52.6 11.9V68c0 1.3-1.5 2.7-4.9 4.5z" />
+                                <path fill="#D82C20"
+                                    d="M121.8 59.8c-6.7 3.5-41.4 17.7-48.8 21.6-7.4 3.8-11.5 3.8-17.3 1C49.9 79.6 13 64.7 6.3 61.5s-6.8-5.4-.3-7.9c6.5-2.6 43.2-17 51-19.7 7.8-2.8 10.4-2.9 17-.5s41.1 16.1 47.6 18.5c6.7 2.4 6.9 4.4.2 7.9z" />
+                                <path fill="#A41E11"
+                                    d="M121.8 51c-6.7 3.5-41.4 17.7-48.8 21.6-7.4 3.8-11.5 3.8-17.3 1C49.9 70.9 13 56 6.3 52.8c-3.3-1.6-5.1-2.9-5.1-4.2V35.9s48-10.5 55.8-13.2c7.8-2.8 10.4-2.9 17-.5s46.1 9.5 52.6 11.9v12.5c.1 1.3-1.4 2.6-4.8 4.4z" />
+                                <path fill="#D82C20"
+                                    d="M121.8 38.3C115.1 41.8 80.4 56 73 59.9c-7.4 3.8-11.5 3.8-17.3 1S13 43.3 6.3 40.1s-6.8-5.4-.3-7.9c6.5-2.6 43.2-17 51-19.7 7.8-2.8 10.4-2.9 17-.5s41.1 16.1 47.6 18.5c6.7 2.4 6.9 4.4.2 7.8z" />
+                                <path fill="#fff"
+                                    d="M80.4 26.1l-10.8 1.2-2.5 5.8-3.9-6.5-12.5-1.1 9.3-3.4-2.8-5.2 8.8 3.4 8.2-2.7L72 23zM66.5 54.5l-20.3-8.4 29.1-4.4z" />
+                                <ellipse fill="#fff" cx="38.4" cy="35.4" rx="15.5" ry="6" />
+                                <path fill="#7A0C00" d="M93.3 27.7l17.2 6.8-17.2 6.8z" />
+                                <path fill="#AD2115" d="M74.3 35.3l19-7.6v13.6l-1.9.8z" />
+                            </svg>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project 3: Vendor Bridge Project -->
+        <div
+            class="w-full bg-white dark:bg-[#252220] border border-solid border-gray-200 dark:border-gray-700 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 mb-6 overflow-hidden">
+            <div class="flex flex-col md:flex-row md:items-stretch">
+                <a href="https://mukund58.github.io/project/vendorbridge/"
+                    class="block w-full md:w-[320px] lg:w-[350px] h-52 sm:h-60 md:h-auto shrink-0 bg-gray-50 dark:bg-stone-800 overflow-hidden group">
+                    <img rel="preload"
+                        class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-300"
+                        src="images/vendorbridge/dashboard.png" alt="Vendor Bridge Project">
+                </a>
+                <div class="flex flex-col justify-between p-5 md:p-6 flex-1 min-w-0">
+                    <div>
+                        <div class="flex items-start justify-between gap-4 mb-2">
+                            <div>
+                                <h3
+                                    class="text-xl md:text-2xl font-bold tracking-tight text-gray-900 dark:text-white hover:text-[#bc4a3c] dark:hover:text-[#bc4a3c] transition-colors">
+                                    <a href="https://mukund58.github.io/project/vendorbridge/">Vendor Bridge Project</a>
+                                </h3>
+                                <div class="flex items-center gap-1.5 text-xs md:text-sm text-gray-500 dark:text-gray-400 mt-1">
+                                    <i class="bx bx-calendar"></i>
+                                    <span>July 22, 2026</span>
+                                </div>
+                            </div>
+                            <a href="https://github.com/mukund58/vendor-bridge" target="_blank"
+                                rel="noopener noreferrer"
+                                class="text-gray-600 hover:text-black dark:text-gray-300 dark:hover:text-white transition-colors p-1"
+                                title="View Source on GitHub">
+                                <i class="bxl bx-github text-2xl md:text-3xl"></i>
+                            </a>
+                        </div>
+                        <p class="text-sm md:text-base text-gray-600 dark:text-gray-300 leading-relaxed mb-4">
+                            VendorBridge is a Procurement & Vendor Management ERP that helps organizations manage their
+                            complete procurement workflow digitally from vendor registration to purchase orders and
+                            invoices.
+                        </p>
+                    </div>
+                    <div
+                        class="flex flex-wrap items-center gap-2 pt-3 border-t border-gray-100 dark:border-gray-700/60">
+                        <span
+                            class="inline-flex items-center justify-center w-9 h-9 rounded-lg bg-red-50 text-indigo-600 dark:bg-stone-800"
+                            title="PostgreSQL">
+                            <i class="bxl bx-postgresql text-2xl"></i>
+                        </span>
+                        <span
+                            class="inline-flex items-center justify-center w-9 h-9 rounded-lg bg-red-50 text-indigo-600 dark:bg-stone-800"
+                            title="Docker">
+                            <i class="bxl bx-docker text-2xl"></i>
+                        </span>
+                        <span
+                            class="inline-flex items-center justify-center w-9 h-9 rounded-lg bg-red-50 text-indigo-600 dark:bg-stone-800"
+                            title="React">
+                            <i class="bxl bx-react text-2xl"></i>
+                        </span>
+                        <span
+                            class="inline-flex items-center justify-center w-9 h-9 rounded-lg bg-[#512bd4] text-white font-bold text-xs tracking-tighter"
+                            title=".NET">
+                            .NET
+                        </span>
+                        <span
+                            class="inline-flex items-center justify-center w-9 h-9 rounded-lg bg-red-50 text-yellow-500 dark:bg-stone-800"
+                            title="JavaScript">
+                            <i class="bxl bx-javascript text-2xl"></i>
+                        </span>
+                        <span
+                            class="inline-flex items-center justify-center w-9 h-9 rounded-lg bg-red-50 text-indigo-600 dark:bg-stone-800"
+                            title="Redis">
+                            <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+                                <path fill="#A41E11"
+                                    d="M121.8 93.1c-6.7 3.5-41.4 17.7-48.8 21.6-7.4 3.9-11.5 3.8-17.3 1S13 98.1 6.3 94.9c-3.3-1.6-5-2.9-5-4.2V78s48-10.5 55.8-13.2c7.8-2.8 10.4-2.9 17-.5s46.1 9.5 52.6 11.9v12.5c0 1.3-1.5 2.7-4.9 4.4z" />
+                                <path fill="#D82C20"
+                                    d="M121.8 80.5C115.1 84 80.4 98.2 73 102.1c-7.4 3.9-11.5 3.8-17.3 1-5.8-2.8-42.7-17.7-49.4-20.9C-.3 79-.5 76.8 6 74.3c6.5-2.6 43.2-17 51-19.7 7.8-2.8 10.4-2.9 17-.5s41.1 16.1 47.6 18.5c6.7 2.4 6.9 4.4.2 7.9z" />
+                                <path fill="#A41E11"
+                                    d="M121.8 72.5C115.1 76 80.4 90.2 73 94.1c-7.4 3.8-11.5 3.8-17.3 1C49.9 92.3 13 77.4 6.3 74.2c-3.3-1.6-5-2.9-5-4.2V57.3s48-10.5 55.8-13.2c7.8-2.8 10.4-2.9 17-.5s46.1 9.5 52.6 11.9V68c0 1.3-1.5 2.7-4.9 4.5z" />
+                                <path fill="#D82C20"
+                                    d="M121.8 59.8c-6.7 3.5-41.4 17.7-48.8 21.6-7.4 3.8-11.5 3.8-17.3 1C49.9 79.6 13 64.7 6.3 61.5s-6.8-5.4-.3-7.9c6.5-2.6 43.2-17 51-19.7 7.8-2.8 10.4-2.9 17-.5s41.1 16.1 47.6 18.5c6.7 2.4 6.9 4.4.2 7.9z" />
+                                <path fill="#A41E11"
+                                    d="M121.8 51c-6.7 3.5-41.4 17.7-48.8 21.6-7.4 3.8-11.5 3.8-17.3 1C49.9 70.9 13 56 6.3 52.8c-3.3-1.6-5.1-2.9-5.1-4.2V35.9s48-10.5 55.8-13.2c7.8-2.8 10.4-2.9 17-.5s46.1 9.5 52.6 11.9v12.5c.1 1.3-1.4 2.6-4.8 4.4z" />
+                                <path fill="#D82C20"
+                                    d="M121.8 38.3C115.1 41.8 80.4 56 73 59.9c-7.4 3.8-11.5 3.8-17.3 1S13 43.3 6.3 40.1s-6.8-5.4-.3-7.9c6.5-2.6 43.2-17 51-19.7 7.8-2.8 10.4-2.9 17-.5s41.1 16.1 47.6 18.5c6.7 2.4 6.9 4.4.2 7.8z" />
+                                <path fill="#fff"
+                                    d="M80.4 26.1l-10.8 1.2-2.5 5.8-3.9-6.5-12.5-1.1 9.3-3.4-2.8-5.2 8.8 3.4 8.2-2.7L72 23zM66.5 54.5l-20.3-8.4 29.1-4.4z" />
+                                <ellipse fill="#fff" cx="38.4" cy="35.4" rx="15.5" ry="6" />
+                                <path fill="#7A0C00" d="M93.3 27.7l17.2 6.8-17.2 6.8z" />
+                                <path fill="#AD2115" d="M74.3 35.3l19-7.6v13.6l-1.9.8z" />
+                            </svg>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project 4: Wireframe Tool Project -->
+        <div
+            class="w-full bg-white dark:bg-[#252220] border border-solid border-gray-200 dark:border-gray-700 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 mb-6 overflow-hidden">
+            <div class="flex flex-col md:flex-row md:items-stretch">
+                <a href="https://mukund58.github.io/project/wireframe/"
+                    class="block w-full md:w-[320px] lg:w-[350px] h-52 sm:h-60 md:h-auto shrink-0 bg-gray-50 dark:bg-stone-800 overflow-hidden group">
+                    <img rel="preload"
+                        class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-300"
+                        src="images/wireframePage.png" alt="Wireframe Tool Project">
+                </a>
+                <div class="flex flex-col justify-between p-5 md:p-6 flex-1 min-w-0">
+                    <div>
+                        <div class="flex items-start justify-between gap-4 mb-2">
+                            <div>
+                                <h3
+                                    class="text-xl md:text-2xl font-bold tracking-tight text-gray-900 dark:text-white hover:text-[#bc4a3c] dark:hover:text-[#bc4a3c] transition-colors">
+                                    <a href="https://mukund58.github.io/project/wireframe/">Wireframe Tool Project</a>
+                                </h3>
+                                <div class="flex items-center gap-1.5 text-xs md:text-sm text-gray-500 dark:text-gray-400 mt-1">
+                                    <i class="bx bx-calendar"></i>
+                                    <span>June 20, 2025</span>
+                                </div>
+                            </div>
+                            <a href="https://github.com/mukund58/Wireframe-tool.git" target="_blank"
+                                rel="noopener noreferrer"
+                                class="text-gray-600 hover:text-black dark:text-gray-300 dark:hover:text-white transition-colors p-1"
+                                title="View Source on GitHub">
+                                <i class="bxl bx-github text-2xl md:text-3xl"></i>
+                            </a>
+                        </div>
+                        <p class="text-sm md:text-base text-gray-600 dark:text-gray-300 leading-relaxed mb-4">
+                            The Wireframe Tool is a web-based application designed to assist UI/UX designers in creating
+                            wireframes efficiently.
+                        </p>
+                    </div>
+                    <div
+                        class="flex flex-wrap items-center gap-2 pt-3 border-t border-gray-100 dark:border-gray-700/60">
+                        <span
+                            class="inline-flex items-center justify-center w-9 h-9 rounded-lg bg-indigo-50 text-indigo-600 dark:bg-stone-800"
+                            title="PHP">
+                            <i class="bxl bx-php text-2xl"></i>
+                        </span>
+                        <span
+                            class="inline-flex items-center justify-center w-9 h-9 rounded-lg bg-indigo-50 text-indigo-600 dark:bg-stone-800"
+                            title="MySQL">
+                            <i class="bxl bx-my-sql text-2xl"></i>
+                        </span>
+                        <span
+                            class="inline-flex items-center justify-center w-9 h-9 rounded-lg bg-indigo-50 text-indigo-600 dark:bg-stone-800"
+                            title="Ubuntu">
+                            <i class="bxl bx-ubuntu text-2xl"></i>
+                        </span>
+                        <span
+                            class="inline-flex items-center justify-center w-9 h-9 rounded-lg bg-indigo-50 text-indigo-600 dark:bg-stone-800"
+                            title="Tailwind CSS">
+                            <i class="bxl bx-tailwind-css text-2xl"></i>
+                        </span>
+                        <span
+                            class="inline-flex items-center justify-center w-9 h-9 rounded-lg bg-indigo-50 text-indigo-600 dark:bg-stone-800"
+                            title="HTML5">
+                            <i class="bxl bx-html5 text-2xl"></i>
+                        </span>
+                        <span
+                            class="inline-flex items-center justify-center w-9 h-9 rounded-lg bg-indigo-50 text-indigo-600 dark:bg-stone-800"
+                            title="JavaScript">
+                            <i class="bxl bx-javascript text-2xl"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Blog Section -->
+<section
+    class="transition-color rounded-lg duration-300 flex flex-col w-full items-center justify-center p-6 md:p-12 dark:bg-stone-900 dark:text-white shadow-lg mb-10 fade-in-1s">
+    <div class="w-full max-w-[106rem] flex flex-col items-center">
+        <div class="w-full flex items-center justify-between mb-8">
+            <h2 class="text-3xl font-bold text-gray-900 dark:text-white">Blog</h2>
+            <a href="/blog"
+                class="text-sm font-semibold text-[#bc4a3c] hover:underline flex items-center gap-1 transition-colors">
+                View all posts <i class="bx bx-right-arrow-alt text-lg"></i>
+            </a>
+        </div>
+
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full">
+            
+            <article
+                class="flex flex-col bg-white dark:bg-[#252220] border border-solid border-gray-200 dark:border-gray-700 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 overflow-hidden group">
+                
+                <a href="https://mukund58.github.io/blog/how-to-config-neovim/" class="block w-full h-48 bg-gray-50 dark:bg-stone-800 overflow-hidden shrink-0">
+                    <img rel="preload"
+                        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                        src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhOsNuiNiR_5Veu1EeTXOMG7VpQyxUUZS2QHeTzo24faCL6KEfAyjYuKglYez31zHjxtAh_n13I9cKNDOnFJQLGK5bmQVe_VAa6vYorLG4eCpRhxYmUIy7CEWH54yZLw9RzQG2ceSDzFnHS1WnaqMkeJTrGUEpqFDuTYPyL4LNC97rM-WlDsM47w8wD5yyF/s1365/pic-selected-240914-1406-41.png" alt="Configure neovim from Scratch">
+                </a>
+                
+                <div class="flex flex-col flex-1 p-5 md:p-6 justify-between min-w-0">
+                    <div>
+                        <div class="flex items-center gap-1.5 text-xs text-gray-500 dark:text-gray-400 mb-2">
+                            <i class="bx bx-calendar"></i>
+                            <span>September 18, 2025</span>
+                        </div>
+                        <h3
+                            class="text-xl font-bold tracking-tight text-gray-900 dark:text-white group-hover:text-[#bc4a3c] dark:group-hover:text-[#bc4a3c] transition-colors mb-2 line-clamp-2">
+                            <a href="https://mukund58.github.io/blog/how-to-config-neovim/">Configure neovim from Scratch</a>
+                        </h3>
+                        
+                        <p class="text-sm text-gray-600 dark:text-gray-300 leading-relaxed mb-4 line-clamp-3">
+                            An explanation of how i configure my neovim setup. 
+                        </p>
+                        
+                    </div>
+                    
+                    <div class="flex flex-wrap gap-1.5 pt-3 border-t border-gray-100 dark:border-gray-700/60 mt-auto">
+                        
+                        
+                        <span
+                            class="text-xs px-2 py-0.5 rounded-md bg-stone-100 dark:bg-stone-800 text-stone-600 dark:text-stone-300">
+                            #editor
+                        </span>
+                        
+                        
+                        
+                        <span
+                            class="text-xs px-2 py-0.5 rounded-md bg-stone-100 dark:bg-stone-800 text-stone-600 dark:text-stone-300">
+                            #Open Source
+                        </span>
+                        
+                        
+                        
+                        <span
+                            class="text-xs px-2 py-0.5 rounded-md bg-stone-100 dark:bg-stone-800 text-stone-600 dark:text-stone-300">
+                            #nvim
+                        </span>
+                        
+                        
+                    </div>
+                    
+                </div>
+            </article>
+            
+            <article
+                class="flex flex-col bg-white dark:bg-[#252220] border border-solid border-gray-200 dark:border-gray-700 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 overflow-hidden group">
+                
+                <a href="https://mukund58.github.io/blog/why-i-use-the-gpl/" class="block w-full h-48 bg-gray-50 dark:bg-stone-800 overflow-hidden shrink-0">
+                    <img rel="preload"
+                        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                        src="https://preview.redd.it/oyfim7x9h6va1.png?auto=webp&s=60579dee07d78dcaee88bf2881b2c86a956bef69" alt="Why I Use the GPL">
+                </a>
+                
+                <div class="flex flex-col flex-1 p-5 md:p-6 justify-between min-w-0">
+                    <div>
+                        <div class="flex items-center gap-1.5 text-xs text-gray-500 dark:text-gray-400 mb-2">
+                            <i class="bx bx-calendar"></i>
+                            <span>September 10, 2025</span>
+                        </div>
+                        <h3
+                            class="text-xl font-bold tracking-tight text-gray-900 dark:text-white group-hover:text-[#bc4a3c] dark:group-hover:text-[#bc4a3c] transition-colors mb-2 line-clamp-2">
+                            <a href="https://mukund58.github.io/blog/why-i-use-the-gpl/">Why I Use the GPL</a>
+                        </h3>
+                        
+                        <p class="text-sm text-gray-600 dark:text-gray-300 leading-relaxed mb-4 line-clamp-3">
+                            An explanation of why I choose to use the GNU General Public License (GPL) for my software projects.
+                        </p>
+                        
+                    </div>
+                    
+                    <div class="flex flex-wrap gap-1.5 pt-3 border-t border-gray-100 dark:border-gray-700/60 mt-auto">
+                        
+                        
+                        <span
+                            class="text-xs px-2 py-0.5 rounded-md bg-stone-100 dark:bg-stone-800 text-stone-600 dark:text-stone-300">
+                            #GPL
+                        </span>
+                        
+                        
+                        
+                        <span
+                            class="text-xs px-2 py-0.5 rounded-md bg-stone-100 dark:bg-stone-800 text-stone-600 dark:text-stone-300">
+                            #Open Source
+                        </span>
+                        
+                        
+                        
+                        <span
+                            class="text-xs px-2 py-0.5 rounded-md bg-stone-100 dark:bg-stone-800 text-stone-600 dark:text-stone-300">
+                            #Software Licensing
+                        </span>
+                        
+                        
+                    </div>
+                    
+                </div>
+            </article>
+            
+            <article
+                class="flex flex-col bg-white dark:bg-[#252220] border border-solid border-gray-200 dark:border-gray-700 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 overflow-hidden group">
+                
+                <a href="https://mukund58.github.io/blog/first/" class="block w-full h-48 bg-gray-50 dark:bg-stone-800 overflow-hidden shrink-0">
+                    <img rel="preload"
+                        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                        src="/images/gnu-means-freedom.png" alt="Why Free software is good ?">
+                </a>
+                
+                <div class="flex flex-col flex-1 p-5 md:p-6 justify-between min-w-0">
+                    <div>
+                        <div class="flex items-center gap-1.5 text-xs text-gray-500 dark:text-gray-400 mb-2">
+                            <i class="bx bx-calendar"></i>
+                            <span>June 20, 2025</span>
+                        </div>
+                        <h3
+                            class="text-xl font-bold tracking-tight text-gray-900 dark:text-white group-hover:text-[#bc4a3c] dark:group-hover:text-[#bc4a3c] transition-colors mb-2 line-clamp-2">
+                            <a href="https://mukund58.github.io/blog/first/">Why Free software is good ?</a>
+                        </h3>
+                        
+                        <p class="text-sm text-gray-600 dark:text-gray-300 leading-relaxed mb-4 line-clamp-3">
+                            An explanation of why I choose to use the Free Software for my software projects.
+                        </p>
+                        
+                    </div>
+                    
+                    <div class="flex flex-wrap gap-1.5 pt-3 border-t border-gray-100 dark:border-gray-700/60 mt-auto">
+                        
+                        
+                        <span
+                            class="text-xs px-2 py-0.5 rounded-md bg-stone-100 dark:bg-stone-800 text-stone-600 dark:text-stone-300">
+                            #Free Software
+                        </span>
+                        
+                        
+                        
+                        <span
+                            class="text-xs px-2 py-0.5 rounded-md bg-stone-100 dark:bg-stone-800 text-stone-600 dark:text-stone-300">
+                            #Proprietary Software
+                        </span>
+                        
+                        
+                        
+                        <span
+                            class="text-xs px-2 py-0.5 rounded-md bg-stone-100 dark:bg-stone-800 text-stone-600 dark:text-stone-300">
+                            #Software Freedom
+                        </span>
+                        
+                        
+                    </div>
+                    
+                </div>
+            </article>
+            
+            <article
+                class="flex flex-col bg-white dark:bg-[#252220] border border-solid border-gray-200 dark:border-gray-700 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 overflow-hidden group">
+                
+                <a href="https://mukund58.github.io/blog/gdb-debugger/" class="block w-full h-48 bg-gray-50 dark:bg-stone-800 overflow-hidden shrink-0">
+                    <img rel="preload"
+                        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                        src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh_YqCCDkmkV2jWyCSwwCsyjEtuNknGjtYEUhGAp5eqwQhgOHjDb3khwg1rzL9Jn4WNR5ljFoTYha4wzNl5tt4m8tn1T_1cG7CEyMOcD5pyOz-ZaUUkGBwXoD380GunlviJTw_loMAuQ2Z8jxNxuHp_Dpp-SmzouKJGmyaBFUFHq7bvNomCu6cucCZBSm19/s1366/pic-full-240910-1913-48.png" alt="How to debug Your code">
+                </a>
+                
+                <div class="flex flex-col flex-1 p-5 md:p-6 justify-between min-w-0">
+                    <div>
+                        <div class="flex items-center gap-1.5 text-xs text-gray-500 dark:text-gray-400 mb-2">
+                            <i class="bx bx-calendar"></i>
+                            <span>October 24, 2024</span>
+                        </div>
+                        <h3
+                            class="text-xl font-bold tracking-tight text-gray-900 dark:text-white group-hover:text-[#bc4a3c] dark:group-hover:text-[#bc4a3c] transition-colors mb-2 line-clamp-2">
+                            <a href="https://mukund58.github.io/blog/gdb-debugger/">How to debug Your code</a>
+                        </h3>
+                        
+                        <p class="text-sm text-gray-600 dark:text-gray-300 leading-relaxed mb-4 line-clamp-3">
+                            How to debug Your code using GDB debugger
+                        </p>
+                        
+                    </div>
+                    
+                    <div class="flex flex-wrap gap-1.5 pt-3 border-t border-gray-100 dark:border-gray-700/60 mt-auto">
+                        
+                        
+                        <span
+                            class="text-xs px-2 py-0.5 rounded-md bg-stone-100 dark:bg-stone-800 text-stone-600 dark:text-stone-300">
+                            #gdb
+                        </span>
+                        
+                        
+                        
+                        <span
+                            class="text-xs px-2 py-0.5 rounded-md bg-stone-100 dark:bg-stone-800 text-stone-600 dark:text-stone-300">
+                            #debugger
+                        </span>
+                        
+                        
+                        
+                        <span
+                            class="text-xs px-2 py-0.5 rounded-md bg-stone-100 dark:bg-stone-800 text-stone-600 dark:text-stone-300">
+                            #c++
+                        </span>
+                        
+                        
+                        
+                        
+                    </div>
+                    
+                </div>
+            </article>
+            
+        </div>
+    </div>
+</section>
+<hr>
+<footer class="flex flex-col  w-58 items-center justify-center">
+    <a href="https://www.mukund.xyz/atom.xml" target="_blank" rel="noopener noreferrer"
+        class="    no-underline hover:underline dark:text-white text-[#1c1917]">RSS FEED</a>
+</footer>
+
+        </section>
+    </body>
+</html>

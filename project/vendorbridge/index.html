@@ -1,0 +1,735 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="UTF-8" />
+        <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+        <meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, user-scalable=no"
+        />
+        <meta name="robots" content="index, follow" />
+
+        <!-- Google tag (gtag.js) -->
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-RPWLQR6JQ1"
+        ></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
+
+            gtag("config", "G-RPWLQR6JQ1");
+        </script>
+
+        <!-- Dynamic Title -->
+        <title>Building VendorBridge | Mukund Parmar</title>
+
+        <!-- Meta Description -->
+        <meta
+            name="description"
+            content="Building a Procurement &amp; Vendor Management ERP using React, ASP.NET Core Minimal API and PostgreSQL during my summer internship."
+        />
+
+        <!-- Keywords -->
+        <meta
+            name="keywords"
+            content="ASP.NET Core, React, PostgreSQL, Internship, ERP, Minimal API"
+        />
+
+        <!-- Author -->
+        <meta name="author" content="Mukund Parmar" />
+
+        <!-- Canonical URL -->
+        <link
+            rel="canonical"
+            href="https://www.mukund.xyz/project/vendorbridge/"
+        />
+
+        <!-- Open Graph Meta Tags -->
+        <meta
+            property="og:title"
+            content="Building VendorBridge"
+        />
+        <meta
+            property="og:description"
+            content="Building a Procurement &amp; Vendor Management ERP using React, ASP.NET Core Minimal API and PostgreSQL during my summer internship."
+        />
+        <meta property="og:type" content="article" />
+        <meta
+            property="og:url"
+            content="https://www.mukund.xyz/project/vendorbridge/"
+        />
+        <meta
+            property="og:image"
+            content="/images/vendorbridge/dashboard.png"
+        />
+        <meta property="og:site_name" content="Mukund Parmar" />
+
+        <!-- X (Twitter) -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+            name="twitter:title"
+            content="Building VendorBridge"
+        />
+        <meta
+            name="twitter:description"
+            content="Building a Procurement &amp; Vendor Management ERP using React, ASP.NET Core Minimal API and PostgreSQL during my summer internship."
+        />
+        <meta
+            name="twitter:image"
+            content="/images/vendorbridge/dashboard.png"
+        />
+
+        
+
+<meta property="article:published_time" content="2026-07-22" />
+
+<meta property="article:author" content="Mukund Parmar" />
+
+
+<meta property="article:tag" content="ASP.NET Core" />
+
+<meta property="article:tag" content="React" />
+
+<meta property="article:tag" content="PostgreSQL" />
+
+<meta property="article:tag" content="Internship" />
+
+<meta property="article:tag" content="ERP" />
+
+<meta property="article:tag" content="Minimal API" />
+
+
+
+<!-- Schema.org Article Structured Data for Google Search -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Building VendorBridge",
+  "description": "Building a Procurement & Vendor Management ERP using React, ASP.NET Core Minimal API and PostgreSQL during my summer internship.",
+  "datePublished": "2026-07-22",
+  "author": {
+    "@type": "Person",
+    "name": "Mukund Parmar",
+    "url": "https://www.mukund.xyz"
+  },
+  
+  "image": "/images/vendorbridge/dashboard.png",
+  
+  "keywords": ["ASP.NET Core", "React", "PostgreSQL", "Internship", "ERP", "Minimal API"],
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.mukund.xyz/project/vendorbridge/"
+  }
+}
+</script>
+
+
+        <link rel="icon" href="https://www.mukund.xyz/images/logo.jpg" />
+        <link
+            href="https://cdn.boxicons.com/fonts/basic/boxicons.min.css"
+            rel="stylesheet"
+        />
+        <link
+            href="https://cdn.boxicons.com/fonts/brands/boxicons-brands.min.css"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://www.mukund.xyz/asserts/css/style.css"
+        />
+        <!-- <link rel="stylesheet"  href="https://www.mukund.xyz/asserts/css/output.css"> -->
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script src="https://unpkg.com/@boxicons/js@latest"></script>
+        <script defer src="https://www.mukund.xyz/asserts/js/script.js"></script>
+        <!-- <script  defer src="https://www.mukund.xyz/asserts/js/tailwind.config.js"></script> -->
+        <script defer>
+            tailwind.config = {
+                corePlugins: {
+                    preflight: false,
+                },
+                darkMode: "class",
+            };
+        </script>
+
+    </head>
+
+    <body
+        class="bg-white dark:bg-[#1c1917] dark:text-white transition-all duration-300 fade-in-1s"
+    >
+        <nav class="bg-white text-2xl dark:bg-[#1c1917] shadow">
+            <div
+                class="mx-auto px-4 py-3 flex justify-around flex-col sm:flex-row items-center text-base md:text-lg"
+            >
+                <a
+                    href="/"
+                    class="dark:filter-none dark:mix-blend-lighten bg-transparent mix-blend-hard-light font-bold text-gray-900 dark:text-white md:space-y-0 md:space-x-4 mt-4 md:mt-0"
+                >
+                    <img
+                        src="https://www.mukund.xyz/images/logo.jpg"
+                        class="w-12"
+                        alt=""
+                    />
+                </a>
+
+                <!-- Navigation links -->
+                <div
+                    id="menu"
+                    class="text-xl whitespace-nowrap md:flex flex-col grid grid-cols-3 md:grid-cols-5 md:flex-row md:items-center md:space-y-0 md:space-x-4 mt-4 md:mt-0"
+                >
+                    <a
+                        href="/"
+                        class="text-gray-700 dark:text-gray-300 no-underline hover:underline"
+                        >~/home</a
+                    >
+                    <a
+                        href="/about"
+                        class="text-gray-700 dark:text-gray-300 no-underline hover:underline"
+                        >~/about</a
+                    >
+                    <a
+                        href="/project"
+                        class="text-gray-700 dark:text-gray-300 no-underline hover:underline"
+                        >~/projects</a
+                    >
+                    <a
+                        href="/notes"
+                        class="text-gray-700 dark:text-gray-300 no-underline hover:underline"
+                        >~/notes</a
+                    >
+                    <a
+                        href="/blog"
+                        class="text-gray-700 dark:text-gray-300 no-underline hover:underline"
+                        >~/blog</a
+                    >
+                    <!-- Dark Mode Toggle -->
+                    <button
+                        id="theme-toggle"
+                        class="bg-inherit text-white border-none text-lg"
+                    >
+                        <i class="bxr bx-moon text-black"></i>
+                        <audio
+                            id="toggle-sound"
+                            src="https://www.mukund.xyz/sounds/toggle-button.mp3"
+                            preload="auto"
+                        ></audio>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Optional script for mobile toggle -->
+        </nav>
+
+        <section class="section w-full">
+            
+<div class="wrapper max-w-4xl m-auto p-4 md:p-8">
+  <a href="/project" class="inline-flex items-center gap-1 text-sm font-medium text-stone-600 dark:text-stone-400 hover:text-[#bc4a3c] dark:hover:text-[#bc4a3c] mb-6 transition-colors">
+    <i class="bx bx-left-arrow-alt text-lg"></i> Back to Projects
+  </a>
+
+  <h1 class="text-3xl md:text-4xl font-extrabold tracking-tight mb-3 text-stone-900 dark:text-white">
+    Building VendorBridge
+  </h1>
+
+  <div class="flex flex-wrap items-center gap-4 text-sm text-stone-500 dark:text-stone-400 mb-4 pb-4 border-b border-stone-200 dark:border-stone-800">
+    
+    <div class="flex items-center gap-1.5">
+      <i class="bx bx-calendar text-base"></i>
+      <span>July 22, 2026</span>
+    </div>
+    
+    
+    <div class="flex items-center gap-1.5">
+      <i class="bx bx-time text-base"></i>
+      <span>5 min read</span>
+    </div>
+    
+  </div>
+
+  
+  <div class="flex flex-wrap items-center gap-2 mb-8">
+    <span class="text-xs uppercase tracking-wider text-stone-400 font-semibold">Tags:</span>
+    
+    <a href="https://www.mukund.xyz/tags/asp-net-core/"
+       class="inline-flex items-center text-xs px-2.5 py-1 rounded-md bg-stone-100 hover:bg-[#bc4a3c] hover:text-white dark:bg-stone-800 dark:hover:bg-[#bc4a3c] dark:hover:text-white text-stone-700 dark:text-stone-300 font-medium transition-colors"
+       title="View all posts tagged #ASP.NET Core">
+      #ASP.NET Core
+    </a>
+    
+    <a href="https://www.mukund.xyz/tags/react/"
+       class="inline-flex items-center text-xs px-2.5 py-1 rounded-md bg-stone-100 hover:bg-[#bc4a3c] hover:text-white dark:bg-stone-800 dark:hover:bg-[#bc4a3c] dark:hover:text-white text-stone-700 dark:text-stone-300 font-medium transition-colors"
+       title="View all posts tagged #React">
+      #React
+    </a>
+    
+    <a href="https://www.mukund.xyz/tags/postgresql/"
+       class="inline-flex items-center text-xs px-2.5 py-1 rounded-md bg-stone-100 hover:bg-[#bc4a3c] hover:text-white dark:bg-stone-800 dark:hover:bg-[#bc4a3c] dark:hover:text-white text-stone-700 dark:text-stone-300 font-medium transition-colors"
+       title="View all posts tagged #PostgreSQL">
+      #PostgreSQL
+    </a>
+    
+    <a href="https://www.mukund.xyz/tags/internship/"
+       class="inline-flex items-center text-xs px-2.5 py-1 rounded-md bg-stone-100 hover:bg-[#bc4a3c] hover:text-white dark:bg-stone-800 dark:hover:bg-[#bc4a3c] dark:hover:text-white text-stone-700 dark:text-stone-300 font-medium transition-colors"
+       title="View all posts tagged #Internship">
+      #Internship
+    </a>
+    
+    <a href="https://www.mukund.xyz/tags/erp/"
+       class="inline-flex items-center text-xs px-2.5 py-1 rounded-md bg-stone-100 hover:bg-[#bc4a3c] hover:text-white dark:bg-stone-800 dark:hover:bg-[#bc4a3c] dark:hover:text-white text-stone-700 dark:text-stone-300 font-medium transition-colors"
+       title="View all posts tagged #ERP">
+      #ERP
+    </a>
+    
+    <a href="https://www.mukund.xyz/tags/minimal-api/"
+       class="inline-flex items-center text-xs px-2.5 py-1 rounded-md bg-stone-100 hover:bg-[#bc4a3c] hover:text-white dark:bg-stone-800 dark:hover:bg-[#bc4a3c] dark:hover:text-white text-stone-700 dark:text-stone-300 font-medium transition-colors"
+       title="View all posts tagged #Minimal API">
+      #Minimal API
+    </a>
+    
+  </div>
+  
+
+  
+  <nav class="my-6 p-4 rounded-xl bg-stone-50 dark:bg-stone-900 border border-stone-200 dark:border-stone-800">
+    <h2 class="text-sm font-bold uppercase tracking-wider text-stone-500 dark:text-stone-400 mb-2">Table of Contents</h2>
+    <ul class="space-y-1 text-sm">
+      
+      <li>
+        <a href="https://www.mukund.xyz/project/vendorbridge/#building-vendorbridge" class="text-stone-700 dark:text-stone-300 hover:text-[#bc4a3c] dark:hover:text-[#bc4a3c] hover:underline">Building VendorBridge</a>
+        
+        <ul class="pl-4 mt-1 space-y-1">
+          
+          <li>
+            <a href="https://www.mukund.xyz/project/vendorbridge/#project-at-a-glance" class="text-stone-600 dark:text-stone-400 hover:text-[#bc4a3c] dark:hover:text-[#bc4a3c] hover:underline">Project at a Glance</a>
+          </li>
+          
+          <li>
+            <a href="https://www.mukund.xyz/project/vendorbridge/#introduction" class="text-stone-600 dark:text-stone-400 hover:text-[#bc4a3c] dark:hover:text-[#bc4a3c] hover:underline">Introduction</a>
+          </li>
+          
+          <li>
+            <a href="https://www.mukund.xyz/project/vendorbridge/#why-asp-net-core" class="text-stone-600 dark:text-stone-400 hover:text-[#bc4a3c] dark:hover:text-[#bc4a3c] hover:underline">Why ASP.NET Core?</a>
+          </li>
+          
+          <li>
+            <a href="https://www.mukund.xyz/project/vendorbridge/#why-this-project" class="text-stone-600 dark:text-stone-400 hover:text-[#bc4a3c] dark:hover:text-[#bc4a3c] hover:underline">Why this project?</a>
+          </li>
+          
+          <li>
+            <a href="https://www.mukund.xyz/project/vendorbridge/#thinking-beyond-crud" class="text-stone-600 dark:text-stone-400 hover:text-[#bc4a3c] dark:hover:text-[#bc4a3c] hover:underline">Thinking Beyond CRUD</a>
+          </li>
+          
+          <li>
+            <a href="https://www.mukund.xyz/project/vendorbridge/#challenges-i-faced" class="text-stone-600 dark:text-stone-400 hover:text-[#bc4a3c] dark:hover:text-[#bc4a3c] hover:underline">Challenges I Faced</a>
+          </li>
+          
+          <li>
+            <a href="https://www.mukund.xyz/project/vendorbridge/#lessons-learned" class="text-stone-600 dark:text-stone-400 hover:text-[#bc4a3c] dark:hover:text-[#bc4a3c] hover:underline">Lessons Learned</a>
+          </li>
+          
+          <li>
+            <a href="https://www.mukund.xyz/project/vendorbridge/#if-i-continued-this-project" class="text-stone-600 dark:text-stone-400 hover:text-[#bc4a3c] dark:hover:text-[#bc4a3c] hover:underline">If I Continued This Project</a>
+          </li>
+          
+          <li>
+            <a href="https://www.mukund.xyz/project/vendorbridge/#tech-stack" class="text-stone-600 dark:text-stone-400 hover:text-[#bc4a3c] dark:hover:text-[#bc4a3c] hover:underline">Tech Stack</a>
+          </li>
+          
+          <li>
+            <a href="https://www.mukund.xyz/project/vendorbridge/#production-oriented-features" class="text-stone-600 dark:text-stone-400 hover:text-[#bc4a3c] dark:hover:text-[#bc4a3c] hover:underline">Production-Oriented Features</a>
+          </li>
+          
+          <li>
+            <a href="https://www.mukund.xyz/project/vendorbridge/#project-architecture" class="text-stone-600 dark:text-stone-400 hover:text-[#bc4a3c] dark:hover:text-[#bc4a3c] hover:underline">Project Architecture</a>
+          </li>
+          
+          <li>
+            <a href="https://www.mukund.xyz/project/vendorbridge/#major-features" class="text-stone-600 dark:text-stone-400 hover:text-[#bc4a3c] dark:hover:text-[#bc4a3c] hover:underline">Major Features</a>
+          </li>
+          
+          <li>
+            <a href="https://www.mukund.xyz/project/vendorbridge/#database-design" class="text-stone-600 dark:text-stone-400 hover:text-[#bc4a3c] dark:hover:text-[#bc4a3c] hover:underline">Database Design</a>
+          </li>
+          
+          <li>
+            <a href="https://www.mukund.xyz/project/vendorbridge/#what-i-learned" class="text-stone-600 dark:text-stone-400 hover:text-[#bc4a3c] dark:hover:text-[#bc4a3c] hover:underline">What I Learned</a>
+          </li>
+          
+          <li>
+            <a href="https://www.mukund.xyz/project/vendorbridge/#implementing-secure-authentication-using-jwt-taught-me-how-production-apis-protect-resources-while-supporting-different-user-roles" class="text-stone-600 dark:text-stone-400 hover:text-[#bc4a3c] dark:hover:text-[#bc4a3c] hover:underline">Implementing secure authentication using JWT taught me how production APIs protect resources while supporting different user roles.</a>
+          </li>
+          
+          <li>
+            <a href="https://www.mukund.xyz/project/vendorbridge/#screenshots" class="text-stone-600 dark:text-stone-400 hover:text-[#bc4a3c] dark:hover:text-[#bc4a3c] hover:underline">Screenshots</a>
+          </li>
+          
+          <li>
+            <a href="https://www.mukund.xyz/project/vendorbridge/#internship-outcomes" class="text-stone-600 dark:text-stone-400 hover:text-[#bc4a3c] dark:hover:text-[#bc4a3c] hover:underline">Internship Outcomes</a>
+          </li>
+          
+          <li>
+            <a href="https://www.mukund.xyz/project/vendorbridge/#final-thoughts" class="text-stone-600 dark:text-stone-400 hover:text-[#bc4a3c] dark:hover:text-[#bc4a3c] hover:underline">Final Thoughts</a>
+          </li>
+          
+        </ul>
+        
+      </li>
+      
+    </ul>
+  </nav>
+  
+
+  <div class="content prose dark:prose-invert max-w-none">
+    <h1 id="building-vendorbridge">Building VendorBridge</h1>
+<p><strong>Company:</strong> Help Me Buddy IT Pvt. Ltd.</p>
+<p><strong>Duration:</strong> 18 May 2026 – 28 June 2026</p>
+<hr />
+<h2 id="project-at-a-glance">Project at a Glance</h2>
+<table><thead><tr><th>Item</th><th>Details</th></tr></thead><tbody>
+<tr><td>Duration</td><td>6 Weeks</td></tr>
+<tr><td>Company</td><td>Help Me Buddy IT Pvt. Ltd.</td></tr>
+<tr><td>Project</td><td>VendorBridge ERP</td></tr>
+<tr><td>Backend</td><td>ASP.NET Core Minimal API</td></tr>
+<tr><td>Frontend</td><td>React</td></tr>
+<tr><td>Database</td><td>PostgreSQL</td></tr>
+<tr><td>ORM</td><td>Entity Framework Core</td></tr>
+<tr><td>Authentication</td><td>JWT</td></tr>
+<tr><td>Architecture</td><td>Layered Architecture</td></tr>
+<tr><td>APIs</td><td>REST</td></tr>
+<tr><td>Documentation</td><td>Swagger</td></tr>
+</tbody></table>
+<h2 id="introduction">Introduction</h2>
+<p>During my summer internship at <strong>Help Me Buddy IT Pvt. Ltd.</strong>, I worked on a real-world ERP application called <strong>VendorBridge</strong>.</p>
+<p>VendorBridge is a Procurement &amp; Vendor Management ERP that helps organizations manage their complete procurement workflow digitally—from vendor registration to purchase orders and invoices.</p>
+<p>This internship was my first experience building a large-scale backend using <strong>ASP.NET Core Minimal APIs</strong> and <strong>Entity Framework Core</strong>.</p>
+<hr />
+<h2 id="why-asp-net-core">Why ASP.NET Core?</h2>
+<p>Before this internship, I had experimented with .NET but had never built a complete production-style application.</p>
+<p>I wanted to understand how modern backend systems are designed beyond simple CRUD applications.</p>
+<p>ASP.NET Core Minimal APIs appealed to me because they provide a lightweight approach to building REST services while still supporting dependency injection, middleware, authentication, validation, and Entity Framework Core.</p>
+<p>This internship gave me an opportunity to apply these technologies to a real business problem.</p>
+<h2 id="why-this-project">Why this project?</h2>
+<p>Many companies still manage procurement using Excel sheets, emails and paper documents.</p>
+<p>This creates several problems:</p>
+<ul>
+<li>Slow approval process</li>
+<li>Difficult vendor comparison</li>
+<li>Manual invoice generation</li>
+<li>No centralized records</li>
+<li>Lack of transparency</li>
+</ul>
+<p>VendorBridge solves these problems by bringing the entire procurement lifecycle into one application.</p>
+<h2 id="thinking-beyond-crud">Thinking Beyond CRUD</h2>
+<p>One of the biggest lessons from this internship was learning that software is not just about writing APIs.</p>
+<p>Every feature starts with understanding a business workflow.</p>
+<p>Instead of asking:</p>
+<blockquote>
+<p>“What tables do I need?”</p>
+</blockquote>
+<p>I learned to ask:</p>
+<blockquote>
+<p>“How does procurement actually work?”</p>
+</blockquote>
+<p>Understanding vendors, RFQs, quotations, approvals, purchase orders, and invoices helped me design a backend that reflected real-world business processes.</p>
+<h2 id="challenges-i-faced">Challenges I Faced</h2>
+<h3 id="understanding-the-procurement-domain">Understanding the Procurement Domain</h3>
+<p>The hardest part wasn’t writing code—it was understanding procurement itself.</p>
+<p>Terms like:</p>
+<ul>
+<li>RFQ</li>
+<li>Purchase Orders</li>
+<li>Quotations</li>
+<li>Vendor Categories</li>
+</ul>
+<p>were completely new to me.</p>
+<p>I spent the first few days learning the business process before implementing the database schema.</p>
+<h2 id="lessons-learned">Lessons Learned</h2>
+<p>This internship changed how I approach backend development.</p>
+<p>Some important lessons were:</p>
+<ul>
+<li>Design business workflows before designing tables.</li>
+<li>Keep APIs small and focused.</li>
+<li>Write clean code instead of clever code.</li>
+<li>Database design matters more than most beginners think.</li>
+<li>Documentation saves debugging time.</li>
+<li>Good architecture makes future features easier to build.</li>
+</ul>
+<h2 id="if-i-continued-this-project">If I Continued This Project</h2>
+<p>If I had more time, I would add several production-ready improvements.</p>
+<ul>
+<li>Redis caching</li>
+<li>Background jobs using Hangfire</li>
+<li>Docker Compose</li>
+<li>CI/CD with GitHub Actions</li>
+<li>Azure deployment</li>
+<li>Unit and Integration Testing</li>
+<li>SignalR for real-time notifications</li>
+<li>Audit history</li>
+<li>File storage using Azure Blob Storage</li>
+</ul>
+<hr />
+<h2 id="tech-stack">Tech Stack</h2>
+<h3 id="backend">Backend</h3>
+<ul>
+<li>ASP.NET Core 8 Minimal API</li>
+<li>Entity Framework Core</li>
+<li>PostgreSQL</li>
+<li>JWT Authentication</li>
+<li>Role-Based Authorization</li>
+<li>FluentValidation</li>
+<li>Dependency Injection</li>
+</ul>
+<h3 id="frontend">Frontend</h3>
+<ul>
+<li>React</li>
+<li>React Router</li>
+<li>Axios</li>
+</ul>
+<h3 id="tools">Tools</h3>
+<ul>
+<li>Git &amp; GitHub</li>
+<li>Swagger</li>
+<li>Postman</li>
+<li>Visual Studio Code</li>
+</ul>
+<hr />
+<h2 id="production-oriented-features">Production-Oriented Features</h2>
+<p>Rather than focusing only on CRUD operations, I tried to build features commonly found in production software.</p>
+<p>Some examples include:</p>
+<ul>
+<li>JWT Authentication</li>
+<li>Role-Based Authorization</li>
+<li>Global Exception Handling</li>
+<li>Validation</li>
+<li>Activity Logging</li>
+<li>RESTful API Design</li>
+<li>Swagger Documentation</li>
+<li>Layered Architecture</li>
+<li>Entity Framework Core</li>
+<li>PostgreSQL</li>
+</ul>
+<h2 id="project-architecture">Project Architecture</h2>
+<p>The backend follows a layered architecture.</p>
+<pre><code>
+React Frontend
+
+↓
+
+REST APIs
+
+↓
+
+Minimal API Endpoints
+
+↓
+
+Business Logic
+
+↓
+
+Entity Framework Core
+
+↓
+
+PostgreSQL
+
+</code></pre>
+<p>Keeping the application modular made it easier to maintain and extend.</p>
+<hr />
+<h2 id="major-features">Major Features</h2>
+<h3 id="authentication">Authentication</h3>
+<ul>
+<li>JWT Authentication</li>
+<li>Login</li>
+<li>Register</li>
+<li>Refresh Tokens</li>
+<li>Protected APIs</li>
+</ul>
+<hr />
+<h3 id="vendor-management">Vendor Management</h3>
+<ul>
+<li>Create Vendors</li>
+<li>Update Vendor Details</li>
+<li>Vendor Categories</li>
+<li>Search Vendors</li>
+</ul>
+<hr />
+<h3 id="request-for-quotations-rfq">Request For Quotations (RFQ)</h3>
+<p>Procurement officers can</p>
+<ul>
+<li>Create RFQs</li>
+<li>Publish RFQs</li>
+<li>Add Products</li>
+<li>Set Deadlines</li>
+</ul>
+<p>Vendors can submit quotations for published RFQs.</p>
+<hr />
+<h3 id="quotation-comparison">Quotation Comparison</h3>
+<p>One of my favorite modules.</p>
+<p>The system compares vendor quotations based on</p>
+<ul>
+<li>Price</li>
+<li>Delivery Time</li>
+<li>Vendor Rating</li>
+</ul>
+<p>making vendor selection much easier.</p>
+<hr />
+<h3 id="approval-workflow">Approval Workflow</h3>
+<p>Managers review procurement requests before purchase orders are generated.</p>
+<p>This creates a proper approval chain inside the organization.</p>
+<hr />
+<h3 id="purchase-orders">Purchase Orders</h3>
+<p>After approval,</p>
+<ul>
+<li>Purchase Orders are generated</li>
+<li>Vendors receive updates</li>
+<li>Procurement history is maintained</li>
+</ul>
+<hr />
+<h3 id="invoice-generation">Invoice Generation</h3>
+<p>The ERP automatically creates invoices which can later be exported as PDF.</p>
+<hr />
+<h3 id="reports-analytics">Reports &amp; Analytics</h3>
+<p>The dashboard provides</p>
+<ul>
+<li>Procurement Trends</li>
+<li>Vendor Performance</li>
+<li>Monthly Spending</li>
+<li>Purchase Statistics</li>
+</ul>
+<p>which helps management take better decisions.</p>
+<hr />
+<h2 id="database-design">Database Design</h2>
+<p>The project contains multiple interconnected tables including</p>
+<ul>
+<li>Users</li>
+<li>Roles</li>
+<li>Vendors</li>
+<li>Vendor Categories</li>
+<li>RFQs</li>
+<li>Quotations</li>
+<li>Purchase Orders</li>
+<li>Invoices</li>
+<li>Activity Logs</li>
+</ul>
+<p>Entity Framework Core handled relationships and migrations efficiently.</p>
+<hr />
+<h2 id="what-i-learned">What I Learned</h2>
+<p>This internship taught me much more than simply writing APIs.</p>
+<p>I learned</p>
+<ul>
+<li>Designing scalable REST APIs</li>
+<li>Database modelling</li>
+<li>Clean project organization</li>
+<li>JWT Authentication</li>
+<li>Role Based Authorization</li>
+<li>Entity Framework Core</li>
+<li>PostgreSQL</li>
+<li>API testing using Swagger</li>
+<li>Git workflow</li>
+<li>Debugging production-like issues</li>
+</ul>
+<hr />
+<h3 id="database-design-1">Database Design</h3>
+<p>Designing relationships was much harder than writing controllers.</p>
+<p>Choosing where to place foreign keys, handling cascading deletes, and modelling approval workflows required several iterations before arriving at a clean design.</p>
+<hr />
+<h3 id="authentication-1">Authentication</h3>
+<h2 id="implementing-secure-authentication-using-jwt-taught-me-how-production-apis-protect-resources-while-supporting-different-user-roles">Implementing secure authentication using JWT taught me how production APIs protect resources while supporting different user roles.</h2>
+<h3 id="database-design-2">Database Design</h3>
+<p>Designing relationships between multiple modules was challenging.</p>
+<p>Thinking through foreign keys and business rules took much longer than writing CRUD APIs.</p>
+<hr />
+<h3 id="authentication-2">Authentication</h3>
+<p>Implementing secure authentication with JWT and role-based authorization helped me understand how modern backend applications protect APIs.</p>
+<hr />
+<h2 id="screenshots">Screenshots</h2>
+<h3 id="login">Login</h3>
+<a href="/images/vendorbridge/login.png" data-lightbox="blog-img" data-title="Sample image">
+    <img src="https://www.mukund.xyz/processed_images/login.ec809521cf604c02.png"
+         srcset="/images/vendorbridge/login.png 2x"
+         width="724"
+         height="482"
+         alt="Sample image"
+         loading="lazy"
+         style="max-width: 100%; height: auto; border-radius: 6px;" />
+</a>
+<hr />
+<h3 id="dashboard">Dashboard</h3>
+<a href="/images/vendorbridge/dashboard.png" data-lightbox="blog-img" data-title="Sample image">
+    <img src="https://www.mukund.xyz/processed_images/dashboard.fb3e820d536e0f0f.png"
+         srcset="/images/vendorbridge/dashboard.png 2x"
+         width="642"
+         height="357"
+         alt="Sample image"
+         loading="lazy"
+         style="max-width: 100%; height: auto; border-radius: 6px;" />
+</a>
+<hr />
+<h3 id="vendor-directory">Vendor Directory</h3>
+<a href="/images/vendorbridge/vendors.png" data-lightbox="blog-img" data-title="Sample image">
+    <img src="https://www.mukund.xyz/processed_images/vendors.9ab6047b23e114b1.png"
+         srcset="/images/vendorbridge/vendors.png 2x"
+         width="642"
+         height="357"
+         alt="Sample image"
+         loading="lazy"
+         style="max-width: 100%; height: auto; border-radius: 6px;" />
+</a>
+<hr />
+<h3 id="rfq-module">RFQ Module</h3>
+<a href="/images/vendorbridge/rfq.png" data-lightbox="blog-img" data-title="Sample image">
+    <img src="https://www.mukund.xyz/processed_images/rfq.9faa51d9ceccc139.png"
+         srcset="/images/vendorbridge/rfq.png 2x"
+         width="642"
+         height="358"
+         alt="Sample image"
+         loading="lazy"
+         style="max-width: 100%; height: auto; border-radius: 6px;" />
+</a>
+<hr />
+<h3 id="reports">Reports</h3>
+<a href="/images/vendorbridge/reports.png" data-lightbox="blog-img" data-title="Sample image">
+    <img src="https://www.mukund.xyz/processed_images/reports.45c467b062a7dd79.png"
+         srcset="/images/vendorbridge/reports.png 2x"
+         width="621"
+         height="346"
+         alt="Sample image"
+         loading="lazy"
+         style="max-width: 100%; height: auto; border-radius: 6px;" />
+</a>
+<hr />
+<h2 id="internship-outcomes">Internship Outcomes</h2>
+<p>By the end of the internship I had built a complete backend application using modern Microsoft technologies.</p>
+<p>More importantly, I became comfortable with</p>
+<ul>
+<li>ASP.NET Core</li>
+<li>Minimal APIs</li>
+<li>Entity Framework Core</li>
+<li>PostgreSQL</li>
+<li>Authentication</li>
+<li>Authorization</li>
+<li>REST APIs</li>
+<li>ERP domain modelling</li>
+</ul>
+<p>This project gave me confidence to build larger backend systems in the future.</p>
+<hr />
+<h2 id="final-thoughts">Final Thoughts</h2>
+<p>When I started this internship, I thought backend development was mostly about writing CRUD APIs.</p>
+<p>By the end, I realized that backend engineering is really about solving business problems through software design.</p>
+<p>Building VendorBridge taught me how authentication, database modelling, API design, and business workflows fit together to create a complete application.</p>
+<p>This internship strengthened my interest in backend engineering and gave me confidence to build larger systems using the .NET ecosystem.</p>
+
+  </div>
+</div>
+
+        </section>
+    </body>
+</html>

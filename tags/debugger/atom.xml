@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>Mukund Parmar - Full Stack Web Developer &amp; Software Engineer - debugger</title>
+    <subtitle>Portfolio of Mukund Parmar, a passionate Full Stack Web Developer specializing in MERN Stack, DevOps, and Competitive Programming. View my projects and experience.</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://www.mukund.xyz/tags/debugger/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://www.mukund.xyz"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2024-10-24T00:00:00+00:00</updated>
+    <id>https://www.mukund.xyz/tags/debugger/atom.xml</id>
+    <entry xml:lang="en">
+        <title>How to debug Your code</title>
+        <published>2024-10-24T00:00:00+00:00</published>
+        <updated>2024-10-24T00:00:00+00:00</updated>
+        
+        <author>
+          <name>Unknown</name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://www.mukund.xyz/blog/gdb-debugger/"/>
+        <id>https://www.mukund.xyz/blog/gdb-debugger/</id>
+        
+        <content type="html" xml:base="https://www.mukund.xyz/blog/gdb-debugger/">&lt;p&gt;When your code is running but not working at that time we mostly check line by line code it cant find any clue.&lt;/p&gt;
+&lt;p&gt;The best way to check your code line by line and what code acutally do internally, when you run the code.&lt;/p&gt;
+&lt;p&gt;so anyway let’s start by installing GDB debugger in computer .&lt;/p&gt;
+&lt;p&gt;To install on Ubuntu&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;sudo apt install gdb
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;To install on arch&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;sudo pacman -S gdb
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;To download on Your Machine
+&lt;code&gt;https://sourceware.org/gdb/download/&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;You can also use it online &lt;code&gt;https://www.onlinegdb.com/&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;How to run GDB&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Run Your complier&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;$ g++ -g program
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;Run Your gdb&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;$ gdb a.out
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;you will get output something like&lt;/p&gt;
+&lt;a href=&quot;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh1MRdJ05GegnQsLcDMAANqWMjfdqUodUt60DdytAogc20kgN_if3b5-E31D1XxdkA3HgeOcdHhebmnvLCdc4T-YZE9RuqhnMokxGt0adIE6cBU2W1MUbtXJ3Bh-5E1mM7z1LN1DlBH5gPYQZSquW5IFFd3v02gL3AWUmNw_DBnO4uTi1PFKazy2OXs4gpY/s1062/pic-selected-240910-1852-15.png&quot; data-lightbox=&quot;blog-img&quot; data-title=&quot;Screenshot&quot;&gt;
+  &lt;img src=&quot;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh1MRdJ05GegnQsLcDMAANqWMjfdqUodUt60DdytAogc20kgN_if3b5-E31D1XxdkA3HgeOcdHhebmnvLCdc4T-YZE9RuqhnMokxGt0adIE6cBU2W1MUbtXJ3Bh-5E1mM7z1LN1DlBH5gPYQZSquW5IFFd3v02gL3AWUmNw_DBnO4uTi1PFKazy2OXs4gpY/s1062/pic-selected-240910-1852-15.png&quot;
+       alt=&quot;Screenshot&quot;
+       loading=&quot;lazy&quot;
+       style=&quot;max-width: 100%; height: auto; border-radius: 6px;&quot; /&gt;
+&lt;/a&gt;
+&lt;p&gt;Start Your gdb with start command&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;start 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Now Press ctrl + x + a&lt;/p&gt;
+&lt;a href=&quot;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh_YqCCDkmkV2jWyCSwwCsyjEtuNknGjtYEUhGAp5eqwQhgOHjDb3khwg1rzL9Jn4WNR5ljFoTYha4wzNl5tt4m8tn1T_1cG7CEyMOcD5pyOz-ZaUUkGBwXoD380GunlviJTw_loMAuQ2Z8jxNxuHp_Dpp-SmzouKJGmyaBFUFHq7bvNomCu6cucCZBSm19/s1366/pic-full-240910-1913-48.png&quot; data-lightbox=&quot;blog-img&quot; data-title=&quot;Screenshot&quot;&gt;
+  &lt;img src=&quot;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh_YqCCDkmkV2jWyCSwwCsyjEtuNknGjtYEUhGAp5eqwQhgOHjDb3khwg1rzL9Jn4WNR5ljFoTYha4wzNl5tt4m8tn1T_1cG7CEyMOcD5pyOz-ZaUUkGBwXoD380GunlviJTw_loMAuQ2Z8jxNxuHp_Dpp-SmzouKJGmyaBFUFHq7bvNomCu6cucCZBSm19/s1366/pic-full-240910-1913-48.png&quot;
+       alt=&quot;Screenshot&quot;
+       loading=&quot;lazy&quot;
+       style=&quot;max-width: 100%; height: auto; border-radius: 6px;&quot; /&gt;
+&lt;/a&gt;
+&lt;p&gt;Now for go to next line&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;next
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;it go two second line&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;next
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;if your ui is not lagging than press &lt;code&gt;ctrl + l&lt;/code&gt; to refresh the ui&lt;/p&gt;
+&lt;p&gt;To check store data in variable&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;print var_name
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;or&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;info locals
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;To Go Function defination when debgger reach to that line&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;step 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;To exit&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;exit
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Hope you get basic idea who to use this software&lt;/p&gt;
+&lt;p&gt;I know that i did not teach everything ,so
+To know more You can refere any Documenation or cheatsheet&lt;/p&gt;
+&lt;p&gt;If i get sometime than i may continue this blog to the end and I will teach everything&lt;/p&gt;
+&lt;p&gt;Thank You For Your Time :)&lt;/p&gt;
+</content>
+        
+    </entry>
+</feed>

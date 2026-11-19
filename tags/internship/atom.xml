@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>Mukund Parmar - Full Stack Web Developer &amp; Software Engineer - Internship</title>
+    <subtitle>Portfolio of Mukund Parmar, a passionate Full Stack Web Developer specializing in MERN Stack, DevOps, and Competitive Programming. View my projects and experience.</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://www.mukund.xyz/tags/internship/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://www.mukund.xyz"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2026-07-22T00:00:00+00:00</updated>
+    <id>https://www.mukund.xyz/tags/internship/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Building VendorBridge</title>
+        <published>2026-07-22T00:00:00+00:00</published>
+        <updated>2026-07-22T00:00:00+00:00</updated>
+        
+        <author>
+          <name>Unknown</name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://www.mukund.xyz/project/vendorbridge/"/>
+        <id>https://www.mukund.xyz/project/vendorbridge/</id>
+        
+        <content type="html" xml:base="https://www.mukund.xyz/project/vendorbridge/">&lt;h1 id=&quot;building-vendorbridge&quot;&gt;Building VendorBridge&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Company:&lt;/strong&gt; Help Me Buddy IT Pvt. Ltd.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Duration:&lt;/strong&gt; 18 May 2026 – 28 June 2026&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 id=&quot;project-at-a-glance&quot;&gt;Project at a Glance&lt;/h2&gt;
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Item&lt;/th&gt;&lt;th&gt;Details&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;
+&lt;tr&gt;&lt;td&gt;Duration&lt;/td&gt;&lt;td&gt;6 Weeks&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Company&lt;/td&gt;&lt;td&gt;Help Me Buddy IT Pvt. Ltd.&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Project&lt;/td&gt;&lt;td&gt;VendorBridge ERP&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Backend&lt;/td&gt;&lt;td&gt;ASP.NET Core Minimal API&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Frontend&lt;/td&gt;&lt;td&gt;React&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Database&lt;/td&gt;&lt;td&gt;PostgreSQL&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;ORM&lt;/td&gt;&lt;td&gt;Entity Framework Core&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Authentication&lt;/td&gt;&lt;td&gt;JWT&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Architecture&lt;/td&gt;&lt;td&gt;Layered Architecture&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;APIs&lt;/td&gt;&lt;td&gt;REST&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Documentation&lt;/td&gt;&lt;td&gt;Swagger&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;During my summer internship at &lt;strong&gt;Help Me Buddy IT Pvt. Ltd.&lt;/strong&gt;, I worked on a real-world ERP application called &lt;strong&gt;VendorBridge&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;VendorBridge is a Procurement &amp;amp; Vendor Management ERP that helps organizations manage their complete procurement workflow digitally—from vendor registration to purchase orders and invoices.&lt;/p&gt;
+&lt;p&gt;This internship was my first experience building a large-scale backend using &lt;strong&gt;ASP.NET Core Minimal APIs&lt;/strong&gt; and &lt;strong&gt;Entity Framework Core&lt;/strong&gt;.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 id=&quot;why-asp-net-core&quot;&gt;Why ASP.NET Core?&lt;/h2&gt;
+&lt;p&gt;Before this internship, I had experimented with .NET but had never built a complete production-style application.&lt;/p&gt;
+&lt;p&gt;I wanted to understand how modern backend systems are designed beyond simple CRUD applications.&lt;/p&gt;
+&lt;p&gt;ASP.NET Core Minimal APIs appealed to me because they provide a lightweight approach to building REST services while still supporting dependency injection, middleware, authentication, validation, and Entity Framework Core.&lt;/p&gt;
+&lt;p&gt;This internship gave me an opportunity to apply these technologies to a real business problem.&lt;/p&gt;
+&lt;h2 id=&quot;why-this-project&quot;&gt;Why this project?&lt;/h2&gt;
+&lt;p&gt;Many companies still manage procurement using Excel sheets, emails and paper documents.&lt;/p&gt;
+&lt;p&gt;This creates several problems:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Slow approval process&lt;/li&gt;
+&lt;li&gt;Difficult vendor comparison&lt;/li&gt;
+&lt;li&gt;Manual invoice generation&lt;/li&gt;
+&lt;li&gt;No centralized records&lt;/li&gt;
+&lt;li&gt;Lack of transparency&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;VendorBridge solves these problems by bringing the entire procurement lifecycle into one application.&lt;/p&gt;
+&lt;h2 id=&quot;thinking-beyond-crud&quot;&gt;Thinking Beyond CRUD&lt;/h2&gt;
+&lt;p&gt;One of the biggest lessons from this internship was learning that software is not just about writing APIs.&lt;/p&gt;
+&lt;p&gt;Every feature starts with understanding a business workflow.&lt;/p&gt;
+&lt;p&gt;Instead of asking:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;“What tables do I need?”&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;I learned to ask:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;“How does procurement actually work?”&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Understanding vendors, RFQs, quotations, approvals, purchase orders, and invoices helped me design a backend that reflected real-world business processes.&lt;/p&gt;
+&lt;h2 id=&quot;challenges-i-faced&quot;&gt;Challenges I Faced&lt;/h2&gt;
+&lt;h3 id=&quot;understanding-the-procurement-domain&quot;&gt;Understanding the Procurement Domain&lt;/h3&gt;
+&lt;p&gt;The hardest part wasn’t writing code—it was understanding procurement itself.&lt;/p&gt;
+&lt;p&gt;Terms like:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;RFQ&lt;/li&gt;
+&lt;li&gt;Purchase Orders&lt;/li&gt;
+&lt;li&gt;Quotations&lt;/li&gt;
+&lt;li&gt;Vendor Categories&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;were completely new to me.&lt;/p&gt;
+&lt;p&gt;I spent the first few days learning the business process before implementing the database schema.&lt;/p&gt;
+&lt;h2 id=&quot;lessons-learned&quot;&gt;Lessons Learned&lt;/h2&gt;
+&lt;p&gt;This internship changed how I approach backend development.&lt;/p&gt;
+&lt;p&gt;Some important lessons were:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Design business workflows before designing tables.&lt;/li&gt;
+&lt;li&gt;Keep APIs small and focused.&lt;/li&gt;
+&lt;li&gt;Write clean code instead of clever code.&lt;/li&gt;
+&lt;li&gt;Database design matters more than most beginners think.&lt;/li&gt;
+&lt;li&gt;Documentation saves debugging time.&lt;/li&gt;
+&lt;li&gt;Good architecture makes future features easier to build.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;if-i-continued-this-project&quot;&gt;If I Continued This Project&lt;/h2&gt;
+&lt;p&gt;If I had more time, I would add several production-ready improvements.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Redis caching&lt;/li&gt;
+&lt;li&gt;Background jobs using Hangfire&lt;/li&gt;
+&lt;li&gt;Docker Compose&lt;/li&gt;
+&lt;li&gt;CI/CD with GitHub Actions&lt;/li&gt;
+&lt;li&gt;Azure deployment&lt;/li&gt;
+&lt;li&gt;Unit and Integration Testing&lt;/li&gt;
+&lt;li&gt;SignalR for real-time notifications&lt;/li&gt;
+&lt;li&gt;Audit history&lt;/li&gt;
+&lt;li&gt;File storage using Azure Blob Storage&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;h2 id=&quot;tech-stack&quot;&gt;Tech Stack&lt;/h2&gt;
+&lt;h3 id=&quot;backend&quot;&gt;Backend&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;ASP.NET Core 8 Minimal API&lt;/li&gt;
+&lt;li&gt;Entity Framework Core&lt;/li&gt;
+&lt;li&gt;PostgreSQL&lt;/li&gt;
+&lt;li&gt;JWT Authentication&lt;/li&gt;
+&lt;li&gt;Role-Based Authorization&lt;/li&gt;
+&lt;li&gt;FluentValidation&lt;/li&gt;
+&lt;li&gt;Dependency Injection&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;frontend&quot;&gt;Frontend&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;React&lt;/li&gt;
+&lt;li&gt;React Router&lt;/li&gt;
+&lt;li&gt;Axios&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;tools&quot;&gt;Tools&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Git &amp;amp; GitHub&lt;/li&gt;
+&lt;li&gt;Swagger&lt;/li&gt;
+&lt;li&gt;Postman&lt;/li&gt;
+&lt;li&gt;Visual Studio Code&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;h2 id=&quot;production-oriented-features&quot;&gt;Production-Oriented Features&lt;/h2&gt;
+&lt;p&gt;Rather than focusing only on CRUD operations, I tried to build features commonly found in production software.&lt;/p&gt;
+&lt;p&gt;Some examples include:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;JWT Authentication&lt;/li&gt;
+&lt;li&gt;Role-Based Authorization&lt;/li&gt;
+&lt;li&gt;Global Exception Handling&lt;/li&gt;
+&lt;li&gt;Validation&lt;/li&gt;
+&lt;li&gt;Activity Logging&lt;/li&gt;
+&lt;li&gt;RESTful API Design&lt;/li&gt;
+&lt;li&gt;Swagger Documentation&lt;/li&gt;
+&lt;li&gt;Layered Architecture&lt;/li&gt;
+&lt;li&gt;Entity Framework Core&lt;/li&gt;
+&lt;li&gt;PostgreSQL&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;project-architecture&quot;&gt;Project Architecture&lt;/h2&gt;
+&lt;p&gt;The backend follows a layered architecture.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;
+React Frontend
+
+↓
+
+REST APIs
+
+↓
+
+Minimal API Endpoints
+
+↓
+
+Business Logic
+
+↓
+
+Entity Framework Core
+
+↓
+
+PostgreSQL
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Keeping the application modular made it easier to maintain and extend.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 id=&quot;major-features&quot;&gt;Major Features&lt;/h2&gt;
+&lt;h3 id=&quot;authentication&quot;&gt;Authentication&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;JWT Authentication&lt;/li&gt;
+&lt;li&gt;Login&lt;/li&gt;
+&lt;li&gt;Register&lt;/li&gt;
+&lt;li&gt;Refresh Tokens&lt;/li&gt;
+&lt;li&gt;Protected APIs&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;h3 id=&quot;vendor-management&quot;&gt;Vendor Management&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Create Vendors&lt;/li&gt;
+&lt;li&gt;Update Vendor Details&lt;/li&gt;
+&lt;li&gt;Vendor Categories&lt;/li&gt;
+&lt;li&gt;Search Vendors&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;h3 id=&quot;request-for-quotations-rfq&quot;&gt;Request For Quotations (RFQ)&lt;/h3&gt;
+&lt;p&gt;Procurement officers can&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Create RFQs&lt;/li&gt;
+&lt;li&gt;Publish RFQs&lt;/li&gt;
+&lt;li&gt;Add Products&lt;/li&gt;
+&lt;li&gt;Set Deadlines&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Vendors can submit quotations for published RFQs.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h3 id=&quot;quotation-comparison&quot;&gt;Quotation Comparison&lt;/h3&gt;
+&lt;p&gt;One of my favorite modules.&lt;/p&gt;
+&lt;p&gt;The system compares vendor quotations based on&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Price&lt;/li&gt;
+&lt;li&gt;Delivery Time&lt;/li&gt;
+&lt;li&gt;Vendor Rating&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;making vendor selection much easier.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h3 id=&quot;approval-workflow&quot;&gt;Approval Workflow&lt;/h3&gt;
+&lt;p&gt;Managers review procurement requests before purchase orders are generated.&lt;/p&gt;
+&lt;p&gt;This creates a proper approval chain inside the organization.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h3 id=&quot;purchase-orders&quot;&gt;Purchase Orders&lt;/h3&gt;
+&lt;p&gt;After approval,&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Purchase Orders are generated&lt;/li&gt;
+&lt;li&gt;Vendors receive updates&lt;/li&gt;
+&lt;li&gt;Procurement history is maintained&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;h3 id=&quot;invoice-generation&quot;&gt;Invoice Generation&lt;/h3&gt;
+&lt;p&gt;The ERP automatically creates invoices which can later be exported as PDF.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h3 id=&quot;reports-analytics&quot;&gt;Reports &amp;amp; Analytics&lt;/h3&gt;
+&lt;p&gt;The dashboard provides&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Procurement Trends&lt;/li&gt;
+&lt;li&gt;Vendor Performance&lt;/li&gt;
+&lt;li&gt;Monthly Spending&lt;/li&gt;
+&lt;li&gt;Purchase Statistics&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;which helps management take better decisions.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 id=&quot;database-design&quot;&gt;Database Design&lt;/h2&gt;
+&lt;p&gt;The project contains multiple interconnected tables including&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Users&lt;/li&gt;
+&lt;li&gt;Roles&lt;/li&gt;
+&lt;li&gt;Vendors&lt;/li&gt;
+&lt;li&gt;Vendor Categories&lt;/li&gt;
+&lt;li&gt;RFQs&lt;/li&gt;
+&lt;li&gt;Quotations&lt;/li&gt;
+&lt;li&gt;Purchase Orders&lt;/li&gt;
+&lt;li&gt;Invoices&lt;/li&gt;
+&lt;li&gt;Activity Logs&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Entity Framework Core handled relationships and migrations efficiently.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 id=&quot;what-i-learned&quot;&gt;What I Learned&lt;/h2&gt;
+&lt;p&gt;This internship taught me much more than simply writing APIs.&lt;/p&gt;
+&lt;p&gt;I learned&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Designing scalable REST APIs&lt;/li&gt;
+&lt;li&gt;Database modelling&lt;/li&gt;
+&lt;li&gt;Clean project organization&lt;/li&gt;
+&lt;li&gt;JWT Authentication&lt;/li&gt;
+&lt;li&gt;Role Based Authorization&lt;/li&gt;
+&lt;li&gt;Entity Framework Core&lt;/li&gt;
+&lt;li&gt;PostgreSQL&lt;/li&gt;
+&lt;li&gt;API testing using Swagger&lt;/li&gt;
+&lt;li&gt;Git workflow&lt;/li&gt;
+&lt;li&gt;Debugging production-like issues&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;h3 id=&quot;database-design-1&quot;&gt;Database Design&lt;/h3&gt;
+&lt;p&gt;Designing relationships was much harder than writing controllers.&lt;/p&gt;
+&lt;p&gt;Choosing where to place foreign keys, handling cascading deletes, and modelling approval workflows required several iterations before arriving at a clean design.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h3 id=&quot;authentication-1&quot;&gt;Authentication&lt;/h3&gt;
+&lt;h2 id=&quot;implementing-secure-authentication-using-jwt-taught-me-how-production-apis-protect-resources-while-supporting-different-user-roles&quot;&gt;Implementing secure authentication using JWT taught me how production APIs protect resources while supporting different user roles.&lt;/h2&gt;
+&lt;h3 id=&quot;database-design-2&quot;&gt;Database Design&lt;/h3&gt;
+&lt;p&gt;Designing relationships between multiple modules was challenging.&lt;/p&gt;
+&lt;p&gt;Thinking through foreign keys and business rules took much longer than writing CRUD APIs.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h3 id=&quot;authentication-2&quot;&gt;Authentication&lt;/h3&gt;
+&lt;p&gt;Implementing secure authentication with JWT and role-based authorization helped me understand how modern backend applications protect APIs.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 id=&quot;screenshots&quot;&gt;Screenshots&lt;/h2&gt;
+&lt;h3 id=&quot;login&quot;&gt;Login&lt;/h3&gt;
+&lt;a href=&quot;/images/vendorbridge/login.png&quot; data-lightbox=&quot;blog-img&quot; data-title=&quot;Sample image&quot;&gt;
+    &lt;img src=&quot;https://www.mukund.xyz/processed_images/login.ec809521cf604c02.png&quot;
+         srcset=&quot;/images/vendorbridge/login.png 2x&quot;
+         width=&quot;724&quot;
+         height=&quot;482&quot;
+         alt=&quot;Sample image&quot;
+         loading=&quot;lazy&quot;
+         style=&quot;max-width: 100%; height: auto; border-radius: 6px;&quot; /&gt;
+&lt;/a&gt;
+&lt;hr /&gt;
+&lt;h3 id=&quot;dashboard&quot;&gt;Dashboard&lt;/h3&gt;
+&lt;a href=&quot;/images/vendorbridge/dashboard.png&quot; data-lightbox=&quot;blog-img&quot; data-title=&quot;Sample image&quot;&gt;
+    &lt;img src=&quot;https://www.mukund.xyz/processed_images/dashboard.fb3e820d536e0f0f.png&quot;
+         srcset=&quot;/images/vendorbridge/dashboard.png 2x&quot;
+         width=&quot;642&quot;
+         height=&quot;357&quot;
+         alt=&quot;Sample image&quot;
+         loading=&quot;lazy&quot;
+         style=&quot;max-width: 100%; height: auto; border-radius: 6px;&quot; /&gt;
+&lt;/a&gt;
+&lt;hr /&gt;
+&lt;h3 id=&quot;vendor-directory&quot;&gt;Vendor Directory&lt;/h3&gt;
+&lt;a href=&quot;/images/vendorbridge/vendors.png&quot; data-lightbox=&quot;blog-img&quot; data-title=&quot;Sample image&quot;&gt;
+    &lt;img src=&quot;https://www.mukund.xyz/processed_images/vendors.9ab6047b23e114b1.png&quot;
+         srcset=&quot;/images/vendorbridge/vendors.png 2x&quot;
+         width=&quot;642&quot;
+         height=&quot;357&quot;
+         alt=&quot;Sample image&quot;
+         loading=&quot;lazy&quot;
+         style=&quot;max-width: 100%; height: auto; border-radius: 6px;&quot; /&gt;
+&lt;/a&gt;
+&lt;hr /&gt;
+&lt;h3 id=&quot;rfq-module&quot;&gt;RFQ Module&lt;/h3&gt;
+&lt;a href=&quot;/images/vendorbridge/rfq.png&quot; data-lightbox=&quot;blog-img&quot; data-title=&quot;Sample image&quot;&gt;
+    &lt;img src=&quot;https://www.mukund.xyz/processed_images/rfq.9faa51d9ceccc139.png&quot;
+         srcset=&quot;/images/vendorbridge/rfq.png 2x&quot;
+         width=&quot;642&quot;
+         height=&quot;358&quot;
+         alt=&quot;Sample image&quot;
+         loading=&quot;lazy&quot;
+         style=&quot;max-width: 100%; height: auto; border-radius: 6px;&quot; /&gt;
+&lt;/a&gt;
+&lt;hr /&gt;
+&lt;h3 id=&quot;reports&quot;&gt;Reports&lt;/h3&gt;
+&lt;a href=&quot;/images/vendorbridge/reports.png&quot; data-lightbox=&quot;blog-img&quot; data-title=&quot;Sample image&quot;&gt;
+    &lt;img src=&quot;https://www.mukund.xyz/processed_images/reports.45c467b062a7dd79.png&quot;
+         srcset=&quot;/images/vendorbridge/reports.png 2x&quot;
+         width=&quot;621&quot;
+         height=&quot;346&quot;
+         alt=&quot;Sample image&quot;
+         loading=&quot;lazy&quot;
+         style=&quot;max-width: 100%; height: auto; border-radius: 6px;&quot; /&gt;
+&lt;/a&gt;
+&lt;hr /&gt;
+&lt;h2 id=&quot;internship-outcomes&quot;&gt;Internship Outcomes&lt;/h2&gt;
+&lt;p&gt;By the end of the internship I had built a complete backend application using modern Microsoft technologies.&lt;/p&gt;
+&lt;p&gt;More importantly, I became comfortable with&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;ASP.NET Core&lt;/li&gt;
+&lt;li&gt;Minimal APIs&lt;/li&gt;
+&lt;li&gt;Entity Framework Core&lt;/li&gt;
+&lt;li&gt;PostgreSQL&lt;/li&gt;
+&lt;li&gt;Authentication&lt;/li&gt;
+&lt;li&gt;Authorization&lt;/li&gt;
+&lt;li&gt;REST APIs&lt;/li&gt;
+&lt;li&gt;ERP domain modelling&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This project gave me confidence to build larger backend systems in the future.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 id=&quot;final-thoughts&quot;&gt;Final Thoughts&lt;/h2&gt;
+&lt;p&gt;When I started this internship, I thought backend development was mostly about writing CRUD APIs.&lt;/p&gt;
+&lt;p&gt;By the end, I realized that backend engineering is really about solving business problems through software design.&lt;/p&gt;
+&lt;p&gt;Building VendorBridge taught me how authentication, database modelling, API design, and business workflows fit together to create a complete application.&lt;/p&gt;
+&lt;p&gt;This internship strengthened my interest in backend engineering and gave me confidence to build larger systems using the .NET ecosystem.&lt;/p&gt;
+</content>
+        
+    </entry>
+</feed>

@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="UTF-8" />
+        <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+        <meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, user-scalable=no"
+        />
+        <meta name="robots" content="index, follow" />
+
+        <!-- Google tag (gtag.js) -->
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-RPWLQR6JQ1"
+        ></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
+
+            gtag("config", "G-RPWLQR6JQ1");
+        </script>
+
+        <!-- Dynamic Title -->
+        <title>Notes - Mukund Parmar Portfolio</title>
+
+        <!-- Meta Description -->
+        <meta
+            name="description"
+            content="Portfolio of Mukund Parmar, a passionate Full Stack Web Developer specializing in MERN Stack, DevOps, and Competitive Programming. View my projects and experience."
+        />
+
+        <!-- Keywords -->
+        <meta
+            name="keywords"
+            content="Web Developer, Full Stack Developer, MERN Stack, DevOps, Portfolio, Software Engineer"
+        />
+
+        <!-- Author -->
+        <meta name="author" content="Mukund Parmar" />
+
+        <!-- Canonical URL -->
+        <link
+            rel="canonical"
+            href="https://www.mukund.xyz/notes/"
+        />
+
+        <!-- Open Graph Meta Tags -->
+        <meta
+            property="og:title"
+            content="Mukund Parmar - Full Stack Web Developer &amp; Software Engineer"
+        />
+        <meta
+            property="og:description"
+            content="Portfolio of Mukund Parmar, a passionate Full Stack Web Developer specializing in MERN Stack, DevOps, and Competitive Programming. View my projects and experience."
+        />
+        <meta property="og:type" content="website" />
+        <meta
+            property="og:url"
+            content="https://www.mukund.xyz/notes/"
+        />
+        <meta
+            property="og:image"
+            content="https://www.mukund.xyz/images/logo.jpg"
+        />
+        <meta property="og:site_name" content="Mukund Parmar" />
+
+        <!-- X (Twitter) -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+            name="twitter:title"
+            content="Mukund Parmar - Full Stack Web Developer &amp; Software Engineer"
+        />
+        <meta
+            name="twitter:description"
+            content="Portfolio of Mukund Parmar, a passionate Full Stack Web Developer specializing in MERN Stack, DevOps, and Competitive Programming. View my projects and experience."
+        />
+        <meta
+            name="twitter:image"
+            content="https://www.mukund.xyz/images/logo.jpg"
+        />
+
+        
+
+        <link rel="icon" href="https://www.mukund.xyz/images/logo.jpg" />
+        <link
+            href="https://cdn.boxicons.com/fonts/basic/boxicons.min.css"
+            rel="stylesheet"
+        />
+        <link
+            href="https://cdn.boxicons.com/fonts/brands/boxicons-brands.min.css"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://www.mukund.xyz/asserts/css/style.css"
+        />
+        <!-- <link rel="stylesheet"  href="https://www.mukund.xyz/asserts/css/output.css"> -->
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script src="https://unpkg.com/@boxicons/js@latest"></script>
+        <script defer src="https://www.mukund.xyz/asserts/js/script.js"></script>
+        <!-- <script  defer src="https://www.mukund.xyz/asserts/js/tailwind.config.js"></script> -->
+        <script defer>
+            tailwind.config = {
+                corePlugins: {
+                    preflight: false,
+                },
+                darkMode: "class",
+            };
+        </script>
+
+    </head>
+
+    <body
+        class="bg-white dark:bg-[#1c1917] dark:text-white transition-all duration-300 fade-in-1s"
+    >
+        <nav class="bg-white text-2xl dark:bg-[#1c1917] shadow">
+            <div
+                class="mx-auto px-4 py-3 flex justify-around flex-col sm:flex-row items-center text-base md:text-lg"
+            >
+                <a
+                    href="/"
+                    class="dark:filter-none dark:mix-blend-lighten bg-transparent mix-blend-hard-light font-bold text-gray-900 dark:text-white md:space-y-0 md:space-x-4 mt-4 md:mt-0"
+                >
+                    <img
+                        src="https://www.mukund.xyz/images/logo.jpg"
+                        class="w-12"
+                        alt=""
+                    />
+                </a>
+
+                <!-- Navigation links -->
+                <div
+                    id="menu"
+                    class="text-xl whitespace-nowrap md:flex flex-col grid grid-cols-3 md:grid-cols-5 md:flex-row md:items-center md:space-y-0 md:space-x-4 mt-4 md:mt-0"
+                >
+                    <a
+                        href="/"
+                        class="text-gray-700 dark:text-gray-300 no-underline hover:underline"
+                        >~/home</a
+                    >
+                    <a
+                        href="/about"
+                        class="text-gray-700 dark:text-gray-300 no-underline hover:underline"
+                        >~/about</a
+                    >
+                    <a
+                        href="/project"
+                        class="text-gray-700 dark:text-gray-300 no-underline hover:underline"
+                        >~/projects</a
+                    >
+                    <a
+                        href="/notes"
+                        class="text-gray-700 dark:text-gray-300 no-underline hover:underline"
+                        >~/notes</a
+                    >
+                    <a
+                        href="/blog"
+                        class="text-gray-700 dark:text-gray-300 no-underline hover:underline"
+                        >~/blog</a
+                    >
+                    <!-- Dark Mode Toggle -->
+                    <button
+                        id="theme-toggle"
+                        class="bg-inherit text-white border-none text-lg"
+                    >
+                        <i class="bxr bx-moon text-black"></i>
+                        <audio
+                            id="toggle-sound"
+                            src="https://www.mukund.xyz/sounds/toggle-button.mp3"
+                            preload="auto"
+                        ></audio>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Optional script for mobile toggle -->
+        </nav>
+
+        <section class="section w-full">
+            
+<h1 class="title p-5">
+  List of Notes
+</h1>
+<ul class="p-0 m-5 ">
+  <!-- If you are using pagination, section.pages will be empty.
+       You need to use the paginator object -->  
+  <!-- 
+  <li><a href="https://www.mukund.xyz/notes/system-desgin/">System design </a></li>
+  
+  <li><a href="https://www.mukund.xyz/notes/quantitative-aptitude/">Quantitative Aptitude</a></li>
+  
+  <li><a href="https://www.mukund.xyz/notes/90-days-of-learing-react/">90 Days of Learning React</a></li>
+  
+  <li><a href="https://www.mukund.xyz/notes/concurrency-is-not-what-you-think/">How Single-CPU Systems Multitask</a></li>
+  
+  <li><a href="https://www.mukund.xyz/notes/how-javascript-works/">JavaScript notes</a></li>
+   -->
+  <section class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+    
+      <article class="bg-white border-solid dark:bg-[#1b1b1b] dark:border-color-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition duration-300">
+        
+          <img src="/images/system-design.png" alt="System design " class="w-full h-48 object-cover">
+        
+        <div class="p-6">
+          <h2 class="text-2xl font-bold text-black dark:text-white">
+            <a class="text-black dark:text-white" href="https://www.mukund.xyz/notes/system-desgin/">System design </a>
+          </h2>
+          <p class="text-gray-600 dark:text-white mt-2">A comprehensive guide to mastering React in 90 days, covering essential concepts, best practices, and advanced techniques.</p>
+          <div class="mt-4 text-sm text-gray-400 dark:text-white">
+            November 05, 2026
+          </div>
+          
+          <div class="flex flex-wrap gap-1.5 mt-3 pt-3 border-t border-gray-100 dark:border-stone-800">
+            
+            <a href="https://www.mukund.xyz/tags/react/" class="text-xs px-2 py-0.5 rounded-md bg-stone-100 hover:bg-[#bc4a3c] hover:text-white dark:bg-stone-800 dark:hover:bg-[#bc4a3c] dark:hover:text-white text-stone-600 dark:text-stone-300 transition-colors">#React</a>
+            
+            <a href="https://www.mukund.xyz/tags/javascript/" class="text-xs px-2 py-0.5 rounded-md bg-stone-100 hover:bg-[#bc4a3c] hover:text-white dark:bg-stone-800 dark:hover:bg-[#bc4a3c] dark:hover:text-white text-stone-600 dark:text-stone-300 transition-colors">#JavaScript</a>
+            
+            <a href="https://www.mukund.xyz/tags/web-development/" class="text-xs px-2 py-0.5 rounded-md bg-stone-100 hover:bg-[#bc4a3c] hover:text-white dark:bg-stone-800 dark:hover:bg-[#bc4a3c] dark:hover:text-white text-stone-600 dark:text-stone-300 transition-colors">#Web Development</a>
+            
+            <a href="https://www.mukund.xyz/tags/frontend-development/" class="text-xs px-2 py-0.5 rounded-md bg-stone-100 hover:bg-[#bc4a3c] hover:text-white dark:bg-stone-800 dark:hover:bg-[#bc4a3c] dark:hover:text-white text-stone-600 dark:text-stone-300 transition-colors">#Frontend Development</a>
+            
+          </div>
+          
+        </div>
+      </article>
+    
+      <article class="bg-white border-solid dark:bg-[#1b1b1b] dark:border-color-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition duration-300">
+        
+          <img src="/images/quantitative-aptitude.jpg" alt="Quantitative Aptitude" class="w-full h-48 object-cover">
+        
+        <div class="p-6">
+          <h2 class="text-2xl font-bold text-black dark:text-white">
+            <a class="text-black dark:text-white" href="https://www.mukund.xyz/notes/quantitative-aptitude/">Quantitative Aptitude</a>
+          </h2>
+          <p class="text-gray-600 dark:text-white mt-2">A comprehensive guide to mastering quantitative aptitude, covering essential concepts, problem-solving techniques, and practice questions.</p>
+          <div class="mt-4 text-sm text-gray-400 dark:text-white">
+            September 23, 2025
+          </div>
+          
+          <div class="flex flex-wrap gap-1.5 mt-3 pt-3 border-t border-gray-100 dark:border-stone-800">
+            
+            <a href="https://www.mukund.xyz/tags/quantitative-aptitude/" class="text-xs px-2 py-0.5 rounded-md bg-stone-100 hover:bg-[#bc4a3c] hover:text-white dark:bg-stone-800 dark:hover:bg-[#bc4a3c] dark:hover:text-white text-stone-600 dark:text-stone-300 transition-colors">#Quantitative Aptitude</a>
+            
+            <a href="https://www.mukund.xyz/tags/math/" class="text-xs px-2 py-0.5 rounded-md bg-stone-100 hover:bg-[#bc4a3c] hover:text-white dark:bg-stone-800 dark:hover:bg-[#bc4a3c] dark:hover:text-white text-stone-600 dark:text-stone-300 transition-colors">#Math</a>
+            
+            <a href="https://www.mukund.xyz/tags/problem-solving/" class="text-xs px-2 py-0.5 rounded-md bg-stone-100 hover:bg-[#bc4a3c] hover:text-white dark:bg-stone-800 dark:hover:bg-[#bc4a3c] dark:hover:text-white text-stone-600 dark:text-stone-300 transition-colors">#Problem Solving</a>
+            
+            <a href="https://www.mukund.xyz/tags/competitive-exams/" class="text-xs px-2 py-0.5 rounded-md bg-stone-100 hover:bg-[#bc4a3c] hover:text-white dark:bg-stone-800 dark:hover:bg-[#bc4a3c] dark:hover:text-white text-stone-600 dark:text-stone-300 transition-colors">#Competitive Exams</a>
+            
+          </div>
+          
+        </div>
+      </article>
+    
+      <article class="bg-white border-solid dark:bg-[#1b1b1b] dark:border-color-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition duration-300">
+        
+          <img src="/images/react-logo.png" alt="90 Days of Learning React" class="w-full h-48 object-cover">
+        
+        <div class="p-6">
+          <h2 class="text-2xl font-bold text-black dark:text-white">
+            <a class="text-black dark:text-white" href="https://www.mukund.xyz/notes/90-days-of-learing-react/">90 Days of Learning React</a>
+          </h2>
+          <p class="text-gray-600 dark:text-white mt-2">A comprehensive guide to mastering React in 90 days, covering essential concepts, best practices, and advanced techniques.</p>
+          <div class="mt-4 text-sm text-gray-400 dark:text-white">
+            July 19, 2025
+          </div>
+          
+          <div class="flex flex-wrap gap-1.5 mt-3 pt-3 border-t border-gray-100 dark:border-stone-800">
+            
+            <a href="https://www.mukund.xyz/tags/react/" class="text-xs px-2 py-0.5 rounded-md bg-stone-100 hover:bg-[#bc4a3c] hover:text-white dark:bg-stone-800 dark:hover:bg-[#bc4a3c] dark:hover:text-white text-stone-600 dark:text-stone-300 transition-colors">#React</a>
+            
+            <a href="https://www.mukund.xyz/tags/javascript/" class="text-xs px-2 py-0.5 rounded-md bg-stone-100 hover:bg-[#bc4a3c] hover:text-white dark:bg-stone-800 dark:hover:bg-[#bc4a3c] dark:hover:text-white text-stone-600 dark:text-stone-300 transition-colors">#JavaScript</a>
+            
+            <a href="https://www.mukund.xyz/tags/web-development/" class="text-xs px-2 py-0.5 rounded-md bg-stone-100 hover:bg-[#bc4a3c] hover:text-white dark:bg-stone-800 dark:hover:bg-[#bc4a3c] dark:hover:text-white text-stone-600 dark:text-stone-300 transition-colors">#Web Development</a>
+            
+            <a href="https://www.mukund.xyz/tags/frontend-development/" class="text-xs px-2 py-0.5 rounded-md bg-stone-100 hover:bg-[#bc4a3c] hover:text-white dark:bg-stone-800 dark:hover:bg-[#bc4a3c] dark:hover:text-white text-stone-600 dark:text-stone-300 transition-colors">#Frontend Development</a>
+            
+          </div>
+          
+        </div>
+      </article>
+    
+      <article class="bg-white border-solid dark:bg-[#1b1b1b] dark:border-color-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition duration-300">
+        
+          <img src="/images/computer.jpg" alt="How Single-CPU Systems Multitask" class="w-full h-48 object-cover">
+        
+        <div class="p-6">
+          <h2 class="text-2xl font-bold text-black dark:text-white">
+            <a class="text-black dark:text-white" href="https://www.mukund.xyz/notes/concurrency-is-not-what-you-think/">How Single-CPU Systems Multitask</a>
+          </h2>
+          <p class="text-gray-600 dark:text-white mt-2">Explore how computers run multiple programs at once, even with a single CPU, by understanding concurrency and scheduling</p>
+          <div class="mt-4 text-sm text-gray-400 dark:text-white">
+            June 23, 2025
+          </div>
+          
+          <div class="flex flex-wrap gap-1.5 mt-3 pt-3 border-t border-gray-100 dark:border-stone-800">
+            
+            <a href="https://www.mukund.xyz/tags/operating-systems/" class="text-xs px-2 py-0.5 rounded-md bg-stone-100 hover:bg-[#bc4a3c] hover:text-white dark:bg-stone-800 dark:hover:bg-[#bc4a3c] dark:hover:text-white text-stone-600 dark:text-stone-300 transition-colors">#Operating Systems</a>
+            
+            <a href="https://www.mukund.xyz/tags/concurrency/" class="text-xs px-2 py-0.5 rounded-md bg-stone-100 hover:bg-[#bc4a3c] hover:text-white dark:bg-stone-800 dark:hover:bg-[#bc4a3c] dark:hover:text-white text-stone-600 dark:text-stone-300 transition-colors">#Concurrency</a>
+            
+            <a href="https://www.mukund.xyz/tags/cpu/" class="text-xs px-2 py-0.5 rounded-md bg-stone-100 hover:bg-[#bc4a3c] hover:text-white dark:bg-stone-800 dark:hover:bg-[#bc4a3c] dark:hover:text-white text-stone-600 dark:text-stone-300 transition-colors">#CPU</a>
+            
+            <a href="https://www.mukund.xyz/tags/multitasking/" class="text-xs px-2 py-0.5 rounded-md bg-stone-100 hover:bg-[#bc4a3c] hover:text-white dark:bg-stone-800 dark:hover:bg-[#bc4a3c] dark:hover:text-white text-stone-600 dark:text-stone-300 transition-colors">#Multitasking</a>
+            
+          </div>
+          
+        </div>
+      </article>
+    
+      <article class="bg-white border-solid dark:bg-[#1b1b1b] dark:border-color-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition duration-300">
+        
+          <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEim3XmMyXtIw7xgiECdqHePh2dkJN6LPqcydmj0LDhjY1Gtn-HuqqczqBkiLJC395xn3b5JCnee0uhUjmeeOPtvzJdZzipPRmRCk3SJtwWezplF6szNw6QXjBeO2Ynjv85-rB3m1UJagAbnfKIcvU369M3IU0pYVXIsdn6CVNnTC6gBrGG-SlqB8hqKw4Xp/s16000/09-02-2025+16:45:36.png" alt="JavaScript notes" class="w-full h-48 object-cover">
+        
+        <div class="p-6">
+          <h2 class="text-2xl font-bold text-black dark:text-white">
+            <a class="text-black dark:text-white" href="https://www.mukund.xyz/notes/how-javascript-works/">JavaScript notes</a>
+          </h2>
+          <p class="text-gray-600 dark:text-white mt-2">How JavaScript Works and its Execution Context</p>
+          <div class="mt-4 text-sm text-gray-400 dark:text-white">
+            October 09, 2024
+          </div>
+          
+          <div class="flex flex-wrap gap-1.5 mt-3 pt-3 border-t border-gray-100 dark:border-stone-800">
+            
+            <a href="https://www.mukund.xyz/tags/javascript/" class="text-xs px-2 py-0.5 rounded-md bg-stone-100 hover:bg-[#bc4a3c] hover:text-white dark:bg-stone-800 dark:hover:bg-[#bc4a3c] dark:hover:text-white text-stone-600 dark:text-stone-300 transition-colors">#JavaScript</a>
+            
+            <a href="https://www.mukund.xyz/tags/execution-context/" class="text-xs px-2 py-0.5 rounded-md bg-stone-100 hover:bg-[#bc4a3c] hover:text-white dark:bg-stone-800 dark:hover:bg-[#bc4a3c] dark:hover:text-white text-stone-600 dark:text-stone-300 transition-colors">#Execution Context</a>
+            
+            <a href="https://www.mukund.xyz/tags/call-stack/" class="text-xs px-2 py-0.5 rounded-md bg-stone-100 hover:bg-[#bc4a3c] hover:text-white dark:bg-stone-800 dark:hover:bg-[#bc4a3c] dark:hover:text-white text-stone-600 dark:text-stone-300 transition-colors">#Call Stack</a>
+            
+            <a href="https://www.mukund.xyz/tags/synchronous/" class="text-xs px-2 py-0.5 rounded-md bg-stone-100 hover:bg-[#bc4a3c] hover:text-white dark:bg-stone-800 dark:hover:bg-[#bc4a3c] dark:hover:text-white text-stone-600 dark:text-stone-300 transition-colors">#Synchronous</a>
+            
+            <a href="https://www.mukund.xyz/tags/asynchronous/" class="text-xs px-2 py-0.5 rounded-md bg-stone-100 hover:bg-[#bc4a3c] hover:text-white dark:bg-stone-800 dark:hover:bg-[#bc4a3c] dark:hover:text-white text-stone-600 dark:text-stone-300 transition-colors">#Asynchronous</a>
+            
+            <a href="https://www.mukund.xyz/tags/single-threaded/" class="text-xs px-2 py-0.5 rounded-md bg-stone-100 hover:bg-[#bc4a3c] hover:text-white dark:bg-stone-800 dark:hover:bg-[#bc4a3c] dark:hover:text-white text-stone-600 dark:text-stone-300 transition-colors">#Single Threaded</a>
+            
+            <a href="https://www.mukund.xyz/tags/multi-threaded/" class="text-xs px-2 py-0.5 rounded-md bg-stone-100 hover:bg-[#bc4a3c] hover:text-white dark:bg-stone-800 dark:hover:bg-[#bc4a3c] dark:hover:text-white text-stone-600 dark:text-stone-300 transition-colors">#Multi Threaded</a>
+            
+          </div>
+          
+        </div>
+      </article>
+    
+  </section>
+</ul>
+
+        </section>
+    </body>
+</html>

@@ -1,0 +1,2114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>Mukund Parmar - Full Stack Web Developer &amp; Software Engineer</title>
+    <subtitle>Portfolio of Mukund Parmar, a passionate Full Stack Web Developer specializing in MERN Stack, DevOps, and Competitive Programming. View my projects and experience.</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://www.mukund.xyz/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://www.mukund.xyz"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2026-11-05T00:00:00+00:00</updated>
+    <id>https://www.mukund.xyz/atom.xml</id>
+    <entry xml:lang="en">
+        <title>System design </title>
+        <published>2026-11-05T00:00:00+00:00</published>
+        <updated>2026-11-05T00:00:00+00:00</updated>
+        
+        <author>
+          <name>Unknown</name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://www.mukund.xyz/notes/system-desgin/"/>
+        <id>https://www.mukund.xyz/notes/system-desgin/</id>
+        
+        <content type="html" xml:base="https://www.mukund.xyz/notes/system-desgin/">&lt;p&gt;This blog is where I will document my journey of learning React over the next 90 days. Each day, I will focus on a specific topic or concept, and share my notes, code snippets, and resources.&lt;/p&gt;
+&lt;a href=&quot;/images/system-design.png&quot; data-lightbox=&quot;blog-img&quot; data-title=&quot;React Logo&quot;&gt;
+  &lt;img src=&quot;/images/system-design.png&quot;
+       alt=&quot;React Logo&quot;
+       loading=&quot;lazy&quot;
+       style=&quot;max-width: 100%; height: auto; border-radius: 6px;&quot; /&gt;
+&lt;/a&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Building VendorBridge</title>
+        <published>2026-07-22T00:00:00+00:00</published>
+        <updated>2026-07-22T00:00:00+00:00</updated>
+        
+        <author>
+          <name>Unknown</name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://www.mukund.xyz/project/vendorbridge/"/>
+        <id>https://www.mukund.xyz/project/vendorbridge/</id>
+        
+        <content type="html" xml:base="https://www.mukund.xyz/project/vendorbridge/">&lt;h1 id=&quot;building-vendorbridge&quot;&gt;Building VendorBridge&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Company:&lt;/strong&gt; Help Me Buddy IT Pvt. Ltd.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Duration:&lt;/strong&gt; 18 May 2026 – 28 June 2026&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 id=&quot;project-at-a-glance&quot;&gt;Project at a Glance&lt;/h2&gt;
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Item&lt;/th&gt;&lt;th&gt;Details&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;
+&lt;tr&gt;&lt;td&gt;Duration&lt;/td&gt;&lt;td&gt;6 Weeks&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Company&lt;/td&gt;&lt;td&gt;Help Me Buddy IT Pvt. Ltd.&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Project&lt;/td&gt;&lt;td&gt;VendorBridge ERP&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Backend&lt;/td&gt;&lt;td&gt;ASP.NET Core Minimal API&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Frontend&lt;/td&gt;&lt;td&gt;React&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Database&lt;/td&gt;&lt;td&gt;PostgreSQL&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;ORM&lt;/td&gt;&lt;td&gt;Entity Framework Core&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Authentication&lt;/td&gt;&lt;td&gt;JWT&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Architecture&lt;/td&gt;&lt;td&gt;Layered Architecture&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;APIs&lt;/td&gt;&lt;td&gt;REST&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Documentation&lt;/td&gt;&lt;td&gt;Swagger&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;During my summer internship at &lt;strong&gt;Help Me Buddy IT Pvt. Ltd.&lt;/strong&gt;, I worked on a real-world ERP application called &lt;strong&gt;VendorBridge&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;VendorBridge is a Procurement &amp;amp; Vendor Management ERP that helps organizations manage their complete procurement workflow digitally—from vendor registration to purchase orders and invoices.&lt;/p&gt;
+&lt;p&gt;This internship was my first experience building a large-scale backend using &lt;strong&gt;ASP.NET Core Minimal APIs&lt;/strong&gt; and &lt;strong&gt;Entity Framework Core&lt;/strong&gt;.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 id=&quot;why-asp-net-core&quot;&gt;Why ASP.NET Core?&lt;/h2&gt;
+&lt;p&gt;Before this internship, I had experimented with .NET but had never built a complete production-style application.&lt;/p&gt;
+&lt;p&gt;I wanted to understand how modern backend systems are designed beyond simple CRUD applications.&lt;/p&gt;
+&lt;p&gt;ASP.NET Core Minimal APIs appealed to me because they provide a lightweight approach to building REST services while still supporting dependency injection, middleware, authentication, validation, and Entity Framework Core.&lt;/p&gt;
+&lt;p&gt;This internship gave me an opportunity to apply these technologies to a real business problem.&lt;/p&gt;
+&lt;h2 id=&quot;why-this-project&quot;&gt;Why this project?&lt;/h2&gt;
+&lt;p&gt;Many companies still manage procurement using Excel sheets, emails and paper documents.&lt;/p&gt;
+&lt;p&gt;This creates several problems:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Slow approval process&lt;/li&gt;
+&lt;li&gt;Difficult vendor comparison&lt;/li&gt;
+&lt;li&gt;Manual invoice generation&lt;/li&gt;
+&lt;li&gt;No centralized records&lt;/li&gt;
+&lt;li&gt;Lack of transparency&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;VendorBridge solves these problems by bringing the entire procurement lifecycle into one application.&lt;/p&gt;
+&lt;h2 id=&quot;thinking-beyond-crud&quot;&gt;Thinking Beyond CRUD&lt;/h2&gt;
+&lt;p&gt;One of the biggest lessons from this internship was learning that software is not just about writing APIs.&lt;/p&gt;
+&lt;p&gt;Every feature starts with understanding a business workflow.&lt;/p&gt;
+&lt;p&gt;Instead of asking:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;“What tables do I need?”&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;I learned to ask:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;“How does procurement actually work?”&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Understanding vendors, RFQs, quotations, approvals, purchase orders, and invoices helped me design a backend that reflected real-world business processes.&lt;/p&gt;
+&lt;h2 id=&quot;challenges-i-faced&quot;&gt;Challenges I Faced&lt;/h2&gt;
+&lt;h3 id=&quot;understanding-the-procurement-domain&quot;&gt;Understanding the Procurement Domain&lt;/h3&gt;
+&lt;p&gt;The hardest part wasn’t writing code—it was understanding procurement itself.&lt;/p&gt;
+&lt;p&gt;Terms like:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;RFQ&lt;/li&gt;
+&lt;li&gt;Purchase Orders&lt;/li&gt;
+&lt;li&gt;Quotations&lt;/li&gt;
+&lt;li&gt;Vendor Categories&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;were completely new to me.&lt;/p&gt;
+&lt;p&gt;I spent the first few days learning the business process before implementing the database schema.&lt;/p&gt;
+&lt;h2 id=&quot;lessons-learned&quot;&gt;Lessons Learned&lt;/h2&gt;
+&lt;p&gt;This internship changed how I approach backend development.&lt;/p&gt;
+&lt;p&gt;Some important lessons were:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Design business workflows before designing tables.&lt;/li&gt;
+&lt;li&gt;Keep APIs small and focused.&lt;/li&gt;
+&lt;li&gt;Write clean code instead of clever code.&lt;/li&gt;
+&lt;li&gt;Database design matters more than most beginners think.&lt;/li&gt;
+&lt;li&gt;Documentation saves debugging time.&lt;/li&gt;
+&lt;li&gt;Good architecture makes future features easier to build.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;if-i-continued-this-project&quot;&gt;If I Continued This Project&lt;/h2&gt;
+&lt;p&gt;If I had more time, I would add several production-ready improvements.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Redis caching&lt;/li&gt;
+&lt;li&gt;Background jobs using Hangfire&lt;/li&gt;
+&lt;li&gt;Docker Compose&lt;/li&gt;
+&lt;li&gt;CI/CD with GitHub Actions&lt;/li&gt;
+&lt;li&gt;Azure deployment&lt;/li&gt;
+&lt;li&gt;Unit and Integration Testing&lt;/li&gt;
+&lt;li&gt;SignalR for real-time notifications&lt;/li&gt;
+&lt;li&gt;Audit history&lt;/li&gt;
+&lt;li&gt;File storage using Azure Blob Storage&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;h2 id=&quot;tech-stack&quot;&gt;Tech Stack&lt;/h2&gt;
+&lt;h3 id=&quot;backend&quot;&gt;Backend&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;ASP.NET Core 8 Minimal API&lt;/li&gt;
+&lt;li&gt;Entity Framework Core&lt;/li&gt;
+&lt;li&gt;PostgreSQL&lt;/li&gt;
+&lt;li&gt;JWT Authentication&lt;/li&gt;
+&lt;li&gt;Role-Based Authorization&lt;/li&gt;
+&lt;li&gt;FluentValidation&lt;/li&gt;
+&lt;li&gt;Dependency Injection&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;frontend&quot;&gt;Frontend&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;React&lt;/li&gt;
+&lt;li&gt;React Router&lt;/li&gt;
+&lt;li&gt;Axios&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;tools&quot;&gt;Tools&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Git &amp;amp; GitHub&lt;/li&gt;
+&lt;li&gt;Swagger&lt;/li&gt;
+&lt;li&gt;Postman&lt;/li&gt;
+&lt;li&gt;Visual Studio Code&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;h2 id=&quot;production-oriented-features&quot;&gt;Production-Oriented Features&lt;/h2&gt;
+&lt;p&gt;Rather than focusing only on CRUD operations, I tried to build features commonly found in production software.&lt;/p&gt;
+&lt;p&gt;Some examples include:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;JWT Authentication&lt;/li&gt;
+&lt;li&gt;Role-Based Authorization&lt;/li&gt;
+&lt;li&gt;Global Exception Handling&lt;/li&gt;
+&lt;li&gt;Validation&lt;/li&gt;
+&lt;li&gt;Activity Logging&lt;/li&gt;
+&lt;li&gt;RESTful API Design&lt;/li&gt;
+&lt;li&gt;Swagger Documentation&lt;/li&gt;
+&lt;li&gt;Layered Architecture&lt;/li&gt;
+&lt;li&gt;Entity Framework Core&lt;/li&gt;
+&lt;li&gt;PostgreSQL&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;project-architecture&quot;&gt;Project Architecture&lt;/h2&gt;
+&lt;p&gt;The backend follows a layered architecture.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;
+React Frontend
+
+↓
+
+REST APIs
+
+↓
+
+Minimal API Endpoints
+
+↓
+
+Business Logic
+
+↓
+
+Entity Framework Core
+
+↓
+
+PostgreSQL
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Keeping the application modular made it easier to maintain and extend.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 id=&quot;major-features&quot;&gt;Major Features&lt;/h2&gt;
+&lt;h3 id=&quot;authentication&quot;&gt;Authentication&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;JWT Authentication&lt;/li&gt;
+&lt;li&gt;Login&lt;/li&gt;
+&lt;li&gt;Register&lt;/li&gt;
+&lt;li&gt;Refresh Tokens&lt;/li&gt;
+&lt;li&gt;Protected APIs&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;h3 id=&quot;vendor-management&quot;&gt;Vendor Management&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Create Vendors&lt;/li&gt;
+&lt;li&gt;Update Vendor Details&lt;/li&gt;
+&lt;li&gt;Vendor Categories&lt;/li&gt;
+&lt;li&gt;Search Vendors&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;h3 id=&quot;request-for-quotations-rfq&quot;&gt;Request For Quotations (RFQ)&lt;/h3&gt;
+&lt;p&gt;Procurement officers can&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Create RFQs&lt;/li&gt;
+&lt;li&gt;Publish RFQs&lt;/li&gt;
+&lt;li&gt;Add Products&lt;/li&gt;
+&lt;li&gt;Set Deadlines&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Vendors can submit quotations for published RFQs.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h3 id=&quot;quotation-comparison&quot;&gt;Quotation Comparison&lt;/h3&gt;
+&lt;p&gt;One of my favorite modules.&lt;/p&gt;
+&lt;p&gt;The system compares vendor quotations based on&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Price&lt;/li&gt;
+&lt;li&gt;Delivery Time&lt;/li&gt;
+&lt;li&gt;Vendor Rating&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;making vendor selection much easier.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h3 id=&quot;approval-workflow&quot;&gt;Approval Workflow&lt;/h3&gt;
+&lt;p&gt;Managers review procurement requests before purchase orders are generated.&lt;/p&gt;
+&lt;p&gt;This creates a proper approval chain inside the organization.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h3 id=&quot;purchase-orders&quot;&gt;Purchase Orders&lt;/h3&gt;
+&lt;p&gt;After approval,&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Purchase Orders are generated&lt;/li&gt;
+&lt;li&gt;Vendors receive updates&lt;/li&gt;
+&lt;li&gt;Procurement history is maintained&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;h3 id=&quot;invoice-generation&quot;&gt;Invoice Generation&lt;/h3&gt;
+&lt;p&gt;The ERP automatically creates invoices which can later be exported as PDF.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h3 id=&quot;reports-analytics&quot;&gt;Reports &amp;amp; Analytics&lt;/h3&gt;
+&lt;p&gt;The dashboard provides&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Procurement Trends&lt;/li&gt;
+&lt;li&gt;Vendor Performance&lt;/li&gt;
+&lt;li&gt;Monthly Spending&lt;/li&gt;
+&lt;li&gt;Purchase Statistics&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;which helps management take better decisions.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 id=&quot;database-design&quot;&gt;Database Design&lt;/h2&gt;
+&lt;p&gt;The project contains multiple interconnected tables including&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Users&lt;/li&gt;
+&lt;li&gt;Roles&lt;/li&gt;
+&lt;li&gt;Vendors&lt;/li&gt;
+&lt;li&gt;Vendor Categories&lt;/li&gt;
+&lt;li&gt;RFQs&lt;/li&gt;
+&lt;li&gt;Quotations&lt;/li&gt;
+&lt;li&gt;Purchase Orders&lt;/li&gt;
+&lt;li&gt;Invoices&lt;/li&gt;
+&lt;li&gt;Activity Logs&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Entity Framework Core handled relationships and migrations efficiently.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 id=&quot;what-i-learned&quot;&gt;What I Learned&lt;/h2&gt;
+&lt;p&gt;This internship taught me much more than simply writing APIs.&lt;/p&gt;
+&lt;p&gt;I learned&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Designing scalable REST APIs&lt;/li&gt;
+&lt;li&gt;Database modelling&lt;/li&gt;
+&lt;li&gt;Clean project organization&lt;/li&gt;
+&lt;li&gt;JWT Authentication&lt;/li&gt;
+&lt;li&gt;Role Based Authorization&lt;/li&gt;
+&lt;li&gt;Entity Framework Core&lt;/li&gt;
+&lt;li&gt;PostgreSQL&lt;/li&gt;
+&lt;li&gt;API testing using Swagger&lt;/li&gt;
+&lt;li&gt;Git workflow&lt;/li&gt;
+&lt;li&gt;Debugging production-like issues&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;h3 id=&quot;database-design-1&quot;&gt;Database Design&lt;/h3&gt;
+&lt;p&gt;Designing relationships was much harder than writing controllers.&lt;/p&gt;
+&lt;p&gt;Choosing where to place foreign keys, handling cascading deletes, and modelling approval workflows required several iterations before arriving at a clean design.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h3 id=&quot;authentication-1&quot;&gt;Authentication&lt;/h3&gt;
+&lt;h2 id=&quot;implementing-secure-authentication-using-jwt-taught-me-how-production-apis-protect-resources-while-supporting-different-user-roles&quot;&gt;Implementing secure authentication using JWT taught me how production APIs protect resources while supporting different user roles.&lt;/h2&gt;
+&lt;h3 id=&quot;database-design-2&quot;&gt;Database Design&lt;/h3&gt;
+&lt;p&gt;Designing relationships between multiple modules was challenging.&lt;/p&gt;
+&lt;p&gt;Thinking through foreign keys and business rules took much longer than writing CRUD APIs.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h3 id=&quot;authentication-2&quot;&gt;Authentication&lt;/h3&gt;
+&lt;p&gt;Implementing secure authentication with JWT and role-based authorization helped me understand how modern backend applications protect APIs.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 id=&quot;screenshots&quot;&gt;Screenshots&lt;/h2&gt;
+&lt;h3 id=&quot;login&quot;&gt;Login&lt;/h3&gt;
+&lt;a href=&quot;/images/vendorbridge/login.png&quot; data-lightbox=&quot;blog-img&quot; data-title=&quot;Sample image&quot;&gt;
+    &lt;img src=&quot;https://www.mukund.xyz/processed_images/login.ec809521cf604c02.png&quot;
+         srcset=&quot;/images/vendorbridge/login.png 2x&quot;
+         width=&quot;724&quot;
+         height=&quot;482&quot;
+         alt=&quot;Sample image&quot;
+         loading=&quot;lazy&quot;
+         style=&quot;max-width: 100%; height: auto; border-radius: 6px;&quot; /&gt;
+&lt;/a&gt;
+&lt;hr /&gt;
+&lt;h3 id=&quot;dashboard&quot;&gt;Dashboard&lt;/h3&gt;
+&lt;a href=&quot;/images/vendorbridge/dashboard.png&quot; data-lightbox=&quot;blog-img&quot; data-title=&quot;Sample image&quot;&gt;
+    &lt;img src=&quot;https://www.mukund.xyz/processed_images/dashboard.fb3e820d536e0f0f.png&quot;
+         srcset=&quot;/images/vendorbridge/dashboard.png 2x&quot;
+         width=&quot;642&quot;
+         height=&quot;357&quot;
+         alt=&quot;Sample image&quot;
+         loading=&quot;lazy&quot;
+         style=&quot;max-width: 100%; height: auto; border-radius: 6px;&quot; /&gt;
+&lt;/a&gt;
+&lt;hr /&gt;
+&lt;h3 id=&quot;vendor-directory&quot;&gt;Vendor Directory&lt;/h3&gt;
+&lt;a href=&quot;/images/vendorbridge/vendors.png&quot; data-lightbox=&quot;blog-img&quot; data-title=&quot;Sample image&quot;&gt;
+    &lt;img src=&quot;https://www.mukund.xyz/processed_images/vendors.9ab6047b23e114b1.png&quot;
+         srcset=&quot;/images/vendorbridge/vendors.png 2x&quot;
+         width=&quot;642&quot;
+         height=&quot;357&quot;
+         alt=&quot;Sample image&quot;
+         loading=&quot;lazy&quot;
+         style=&quot;max-width: 100%; height: auto; border-radius: 6px;&quot; /&gt;
+&lt;/a&gt;
+&lt;hr /&gt;
+&lt;h3 id=&quot;rfq-module&quot;&gt;RFQ Module&lt;/h3&gt;
+&lt;a href=&quot;/images/vendorbridge/rfq.png&quot; data-lightbox=&quot;blog-img&quot; data-title=&quot;Sample image&quot;&gt;
+    &lt;img src=&quot;https://www.mukund.xyz/processed_images/rfq.9faa51d9ceccc139.png&quot;
+         srcset=&quot;/images/vendorbridge/rfq.png 2x&quot;
+         width=&quot;642&quot;
+         height=&quot;358&quot;
+         alt=&quot;Sample image&quot;
+         loading=&quot;lazy&quot;
+         style=&quot;max-width: 100%; height: auto; border-radius: 6px;&quot; /&gt;
+&lt;/a&gt;
+&lt;hr /&gt;
+&lt;h3 id=&quot;reports&quot;&gt;Reports&lt;/h3&gt;
+&lt;a href=&quot;/images/vendorbridge/reports.png&quot; data-lightbox=&quot;blog-img&quot; data-title=&quot;Sample image&quot;&gt;
+    &lt;img src=&quot;https://www.mukund.xyz/processed_images/reports.45c467b062a7dd79.png&quot;
+         srcset=&quot;/images/vendorbridge/reports.png 2x&quot;
+         width=&quot;621&quot;
+         height=&quot;346&quot;
+         alt=&quot;Sample image&quot;
+         loading=&quot;lazy&quot;
+         style=&quot;max-width: 100%; height: auto; border-radius: 6px;&quot; /&gt;
+&lt;/a&gt;
+&lt;hr /&gt;
+&lt;h2 id=&quot;internship-outcomes&quot;&gt;Internship Outcomes&lt;/h2&gt;
+&lt;p&gt;By the end of the internship I had built a complete backend application using modern Microsoft technologies.&lt;/p&gt;
+&lt;p&gt;More importantly, I became comfortable with&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;ASP.NET Core&lt;/li&gt;
+&lt;li&gt;Minimal APIs&lt;/li&gt;
+&lt;li&gt;Entity Framework Core&lt;/li&gt;
+&lt;li&gt;PostgreSQL&lt;/li&gt;
+&lt;li&gt;Authentication&lt;/li&gt;
+&lt;li&gt;Authorization&lt;/li&gt;
+&lt;li&gt;REST APIs&lt;/li&gt;
+&lt;li&gt;ERP domain modelling&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This project gave me confidence to build larger backend systems in the future.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 id=&quot;final-thoughts&quot;&gt;Final Thoughts&lt;/h2&gt;
+&lt;p&gt;When I started this internship, I thought backend development was mostly about writing CRUD APIs.&lt;/p&gt;
+&lt;p&gt;By the end, I realized that backend engineering is really about solving business problems through software design.&lt;/p&gt;
+&lt;p&gt;Building VendorBridge taught me how authentication, database modelling, API design, and business workflows fit together to create a complete application.&lt;/p&gt;
+&lt;p&gt;This internship strengthened my interest in backend engineering and gave me confidence to build larger systems using the .NET ecosystem.&lt;/p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Quantitative Aptitude</title>
+        <published>2025-09-23T00:00:00+00:00</published>
+        <updated>2025-09-23T00:00:00+00:00</updated>
+        
+        <author>
+          <name>Unknown</name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://www.mukund.xyz/notes/quantitative-aptitude/"/>
+        <id>https://www.mukund.xyz/notes/quantitative-aptitude/</id>
+        
+        <content type="html" xml:base="https://www.mukund.xyz/notes/quantitative-aptitude/">&lt;a href=&quot;/images/quantitative-aptitude.jpg&quot; data-lightbox=&quot;blog-img&quot; data-title=&quot;image&quot;&gt;
+  &lt;img src=&quot;/images/quantitative-aptitude.jpg&quot;
+       alt=&quot;image&quot;
+       loading=&quot;lazy&quot;
+       style=&quot;max-width: 100%; height: auto; border-radius: 6px;&quot; /&gt;
+&lt;/a&gt;
+&lt;h1 id=&quot;quantitative-aptitude&quot;&gt;Quantitative Aptitude&lt;/h1&gt;
+&lt;p&gt;A comprehensive guide to mastering quantitative aptitude, covering essential concepts, problem-solving techniques, and practice questions.&lt;/p&gt;
+&lt;h2 id=&quot;time-and-work&quot;&gt;Time and Work&lt;/h2&gt;
+&lt;p&gt;Time and Work problems are a common topic in quantitative aptitude tests. They involve calculating the time taken to complete a task when multiple workers are involved or determining how much work can be done in a given time.&lt;/p&gt;
+&lt;h3 id=&quot;invert-trick&quot;&gt;Invert Trick&lt;/h3&gt;
+&lt;p&gt;The Invert Trick is a useful technique for solving Time and Work problems. It involves inverting the relationship between time and work to simplify calculations. For example, if a worker can complete a task in 5 days, their work rate is 1/5 of the task per day.&lt;/p&gt;
+&lt;h3 id=&quot;example-problem&quot;&gt;Example Problem&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;If A can complete a task in 4 days and B can complete the same task in 6 days, how long will it take for both A and B to complete the task together?&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;Solution:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;A’s work rate = 1/4 per day&lt;/p&gt;
+&lt;p&gt;B’s work rate = 1/6 per day&lt;/p&gt;
+&lt;p&gt;Combined work rate = 1/4 + 1/6 = 5/12 per day&lt;/p&gt;
+&lt;p&gt;Time taken together = 1 / (5/12) = 12/5 = 2.4 days&lt;/p&gt;
+&lt;ol start=&quot;2&quot;&gt;
+&lt;li&gt;A can work 5 times faster than B. If A can complete a task in 60 days less than b to complete the work , in how many days does A and B individually complete the work?
+&lt;strong&gt;Solution:&lt;/strong&gt;
+Let the time taken by B to complete the work be x days.
+Then, the time taken by A to complete the work is (x - 60) days.&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Configure neovim from Scratch</title>
+        <published>2025-09-18T00:00:00+00:00</published>
+        <updated>2025-09-18T00:00:00+00:00</updated>
+        
+        <author>
+          <name>Unknown</name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://www.mukund.xyz/blog/how-to-config-neovim/"/>
+        <id>https://www.mukund.xyz/blog/how-to-config-neovim/</id>
+        
+        <content type="html" xml:base="https://www.mukund.xyz/blog/how-to-config-neovim/">&lt;h4 id=&quot;how-to-install&quot;&gt;How to install&lt;/h4&gt;
+&lt;p&gt;To install simply just type&lt;/p&gt;
+&lt;pre&gt;&lt;code data-lang=&quot;bash&quot;&gt;sudo pacman -S neovim
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Now make a directory in .config&lt;/p&gt;
+&lt;pre&gt;&lt;code data-lang=&quot;bash&quot;&gt;mkdir ~/.config/nvim
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;then go to that directory and open nvim&lt;/p&gt;
+&lt;pre&gt;&lt;code data-lang=&quot;bash&quot;&gt;cd ~/.config/nvim
+nvim .
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;here this type of interface popup&lt;/p&gt;
+&lt;a href=&quot;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhlEccoDEj5CZgXVd6CiweqhVczEQRHgki0We_MffmX2BqDx3B5HnaY0dc6Sjgg8UhUmgDqDSGvXY-2BFVDqHv_qf5ZoDLFaICZGwVfN4EMGUiRIQGon5F2VIoo2DNEs2RfyTKr14gLWaSYFUSR7RdvoLBhoJZ-GHK56EEyCqxkPzU1iuIBjqQNU-MZMfqj/s1364/pic-window-240913-1743-56.png&quot; data-lightbox=&quot;blog-img&quot; data-title=&quot;Screenshot&quot;&gt;
+  &lt;img src=&quot;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhlEccoDEj5CZgXVd6CiweqhVczEQRHgki0We_MffmX2BqDx3B5HnaY0dc6Sjgg8UhUmgDqDSGvXY-2BFVDqHv_qf5ZoDLFaICZGwVfN4EMGUiRIQGon5F2VIoo2DNEs2RfyTKr14gLWaSYFUSR7RdvoLBhoJZ-GHK56EEyCqxkPzU1iuIBjqQNU-MZMfqj/s1364/pic-window-240913-1743-56.png&quot;
+       alt=&quot;Screenshot&quot;
+       loading=&quot;lazy&quot;
+       style=&quot;max-width: 100%; height: auto; border-radius: 6px;&quot; /&gt;
+&lt;/a&gt;
+&lt;h4 id=&quot;how-to-configure&quot;&gt;How to configure&lt;/h4&gt;
+&lt;p&gt;Now press &lt;code&gt;:&lt;/code&gt; and type&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;:h rtp
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;here you can see &lt;code&gt;default $XDG_CONFIG_HOME/nvim&lt;/code&gt; is our main directory where we put all our config files.&lt;/p&gt;
+&lt;a href=&quot;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgxIXHocnkLhtvxZN4rIk7xEVAH1fjw809GNTUtNZZ3TzGUT0f1M3OXuUCDi2658gGYym7XHirlKi2ZCjdO4AIN80Fl7Mp985hdHtjlLXtw0qKMSzVNngVe2gs2iQY_Ln3JQWQzRwL05Ja_Se7L-J4mwMx4eh32LBsVaBlfvyw0Pvva25TNJQdWshF0Ym55/s1364/pic-window-240913-1748-25.png&quot; data-lightbox=&quot;blog-img&quot; data-title=&quot;Screenshot&quot;&gt;
+  &lt;img src=&quot;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgxIXHocnkLhtvxZN4rIk7xEVAH1fjw809GNTUtNZZ3TzGUT0f1M3OXuUCDi2658gGYym7XHirlKi2ZCjdO4AIN80Fl7Mp985hdHtjlLXtw0qKMSzVNngVe2gs2iQY_Ln3JQWQzRwL05Ja_Se7L-J4mwMx4eh32LBsVaBlfvyw0Pvva25TNJQdWshF0Ym55/s1364/pic-window-240913-1748-25.png&quot;
+       alt=&quot;Screenshot&quot;
+       loading=&quot;lazy&quot;
+       style=&quot;max-width: 100%; height: auto; border-radius: 6px;&quot; /&gt;
+&lt;/a&gt;
+&lt;p&gt;Now exit from that your interface should look like this&lt;/p&gt;
+&lt;a href=&quot;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhSAZcEnzH-SOXjVUgO_v2YnV2Dyw85kIKMAJp6iVlgJHk1rkfqtybFvjD2MgTh9o0HiQLGgiJ_ycv7MRV2G9i4ChN2ksg-_qEfdTyMk-xsWboqPaPLLyc-gtedBURYFw7S9jpZtfknIPT1J0k5TEQs3EvW666VX34ERuegZp1kKMZ-XXbyIpxV41HabjNZ/s1364/pic-window-240913-1743-56.png&quot; data-lightbox=&quot;blog-img&quot; data-title=&quot;Screenshot&quot;&gt;
+  &lt;img src=&quot;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhSAZcEnzH-SOXjVUgO_v2YnV2Dyw85kIKMAJp6iVlgJHk1rkfqtybFvjD2MgTh9o0HiQLGgiJ_ycv7MRV2G9i4ChN2ksg-_qEfdTyMk-xsWboqPaPLLyc-gtedBURYFw7S9jpZtfknIPT1J0k5TEQs3EvW666VX34ERuegZp1kKMZ-XXbyIpxV41HabjNZ/s1364/pic-window-240913-1743-56.png&quot;
+       alt=&quot;Screenshot&quot;
+       loading=&quot;lazy&quot;
+       style=&quot;max-width: 100%; height: auto; border-radius: 6px;&quot; /&gt;
+&lt;/a&gt;
+&lt;p&gt;Now press % and give file name &lt;code&gt;init.lua&lt;/code&gt;&lt;/p&gt;
+&lt;a href=&quot;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhBh7cr8aFVY-ds0dN_xYKfcNph1WL-UM5aY7ESQaqsCbUQ_ZDiH5-djUKqEt_izHkHnmjnPOdw1k2xvR1PhiWhwFkzvwxw3sinknaf5z3XYqCmFskUD-IdLh_F9ltbk7j8c_DQyi08Y822w-FPwpQ_mb_fluP4t9RW8Bmk2Qgx7bTW8bTm-plN11bdqlCb/s501/pic-selected-240913-1812-12.png&quot; data-lightbox=&quot;blog-img&quot; data-title=&quot;Screenshot&quot;&gt;
+  &lt;img src=&quot;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhBh7cr8aFVY-ds0dN_xYKfcNph1WL-UM5aY7ESQaqsCbUQ_ZDiH5-djUKqEt_izHkHnmjnPOdw1k2xvR1PhiWhwFkzvwxw3sinknaf5z3XYqCmFskUD-IdLh_F9ltbk7j8c_DQyi08Y822w-FPwpQ_mb_fluP4t9RW8Bmk2Qgx7bTW8bTm-plN11bdqlCb/s501/pic-selected-240913-1812-12.png&quot;
+       alt=&quot;Screenshot&quot;
+       loading=&quot;lazy&quot;
+       style=&quot;max-width: 100%; height: auto; border-radius: 6px;&quot; /&gt;
+&lt;/a&gt;
+&lt;p&gt;To type something press &lt;code&gt;i&lt;/code&gt; (insert) or &lt;code&gt;a&lt;/code&gt;(append)
+type this&lt;/p&gt;
+&lt;a href=&quot;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhaQ98ctWxLs-7I6zb9ZJge3X8_qn9f4rlyiQ-7KlwDW8u7DruJ5YtXDisDVBWh_nkzteZQpmrARbSlqwFEFop5SBlB4mewx1U03kNvEFyn9I2TnpT6ams3qdqSJKw923wByoOCPxWJ6qW_oqzKTn30LErGIaXfzSgpXF9bSAkPN-RuOXa8e1YXUFOmSbgT/s368/pic-selected-240913-1815-40.png&quot; data-lightbox=&quot;blog-img&quot; data-title=&quot;Screenshot&quot;&gt;
+  &lt;img src=&quot;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhaQ98ctWxLs-7I6zb9ZJge3X8_qn9f4rlyiQ-7KlwDW8u7DruJ5YtXDisDVBWh_nkzteZQpmrARbSlqwFEFop5SBlB4mewx1U03kNvEFyn9I2TnpT6ams3qdqSJKw923wByoOCPxWJ6qW_oqzKTn30LErGIaXfzSgpXF9bSAkPN-RuOXa8e1YXUFOmSbgT/s368/pic-selected-240913-1815-40.png&quot;
+       alt=&quot;Screenshot&quot;
+       loading=&quot;lazy&quot;
+       style=&quot;max-width: 100%; height: auto; border-radius: 6px;&quot; /&gt;
+&lt;/a&gt;
+&lt;p&gt;now exit from insert mode by pressing &lt;code&gt;Esc&lt;/code&gt; or &lt;code&gt;ctrl + c&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;After to save this file press &lt;code&gt;:&lt;/code&gt; and type &lt;code&gt;w&lt;/code&gt;(write) or &lt;code&gt;wq&lt;/code&gt;(write and quiet)&lt;/p&gt;
+&lt;a href=&quot;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjpdOezSW67-NQy0aDlGu0Kwjbd8syUv59SArftXhIdej2_8t9F6j_ZAcQYZSV1jmwDHaHvz4j_oNmsFtSrwQgr5rbUQJZtGVkQKuWcoDw4YQkwBF0A2WMaLRD4gN7ELO0eyX8qB6UqcF4iXwebBCuw8dmGTx7BTj2vWki6rsZOjnp3W_GzpYHOnsYh4yP4/s421/pic-selected-240913-1823-04.png&quot; data-lightbox=&quot;blog-img&quot; data-title=&quot;Screenshot&quot;&gt;
+  &lt;img src=&quot;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjpdOezSW67-NQy0aDlGu0Kwjbd8syUv59SArftXhIdej2_8t9F6j_ZAcQYZSV1jmwDHaHvz4j_oNmsFtSrwQgr5rbUQJZtGVkQKuWcoDw4YQkwBF0A2WMaLRD4gN7ELO0eyX8qB6UqcF4iXwebBCuw8dmGTx7BTj2vWki6rsZOjnp3W_GzpYHOnsYh4yP4/s421/pic-selected-240913-1823-04.png&quot;
+       alt=&quot;Screenshot&quot;
+       loading=&quot;lazy&quot;
+       style=&quot;max-width: 100%; height: auto; border-radius: 6px;&quot; /&gt;
+&lt;/a&gt;
+&lt;p&gt;Again go to nvim&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;nvim .
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;here you can notice that our file is created and bottom left you can see hello.&lt;/p&gt;
+&lt;a href=&quot;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjMB3Opt0bRBdhmPvygfl9gno_5qNKMYS0L9e2L1xZ7bypb06yaCcNM7jYwnrRCL5R-XhnV9nCMRXtgjuSSLQAZGAwjc342wyQKptP02zPURy90YhXAFDL8Kt5YPhWuS1wTQ_LPNrruEtf50tki2t0fUde7R4YXn2Suf_UzA-4m-4F76od5_Ms9qWu2TpLM/s1364/pic-window-240913-1833-48.png&quot; data-lightbox=&quot;blog-img&quot; data-title=&quot;Screenshot&quot;&gt;
+  &lt;img src=&quot;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjMB3Opt0bRBdhmPvygfl9gno_5qNKMYS0L9e2L1xZ7bypb06yaCcNM7jYwnrRCL5R-XhnV9nCMRXtgjuSSLQAZGAwjc342wyQKptP02zPURy90YhXAFDL8Kt5YPhWuS1wTQ_LPNrruEtf50tki2t0fUde7R4YXn2Suf_UzA-4m-4F76od5_Ms9qWu2TpLM/s1364/pic-window-240913-1833-48.png&quot;
+       alt=&quot;Screenshot&quot;
+       loading=&quot;lazy&quot;
+       style=&quot;max-width: 100%; height: auto; border-radius: 6px;&quot; /&gt;
+&lt;/a&gt;
+&lt;p&gt;Now press &lt;code&gt;d&lt;/code&gt; to create directory and give name &lt;code&gt;lua&lt;/code&gt;&lt;/p&gt;
+&lt;a href=&quot;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi8NXHzCnitR7Xo4yNijWhiskByVxuySeYQefEIMfgtcAE_Xw9RrsUW4fXPHYWo8kyDoAv6EO2_skts5Tp8ZW-SuyfynQr-mqYU1-Ptk-X6CSoSHJNl2I5i5FNoxPKYQ9rrRhWAyQ-uA5exKwZiJvl0rs5w3YhoE-I1VKG6ECR2EhzYX80D39zVEIwbIzT6/s1364/pic-window-240913-1844-33.png&quot; data-lightbox=&quot;blog-img&quot; data-title=&quot;Screenshot&quot;&gt;
+  &lt;img src=&quot;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi8NXHzCnitR7Xo4yNijWhiskByVxuySeYQefEIMfgtcAE_Xw9RrsUW4fXPHYWo8kyDoAv6EO2_skts5Tp8ZW-SuyfynQr-mqYU1-Ptk-X6CSoSHJNl2I5i5FNoxPKYQ9rrRhWAyQ-uA5exKwZiJvl0rs5w3YhoE-I1VKG6ECR2EhzYX80D39zVEIwbIzT6/s1364/pic-window-240913-1844-33.png&quot;
+       alt=&quot;Screenshot&quot;
+       loading=&quot;lazy&quot;
+       style=&quot;max-width: 100%; height: auto; border-radius: 6px;&quot; /&gt;
+&lt;/a&gt;
+&lt;p&gt;Go to lua directory and create a whatever named directory&lt;/p&gt;
+&lt;a href=&quot;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiJ7bK9EGUlpO1Dco4fQgqA4Xdt-6v_hGy1GAlPHNGz66hSlsVycc-TSvM7FLa4pGIktsm3_-af8u6HnrR5YrH84_MPZvp7Y7NFKfgzfqEMZBg6HtBlnH2MPejwMn79jdBoP-OFTOFn-t806JABVJYnDjFTLbd2oXIw1kVgKeKKnQfrDtCsz4PbVtqyZeXt/s1364/pic-window-240913-1911-55.png&quot; data-lightbox=&quot;blog-img&quot; data-title=&quot;Screenshot&quot;&gt;
+  &lt;img src=&quot;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiJ7bK9EGUlpO1Dco4fQgqA4Xdt-6v_hGy1GAlPHNGz66hSlsVycc-TSvM7FLa4pGIktsm3_-af8u6HnrR5YrH84_MPZvp7Y7NFKfgzfqEMZBg6HtBlnH2MPejwMn79jdBoP-OFTOFn-t806JABVJYnDjFTLbd2oXIw1kVgKeKKnQfrDtCsz4PbVtqyZeXt/s1364/pic-window-240913-1911-55.png&quot;
+       alt=&quot;Screenshot&quot;
+       loading=&quot;lazy&quot;
+       style=&quot;max-width: 100%; height: auto; border-radius: 6px;&quot; /&gt;
+&lt;/a&gt;
+&lt;p&gt;And go to that directory and create file &lt;code&gt;init.lua&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;for testing type this in your file:&lt;/p&gt;
+&lt;a href=&quot;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiyM5KXuvn-gep8cjwaEVplNJQlLORxU02KLEZ_Z_4vjFtsKsgjPp_fnlvJYDHRcrVkBv07YJmkBA0L_PcdSsySEw4l8i0lHyTZ431SHcQ7-YN0ciWIq5ZZbboR6A-_axsPJh11OXWKTpkBvlf8I6zLzn-pDlN1bVxbgIV2_RQ2KU_8pr9a-kcjRdssrO7W/s421/pic-selected-240913-1924-20.png&quot; data-lightbox=&quot;blog-img&quot; data-title=&quot;Screenshot&quot;&gt;
+  &lt;img src=&quot;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiyM5KXuvn-gep8cjwaEVplNJQlLORxU02KLEZ_Z_4vjFtsKsgjPp_fnlvJYDHRcrVkBv07YJmkBA0L_PcdSsySEw4l8i0lHyTZ431SHcQ7-YN0ciWIq5ZZbboR6A-_axsPJh11OXWKTpkBvlf8I6zLzn-pDlN1bVxbgIV2_RQ2KU_8pr9a-kcjRdssrO7W/s421/pic-selected-240913-1924-20.png&quot;
+       alt=&quot;Screenshot&quot;
+       loading=&quot;lazy&quot;
+       style=&quot;max-width: 100%; height: auto; border-radius: 6px;&quot; /&gt;
+&lt;/a&gt;
+&lt;p&gt;Again press &lt;code&gt;:&lt;/code&gt; to go explore mode &lt;code&gt;Ex&lt;/code&gt;
+and go to previous directory &lt;code&gt;../&lt;/code&gt;  where our first file created&lt;/p&gt;
+&lt;p&gt;open that file &lt;code&gt;~/.config/nvim/init.lua&lt;/code&gt; and type this&lt;/p&gt;
+&lt;a href=&quot;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiT6b3sAVAiFr1U1ppFdb-bByHxALCEixxo3sBAMnEcAW4SJoOgChureVhKI9cAOE4hdhrWbgiC5xIqG1mguQRwYt73-NLjELafCnbrnj6cwsuau2QNjlG6HfLFCUeJy7ehN8BSHinkkUgmUy0LTEdAY1XxD73IKWOTeStmkPPrtPltedD-9M_HZ-qImK7J/s437/pic-selected-240913-2120-00.png&quot; data-lightbox=&quot;blog-img&quot; data-title=&quot;Screenshot&quot;&gt;
+  &lt;img src=&quot;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiT6b3sAVAiFr1U1ppFdb-bByHxALCEixxo3sBAMnEcAW4SJoOgChureVhKI9cAOE4hdhrWbgiC5xIqG1mguQRwYt73-NLjELafCnbrnj6cwsuau2QNjlG6HfLFCUeJy7ehN8BSHinkkUgmUy0LTEdAY1XxD73IKWOTeStmkPPrtPltedD-9M_HZ-qImK7J/s437/pic-selected-240913-2120-00.png&quot;
+       alt=&quot;Screenshot&quot;
+       loading=&quot;lazy&quot;
+       style=&quot;max-width: 100%; height: auto; border-radius: 6px;&quot; /&gt;
+&lt;/a&gt;
+&lt;p&gt;now exit from nvim by pressing &lt;code&gt;:wq&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Again open nvim&lt;/p&gt;
+&lt;p&gt;pwd :- ~/.config/nvim&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;nvim .
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;A message like this will show when you open nvim&lt;/p&gt;
+&lt;p&gt;congrats if this type of  message will shows so you go further and lets make nvim usable.&lt;/p&gt;
+&lt;a href=&quot;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhYrqlA4oWINyvo_eBhS9rQhy0Hyxje-okrf72B1grUz9KcNLu-OHtkUEa6reFmY5QtY3PadNvt-8rX_fq9lxQjxBB8l9IA04sapSjgAZvvPigHQBX_vYbEsDl_Cy3MjOjgyCiiUEeCmJnxrTqGfDOCuBdy3JkTTBr4IuFnGEMpNRJvfpLIearaiJKDPxB-/s566/pic-selected-240913-2125-02.png&quot; data-lightbox=&quot;blog-img&quot; data-title=&quot;Screenshot&quot;&gt;
+  &lt;img src=&quot;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhYrqlA4oWINyvo_eBhS9rQhy0Hyxje-okrf72B1grUz9KcNLu-OHtkUEa6reFmY5QtY3PadNvt-8rX_fq9lxQjxBB8l9IA04sapSjgAZvvPigHQBX_vYbEsDl_Cy3MjOjgyCiiUEeCmJnxrTqGfDOCuBdy3JkTTBr4IuFnGEMpNRJvfpLIearaiJKDPxB-/s566/pic-selected-240913-2125-02.png&quot;
+       alt=&quot;Screenshot&quot;
+       loading=&quot;lazy&quot;
+       style=&quot;max-width: 100%; height: auto; border-radius: 6px;&quot; /&gt;
+&lt;/a&gt;
+&lt;h4 id=&quot;creating-some-shortcuts&quot;&gt;Creating some shortcuts&lt;/h4&gt;
+&lt;p&gt;Now lets make some shortcuts
+first you have to create a remap.lua file in
+~/.config/nvim/lua/soul/remap.lua&lt;/p&gt;
+&lt;p&gt;here &lt;code&gt;vim.g.leader&lt;/code&gt; is name where you can assign a keybutton&lt;/p&gt;
+&lt;p&gt;in second line you can see &lt;code&gt;vim.keymap.set&lt;/code&gt; is used for set keyboard shortcuts of vim command&lt;/p&gt;
+&lt;p&gt;here we can directly execute this command  &lt;code&gt;Ex&lt;/code&gt; by &lt;code&gt;spacebar pv&lt;/code&gt;&lt;/p&gt;
+&lt;a href=&quot;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgkIWoYFI1FDCInDmElLLTNXJg5RMNWMcl9lr5fyd2hkMuc9JgP455kQ5o-vDAfumfGmkp6vkN4lsOAYMPJUOOnVJmLUCGc2rVNvS30WZggCV56L1XGMgLT_tBNO7of3YWbSKnTIGPkNhxcs3CVUEcaXtzVmso30lxwH2nSVH_u72Wz5wyiLg6HeyBQMNKe/s722/pic-selected-240913-2136-46.png&quot; data-lightbox=&quot;blog-img&quot; data-title=&quot;Screenshot&quot;&gt;
+  &lt;img src=&quot;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgkIWoYFI1FDCInDmElLLTNXJg5RMNWMcl9lr5fyd2hkMuc9JgP455kQ5o-vDAfumfGmkp6vkN4lsOAYMPJUOOnVJmLUCGc2rVNvS30WZggCV56L1XGMgLT_tBNO7of3YWbSKnTIGPkNhxcs3CVUEcaXtzVmso30lxwH2nSVH_u72Wz5wyiLg6HeyBQMNKe/s722/pic-selected-240913-2136-46.png&quot;
+       alt=&quot;Screenshot&quot;
+       loading=&quot;lazy&quot;
+       style=&quot;max-width: 100%; height: auto; border-radius: 6px;&quot; /&gt;
+&lt;/a&gt;
+&lt;p&gt;save this file &lt;code&gt;:w&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;after press &lt;code&gt;:so&lt;/code&gt; hit Enter (it will complie the source)
+now you can press &lt;code&gt;spacebar pv&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;here when you exit from nvim you have to complie again
+so to solve this problem
+we have to type this in our init.lua&lt;/p&gt;
+&lt;p&gt;pwd:- ~/.config/nvim/lua/soul/init.lua&lt;/p&gt;
+&lt;a href=&quot;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgUOFsyOZKl6t6RgG0Husli4wsPs3SQ-x0RuOLF8usuHSbk-5qqaL1Lgjv5VsCPvSihfZK8op-EHFw2YdaZBkiE0ITJXQRCCPzA80pNNQn1iGaxKbFtLQ6xVVDLg4hkj_Vyz2mHRbQsDMv2v3IUxJaMQYwwrd1lbkj5JBGQTDlyrH4ks-1I-bGXP8RMUoRa/s722/pic-selected-240913-2204-18.png&quot; data-lightbox=&quot;blog-img&quot; data-title=&quot;Screenshot&quot;&gt;
+  &lt;img src=&quot;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgUOFsyOZKl6t6RgG0Husli4wsPs3SQ-x0RuOLF8usuHSbk-5qqaL1Lgjv5VsCPvSihfZK8op-EHFw2YdaZBkiE0ITJXQRCCPzA80pNNQn1iGaxKbFtLQ6xVVDLg4hkj_Vyz2mHRbQsDMv2v3IUxJaMQYwwrd1lbkj5JBGQTDlyrH4ks-1I-bGXP8RMUoRa/s722/pic-selected-240913-2204-18.png&quot;
+       alt=&quot;Screenshot&quot;
+       loading=&quot;lazy&quot;
+       style=&quot;max-width: 100%; height: auto; border-radius: 6px;&quot; /&gt;
+&lt;/a&gt;
+&lt;p&gt;Now you everytime you open your nvim it will compile automatically&lt;/p&gt;
+&lt;h4 id=&quot;add-pulgin-manger-packer&quot;&gt;Add pulgin-manger(packer)&lt;/h4&gt;
+&lt;p&gt;Go to this repo &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://github.com/wbthomason/packer.nvim&quot;&gt;packer.nvim&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;clone this repo in your ~/.config&lt;/p&gt;
+&lt;pre&gt;&lt;code data-lang=&quot;bash&quot;&gt;git clone --depth 1 https://github.com/wbthomason/packer.nvim\
+ ~/.local/share/nvim/site/pack/packer/start/packer.nvim
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Now copy this from that repo&lt;/p&gt;
+&lt;pre&gt;&lt;code data-lang=&quot;lua&quot;&gt;vim.cmd [[packadd packer.nvim]]
+
+return require(&amp;#39;packer&amp;#39;).startup(function(use)
+  -- Packer can manage itself
+  use &amp;#39;wbthomason/packer.nvim&amp;#39;
+end)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;paste it in
+~/.config/nvim/lua/soul/packer.lua&lt;/p&gt;
+&lt;p&gt;now complie it &lt;code&gt;:so&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;now can able to type this &lt;code&gt;:PackerSync&lt;/code&gt;
+it will look like this&lt;/p&gt;
+&lt;p&gt;if the option is not available you  can restart your nvim and recomplie it .&lt;/p&gt;
+&lt;a href=&quot;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgh375U-HZtX-coZhrI3CWI-Js40-XB3U4NZs98O2rFTKdEcesOj7uu1o3U5vWleZgWs5M5ElorMuVQYJ-PeLND3yImfUfsnZ9ODEz0gQQRHHO6DTQiN7UcZTCxWtAlcjQBuxXHr0O6P4XXVoQZHRxeiGAXnchpmbhA9l7Bn2U4vHo465XCjjJzfrYp19pO/s1364/pic-window-240913-2238-51.png&quot; data-lightbox=&quot;blog-img&quot; data-title=&quot;Screenshot&quot;&gt;
+  &lt;img src=&quot;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgh375U-HZtX-coZhrI3CWI-Js40-XB3U4NZs98O2rFTKdEcesOj7uu1o3U5vWleZgWs5M5ElorMuVQYJ-PeLND3yImfUfsnZ9ODEz0gQQRHHO6DTQiN7UcZTCxWtAlcjQBuxXHr0O6P4XXVoQZHRxeiGAXnchpmbhA9l7Bn2U4vHo465XCjjJzfrYp19pO/s1364/pic-window-240913-2238-51.png&quot;
+       alt=&quot;Screenshot&quot;
+       loading=&quot;lazy&quot;
+       style=&quot;max-width: 100%; height: auto; border-radius: 6px;&quot; /&gt;
+&lt;/a&gt;
+&lt;p&gt;congrats you come this far you have succesfully installed pulgin-manger.&lt;/p&gt;
+&lt;h5 id=&quot;add-pulgin-fuzzy-finder&quot;&gt;Add Pulgin(fuzzy finder)&lt;/h5&gt;
+&lt;p&gt;Now lets add some pulgin&lt;/p&gt;
+&lt;p&gt;go to repo &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://github.com/nvim-telescope/telescope.nvim&quot;&gt;telescope.nvim&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;copy this from that repo&lt;/p&gt;
+&lt;pre&gt;&lt;code data-lang=&quot;lua&quot;&gt;use {
+  &amp;#39;nvim-telescope/telescope.nvim&amp;#39;, tag = &amp;#39;0.1.8&amp;#39;,
+-- or                            , branch = &amp;#39;0.1.x&amp;#39;,
+  requires = { {&amp;#39;nvim-lua/plenary.nvim&amp;#39;} }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;paste in your packer.lua
+it should be look like this&lt;/p&gt;
+&lt;a href=&quot;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiYndla32ASmdYaPT8Hei_O37y4CWg60XD-Iq3T3e_-_6NYKpYTqsh2pc8YN7wc_XG7dgKnQ_iX6y5EkBxmHAn2KM-cpeKE31BElAb0P1hxtYo3_kO1lkUOGrU8doI3ozwy7tIHtSzmK2kLpkpgj0EKQG2zFnfMS_gnkhVQE6Mog12IdVM-SclNdXx5ndvl/s617/pic-selected-240913-2258-47.png&quot; data-lightbox=&quot;blog-img&quot; data-title=&quot;Screenshot&quot;&gt;
+  &lt;img src=&quot;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiYndla32ASmdYaPT8Hei_O37y4CWg60XD-Iq3T3e_-_6NYKpYTqsh2pc8YN7wc_XG7dgKnQ_iX6y5EkBxmHAn2KM-cpeKE31BElAb0P1hxtYo3_kO1lkUOGrU8doI3ozwy7tIHtSzmK2kLpkpgj0EKQG2zFnfMS_gnkhVQE6Mog12IdVM-SclNdXx5ndvl/s617/pic-selected-240913-2258-47.png&quot;
+       alt=&quot;Screenshot&quot;
+       loading=&quot;lazy&quot;
+       style=&quot;max-width: 100%; height: auto; border-radius: 6px;&quot; /&gt;
+&lt;/a&gt;
+&lt;p&gt;Now press &lt;code&gt;:w&lt;/code&gt;, &lt;code&gt;:so&lt;/code&gt; and after that &lt;code&gt;:PackerSync&lt;/code&gt;
+it will start to install that pulgin&lt;/p&gt;
+&lt;a href=&quot;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEihJpdFhxgTfc0yMf4doskm_O3ow39JywjDig4GljqgfXrRcFOHouxfLts4TNX3t-pki0FbA-_miGjCY7XfuMsNISkFvd7SQSvo2O3o8K01vz3X470k64m3HUj_Lleity-hWBDM1kPhyphenhyphenZ_N-AHWhr4vbPQYOtOSnri4iWxUz9nlOBqgT_q44Zkgg7X7OpPm/s1364/pic-window-240913-2302-39.png&quot; data-lightbox=&quot;blog-img&quot; data-title=&quot;Screenshot&quot;&gt;
+  &lt;img src=&quot;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEihJpdFhxgTfc0yMf4doskm_O3ow39JywjDig4GljqgfXrRcFOHouxfLts4TNX3t-pki0FbA-_miGjCY7XfuMsNISkFvd7SQSvo2O3o8K01vz3X470k64m3HUj_Lleity-hWBDM1kPhyphenhyphenZ_N-AHWhr4vbPQYOtOSnri4iWxUz9nlOBqgT_q44Zkgg7X7OpPm/s1364/pic-window-240913-2302-39.png&quot;
+       alt=&quot;Screenshot&quot;
+       loading=&quot;lazy&quot;
+       style=&quot;max-width: 100%; height: auto; border-radius: 6px;&quot; /&gt;
+&lt;/a&gt;
+&lt;p&gt;Now copy this line
+paste it in  ~/.config/nvim/after/pulgin/telescope.lua
+here create respective directory&lt;/p&gt;
+&lt;pre&gt;&lt;code data-lang=&quot;lua&quot;&gt;local builtin = require(&amp;#39;telescope.builtin&amp;#39;)
+vim.keymap.set(&amp;#39;n&amp;#39;, &amp;#39;&amp;lt;leader&amp;gt;pf&amp;#39;, builtin.find_files, {})
+vim.keymap.set(&amp;#39;n&amp;#39;, &amp;#39;C-p&amp;#39;, builtin.git_files, {})
+vim.keymap.set(&amp;#39;n&amp;#39;, &amp;#39;&amp;lt;leader&amp;gt;ps&amp;#39;, function()
+	builtin.grep_string({ search = vim.fn.input(&amp;quot;Grep &amp;gt; &amp;quot;)});
+end)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Now press &lt;code&gt;:w&lt;/code&gt; &lt;code&gt;:so&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;now you can use fuzzy finder
+press &lt;code&gt;spacebar pf or ps&lt;/code&gt;&lt;/p&gt;
+&lt;a href=&quot;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgZmYnHq8oVAFiA4PIhNFusfq1XP2EeWEdXAJSHLkrjEK8-mLU2SpM1N0_-UCAhCXVSG-WfhibauYrrn-fxgxQY48WxW-qyeW8YMJ2nP6qh3Eha6TX1oHmPjt69pL-GLpaXNwVtUZfZyFsnN4N3kS8dMt8iWcG4-rEcrh8yvvmWSQTzHeumTqpIxlfxug0-/s1364/pic-window-240913-2355-48.png&quot; data-lightbox=&quot;blog-img&quot; data-title=&quot;Screenshot&quot;&gt;
+  &lt;img src=&quot;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgZmYnHq8oVAFiA4PIhNFusfq1XP2EeWEdXAJSHLkrjEK8-mLU2SpM1N0_-UCAhCXVSG-WfhibauYrrn-fxgxQY48WxW-qyeW8YMJ2nP6qh3Eha6TX1oHmPjt69pL-GLpaXNwVtUZfZyFsnN4N3kS8dMt8iWcG4-rEcrh8yvvmWSQTzHeumTqpIxlfxug0-/s1364/pic-window-240913-2355-48.png&quot;
+       alt=&quot;Screenshot&quot;
+       loading=&quot;lazy&quot;
+       style=&quot;max-width: 100%; height: auto; border-radius: 6px;&quot; /&gt;
+&lt;/a&gt;
+&lt;h5 id=&quot;add-pulgin-rose-pine&quot;&gt;Add pulgin (Rosé Pine)&lt;/h5&gt;
+&lt;p&gt;Now go to this repo &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://github.com/will/rose-pine-neovim&quot;&gt;Rosé Pine&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;copy this line
+paste it in ~/.config/nvim/lua/soul/packer.lua&lt;/p&gt;
+&lt;pre&gt;&lt;code data-lang=&quot;lua&quot;&gt;use({ &amp;#39;rose-pine/neovim&amp;#39;, as = &amp;#39;rose-pine&amp;#39; })
+
+vim.cmd(&amp;#39;colorscheme rose-pine&amp;#39;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Now you can change it colorschema &lt;code&gt;:coloschema rose-pine-main&lt;/code&gt;&lt;/p&gt;
+&lt;a href=&quot;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgejqL4HwbMUBTGYfUMEqH5z7FfGzzfszcrfdyqJb4bnlt9XjdX11z7LfPIifCg7zudPcvF9GifS0E35o1uCSVJxFuO_HjUWNO96nWBr2Xn4q2oGoo9fyDrEqGdEaG5A2wkZ2MSwDKSGru7mmB2FRPhQtrkqrIybQAuHhfQYdqCRFf7vXUGCCiCrU7z-Nth/s1364/pic-window-240914-0003-57.png&quot; data-lightbox=&quot;blog-img&quot; data-title=&quot;Screenshot&quot;&gt;
+  &lt;img src=&quot;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgejqL4HwbMUBTGYfUMEqH5z7FfGzzfszcrfdyqJb4bnlt9XjdX11z7LfPIifCg7zudPcvF9GifS0E35o1uCSVJxFuO_HjUWNO96nWBr2Xn4q2oGoo9fyDrEqGdEaG5A2wkZ2MSwDKSGru7mmB2FRPhQtrkqrIybQAuHhfQYdqCRFf7vXUGCCiCrU7z-Nth/s1364/pic-window-240914-0003-57.png&quot;
+       alt=&quot;Screenshot&quot;
+       loading=&quot;lazy&quot;
+       style=&quot;max-width: 100%; height: auto; border-radius: 6px;&quot; /&gt;
+&lt;/a&gt;
+&lt;h4 id=&quot;transparent-background&quot;&gt;Transparent Background&lt;/h4&gt;
+&lt;p&gt;here i want traspraent background&lt;/p&gt;
+&lt;p&gt;create a file colors.lua
+at ~/.config/nvim/after/pulgin/colors.lua&lt;/p&gt;
+&lt;pre&gt;&lt;code data-lang=&quot;lua&quot;&gt;function ColorMyPencils(color)
+            color = color or &amp;quot;rose-pine&amp;quot;
+            vim.cmd.colorscheme(color)
+            vim.api.nvim_set_hl(0,&amp;quot;Normal&amp;quot;,{bg = &amp;quot;none&amp;quot;})
+            vim.api.nvim_set_hl(0,&amp;quot;NormalFloat&amp;quot;,{bg = &amp;quot;none&amp;quot;})
+end
+
+ColorMyPencils()
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;After transparenting  background .
+it will look beautiful &lt;code&gt;&amp;gt;&amp;lt;&lt;/code&gt;.&lt;/p&gt;
+&lt;a href=&quot;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhOsNuiNiR_5Veu1EeTXOMG7VpQyxUUZS2QHeTzo24faCL6KEfAyjYuKglYez31zHjxtAh_n13I9cKNDOnFJQLGK5bmQVe_VAa6vYorLG4eCpRhxYmUIy7CEWH54yZLw9RzQG2ceSDzFnHS1WnaqMkeJTrGUEpqFDuTYPyL4LNC97rM-WlDsM47w8wD5yyF/s1365/pic-selected-240914-1406-41.png&quot; data-lightbox=&quot;blog-img&quot; data-title=&quot;Screenshot&quot;&gt;
+  &lt;img src=&quot;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhOsNuiNiR_5Veu1EeTXOMG7VpQyxUUZS2QHeTzo24faCL6KEfAyjYuKglYez31zHjxtAh_n13I9cKNDOnFJQLGK5bmQVe_VAa6vYorLG4eCpRhxYmUIy7CEWH54yZLw9RzQG2ceSDzFnHS1WnaqMkeJTrGUEpqFDuTYPyL4LNC97rM-WlDsM47w8wD5yyF/s1365/pic-selected-240914-1406-41.png&quot;
+       alt=&quot;Screenshot&quot;
+       loading=&quot;lazy&quot;
+       style=&quot;max-width: 100%; height: auto; border-radius: 6px;&quot; /&gt;
+&lt;/a&gt;
+&lt;h4 id=&quot;add-tree-sitter&quot;&gt;Add tree sitter&lt;/h4&gt;
+&lt;p&gt;Add this line in your packer.lua&lt;/p&gt;
+&lt;pre&gt;&lt;code data-lang=&quot;lua&quot;&gt;use( &amp;#39;nvim-treesitter/nvim-treesitter&amp;#39;, { run = &amp;#39;:TSUpdate&amp;#39;})
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Save the file &lt;code&gt;:w&lt;/code&gt; and comple it &lt;code&gt;:so&lt;/code&gt; and run Packer &lt;code&gt;:PackerSync&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;copy this line and paste it in
+~/.config/nvim/after/pulgin/tree-sitter.lua&lt;/p&gt;
+&lt;pre&gt;&lt;code data-lang=&quot;lua&quot;&gt;require&amp;#39;nvim-treesitter.configs&amp;#39;.setup {
+  -- A list of parser names, or &amp;quot;all&amp;quot; (the listed parsers MUST always be installed)
+  ensure_installed = { &amp;quot;c&amp;quot;, &amp;quot;lua&amp;quot;, &amp;quot;vim&amp;quot;, &amp;quot;vimdoc&amp;quot;, &amp;quot;query&amp;quot;, &amp;quot;markdown&amp;quot;, &amp;quot;markdown_inline&amp;quot;, &amp;quot;javascript&amp;quot;, &amp;quot;rust&amp;quot;, &amp;quot;typescript&amp;quot;  },
+
+  -- Install parsers synchronously (only applied to `ensure_installed`)
+  sync_install = false,
+
+  -- Automatically install missing parsers when entering buffer
+  -- Recommendation: set to false if you don&amp;#39;t have `tree-sitter` CLI installed locally
+  auto_install = true,
+  highlight = {
+    enable = true,
+    -- Setting this to true will run `:h syntax` and tree-sitter at the same time.
+    -- Set this to `true` if you depend on &amp;#39;syntax&amp;#39; being enabled (like for indentation).
+    -- Using this option may slow down your editor, and you may see some duplicate highlights.
+    -- Instead of true it can also be a list of languages
+    additional_vim_regex_highlighting = false,
+  },
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Save the file &lt;code&gt;:w&lt;/code&gt; and comple it &lt;code&gt;:so&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Add this line in your packer.lua&lt;/p&gt;
+&lt;pre&gt;&lt;code data-lang=&quot;lua&quot;&gt;use( &amp;#39;nvim-treesitter/playground&amp;#39;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Save the file &lt;code&gt;:w&lt;/code&gt; and comple it &lt;code&gt;:so&lt;/code&gt; and run packer &lt;code&gt;PackerSync&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;you can able to run &lt;code&gt;:TSPlaygroundToggle&lt;/code&gt;&lt;/p&gt;
+&lt;h4 id=&quot;add-harrpon&quot;&gt;Add harrpon&lt;/h4&gt;
+&lt;p&gt;Add this line in you Packer&lt;/p&gt;
+&lt;pre&gt;&lt;code data-lang=&quot;lua&quot;&gt;use( &amp;#39;ThePrimeagen/harpoon&amp;#39;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;same as above&lt;/p&gt;
+&lt;p&gt;Now create a file harpoon.lua
+at ~/.config/nvim/after/harpoon.lua
+paste this&lt;/p&gt;
+&lt;pre&gt;&lt;code data-lang=&quot;lua&quot;&gt;local mark = require(&amp;quot;harpoon.mark&amp;quot;)
+local ui = require(&amp;quot;harpoon.ui&amp;quot;)
+vim.keymap.set(&amp;quot;n&amp;quot;, &amp;quot;&amp;lt;leader&amp;gt;a&amp;quot;, mark.add_file)
+vim.keymap.set(&amp;quot;n&amp;quot;, &amp;quot;&amp;lt;leader&amp;gt;as&amp;quot;, ui.toggle_quick_menu)
+
+vim.keymap.set(&amp;quot;n&amp;quot;, &amp;quot;&amp;lt;C-a&amp;gt;&amp;quot;, function () ui.nav_file(1) end)
+vim.keymap.set(&amp;quot;n&amp;quot;, &amp;quot;&amp;lt;C-s&amp;gt;&amp;quot;, function () ui.nav_file(2) end)
+vim.keymap.set(&amp;quot;n&amp;quot;, &amp;quot;&amp;lt;C-u&amp;gt;&amp;quot;, function () ui.nav_file(3) end)
+vim.keymap.set(&amp;quot;n&amp;quot;, &amp;quot;&amp;lt;C-i&amp;gt;&amp;quot;, function () ui.nav_file(4) end)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;and save it and complie it
+Now can switch one file to another very fast&lt;/p&gt;
+&lt;p&gt;Here How ?&lt;/p&gt;
+&lt;p&gt;when i press &lt;code&gt;spacebar a&lt;/code&gt; means to add  file in nav
+now press &lt;code&gt;spacebar pf&lt;/code&gt; serach file you want to access and go to that file and&lt;/p&gt;
+&lt;a href=&quot;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgcP_RVinVABBKu0SGZlujBo_Q23zkXH8HVQDQ2OKUDblsV4wnF12o3twD_BeGHrUTx3lBY5FNTwVIGn5vndjd68MY7NX3D3llE8bLmHwn52PyMJAWP9M-qiLBm873TiwvL5T4E-jdIa2G-cv7M_wNgQv7WZ3_RQn89nemPZVgMTCXj_byvkmyW1kwTLt5F/s1366/pic-window-240914-1648-01.png&quot; data-lightbox=&quot;blog-img&quot; data-title=&quot;Screenshot&quot;&gt;
+  &lt;img src=&quot;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgcP_RVinVABBKu0SGZlujBo_Q23zkXH8HVQDQ2OKUDblsV4wnF12o3twD_BeGHrUTx3lBY5FNTwVIGn5vndjd68MY7NX3D3llE8bLmHwn52PyMJAWP9M-qiLBm873TiwvL5T4E-jdIa2G-cv7M_wNgQv7WZ3_RQn89nemPZVgMTCXj_byvkmyW1kwTLt5F/s1366/pic-window-240914-1648-01.png&quot;
+       alt=&quot;Screenshot&quot;
+       loading=&quot;lazy&quot;
+       style=&quot;max-width: 100%; height: auto; border-radius: 6px;&quot; /&gt;
+&lt;/a&gt;
+&lt;p&gt;press &lt;code&gt;spacebar a&lt;/code&gt; now press &lt;code&gt;spacebar as&lt;/code&gt; now and see two file that you selected&lt;/p&gt;
+&lt;a href=&quot;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi2xPB2PCKSyBSns_7B_oul-uwHJ47D7RgN2RW-mqKCFVs6aAOt6pMzLqjJ0qpPZH3qPpsHwb00YSCBtV5yoN0Q1MXr2Xsah0EidZBbXJnB-Ulls-D1VQms6yI5Y7e4FUorI8nLiJ6yjk07nwE9dQQFcnRz2i45d8fsFMszRdUy-hGv4nUjcDi6nJrp24Sp/s1363/pic-selected-240914-1652-13.png&quot; data-lightbox=&quot;blog-img&quot; data-title=&quot;Screenshot&quot;&gt;
+  &lt;img src=&quot;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi2xPB2PCKSyBSns_7B_oul-uwHJ47D7RgN2RW-mqKCFVs6aAOt6pMzLqjJ0qpPZH3qPpsHwb00YSCBtV5yoN0Q1MXr2Xsah0EidZBbXJnB-Ulls-D1VQms6yI5Y7e4FUorI8nLiJ6yjk07nwE9dQQFcnRz2i45d8fsFMszRdUy-hGv4nUjcDi6nJrp24Sp/s1363/pic-selected-240914-1652-13.png&quot;
+       alt=&quot;Screenshot&quot;
+       loading=&quot;lazy&quot;
+       style=&quot;max-width: 100%; height: auto; border-radius: 6px;&quot; /&gt;
+&lt;/a&gt;
+&lt;p&gt;now you can switch using &lt;code&gt;Ctrl + a&lt;/code&gt; and &lt;code&gt;Ctrl + s&lt;/code&gt; and thats very quick&lt;/p&gt;
+&lt;p&gt;or you can use &lt;code&gt;spacebar as&lt;/code&gt; to switch&lt;/p&gt;
+&lt;h4 id=&quot;add-undotree&quot;&gt;Add undotree&lt;/h4&gt;
+&lt;p&gt;add this line in your packer&lt;/p&gt;
+&lt;pre&gt;&lt;code data-lang=&quot;lua&quot;&gt;use (&amp;#39;mbbill/undotree&amp;#39;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;then save it and complie it&lt;/p&gt;
+&lt;p&gt;now create a file undotree.lua
+~/.config/nvim/after/plugin/undotree.lua&lt;/p&gt;
+&lt;pre&gt;&lt;code data-lang=&quot;lua&quot;&gt;vim.keymap.set(&amp;#39;n&amp;#39;, &amp;#39;&amp;lt;leader&amp;gt;u&amp;#39;, vim.cmd.UndotreeToggle)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;save this file and complie it&lt;/p&gt;
+&lt;h4 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h4&gt;
+&lt;p&gt;Hope this helps you to understand who things works
+I also want to add lsp but i still confuse how to configure so if i fully understand then i will update it.&lt;/p&gt;
+&lt;p&gt;I try my best to make things simple
+see you in another blog :)&lt;/p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Why I Use the GPL</title>
+        <published>2025-09-10T00:00:00+00:00</published>
+        <updated>2025-09-10T00:00:00+00:00</updated>
+        
+        <author>
+          <name>Unknown</name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://www.mukund.xyz/blog/why-i-use-the-gpl/"/>
+        <id>https://www.mukund.xyz/blog/why-i-use-the-gpl/</id>
+        
+        <content type="html" xml:base="https://www.mukund.xyz/blog/why-i-use-the-gpl/">&lt;h1 id=&quot;why-i-use-the-gpl-and-how-it-protects-my-code&quot;&gt;Why I Use the GPL (and How It Protects My Code)&lt;/h1&gt;
+&lt;p&gt;As a developer, one of the most important decisions you make when publishing code is &lt;strong&gt;which license to use&lt;/strong&gt;. Personally, I choose the &lt;strong&gt;GNU General Public License v3 (GPLv3)&lt;/strong&gt; for nearly all of my projects.&lt;/p&gt;
+&lt;p&gt;Here’s why, and what you can do if someone tries to steal your code or claim it as their own.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 id=&quot;why-the-gpl&quot;&gt;Why the GPL?&lt;/h2&gt;
+&lt;p&gt;The GPL is a &lt;strong&gt;copyleft license&lt;/strong&gt;. That means:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Anyone can run, study, modify, and share your code.&lt;/li&gt;
+&lt;li&gt;But if they &lt;strong&gt;redistribute&lt;/strong&gt; it (modified or not), they must:
+&lt;ul&gt;
+&lt;li&gt;Keep your copyright and license notice.&lt;/li&gt;
+&lt;li&gt;Release their modifications under the GPL as well.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This ensures that your work &lt;strong&gt;stays free and open source forever&lt;/strong&gt;. No company can legally close-source it, rebrand it, and sell it back to you.&lt;/p&gt;
+&lt;p&gt;By contrast, &lt;strong&gt;permissive licenses&lt;/strong&gt; (MIT, BSD, Apache, etc.) allow redistribution without that requirement. Someone can take your code, hide the source, and profit from it without giving anything back.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;you can read the full GPLv3 text here:
+https://www.gnu.org/licenses/gpl-3.0.en.html&lt;/p&gt;
+&lt;p&gt;also check lukesmith.xyz article on
+&lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://lukesmith.xyz/articles/why-i-use-the-gpl-and-not-cuck-licenses/&quot;&gt;why he uses gpl&lt;/a&gt;
+i have added some points from his article below&lt;/p&gt;
+&lt;h2 id=&quot;why-not-mit-bsd-inspired-by-luke-smith-s-cuck-licenses-essay&quot;&gt;Why Not MIT/BSD? (Inspired by Luke Smith’s “Cuck Licenses” Essay)&lt;/h2&gt;
+&lt;p&gt;Permissive licenses (commonly referred to as “cuck licenses”) like the MIT license allow others to modify your software and release it under an unfree license. Copyleft licenses (like the Gnu General Public License) mandate that all derivative works remain free.&lt;/p&gt;
+&lt;a href=&quot;https://preview.redd.it/gpl-gigachad-v0-lfsxe7pwpgda1.jpg?width=640&amp;crop=smart&amp;auto=webp&amp;s=f72b1d0db28eed57a3670ab3ccfe9d4602ebdfea&quot; data-lightbox=&quot;blog-img&quot; data-title=&quot;Meme&quot;&gt;
+  &lt;img src=&quot;https://preview.redd.it/gpl-gigachad-v0-lfsxe7pwpgda1.jpg?width=640&amp;crop=smart&amp;auto=webp&amp;s=f72b1d0db28eed57a3670ab3ccfe9d4602ebdfea&quot;
+       alt=&quot;Meme&quot;
+       loading=&quot;lazy&quot;
+       style=&quot;max-width: 100%; height: auto; border-radius: 6px;&quot; /&gt;
+&lt;/a&gt;
+&lt;p&gt;Some developers argue that MIT or BSD licenses are “freer” because they impose fewer restrictions.&lt;br /&gt;
+But as Luke Smith argued in his well-known essay &lt;em&gt;“Why I Use the GPL and Not Cuck Licenses”&lt;/em&gt;, permissive licenses often end up serving corporations rather than communities.&lt;/p&gt;
+&lt;p&gt;Key takeaways from his perspective:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;MIT/BSD are corporate-friendly&lt;/strong&gt; – They let companies take your code, close it, and profit without giving anything back.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;GPL enforces reciprocity&lt;/strong&gt; – If someone improves your work, they must share it under the same license.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Freedom vs exploitation&lt;/strong&gt; – MIT/BSD give companies the freedom to exploit, while GPL ensures users’ freedom to study, share, and improve software.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Real-world consequences&lt;/strong&gt; – For example, MINIX (released under BSD) was silently used inside Intel processors for their Management Engine, now seen as a security risk. If it had been GPL, Intel would’ve had to release the source.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Respect and protection&lt;/strong&gt; – GPL enforces credit and sharing. MIT/BSD only rely on goodwill.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;a href=&quot;https://lemmy.world/pictrs/image/9a59b61d-20a4-4f40-9c30-bc273a20dfdd.webp?format=webp&quot; data-lightbox=&quot;blog-img&quot; data-title=&quot;Meme&quot;&gt;
+  &lt;img src=&quot;https://lemmy.world/pictrs/image/9a59b61d-20a4-4f40-9c30-bc273a20dfdd.webp?format=webp&quot;
+       alt=&quot;Meme&quot;
+       loading=&quot;lazy&quot;
+       style=&quot;max-width: 100%; height: auto; border-radius: 6px;&quot; /&gt;
+&lt;/a&gt;
+&lt;p&gt;Context:&lt;/p&gt;
+&lt;p&gt;Andrew Tanenbaum developed MINIX, a modular operating system kernel. Intel went ahead and used it to build Management Engine, arguably one of the most widespread and invasive pieces of malware in the world, without even as much as telling him. There’s nothing Tanenbaum could do, since the MIT license allows this.&lt;/p&gt;
+&lt;p&gt;Erik Andersen is one of the developers of Busybox, a minimal implementation of that’s suited for embedded systems. Many companies tried to steal his code and distribute it with their unfree products, but since it’s protected under the GPL, Busybox developers &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://en.wikipedia.org/wiki/BusyBox#GPL_lawsuits&quot;&gt;were able to sue&lt;/a&gt; them and gain some money in the process.&lt;/p&gt;
+&lt;p&gt;Interestingly enough, Tanenbaum &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://www.cs.vu.nl/~ast/intel/&quot;&gt;doesn’t seem to mind&lt;/a&gt; what intel did. But there are &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://donatstudios.com/License-Grumbles&quot;&gt;some examples&lt;/a&gt; out there of people regretting releasing their work under a permissive license.&lt;/p&gt;
+&lt;p&gt;References:
+https://lemmy.world/comment/10690861&lt;/p&gt;
+&lt;p&gt;In short: permissive licenses can look generous, but they make it easier for your work to be absorbed into proprietary systems. GPL prevents that.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 id=&quot;what-if-someone-claims-my-code-as-theirs&quot;&gt;What If Someone Claims My Code as Theirs?&lt;/h2&gt;
+&lt;p&gt;This isn’t really “software piracy” — it’s &lt;strong&gt;plagiarism or license violation&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Fortunately, both GPL and MIT/BSD already protect you:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;GPL:&lt;/strong&gt; They must keep your name and license notice. Removing it = license violation.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;MIT/BSD:&lt;/strong&gt; They must credit you too. If they remove attribution, that’s also a violation.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;No license/public domain:&lt;/strong&gt; You have no protection; anyone can claim it.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;So as long as you choose a license, you’re covered.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 id=&quot;shield-what-actions-can-you-take&quot;&gt;🛡️ What Actions Can You Take?&lt;/h2&gt;
+&lt;p&gt;Here’s a step-by-step &lt;strong&gt;action checklist&lt;/strong&gt; if you find a violation:&lt;/p&gt;
+&lt;h3 id=&quot;step-1-gather-evidence&quot;&gt;Step 1: Gather Evidence&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Save screenshots of your repo with timestamps.&lt;/li&gt;
+&lt;li&gt;Save screenshots/links of the infringing project.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;step-2-contact-them&quot;&gt;Step 2: Contact Them&lt;/h3&gt;
+&lt;p&gt;Send a polite but firm notice. Example:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;“Your project [link] uses my code from [link] but does not comply with GPLv3. Please restore attribution and comply with the license within 7 days.”&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;step-3-public-exposure&quot;&gt;Step 3: Public Exposure&lt;/h3&gt;
+&lt;p&gt;If ignored, make it public. Post an issue or blog about the violation. Communities often side with the original author.&lt;/p&gt;
+&lt;h3 id=&quot;step-4-dmca-takedown&quot;&gt;Step 4: DMCA Takedown&lt;/h3&gt;
+&lt;p&gt;File a takedown with the hosting platform (GitHub, GitLab, etc.).&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;GitHub DMCA portal: https://github.com/github/dmca&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;step-5-legal-enforcement&quot;&gt;Step 5: Legal Enforcement&lt;/h3&gt;
+&lt;p&gt;If it’s a company profiting from your work:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Send a &lt;strong&gt;cease-and-desist letter&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;If needed, escalate to a copyright infringement lawsuit.&lt;/li&gt;
+&lt;li&gt;The &lt;strong&gt;Free Software Foundation (FSF)&lt;/strong&gt; can sometimes assist with GPL cases: https://www.fsf.org/licensing&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;h2 id=&quot;ready-to-use-templates&quot;&gt;Ready-to-Use Templates&lt;/h2&gt;
+&lt;h3 id=&quot;email-to-violator&quot;&gt;Email to Violator&lt;/h3&gt;
+&lt;pre&gt;&lt;code data-lang=&quot;text&quot;&gt;Subject: License Violation Notice – [Your Project Name]
+
+Hello [Name/Team],
+
+I am the copyright holder of [Project Name], published at [repo link].  
+Your project [violating project link] uses my code but does not comply with [GPLv3/MIT].  
+
+Please restore attribution and comply with the license within 7 days.  
+If not, I will escalate with a DMCA request and legal action.  
+
+Sincerely,  
+[Your Name]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&quot;dmca-takedown-request&quot;&gt;DMCA Takedown Request&lt;/h3&gt;
+&lt;pre&gt;&lt;code data-lang=&quot;text&quot;&gt;To: [Hosting Platform DMCA Email]
+Subject: DMCA Takedown Request – Unauthorized Use of [Project Name]
+
+I am the copyright holder of [Project Name], originally at [repo link].  
+The repository [infringing link] contains my code without license compliance.  
+
+I request removal of this repository.  
+This claim is made in good faith and under penalty of perjury.  
+
+Name: [Your Full Name]  
+Email: [Your Email]  
+Signature: [Your Name]
+Date: [Date]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;Choosing the GPL is not just about protecting yourself — it’s about protecting users’ freedom.&lt;/p&gt;
+&lt;p&gt;With GPL, your work remains open, and violators risk real legal consequences.&lt;/p&gt;
+&lt;p&gt;With MIT/BSD, your name must stay, but your code can still be locked away inside proprietary software.&lt;/p&gt;
+&lt;p&gt;With no license, you give up all control.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;If you value freedom, recognition, and fairness in software, the GPL is your strongest tool.
+&lt;/code&gt;&lt;/pre&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>90 Days of Learning React</title>
+        <published>2025-07-19T00:00:00+00:00</published>
+        <updated>2025-07-19T00:00:00+00:00</updated>
+        
+        <author>
+          <name>Unknown</name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://www.mukund.xyz/notes/90-days-of-learing-react/"/>
+        <id>https://www.mukund.xyz/notes/90-days-of-learing-react/</id>
+        
+        <content type="html" xml:base="https://www.mukund.xyz/notes/90-days-of-learing-react/">&lt;p&gt;This blog is where I will document my journey of learning React over the next 90 days. Each day, I will focus on a specific topic or concept, and share my notes, code snippets, and resources.&lt;/p&gt;
+&lt;a href=&quot;/images/react-logo.png&quot; data-lightbox=&quot;blog-img&quot; data-title=&quot;React Logo&quot;&gt;
+  &lt;img src=&quot;/images/react-logo.png&quot;
+       alt=&quot;React Logo&quot;
+       loading=&quot;lazy&quot;
+       style=&quot;max-width: 100%; height: auto; border-radius: 6px;&quot; /&gt;
+&lt;/a&gt;
+&lt;h2 id=&quot;day-1-introduction-to-react&quot;&gt;Day 1: Introduction to React&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;What is React?&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;A JavaScript library for building user interfaces.&lt;/li&gt;
+&lt;li&gt;Developed by Facebook and released in 2013.&lt;/li&gt;
+&lt;li&gt;Focuses on building reusable UI components.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Key Features:&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Virtual DOM for efficient rendering.&lt;/li&gt;
+&lt;li&gt;Component-based architecture.&lt;/li&gt;
+&lt;li&gt;Single Page Application (SPA) capabilities.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&quot;setup-and-installation&quot;&gt;Setup and Installation&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Install Node.js and npm.&lt;/li&gt;
+&lt;li&gt;Create a new React app using Create React App:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code data-lang=&quot;bash&quot;&gt;npx create-react-app my-app
+cd my-app
+npm start
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;Alternatively, you can set up a React project using Vite for faster development:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code data-lang=&quot;bash&quot;&gt;npm create vite@latest my-app --template React
+cd my-app
+npm install 
+npm run dev 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Structure of a React App:&lt;/p&gt;
+&lt;pre&gt;&lt;code data-lang=&quot;plaintext&quot;&gt;├── eslint.config.js
+├── index.html
+├── package.json
+├── package-lock.json
+├── public
+│   └── vite.svg
+├── README.md
+├── src
+│   ├── App.jsx
+│   ├── main.jsx
+   └── Nav.jsx
+└── vite.config.jsx
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;day-2-jsx-and-rendering-elements&quot;&gt;Day 2: JSX and Rendering Elements&lt;/h2&gt;
+&lt;h3 id=&quot;jsx-javascript-xml&quot;&gt;JSX (JavaScript XML)&lt;/h3&gt;
+&lt;p&gt;App.jsx&lt;/p&gt;
+&lt;pre&gt;&lt;code data-lang=&quot;js&quot;&gt;import React from &amp;#39;react&amp;#39;
+export default App
+function App() {
+
+  return (
+	  &amp;lt;h1&amp;gt;Hello, World!&amp;lt;/h1&amp;gt;
+
+  )
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Nav.jsx&lt;/p&gt;
+&lt;pre&gt;&lt;code data-lang=&quot;js&quot;&gt;import React from &amp;quot;react&amp;quot;;
+export default Nav 
+function Nav(){
+	return(
+		&amp;lt;h1&amp;gt;Nav Bar&amp;lt;/h1&amp;gt;
+	)
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;main.jsx&lt;/p&gt;
+&lt;pre&gt;&lt;code data-lang=&quot;js&quot;&gt;import { StrictMode } from &amp;#39;react&amp;#39;
+import { createRoot } from &amp;#39;react-dom/client&amp;#39;
+import App from &amp;#39;./App.jsx&amp;#39;
+import Nav from &amp;#39;./Nav.jsx&amp;#39;
+
+createRoot(document.getElementById(&amp;#39;root&amp;#39;)).render(
+  &amp;lt;StrictMode&amp;gt;
+    &amp;lt;App /&amp;gt;
+    &amp;lt;Nav /&amp;gt;
+  &amp;lt;/StrictMode&amp;gt;,
+)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&quot;key-points&quot;&gt;Key Points&lt;/h3&gt;
+&lt;p&gt;Component should  start with an uppercase letter, and the file name should match the component name. This is a convention in React to differentiate components from regular HTML elements.&lt;/p&gt;
+&lt;p&gt;We can name both App.js &amp;amp; App.jsx but in vite development environment we have to use jsx&lt;/p&gt;
+&lt;p&gt;We can return only one component by a jsx function so it’s good to wrap in &amp;lt;&amp;gt;&amp;lt;/&amp;gt; or &lt;div&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;h2 id=&quot;day-3-create-own-custom-components&quot;&gt;Day 3: Create own Custom components&lt;/h2&gt;
+&lt;h3 id=&quot;creating-custom-components&quot;&gt;Creating Custom components&lt;/h3&gt;
+&lt;p&gt;script.js&lt;/p&gt;
+&lt;pre&gt;&lt;code data-lang=&quot;js&quot;&gt;let rootElement = document.getElementById(&amp;#39;root&amp;#39;);
+
+const reactElement = {
+	type: &amp;#39;a&amp;#39;,
+	props: {
+		href: &amp;#39;https://mukund.xyz&amp;#39;,
+		_target: &amp;#39;_blank&amp;#39;,
+	},
+	children: &amp;#39;Visit mukund.xyz&amp;#39;,
+};
+
+
+CreateReactElement(reactElement, rootElement);
+
+
+function CreateReactElement(element, container) {
+	const domElement = document.createElement(element.type);
+	domElement.textContent = element.children;
+        for (const prop in element.props) {
+			if (prop === &amp;#39;children&amp;#39;) continue;
+		domElement.setAttribute(prop, element.props[prop]);
+	}
+container.appendChild(domElement);
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;index.html&lt;/p&gt;
+&lt;pre&gt;&lt;code data-lang=&quot;html&quot;&gt;&amp;lt;!DOCTYPE html&amp;gt;
+&amp;lt;html lang=&amp;quot;en&amp;quot;&amp;gt;
+	&amp;lt;head&amp;gt;
+		&amp;lt;meta charset=&amp;quot;UTF-8&amp;quot;&amp;gt;
+		&amp;lt;meta name=&amp;quot;viewport&amp;quot; content=&amp;quot;width=device-width, initial-scale=1&amp;quot;&amp;gt;
+		&amp;lt;title&amp;gt;&amp;lt;/title&amp;gt;
+		&amp;lt;link href=&amp;quot;css/style.css&amp;quot; rel=&amp;quot;stylesheet&amp;quot;&amp;gt;
+	&amp;lt;/head&amp;gt;
+	&amp;lt;body&amp;gt;
+	
+		&amp;lt;div id=&amp;quot;root&amp;quot;&amp;gt;
+			
+		&amp;lt;/div&amp;gt;
+	&amp;lt;/body&amp;gt;
+		&amp;lt;script src=&amp;quot;script.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;/html&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Create a custom component in React that renders an anchor tag with a link to your website.&lt;/p&gt;
+&lt;p&gt;main.jsx&lt;/p&gt;
+&lt;pre&gt;&lt;code data-lang=&quot;js&quot;&gt;import React from &amp;#39;react&amp;#39;
+import { createRoot } from &amp;#39;react-dom/client&amp;#39;
+const reactElement = React.createElement(
+  &amp;#39;a&amp;#39;,
+  {
+    href: &amp;#39;https://mukund.xyz&amp;#39;,
+    target: &amp;#39;_blank&amp;#39;,
+  },
+  &amp;#39;Visit mukund.xyz&amp;#39;
+)
+
+
+
+createRoot(document.getElementById(&amp;#39;root&amp;#39;))
+.render(
+reactElement
+)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;days-4-hooks-and-state-management&quot;&gt;Days 4 Hooks and State Management&lt;/h2&gt;
+&lt;p&gt;Hooks are functions that let you use state and other React features in functional components. They allow you to manage state, lifecycle events, and side effects without writing class components.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;useState Hook&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Allows you to add state to functional components.&lt;/li&gt;
+&lt;li&gt;Returns an array with the current state and a function to update it.&lt;/li&gt;
+&lt;li&gt;Hooks can’t be called inside loops, conditions, or nested functions. They should be called at the top level of your component.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;day-5-virtual-dom-and-reconciliation&quot;&gt;Day 5: Virtual DOM and Reconciliation&lt;/h2&gt;
+&lt;p&gt;React Fiber Architecture is an ongoing reimplementation of React’s core algorithm. It is the culmination of over two years of research by the React team.&lt;/p&gt;
+&lt;h3 id=&quot;virtual-dom&quot;&gt;Virtual dom&lt;/h3&gt;
+&lt;p&gt;Virtual DOM (VDOM) is a programming concept where a virtual representation of the UI is kept in memory and synced with the real DOM by a library such as ReactDOM. This process is called reconciliation.&lt;/p&gt;
+&lt;h3 id=&quot;what-is-reconciliation&quot;&gt;What is reconciliation?&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;The algorithm React uses to diff(differentiate) one tree with another to determine which parts need to be changed.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;reconciliation&lt;/strong&gt; is the process through which React updates the DOM. When a component’s state or props change, React creates a new Virtual DOM tree and compares it with the previous one. It then calculates the most efficient way to update the real DOM to match the new Virtual DOM.&lt;/p&gt;
+&lt;h3 id=&quot;key-terms&quot;&gt;Key Terms&lt;/h3&gt;
+&lt;p&gt;Other key features include the&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;ability to pause&lt;/strong&gt;,
+&lt;strong&gt;abort&lt;/strong&gt;, or &lt;strong&gt;reuse work as new updates come in&lt;/strong&gt;
+&lt;strong&gt;the ability to assign priority to different types of updates&lt;/strong&gt;
+and new concurrency primitives.&lt;/p&gt;
+&lt;p&gt;The algorithm React uses to diff one tree with another to determine which parts need to be changed.&lt;/p&gt;
+&lt;a href=&quot;https://media.geeksforgeeks.org/wp-content/uploads/20241212235246933476/Browser-DOM-Virtual-DOM.webp&quot; data-lightbox=&quot;blog-img&quot; data-title=&quot;Online Image Example&quot;&gt;
+  &lt;img src=&quot;https://media.geeksforgeeks.org/wp-content/uploads/20241212235246933476/Browser-DOM-Virtual-DOM.webp&quot;
+       alt=&quot;Online Image Example&quot;
+       loading=&quot;lazy&quot;
+       style=&quot;max-width: 100%; height: auto; border-radius: 6px;&quot; /&gt;
+&lt;/a&gt;
+&lt;p&gt;&lt;strong&gt;Reconciliation is the algorithm behind what is popularly understood as the “virtual DOM.”&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;A high-level description goes something like this: when you render a React application, a tree of nodes that describes the app is generated and saved in memory. This tree is then flushed to the rendering environment — for example, in the case of a browser application, it’s translated to a set of DOM operations. When the app is updated (usually via setState), a new tree is generated. The new tree is diffed with the previous tree to compute which operations are needed to update the rendered app.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Although Fiber is a ground-up rewrite of the reconciler, the high-level algorithm described in the React docs will be largely the same.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The key points are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Different component types are assumed to generate substantially different trees. React will not attempt to diff them, but rather replace the old tree completely.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Diffing of lists is performed using keys. Keys should be “stable, predictable, and unique.”&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;in-array-why-keys-should-be-introduced&quot;&gt;In Array Why keys should be introduced?&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;In Fiber algorithm if we want to impove performance of list when itrating over array of items  we should use keys.&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;When React sees a list of elements, it needs to determine which items have changed, been added, or been removed. Keys help React identify which items in the list correspond to which elements in the previous render.&lt;/p&gt;
+&lt;p&gt;Scheduling&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;the process of determining when work should be performed.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The key points are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;In a UI, it’s not necessary for every update to be applied immediately; in fact, doing so can be wasteful, causing frames to drop and degrading the user experience.&lt;/li&gt;
+&lt;li&gt;Different types of updates have different priorities — an animation update needs to complete more quickly than, say, an update from a data store.&lt;/li&gt;
+&lt;li&gt;A push-based approach requires the app (you, the programmer) to decide how to schedule work. A pull-based approach allows the framework (React) to be smart and make those decisions for you.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;what-is-a-fiber&quot;&gt;What is a fiber?&lt;/h3&gt;
+&lt;p&gt;We’ve established that a primary goal of Fiber is to enable React to take advantage of scheduling. Specifically, we need to be able to&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;pause work and come back to it later.&lt;/li&gt;
+&lt;li&gt;assign priority to different types of work.&lt;/li&gt;
+&lt;li&gt;reuse previously completed work.&lt;/li&gt;
+&lt;li&gt;abort work if it’s no longer needed.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;structure-of-a-fiber&quot;&gt;Structure of a Fiber&lt;/h3&gt;
+&lt;p&gt;In concrete terms, a fiber is a JavaScript object that contains information about a component, its input, and its output.&lt;/p&gt;
+&lt;p&gt;A fiber corresponds to a stack frame, but it also corresponds to an instance of a component.&lt;/p&gt;
+&lt;p&gt;Here are some of the important fields that belong to a fiber. (This list is not exhaustive.)
+&lt;code&gt;type&lt;/code&gt; and &lt;code&gt;key&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id=&quot;day-6-props-for-component-communication&quot;&gt;Day 6: Props for  Component Communication&lt;/h2&gt;
+&lt;p&gt;Props (short for “properties”) are a way to pass data from a parent component to a child component in React. They are read-only and cannot be modified by the child component.&lt;/p&gt;
+&lt;h4 id=&quot;function-and-class-components&quot;&gt;Function and Class Components&lt;/h4&gt;
+&lt;p&gt;The simplest way to define a component is to write a JavaScript function:&lt;/p&gt;
+&lt;pre&gt;&lt;code data-lang=&quot;js&quot;&gt;function Welcome(props) {
+  return &amp;lt;h1&amp;gt;Hello, {props.name}&amp;lt;/h1&amp;gt;;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This function is a valid React component because it accepts a single “props” (which stands for properties) object argument with data and returns a React element. &lt;code&gt;We call such components “function components” because they are literally JavaScript functions.&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;You can also use an &lt;code&gt;ES6&lt;/code&gt; class to define a component:&lt;/p&gt;
+&lt;pre&gt;&lt;code data-lang=&quot;js&quot;&gt;class Welcome extends React.Component {
+  render() {
+    return &amp;lt;h1&amp;gt;Hello, {this.props.name}&amp;lt;/h1&amp;gt;;
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The above two components are equivalent from React’s point of view.&lt;/p&gt;
+&lt;p&gt;How to create Parents and Child components using props&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;ParentCard.jsx&lt;/code&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code data-lang=&quot;js&quot;&gt;import Card from &amp;quot;./Card&amp;quot;;
+
+function ParentCard() {
+  const products = [
+    {
+      name: &amp;quot;Apple Watch&amp;quot;,
+      price: &amp;quot;$899&amp;quot;,
+      stock: &amp;quot;In Stock&amp;quot;,
+      img: &amp;quot;https://files.refurbed.com/ii/apple-watch-series-7-titan-45mm-1705929512.jpg&amp;quot;
+    },
+    {
+      name: &amp;quot;Samsung Galaxy Watch&amp;quot;,
+      price: &amp;quot;$699&amp;quot;,
+      stock: &amp;quot;Only 3 Left&amp;quot;,
+      img: &amp;quot;https://m.media-amazon.com/images/I/71Swqqe7XAL._AC_UL600_FMwebp_QL65_.jpg&amp;quot;
+    },
+    {
+      name: &amp;quot;Noise Smartwatch&amp;quot;,
+      price: &amp;quot;$199&amp;quot;,
+      stock: &amp;quot;Out of Stock&amp;quot;,
+      img: &amp;quot;https://sell.gameloot.in/wp-content/uploads/sites/4/2022/05/Samsung-Galaxy-Watch-4-Classic-LTE-42mm.jpg&amp;quot;
+    }
+  ];
+
+  return (
+    &amp;lt;div className=&amp;quot;container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 p-5&amp;quot;&amp;gt;
+      {products.map((product, index) =&amp;gt; (
+        &amp;lt;Card key={index} productData={product} /&amp;gt;
+      ))}
+    &amp;lt;/div&amp;gt;
+  );
+}
+
+export default ParentCard;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;code&gt;Card.jsx&lt;/code&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code data-lang=&quot;js&quot;&gt;function Card(props) {
+  const obj = props.productData;
+
+const { name= &amp;quot;default Watch &amp;quot;, price= &amp;quot;$899&amp;quot;, stock= &amp;quot;Out of Stock&amp;quot;, img=&amp;quot;https://files.refurbed.com/ii/apple-watch-series-7-titan-45mm-1705929512.jpg&amp;quot; } = obj;
+
+    return (
+        &amp;lt;div className=&amp;quot;max-w-sm rounded overflow-hidden shadow-lg&amp;quot;&amp;gt;
+        &amp;lt;img className=&amp;quot;w-full h-64 object-cover&amp;quot; src={img} alt={name} /&amp;gt;
+        &amp;lt;div className=&amp;quot;px-6 py-4&amp;quot;&amp;gt;
+            &amp;lt;div className=&amp;quot;font-bold text-xl mb-2&amp;quot;&amp;gt;{name}&amp;lt;/div&amp;gt;
+            &amp;lt;p className=&amp;quot;text-gray-700 text-base&amp;quot;&amp;gt;Price: {price}&amp;lt;/p&amp;gt;
+            &amp;lt;p className={`text-base ${stock === &amp;quot;In Stock&amp;quot; ? &amp;quot;text-green-500&amp;quot; : stock === &amp;quot;Only 3 Left&amp;quot; ? &amp;quot;text-yellow-500&amp;quot; : &amp;quot;text-red-500&amp;quot;}`}&amp;gt;
+            {stock}
+            &amp;lt;/p&amp;gt;
+        &amp;lt;/div&amp;gt;
+        &amp;lt;div className=&amp;quot;px-6 pt-4 pb-2&amp;quot;&amp;gt;
+            &amp;lt;button className=&amp;quot;bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded&amp;quot;&amp;gt;
+            Buy Now
+            &amp;lt;/button&amp;gt;
+        &amp;lt;/div&amp;gt;
+        &amp;lt;/div&amp;gt;
+    );
+    }
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;day-7-usestate-hook-in-depth&quot;&gt;Day 7: useState Hook in Depth&lt;/h2&gt;
+&lt;p&gt;The &lt;code&gt;useState&lt;/code&gt; hook is a fundamental building block in React that allows you to add state to functional components. It provides a way to manage and update state within your components without the need for class components.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Understanding State&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Definition: State is data in an application that changes over time . In React, this means data that can be different from one component render to another .&lt;/p&gt;
+&lt;p&gt;Importance: Tracking state is crucial for application functionality, such as showing a loading spinner while fetching data, displaying error messages, or handling the data itself .&lt;/p&gt;
+&lt;ol start=&quot;2&quot;&gt;
+&lt;li&gt;The useState Hook&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Purpose: useState is the primary hook used in functional components to manage and manipulate state in React .&lt;/p&gt;
+&lt;p&gt;How to Import: You must import the hook from React: import { useState } from ‘react’ .&lt;/p&gt;
+&lt;ol start=&quot;3&quot;&gt;
+&lt;li&gt;useState Syntax and Structure&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The hook is used by destructuring an array that contains two elements:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;State Variable (count): The current value of the state .&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Updater Function (setCount): A function used to update the state variable .&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Naming Convention: By convention, the updater function is named set followed by the name of the state variable (e.g., setCount) .&lt;/p&gt;
+&lt;p&gt;Default Value: The value passed as an argument to useState() is the initial or default value of the state. If no value is provided, the state will be undefined .&lt;/p&gt;
+&lt;p&gt;JavaScript&lt;/p&gt;
+&lt;pre&gt;&lt;code data-lang=&quot;js&quot;&gt;// Example: Initializing count with a default value of 0
+const [count, setCount] = useState(0);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;state&lt;/code&gt;: The current state value.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;setState&lt;/code&gt;: A function that allows you to update the state.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;initialState&lt;/code&gt;: The initial value of the state.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;example-of-usestate-hook-for-background-color-change-on-button-click&quot;&gt;Example of useState Hook for Background Color Change on Button Click&lt;/h3&gt;
+&lt;pre&gt;&lt;code data-lang=&quot;js&quot;&gt;import { useState } from &amp;#39;react&amp;#39;
+
+function App() {
+  const [colorbg, setColor] = useState(&amp;quot;Black&amp;quot;);
+
+  return (
+    &amp;lt;&amp;gt;
+	  &amp;lt;div className=&amp;quot;App&amp;quot; style={{ backgroundColor: colorbg, transition: &amp;#39;background-color 0.5s ease&amp;#39;, height: &amp;#39;100vh&amp;#39; }}&amp;gt;
+	&amp;lt;h1 className=&amp;quot;text-3xl font-bold text-center min-h-screen&amp;quot;&amp;gt;
+	  Background Color Change on Click
+	&amp;lt;/h1&amp;gt;
+	  
+	  &amp;lt;div className=&amp;quot;flex flex-row items-top justify-center p-10 gap-5 absolute top-10 w-full bg-white/10 &amp;quot;&amp;gt;
+	  	&amp;lt;button className=&amp;quot;bg-green hover:bg-green-700 text-white  font-bold py-2 px-4 rounded border&amp;quot; onClick={()=&amp;gt; {setColor(&amp;quot;Green&amp;quot;)}} &amp;gt;Green&amp;lt;/button&amp;gt;
+	  	&amp;lt;button className=&amp;quot;bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded&amp;quot;onClick={() =&amp;gt; setColor(&amp;quot;Blue&amp;quot;)}&amp;gt;Blue&amp;lt;/button&amp;gt;
+	  	&amp;lt;button className=&amp;quot;bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded&amp;quot;onClick={() =&amp;gt; setColor(&amp;quot;Red&amp;quot;)}&amp;gt;Red&amp;lt;/button&amp;gt;
+	  	&amp;lt;button className=&amp;quot;bg-yellow-500 hover:bg-yellow-700 text-white font-bold py-2 px-4 rounded&amp;quot;onClick={() =&amp;gt; setColor(&amp;quot;Yellow&amp;quot;)}&amp;gt;Yellow&amp;lt;/button&amp;gt;
+	  	&amp;lt;button className=&amp;quot;bg-purple-500 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded&amp;quot;onClick={() =&amp;gt; setColor(&amp;quot;Purple&amp;quot;)}&amp;gt;Purple&amp;lt;/button&amp;gt;
+	  	&amp;lt;button className=&amp;quot;bg-pink-500 hover:bg-pink-700 text-white font-bold py-2 px-4 rounded&amp;quot;onClick={() =&amp;gt; setColor(&amp;quot;Pink&amp;quot;)}&amp;gt;Pink&amp;lt;/button&amp;gt;
+	  	&amp;lt;button className=&amp;quot;bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded&amp;quot;onClick={() =&amp;gt; setColor(&amp;quot;Gray&amp;quot;)}&amp;gt;Gray&amp;lt;/button&amp;gt;
+	  	&amp;lt;button className=&amp;quot;bg-black hover:bg-black text-white font-bold py-2 px-4 rounded&amp;quot;onClick={() =&amp;gt; setColor(&amp;quot;Black&amp;quot;)}&amp;gt;Black&amp;lt;/button&amp;gt;
+	  	&amp;lt;button className=&amp;quot;bg-white hover:bg-white text-black font-bold py-2 px-4 rounded border&amp;quot;onClick={() =&amp;gt; setColor(&amp;quot;White&amp;quot;)}&amp;gt;White&amp;lt;/button&amp;gt;
+
+	  	&amp;lt;/div&amp;gt;
+	  &amp;lt;/div&amp;gt;
+    &amp;lt;/&amp;gt;
+  )
+}
+
+export default App
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&quot;explanation&quot;&gt;Explanation&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;We import the &lt;code&gt;useState&lt;/code&gt; hook from React.&lt;/li&gt;
+&lt;li&gt;We define a functional component &lt;code&gt;App&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;We use the &lt;code&gt;useState&lt;/code&gt; hook to create a state variable &lt;code&gt;colorbg&lt;/code&gt; with an initial value of “Black”.&lt;/li&gt;
+&lt;li&gt;We create buttons that, when clicked, update the &lt;code&gt;colorbg&lt;/code&gt; state to different colors.&lt;/li&gt;
+&lt;li&gt;The background color of the &lt;code&gt;div&lt;/code&gt; changes based on the current value of &lt;code&gt;colorbg&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;key-points-1&quot;&gt;Key points&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;The &lt;code&gt;useState&lt;/code&gt; hook can be called multiple times in a single component to manage different pieces of state.&lt;/li&gt;
+&lt;li&gt;State updates are asynchronous, so the new state value may not be immediately available after calling the &lt;code&gt;setState&lt;/code&gt; function.&lt;/li&gt;
+&lt;li&gt;You can pass a function to the &lt;code&gt;setState&lt;/code&gt; function if you need to update the state based on the previous state.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;example-of-updating-state-based-on-previous-state&quot;&gt;Example of updating state based on previous state&lt;/h3&gt;
+&lt;pre&gt;&lt;code data-lang=&quot;js&quot;&gt;setCount(prevCount =&amp;gt; prevCount + 1);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This ensures that you are working with the most up-to-date state value, especially when multiple state updates are queued.&lt;/p&gt;
+&lt;h3 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h3&gt;
+&lt;p&gt;The &lt;code&gt;useState&lt;/code&gt; hook is a powerful and essential tool for managing state in React functional Components. It allows you to create dynamic and interactive user interfaces by enabling stateful behavior in your components.&lt;/p&gt;
+&lt;h2 id=&quot;day-8-useeffect-useref-and-usecallback-hooks&quot;&gt;Day 8: useEffect, useRef and useCallback Hooks&lt;/h2&gt;
+&lt;h3 id=&quot;useeffect-hook&quot;&gt;useEffect Hook&lt;/h3&gt;
+&lt;p&gt;What is &lt;code&gt;useEffect&lt;/code&gt; ?
+It is a hook from react to perform side effects in out application.
+side effects you can think of about them as name implies  as things happening as consequence of something else happening in your application like fetching data from an API, setting up a subscription, or manually changing the DOM in React components.&lt;/p&gt;
+&lt;p&gt;how to use it ?&lt;/p&gt;
+&lt;p&gt;when to use it ?
+how it works ?&lt;/p&gt;
+&lt;p&gt;The &lt;code&gt;useEffect&lt;/code&gt; hook allows you to perform side effects in your functional components. Side effects can include data fetching, subscriptions, or manually changing the DOM. The &lt;code&gt;useEffect&lt;/code&gt; hook runs after the component renders.&lt;/p&gt;
+&lt;h3 id=&quot;syntax&quot;&gt;Syntax&lt;/h3&gt;
+&lt;pre&gt;&lt;code data-lang=&quot;js&quot;&gt;useEffect(() =&amp;gt; {}, [dependencies]);
+
+useEffect(() =&amp;gt; {
+// Side effect code here 
+// optional return  function for cleanup
+}, [dependencies]);
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;The first argument is a function that contains the side effect code.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The second argument is an optional array of dependencies. The effect will only re-run if one of the dependencies has changed.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;it is guaranteed that the useEffect function will run at least once when our component mounts.And no matter what you pass as dependencies.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;useref-hook&quot;&gt;useRef Hook&lt;/h3&gt;
+&lt;p&gt;The &lt;code&gt;useRef&lt;/code&gt; hook allows you to create a mutable reference that persists across renders. It can be used to access DOM elements directly or to store any mutable value that does not cause a re-render when updated.&lt;/p&gt;
+&lt;h3 id=&quot;syntax-1&quot;&gt;Syntax&lt;/h3&gt;
+&lt;pre&gt;&lt;code data-lang=&quot;js&quot;&gt;const ref = useRef(initialValue);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;ref&lt;/code&gt;: The mutable reference object.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;initialValue&lt;/code&gt;: The initial value of the reference.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;usecallback-hook&quot;&gt;useCallback Hook&lt;/h3&gt;
+&lt;p&gt;The &lt;code&gt;useCallback&lt;/code&gt; hook returns a memoized version of a callback function that only changes if one of the dependencies has changed. It is useful for optimizing performance by preventing unnecessary re-creations of functions.&lt;/p&gt;
+&lt;h3 id=&quot;syntax-2&quot;&gt;Syntax&lt;/h3&gt;
+&lt;pre&gt;&lt;code data-lang=&quot;js&quot;&gt;const memoizedCallback = useCallback(() =&amp;gt; {
+  // Callback code here
+}, [dependencies]);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;The first argument is the callback function.&lt;/li&gt;
+&lt;li&gt;The second argument is an array of dependencies. The callback will only be re-created if one of the dependencies has changed.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;example-using-useeffect-useref-and-usecallback&quot;&gt;Example using useEffect, useRef, and useCallback&lt;/h3&gt;
+&lt;pre&gt;&lt;code data-lang=&quot;js&quot;&gt;import { useState, useEffect, useRef, useCallback } from &amp;#39;react&amp;#39;;
+import &amp;#39;./App.css&amp;#39;
+function App() {
+  const [count, setCount] = useState(0);
+  const countRef = useRef(count);
+
+  useEffect(() =&amp;gt; {
+    countRef.current = count;
+  }, [count]);
+
+  const increment = useCallback(() =&amp;gt; {
+    setCount(prevCount =&amp;gt; prevCount + 1);
+  }, []);
+
+  return (
+    &amp;lt;&amp;gt;
+      &amp;lt;div className=&amp;quot;App&amp;quot;&amp;gt;
+    &amp;lt;h1 className=&amp;quot;text-3xl font-bold underline&amp;quot;&amp;gt;useEffect, useRef and useCallback Hooks&amp;lt;/h1&amp;gt;
+      &amp;lt;button className=&amp;quot;bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded&amp;quot; onClick={increment}&amp;gt;Increment Count: {count}&amp;lt;/button&amp;gt;
+      &amp;lt;h1 className=&amp;quot;text-3xl font-bold underline&amp;quot;&amp;gt;{count}&amp;lt;/h1&amp;gt;
+      &amp;lt;/div&amp;gt;
+    &amp;lt;/&amp;gt;
+  )
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;day-9-project-password-generator-using-react&quot;&gt;Day 9: Project password generator using React&lt;/h2&gt;
+&lt;pre&gt;&lt;code data-lang=&quot;js&quot;&gt;import { useState,useEffect } from &amp;#39;react&amp;#39;
+import &amp;#39;./App.css&amp;#39;
+
+function App() {
+  const [length, setLength] = useState(8);
+  const [allowedCharacter, setAllowedCharacter] = useState(false);
+  const [allowedNumber, setAllowedNumber] = useState(false);
+  const [password, setPassword] = useState(&amp;quot;&amp;quot;);
+  const [randomNumber, setRandomNumber] = useState(0);
+  const [copied, setCopied] = useState(false);
+
+
+	const generatePassword = () =&amp;gt;{
+		let chars = &amp;quot;abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ&amp;quot;;
+	        let numbers = &amp;quot;0123456789&amp;quot;;
+		let symbols = &amp;quot;!@#$%^&amp;amp;*()_-+=&amp;lt;&amp;gt;?/{}~&amp;quot;;
+
+		let allowed = chars;
+   		if (allowedNumber) allowed += numbers;
+	   	if (allowedCharacter) allowed += symbols;
+
+		let pass = &amp;quot;&amp;quot;;
+		for (let i = 0; i &amp;lt; length; i++) {
+			const randomIndex = Math.floor(Math.random() * allowed.length);
+			pass += allowed[randomIndex];
+		}
+		setPassword(pass);
+	};
+         	 useEffect(() =&amp;gt; {
+    		generatePassword();
+	 	 }, [length, allowedCharacter, allowedNumber]);
+	  const copyToClipboard = () =&amp;gt; {
+   		 navigator.clipboard.writeText(password);
+   		 setCopied(true);
+    		setTimeout(() =&amp;gt; setCopied(false), 1500); // Reset &amp;quot;copied&amp;quot; message
+  	};
+
+
+
+  return (
+    &amp;lt;&amp;gt;
+
+	  &amp;lt;h1 className=&amp;#39;text-3xl font-bold  m-4 position-absolute top-0 &amp;#39;&amp;gt;
+	    Password Generator 
+	  &amp;lt;/h1&amp;gt;
+	  	&amp;lt;div className=&amp;#39;container bg-black border rounded-md p-4&amp;#39;&amp;gt;
+	  	&amp;lt;div className=&amp;quot;box&amp;quot;&amp;gt;
+	  		Password : &amp;lt;input type=&amp;#39;text&amp;#39; readOnly name=&amp;#39;length&amp;#39; className=&amp;#39;bg-white text-black w-90&amp;#39; value={password}  /&amp;gt;  
+	  	&amp;lt;/div&amp;gt;
+	  &amp;lt;button onClick={generatePassword} className=&amp;quot;ml-2 bg-blue-500 text-white px-2 py-1 rounded&amp;quot; &amp;gt;Refresh&amp;lt;/button&amp;gt;
+	&amp;lt;button    onClick={copyToClipboard} className=&amp;quot;bg-green-500 hover:bg-green-600 text-white px-2 py-1 rounded&amp;quot; &amp;gt; Copy  &amp;lt;/button&amp;gt;
+
+          {copied &amp;amp;&amp;amp; &amp;lt;span className=&amp;quot;text-green-400 ml-2&amp;quot;&amp;gt;Copied!&amp;lt;/span&amp;gt;}
+	        &amp;lt;div className=&amp;quot;container flex flex-col content-center justify-start m-4 align-center&amp;quot;&amp;gt;
+	  	
+	  	
+	  	&amp;lt;div className=&amp;quot;box flex flex-row content-center  align-center m-1&amp;quot; &amp;gt;
+	  
+	  		Length : &amp;lt;input type=&amp;#39;range&amp;#39; min=&amp;quot;4&amp;quot; max=&amp;quot;20&amp;quot; value={length} name=&amp;#39;length&amp;#39;  onChange={(e) =&amp;gt; setLength(e.target.value)} /&amp;gt;{&amp;quot; &amp;quot;}{length} 
+	  
+	  	&amp;lt;/div&amp;gt; 
+	  		
+	  	&amp;lt;div className=&amp;quot;box flex flex-row content-center justify-start m-1 align-center&amp;quot;&amp;gt;
+	  		Charater : &amp;lt;input type=&amp;#39;checkbox&amp;#39; name=&amp;#39;length&amp;#39; checked={allowedCharacter} onChange={()=&amp;gt; setAllowedCharacter((prev) =&amp;gt; !prev)} /&amp;gt;  
+
+	  	&amp;lt;/div&amp;gt; 
+	  	&amp;lt;div className=&amp;quot;box flex flex-row content-center justify-start m-1 align-center &amp;quot;&amp;gt;
+	  		Numbers : &amp;lt;input type=&amp;#39;checkbox&amp;#39; name=&amp;#39;length&amp;#39; className=&amp;#39;bg-white text-black&amp;#39; checked={allowedNumber} onChange={() =&amp;gt; setAllowedNumber ((prev) =&amp;gt; !prev)} /&amp;gt;  
+	  	&amp;lt;/div&amp;gt; 
+
+	  &amp;lt;/div&amp;gt;
+  
+	  &amp;lt;/div&amp;gt;
+	&amp;lt;/&amp;gt;
+  )
+}
+
+export default App
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&quot;explanation-1&quot;&gt;Explanation&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;We use the &lt;code&gt;useState&lt;/code&gt; hook to manage various state variables such as &lt;code&gt;length&lt;/code&gt;, &lt;code&gt;allowedCharacter&lt;/code&gt;, &lt;code&gt;allowedNumber&lt;/code&gt;, &lt;code&gt;password&lt;/code&gt;, and &lt;code&gt;copied&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;The &lt;code&gt;generatePassword&lt;/code&gt; function generates a random password based on the selected criteria.&lt;/li&gt;
+&lt;li&gt;The &lt;code&gt;useEffect&lt;/code&gt; hook is used to automatically generate a new password whenever the &lt;code&gt;length&lt;/code&gt;, &lt;code&gt;allowedCharacter&lt;/code&gt;, or &lt;code&gt;allowedNumber&lt;/code&gt; state changes.&lt;/li&gt;
+&lt;li&gt;The &lt;code&gt;copyToClipboard&lt;/code&gt; function copies the generated password to the clipboard and shows a “Copied!” message for 1.5 seconds.&lt;/li&gt;
+&lt;li&gt;The UI includes input elements for selecting password length and options for including characters and numbers, as well as buttons for generating and copying the password.&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>How Single-CPU Systems Multitask</title>
+        <published>2025-06-23T00:00:00+00:00</published>
+        <updated>2025-06-23T00:00:00+00:00</updated>
+        
+        <author>
+          <name>Unknown</name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://www.mukund.xyz/notes/concurrency-is-not-what-you-think/"/>
+        <id>https://www.mukund.xyz/notes/concurrency-is-not-what-you-think/</id>
+        
+        <content type="html" xml:base="https://www.mukund.xyz/notes/concurrency-is-not-what-you-think/">&lt;p&gt;Have you ever wondered how your computer can run multiple programs at the same time?&lt;/p&gt;
+&lt;p&gt;Most people think of &lt;strong&gt;multi-core CPUs&lt;/strong&gt;, which is understandable with the marketing push from CPU manufacturers. However, the ability to multitask has been around &lt;strong&gt;since the days of single-core processors&lt;/strong&gt;.&lt;/p&gt;
+&lt;h2 id=&quot;a-historical-perspective&quot;&gt;A Historical Perspective&lt;/h2&gt;
+&lt;p&gt;Back in the 1980s, machines like the &lt;strong&gt;Commodore Amiga&lt;/strong&gt; and &lt;strong&gt;Apple Macintosh&lt;/strong&gt; could already run multiple programs at once—even with only &lt;strong&gt;one processor&lt;/strong&gt;.&lt;/p&gt;
+&lt;a href=&quot;https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Amiga500_system.jpg/250px-Amiga500_system.jpg&quot; data-lightbox=&quot;blog-img&quot; data-title=&quot;Online Image Example&quot;&gt;
+  &lt;img src=&quot;https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Amiga500_system.jpg/250px-Amiga500_system.jpg&quot;
+       alt=&quot;Online Image Example&quot;
+       loading=&quot;lazy&quot;
+       style=&quot;max-width: 100%; height: auto; border-radius: 6px;&quot; /&gt;
+&lt;/a&gt;
+&lt;p&gt;To understand how, we need to go back further.&lt;/p&gt;
+&lt;h3 id=&quot;mainframes-and-limited-access&quot;&gt;Mainframes and Limited Access&lt;/h3&gt;
+&lt;a href=&quot;https://media.wired.com/photos/59329428a312645844995f4d/master/w_1600,c_limit/AP120305028348.jpg&quot; data-lightbox=&quot;blog-img&quot; data-title=&quot;Online Image Example&quot;&gt;
+  &lt;img src=&quot;https://media.wired.com/photos/59329428a312645844995f4d/master/w_1600,c_limit/AP120305028348.jpg&quot;
+       alt=&quot;Online Image Example&quot;
+       loading=&quot;lazy&quot;
+       style=&quot;max-width: 100%; height: auto; border-radius: 6px;&quot; /&gt;
+&lt;/a&gt;
+&lt;p&gt;Early computers were massive and expensive machines called &lt;strong&gt;mainframes&lt;/strong&gt;. They filled entire rooms and were only accessible to governments, big companies, and universities. Due to their high cost and complexity, &lt;strong&gt;computer time was highly valuable&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Operating a program on these machines wasn’t simple:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Load the compiler (often from magnetic tape).&lt;/li&gt;
+&lt;li&gt;Input the source code (e.g., in Fortran).&lt;/li&gt;
+&lt;li&gt;Generate Assembly code.&lt;/li&gt;
+&lt;li&gt;Use an assembler to produce machine code.&lt;/li&gt;
+&lt;li&gt;Finally, execute the program.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Each step involved manual tape mounting and waiting, during which the &lt;strong&gt;CPU sat idle&lt;/strong&gt;, even though other users couldn’t access it.&lt;/p&gt;
+&lt;h3 id=&quot;the-birth-of-operating-systems&quot;&gt;The Birth of Operating Systems&lt;/h3&gt;
+&lt;p&gt;To improve efficiency, researchers created early &lt;strong&gt;operating systems&lt;/strong&gt; that enabled &lt;strong&gt;multiple users&lt;/strong&gt; to connect via devices like &lt;strong&gt;teletypes&lt;/strong&gt; or &lt;strong&gt;dumb terminals&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;This led to &lt;strong&gt;time-sharing&lt;/strong&gt; systems, where the operating system would &lt;strong&gt;switch between users’ programs&lt;/strong&gt;, keeping the CPU busy and maximizing the value of expensive computers.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 id=&quot;concurrency-in-single-cpu-systems&quot;&gt;Concurrency in Single-CPU Systems&lt;/h2&gt;
+&lt;p&gt;A &lt;strong&gt;CPU executes one instruction at a time&lt;/strong&gt;, but it does so incredibly fast which gives the illusion of simultaneous execution. This is the core idea of &lt;strong&gt;concurrency&lt;/strong&gt;.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Even with one CPU, computers can appear to run many processes at once by rapidly switching between them.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Systems like &lt;strong&gt;Multics&lt;/strong&gt; (developed in the 1960s) were pioneers in this approach.&lt;/p&gt;
+&lt;a href=&quot;https://www.macos.utah.edu/documentation/short_courses/mac_os_x_overview/history_and_evolution/unix_history/mainColumnParagraphs/010/image/openstep1.jpg&quot; data-lightbox=&quot;blog-img&quot; data-title=&quot;Online Image Example&quot;&gt;
+  &lt;img src=&quot;https://www.macos.utah.edu/documentation/short_courses/mac_os_x_overview/history_and_evolution/unix_history/mainColumnParagraphs/010/image/openstep1.jpg&quot;
+       alt=&quot;Online Image Example&quot;
+       loading=&quot;lazy&quot;
+       style=&quot;max-width: 100%; height: auto; border-radius: 6px;&quot; /&gt;
+&lt;/a&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://www.macos.utah.edu/documentation/short_courses/mac_os_x_overview/history_and_evolution/unix_history.html&quot;&gt;refrence&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Later, personal computers adopted similar techniques to serve multiple users, but to allow a &lt;strong&gt;single user to run multiple applications&lt;/strong&gt;.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 id=&quot;how-cpus-execute-instructions&quot;&gt;How CPUs Execute Instructions&lt;/h2&gt;
+&lt;p&gt;At a low level, the CPU operates in a &lt;strong&gt;fetch-decode-execute&lt;/strong&gt; cycle:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;The &lt;strong&gt;address register&lt;/strong&gt; holds the memory location of the next instruction.&lt;/li&gt;
+&lt;li&gt;The instruction is &lt;strong&gt;fetched&lt;/strong&gt; and moved to the &lt;strong&gt;instruction register&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;The CPU &lt;strong&gt;decodes and executes&lt;/strong&gt; the instruction.&lt;/li&gt;
+&lt;li&gt;The address register is updated to point to the next instruction.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;Jump instructions&lt;/strong&gt; allow for loops and conditions, by modifying the address register manually.&lt;/p&gt;
+&lt;p&gt;This means programs don’t need to be split in memory—the &lt;strong&gt;operating system changes the CPU’s state&lt;/strong&gt; to switch between processes.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 id=&quot;scheduling-and-process-management&quot;&gt;Scheduling and Process Management&lt;/h2&gt;
+&lt;p&gt;Once a program starts running, it becomes a &lt;strong&gt;process&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;The OS uses a &lt;strong&gt;queue&lt;/strong&gt; to manage all active processes. Two key components handle this:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Scheduler&lt;/strong&gt;: Determines which process should run next.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Dispatcher&lt;/strong&gt;: Loads the selected process into the CPU.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;but-when-does-the-os-run&quot;&gt;But When Does the OS Run?&lt;/h3&gt;
+&lt;p&gt;Programs often rely on the OS for tasks like file access or memory allocation. These are handled through &lt;strong&gt;interruptions&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;When an &lt;strong&gt;interrupt&lt;/strong&gt; occurs (e.g., from an I/O request):&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;The CPU saves the current process’s state.&lt;/li&gt;
+&lt;li&gt;It jumps to the &lt;strong&gt;interrupt service routine (ISR)&lt;/strong&gt; in OS memory.&lt;/li&gt;
+&lt;li&gt;The OS handles the request and schedules the next process.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;This is how the &lt;strong&gt;OS regains control&lt;/strong&gt; of the CPU.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 id=&quot;the-problem-with-cooperative-scheduling&quot;&gt;The Problem With Cooperative Scheduling&lt;/h2&gt;
+&lt;p&gt;Originally, systems used &lt;strong&gt;cooperative scheduling&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;A process keeps the CPU until it voluntarily gives it up.&lt;/li&gt;
+&lt;li&gt;This can lead to problems if a process enters an &lt;strong&gt;infinite loop&lt;/strong&gt; with no I/O.&lt;/li&gt;
+&lt;li&gt;The OS never regains control, potentially locking the system.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This method is insecure, especially with malicious programs.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 id=&quot;enter-preemptive-scheduling&quot;&gt;Enter Preemptive Scheduling&lt;/h2&gt;
+&lt;p&gt;To solve this, hardware support is essential.&lt;/p&gt;
+&lt;p&gt;A &lt;strong&gt;hardware timer&lt;/strong&gt; is introduced:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Before assigning the CPU to a process, the OS sets the timer.&lt;/li&gt;
+&lt;li&gt;If the timer expires, it &lt;strong&gt;automatically triggers an interrupt&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;This forces the CPU to return control to the OS.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Preemptive scheduling allows the OS to &lt;strong&gt;interrupt any process&lt;/strong&gt; and regain CPU control—even if the process doesn’t cooperate.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Modern systems, including versions of Windows from &lt;strong&gt;95 onward&lt;/strong&gt;, use this method. Interestingly, &lt;strong&gt;Multics supported it in the 1960s&lt;/strong&gt;!&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 id=&quot;what-about-multi-core-systems&quot;&gt;What About Multi-core Systems?&lt;/h2&gt;
+&lt;p&gt;Multitasking on a single core uses concurrency to &lt;strong&gt;simulate&lt;/strong&gt; parallel execution.&lt;/p&gt;
+&lt;p&gt;However, as the number of processes grows, delays become noticeable.&lt;/p&gt;
+&lt;h3 id=&quot;hardware-solution-multi-core-cpus&quot;&gt;Hardware Solution: Multi-core CPUs&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Each core can handle a process independently.&lt;/li&gt;
+&lt;li&gt;This enables &lt;strong&gt;true parallelism&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Yet, even in multi-core systems, concurrency is still crucial—because &lt;strong&gt;we often have more processes than cores&lt;/strong&gt;.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 id=&quot;final-thought&quot;&gt;Final Thought&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Concurrency is about dealing with lots of things at once.&lt;br /&gt;
+Parallelism is about doing lots of things at once.&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr /&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Why Free software is good ?</title>
+        <published>2025-06-20T00:00:00+00:00</published>
+        <updated>2025-06-20T00:00:00+00:00</updated>
+        
+        <author>
+          <name>Unknown</name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://www.mukund.xyz/blog/first/"/>
+        <id>https://www.mukund.xyz/blog/first/</id>
+        
+        <content type="html" xml:base="https://www.mukund.xyz/blog/first/">&lt;h3 id=&quot;what-is-free-software&quot;&gt;What is free Software&lt;/h3&gt;
+&lt;a href=&quot;/images/gnu-means-freedom.png&quot; data-lightbox=&quot;blog-img&quot; data-title=&quot;Sample image&quot;&gt;
+    &lt;img src=&quot;https://www.mukund.xyz/processed_images/gnu-means-freedom.b27c0f549c607b56.png&quot;
+         srcset=&quot;/images/gnu-means-freedom.png 2x&quot;
+         width=&quot;270&quot;
+         height=&quot;260&quot;
+         alt=&quot;Sample image&quot;
+         loading=&quot;lazy&quot;
+         style=&quot;max-width: 100%; height: auto; border-radius: 6px;&quot; /&gt;
+&lt;/a&gt;
+&lt;p&gt;A program is free software which respect user Freedom ‘Its free as freedom’ Its means Zero price but we are not taking about price, We talking about more freedom.&lt;/p&gt;
+&lt;p&gt;More precisely, To support defination free software there are four essential freedoms:&lt;/p&gt;
+&lt;ol start=&quot;0&quot;&gt;
+&lt;li&gt;The freedom to run the program as you wish, for any purpose.&lt;/li&gt;
+&lt;li&gt;The freedom to study ,to change and  how the program works.&lt;/li&gt;
+&lt;li&gt;The freedom to redistribute copies When you wish .&lt;/li&gt;
+&lt;li&gt;The freedom to distribute copies of your modified versions to others.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;“When user control program that’s  free software and When program control user that’s Proprietary Software” - Richard Stallman&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;what-is-proprietary-software&quot;&gt;what is Proprietary Software&lt;/h3&gt;
+&lt;p&gt;Proprietary software, also called nonfree software, means software that doesn’t respect users’ freedom and community.&lt;/p&gt;
+&lt;p&gt;A proprietary program puts its developer or owner in a position of power over its users. This power is in itself an injustice.&lt;/p&gt;
+&lt;h3 id=&quot;free-software-vs-proprietary-software&quot;&gt;Free Software Vs Proprietary Software&lt;/h3&gt;
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Points&lt;/th&gt;&lt;th style=&quot;text-align: center&quot;&gt;Free Software&lt;/th&gt;&lt;th style=&quot;text-align: right&quot;&gt;Proprietary Software&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;
+&lt;tr&gt;&lt;td&gt;Modify&lt;/td&gt;&lt;td style=&quot;text-align: center&quot;&gt;Freedom to change anything&lt;/td&gt;&lt;td style=&quot;text-align: right&quot;&gt;restrict to change thing&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Jail&lt;/td&gt;&lt;td style=&quot;text-align: center&quot;&gt;No censorship on application&lt;/td&gt;&lt;td style=&quot;text-align: right&quot;&gt;censorship on application&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Distribution&lt;/td&gt;&lt;td style=&quot;text-align: center&quot;&gt;freely distribute&lt;/td&gt;&lt;td style=&quot;text-align: right&quot;&gt;cannot freely distribute&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Source Code&lt;/td&gt;&lt;td style=&quot;text-align: center&quot;&gt;Have access&lt;/td&gt;&lt;td style=&quot;text-align: right&quot;&gt;Not have acces&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Run Program&lt;/td&gt;&lt;td style=&quot;text-align: center&quot;&gt;Free of cost&lt;/td&gt;&lt;td style=&quot;text-align: right&quot;&gt;pay of cost&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Customization&lt;/td&gt;&lt;td style=&quot;text-align: center&quot;&gt;Highly customizable&lt;/td&gt;&lt;td style=&quot;text-align: right&quot;&gt;Limited customization&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;h3 id=&quot;free-software-is-even-more-important-now&quot;&gt;Free Software Is Even More Important Now&lt;/h3&gt;
+&lt;p&gt;With free software, the users control the program, both individually and collectively. So they control what their computers do&lt;/p&gt;
+&lt;p&gt;With proprietary software, the program controls the users, and some other entity (the developer or “owner”) controls the program
+Even when proprietary software isn’t downright malicious, its developers have an incentive to make it addictive, controlling and manipulative.&lt;/p&gt;
+&lt;p&gt;Freedom means having control over your own life. If you use a program to carry out activities in your life, your freedom depends on your having control over the program. You deserve to have control over the programs you use, and all the more so when you use them for something important in your life.&lt;/p&gt;
+&lt;p&gt;“The Free Software Foundation (FSF) is a nonprofit with a worldwide mission to promote computer user freedom. We defend the rights of all software users.”&lt;/p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Wireframe Tool</title>
+        <published>2025-06-20T00:00:00+00:00</published>
+        <updated>2025-06-20T00:00:00+00:00</updated>
+        
+        <author>
+          <name>Unknown</name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://www.mukund.xyz/project/wireframe/"/>
+        <id>https://www.mukund.xyz/project/wireframe/</id>
+        
+        <content type="html" xml:base="https://www.mukund.xyz/project/wireframe/">&lt;h2 id=&quot;wireframe-tool-project-report&quot;&gt;Wireframe Tool Project Report&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Institute:&lt;/strong&gt; Birla Vishvakarma Mahavidyalaya&lt;br /&gt;
+&lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://github.com/mukund58/Wireframe-tool&quot;&gt;Project Repo&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Group Members:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Mukund Parmar (23CP014)&lt;/li&gt;
+&lt;li&gt;Jaivik Prajapati (23CP002)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;snapshots&quot;&gt;Snapshots&lt;/h2&gt;
+&lt;h3 id=&quot;home-page&quot;&gt;Home Page&lt;/h3&gt;
+&lt;a href=&quot;/images/project.png&quot; data-lightbox=&quot;blog-img&quot; data-title=&quot;Sample image&quot;&gt;
+    &lt;img src=&quot;https://www.mukund.xyz/processed_images/project.924513388348b469.png&quot;
+         srcset=&quot;/images/project.png 2x&quot;
+         width=&quot;675&quot;
+         height=&quot;921&quot;
+         alt=&quot;Sample image&quot;
+         loading=&quot;lazy&quot;
+         style=&quot;max-width: 100%; height: auto; border-radius: 6px;&quot; /&gt;
+&lt;/a&gt;
+&lt;h3 id=&quot;login-and-signup-page&quot;&gt;Login and Signup Page&lt;/h3&gt;
+&lt;a href=&quot;/images/project-login.png&quot; data-lightbox=&quot;blog-img&quot; data-title=&quot;Sample image&quot;&gt;
+    &lt;img src=&quot;https://www.mukund.xyz/processed_images/project-login.18800b93816dc9a8.png&quot;
+         srcset=&quot;/images/project-login.png 2x&quot;
+         width=&quot;675&quot;
+         height=&quot;307&quot;
+         alt=&quot;Sample image&quot;
+         loading=&quot;lazy&quot;
+         style=&quot;max-width: 100%; height: auto; border-radius: 6px;&quot; /&gt;
+&lt;/a&gt;
+&lt;a href=&quot;/images/project-signup.png&quot; data-lightbox=&quot;blog-img&quot; data-title=&quot;Sample image&quot;&gt;
+    &lt;img src=&quot;https://www.mukund.xyz/processed_images/project-signup.3a9e4b3783c69830.png&quot;
+         srcset=&quot;/images/project-signup.png 2x&quot;
+         width=&quot;675&quot;
+         height=&quot;307&quot;
+         alt=&quot;Sample image&quot;
+         loading=&quot;lazy&quot;
+         style=&quot;max-width: 100%; height: auto; border-radius: 6px;&quot; /&gt;
+&lt;/a&gt;
+&lt;h3 id=&quot;dashboard-page&quot;&gt;Dashboard Page&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Send verification email&lt;/li&gt;
+&lt;li&gt;Edit or delete draft&lt;/li&gt;
+&lt;li&gt;Create new drafts&lt;/li&gt;
+&lt;/ul&gt;
+&lt;a href=&quot;/images/project-dashborad.png&quot; data-lightbox=&quot;blog-img&quot; data-title=&quot;Sample image&quot;&gt;
+    &lt;img src=&quot;https://www.mukund.xyz/processed_images/project-dashborad.bd04a0222b6ec3b3.png&quot;
+         srcset=&quot;/images/project-dashborad.png 2x&quot;
+         width=&quot;675&quot;
+         height=&quot;357&quot;
+         alt=&quot;Sample image&quot;
+         loading=&quot;lazy&quot;
+         style=&quot;max-width: 100%; height: auto; border-radius: 6px;&quot; /&gt;
+&lt;/a&gt;
+&lt;a href=&quot;/images/project-DashboardDraft.png&quot; data-lightbox=&quot;blog-img&quot; data-title=&quot;Sample image&quot;&gt;
+    &lt;img src=&quot;https://www.mukund.xyz/processed_images/project-DashboardDraft.7cf545200223c93e.png&quot;
+         srcset=&quot;/images/project-DashboardDraft.png 2x&quot;
+         width=&quot;675&quot;
+         height=&quot;385&quot;
+         alt=&quot;Sample image&quot;
+         loading=&quot;lazy&quot;
+         style=&quot;max-width: 100%; height: auto; border-radius: 6px;&quot; /&gt;
+&lt;/a&gt;
+&lt;h3 id=&quot;editor-page&quot;&gt;Editor Page&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Name and create drafts&lt;/li&gt;
+&lt;li&gt;View/search all drafts&lt;/li&gt;
+&lt;/ul&gt;
+&lt;a href=&quot;/images/project-editor.png&quot; data-lightbox=&quot;blog-img&quot; data-title=&quot;Sample image&quot;&gt;
+    &lt;img src=&quot;https://www.mukund.xyz/processed_images/project-editor.f06ead22fd3643da.png&quot;
+         srcset=&quot;/images/project-editor.png 2x&quot;
+         width=&quot;675&quot;
+         height=&quot;307&quot;
+         alt=&quot;Sample image&quot;
+         loading=&quot;lazy&quot;
+         style=&quot;max-width: 100%; height: auto; border-radius: 6px;&quot; /&gt;
+&lt;/a&gt;
+&lt;h2 id=&quot;1-introduction&quot;&gt;1. Introduction&lt;/h2&gt;
+&lt;p&gt;The &lt;strong&gt;Wireframe Tool&lt;/strong&gt; is a web-based application designed to assist UI/UX designers in creating wireframes efficiently. The tool provides an infinite canvas where users can collaboratively design, modify, and share wireframes. It is developed using the LAMP stack (Linux, Apache, MySQL, PHP) and aims to streamline the design process with real-time collaboration features.&lt;/p&gt;
+&lt;h2 id=&quot;2-purpose&quot;&gt;2. Purpose&lt;/h2&gt;
+&lt;p&gt;The primary goal of this project is to create an intuitive and feature-rich wireframe design tool that allows users to design interfaces collaboratively.&lt;/p&gt;
+&lt;h3 id=&quot;what-is-a-wireframe&quot;&gt;What is a Wireframe?&lt;/h3&gt;
+&lt;p&gt;A wireframe is a simple sketch or blueprint that shows the basic layout of a website or app.&lt;/p&gt;
+&lt;h3 id=&quot;why-use-wireframes&quot;&gt;Why Use Wireframes?&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Clarify ideas.&lt;/li&gt;
+&lt;li&gt;Get early feedback.&lt;/li&gt;
+&lt;li&gt;Save time.&lt;/li&gt;
+&lt;li&gt;Focus on function.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;benefits-of-using-wireframes&quot;&gt;Benefits of Using Wireframes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Improves user experience.&lt;/li&gt;
+&lt;li&gt;Faster changes.&lt;/li&gt;
+&lt;li&gt;Clearer development.&lt;/li&gt;
+&lt;li&gt;Saves costs.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;objectives&quot;&gt;Objectives&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Provide an infinite canvas for designing wireframes.&lt;/li&gt;
+&lt;li&gt;Enable real-time collaboration through link-based sharing.&lt;/li&gt;
+&lt;li&gt;Store and retrieve wireframe data efficiently.&lt;/li&gt;
+&lt;li&gt;Offer an easy-to-use UI without coding knowledge.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;3-modules&quot;&gt;3. Modules&lt;/h2&gt;
+&lt;h3 id=&quot;3-1-user-authentication-module&quot;&gt;3.1 User Authentication Module&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Registration and login&lt;/li&gt;
+&lt;li&gt;Secure session handling&lt;/li&gt;
+&lt;li&gt;Password encryption and reset&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;3-2-wireframe-design-module&quot;&gt;3.2 Wireframe Design Module&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Infinite canvas&lt;/li&gt;
+&lt;li&gt;Drag-and-drop UI elements&lt;/li&gt;
+&lt;li&gt;Layered object management&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;3-3-collaboration-module&quot;&gt;3.3 Collaboration Module&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Shareable links&lt;/li&gt;
+&lt;li&gt;Real-time sync via WebSockets/AJAX&lt;/li&gt;
+&lt;li&gt;View/edit permission management&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;3-4-storage-and-database-module&quot;&gt;3.4 Storage and Database Module&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;MySQL storage and retrieval&lt;/li&gt;
+&lt;li&gt;Load previous designs&lt;/li&gt;
+&lt;li&gt;Optimized queries&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;3-5-export-and-sharing-module&quot;&gt;3.5 Export and Sharing Module&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Export to PDF/PNG/SVG&lt;/li&gt;
+&lt;li&gt;Unique sharing links&lt;/li&gt;
+&lt;li&gt;Print-ready outputs&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;4-functional-requirements&quot;&gt;4. Functional Requirements&lt;/h2&gt;
+&lt;h3 id=&quot;4-1-user-authentication&quot;&gt;4.1 User Authentication&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Secure login/logout&lt;/li&gt;
+&lt;li&gt;Password hashing&lt;/li&gt;
+&lt;li&gt;Session management&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;4-2-wireframe-creation&quot;&gt;4.2 Wireframe Creation&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Drag and drop elements&lt;/li&gt;
+&lt;li&gt;Resize, move, delete&lt;/li&gt;
+&lt;li&gt;Undo/redo support&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;4-3-collaboration&quot;&gt;4.3 Collaboration&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Invite via link&lt;/li&gt;
+&lt;li&gt;Real-time updates&lt;/li&gt;
+&lt;li&gt;Shared views for all collaborators&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;4-4-data-storage-and-retrieval&quot;&gt;4.4 Data Storage and Retrieval&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Save wireframes in DB&lt;/li&gt;
+&lt;li&gt;Access previous work&lt;/li&gt;
+&lt;li&gt;Autosave support&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;4-5-export-and-sharing&quot;&gt;4.5 Export and Sharing&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Export to standard formats&lt;/li&gt;
+&lt;li&gt;Shareable links&lt;/li&gt;
+&lt;li&gt;Print options&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;additional-functional-requirements&quot;&gt;Additional Functional Requirements&lt;/h2&gt;
+&lt;h3 id=&quot;1-user-management&quot;&gt;1. User Management&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Register with email, username, password&lt;/li&gt;
+&lt;li&gt;Role-based access (admin/user)&lt;/li&gt;
+&lt;li&gt;Update profile info&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;2-draft-management&quot;&gt;2. Draft Management&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Create/view/edit/delete drafts&lt;/li&gt;
+&lt;li&gt;Use assets in drafts&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;3-asset-management-admin&quot;&gt;3. Asset Management (Admin)&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Add/update/delete assets&lt;/li&gt;
+&lt;li&gt;Assets linked to drafts&lt;/li&gt;
+&lt;li&gt;Access control&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;4-draft-asset-relationship&quot;&gt;4. Draft-Asset Relationship&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Multiple assets per draft&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;5-security-authorization&quot;&gt;5. Security &amp;amp; Authorization&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Only authenticated users can access features&lt;/li&gt;
+&lt;li&gt;Hashed passwords&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;6-database-constraints&quot;&gt;6. Database Constraints&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Valid user-draft relationship&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;7-import-export&quot;&gt;7. Import/Export&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Drafts as JSON import/export&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;er-model&quot;&gt;ER Model&lt;/h2&gt;
+&lt;a href=&quot;/images/ER.png&quot; data-lightbox=&quot;blog-img&quot; data-title=&quot;Sample image&quot;&gt;
+    &lt;img src=&quot;https://www.mukund.xyz/processed_images/ER.f7efa0664c718861.png&quot;
+         srcset=&quot;/images/ER.png 2x&quot;
+         width=&quot;403&quot;
+         height=&quot;157&quot;
+         alt=&quot;Sample image&quot;
+         loading=&quot;lazy&quot;
+         style=&quot;max-width: 100%; height: auto; border-radius: 6px;&quot; /&gt;
+&lt;/a&gt;
+&lt;h2 id=&quot;relational-schema&quot;&gt;Relational Schema&lt;/h2&gt;
+&lt;a href=&quot;/images/RS.png&quot; data-lightbox=&quot;blog-img&quot; data-title=&quot;Sample image&quot;&gt;
+    &lt;img src=&quot;https://www.mukund.xyz/processed_images/RS.2cd053587c4e7278.png&quot;
+         srcset=&quot;/images/RS.png 2x&quot;
+         width=&quot;411&quot;
+         height=&quot;193&quot;
+         alt=&quot;Sample image&quot;
+         loading=&quot;lazy&quot;
+         style=&quot;max-width: 100%; height: auto; border-radius: 6px;&quot; /&gt;
+&lt;/a&gt;
+&lt;hr /&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>How to debug Your code</title>
+        <published>2024-10-24T00:00:00+00:00</published>
+        <updated>2024-10-24T00:00:00+00:00</updated>
+        
+        <author>
+          <name>Unknown</name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://www.mukund.xyz/blog/gdb-debugger/"/>
+        <id>https://www.mukund.xyz/blog/gdb-debugger/</id>
+        
+        <content type="html" xml:base="https://www.mukund.xyz/blog/gdb-debugger/">&lt;p&gt;When your code is running but not working at that time we mostly check line by line code it cant find any clue.&lt;/p&gt;
+&lt;p&gt;The best way to check your code line by line and what code acutally do internally, when you run the code.&lt;/p&gt;
+&lt;p&gt;so anyway let’s start by installing GDB debugger in computer .&lt;/p&gt;
+&lt;p&gt;To install on Ubuntu&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;sudo apt install gdb
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;To install on arch&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;sudo pacman -S gdb
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;To download on Your Machine
+&lt;code&gt;https://sourceware.org/gdb/download/&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;You can also use it online &lt;code&gt;https://www.onlinegdb.com/&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;How to run GDB&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Run Your complier&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;$ g++ -g program
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;Run Your gdb&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;$ gdb a.out
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;you will get output something like&lt;/p&gt;
+&lt;a href=&quot;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh1MRdJ05GegnQsLcDMAANqWMjfdqUodUt60DdytAogc20kgN_if3b5-E31D1XxdkA3HgeOcdHhebmnvLCdc4T-YZE9RuqhnMokxGt0adIE6cBU2W1MUbtXJ3Bh-5E1mM7z1LN1DlBH5gPYQZSquW5IFFd3v02gL3AWUmNw_DBnO4uTi1PFKazy2OXs4gpY/s1062/pic-selected-240910-1852-15.png&quot; data-lightbox=&quot;blog-img&quot; data-title=&quot;Screenshot&quot;&gt;
+  &lt;img src=&quot;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh1MRdJ05GegnQsLcDMAANqWMjfdqUodUt60DdytAogc20kgN_if3b5-E31D1XxdkA3HgeOcdHhebmnvLCdc4T-YZE9RuqhnMokxGt0adIE6cBU2W1MUbtXJ3Bh-5E1mM7z1LN1DlBH5gPYQZSquW5IFFd3v02gL3AWUmNw_DBnO4uTi1PFKazy2OXs4gpY/s1062/pic-selected-240910-1852-15.png&quot;
+       alt=&quot;Screenshot&quot;
+       loading=&quot;lazy&quot;
+       style=&quot;max-width: 100%; height: auto; border-radius: 6px;&quot; /&gt;
+&lt;/a&gt;
+&lt;p&gt;Start Your gdb with start command&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;start 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Now Press ctrl + x + a&lt;/p&gt;
+&lt;a href=&quot;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh_YqCCDkmkV2jWyCSwwCsyjEtuNknGjtYEUhGAp5eqwQhgOHjDb3khwg1rzL9Jn4WNR5ljFoTYha4wzNl5tt4m8tn1T_1cG7CEyMOcD5pyOz-ZaUUkGBwXoD380GunlviJTw_loMAuQ2Z8jxNxuHp_Dpp-SmzouKJGmyaBFUFHq7bvNomCu6cucCZBSm19/s1366/pic-full-240910-1913-48.png&quot; data-lightbox=&quot;blog-img&quot; data-title=&quot;Screenshot&quot;&gt;
+  &lt;img src=&quot;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh_YqCCDkmkV2jWyCSwwCsyjEtuNknGjtYEUhGAp5eqwQhgOHjDb3khwg1rzL9Jn4WNR5ljFoTYha4wzNl5tt4m8tn1T_1cG7CEyMOcD5pyOz-ZaUUkGBwXoD380GunlviJTw_loMAuQ2Z8jxNxuHp_Dpp-SmzouKJGmyaBFUFHq7bvNomCu6cucCZBSm19/s1366/pic-full-240910-1913-48.png&quot;
+       alt=&quot;Screenshot&quot;
+       loading=&quot;lazy&quot;
+       style=&quot;max-width: 100%; height: auto; border-radius: 6px;&quot; /&gt;
+&lt;/a&gt;
+&lt;p&gt;Now for go to next line&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;next
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;it go two second line&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;next
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;if your ui is not lagging than press &lt;code&gt;ctrl + l&lt;/code&gt; to refresh the ui&lt;/p&gt;
+&lt;p&gt;To check store data in variable&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;print var_name
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;or&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;info locals
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;To Go Function defination when debgger reach to that line&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;step 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;To exit&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;exit
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Hope you get basic idea who to use this software&lt;/p&gt;
+&lt;p&gt;I know that i did not teach everything ,so
+To know more You can refere any Documenation or cheatsheet&lt;/p&gt;
+&lt;p&gt;If i get sometime than i may continue this blog to the end and I will teach everything&lt;/p&gt;
+&lt;p&gt;Thank You For Your Time :)&lt;/p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>JavaScript notes</title>
+        <published>2024-10-09T00:00:00+00:00</published>
+        <updated>2024-10-09T00:00:00+00:00</updated>
+        
+        <author>
+          <name>Unknown</name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://www.mukund.xyz/notes/how-javascript-works/"/>
+        <id>https://www.mukund.xyz/notes/how-javascript-works/</id>
+        
+        <content type="html" xml:base="https://www.mukund.xyz/notes/how-javascript-works/">&lt;h4 id=&quot;how-javascript-works&quot;&gt;How JavaScript Works&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Everything in JavaScript happen inside an Execution context&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&quot;execution-context&quot;&gt;Execution context&lt;/h5&gt;
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Memory&lt;/th&gt;&lt;th style=&quot;text-align: center&quot;&gt;code&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;
+&lt;tr&gt;&lt;td&gt;Variable Environment&lt;/td&gt;&lt;td style=&quot;text-align: center&quot;&gt;Thread Of Execution&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Key Value&lt;/td&gt;&lt;td style=&quot;text-align: center&quot;&gt;Your Programs&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;a:10&lt;/td&gt;&lt;td style=&quot;text-align: center&quot;&gt;Where code line by line Execute&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;fn:{…}&lt;/td&gt;&lt;td style=&quot;text-align: center&quot;&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;p&gt;&lt;code&gt;JavaScript Is a Synchronous Single-Threaded Language&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Single-Threaded Language - Executed code line by line&lt;br /&gt;
+Synchronous Single-Threaded Language - Executed code line by line but at specific order&lt;/p&gt;
+&lt;h5 id=&quot;what-happen-when-you-run-javascript-code&quot;&gt;What happen when You run JavaScript code ?&lt;/h5&gt;
+&lt;p&gt;let take a JavaScript Programs&lt;/p&gt;
+&lt;pre&gt;&lt;code data-lang=&quot;JavaScript&quot;&gt;1 var n = 2;
+2 function square(num) {
+3  var ans = num * num;
+4  return ans;
+4 }
+5 var square2 = square(n);
+6 var square4 = square(4);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;When Code is Executed it has two phase&lt;/p&gt;
+&lt;h5 id=&quot;1-memory-allocation-phase&quot;&gt;1.Memory Allocation phase&lt;/h5&gt;
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Memory&lt;/th&gt;&lt;th style=&quot;text-align: center&quot;&gt;code&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;
+&lt;tr&gt;&lt;td&gt;n : undefined&lt;/td&gt;&lt;td style=&quot;text-align: center&quot;&gt;at line 1&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;square:{store whole code of the function}&lt;/td&gt;&lt;td style=&quot;text-align: center&quot;&gt;skip 2 to 5&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;square2:undefined&lt;/td&gt;&lt;td style=&quot;text-align: center&quot;&gt;At 6 Function Invocation&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;square4:undefined&lt;/td&gt;&lt;td style=&quot;text-align: center&quot;&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;In 1st phase of Memory allocation  we were allocating memory to variable and function inside the global space (whole program) and we allocated the memory to variable which is undefined in case of function we totally store whole functions code into the memory&lt;/td&gt;&lt;td style=&quot;text-align: center&quot;&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;h5 id=&quot;2-code-execution-phase&quot;&gt;2.Code Execution phase&lt;/h5&gt;
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Memory&lt;/th&gt;&lt;th style=&quot;text-align: center&quot;&gt;code&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;
+&lt;tr&gt;&lt;td&gt;n : 2&lt;/td&gt;&lt;td style=&quot;text-align: center&quot;&gt;at line 1&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;square:{store whole code of the function}&lt;/td&gt;&lt;td style=&quot;text-align: center&quot;&gt;skip 2 to 5&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;square2:4&lt;/td&gt;&lt;td style=&quot;text-align: center&quot;&gt;At 6 Function Invocation&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;square4:16&lt;/td&gt;&lt;td style=&quot;text-align: center&quot;&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;In 2nd Phase which is Code Execution Phase Now it executed code line by line and&lt;/td&gt;&lt;td style=&quot;text-align: center&quot;&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;it goes to first line allocate value to it variable and&lt;/td&gt;&lt;td style=&quot;text-align: center&quot;&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;as control goes to line number 6 ,it’ll invoke the function so when you invoke the function Execution context is created and as it is there 1st Memory allocation num and ans is allocated to memeory and 2nd in Code Execution whole function will run here num * num it store into ans and return statement is executed.In return statement we take back the control over at line number 6 and now square2 will store new value which is coming from function invocation which was the ans&lt;/td&gt;&lt;td style=&quot;text-align: center&quot;&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;h5 id=&quot;what-do-you-mean-by-function-invocation&quot;&gt;What Do you mean by Function Invocation&lt;/h5&gt;
+&lt;p&gt;It means that function is now begin executed&lt;/p&gt;
+&lt;pre&gt;&lt;code data-lang=&quot;js&quot;&gt;var square2 = square(n);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Everytime when Function Invoaction there a new Execution Context has been created&lt;/p&gt;
+&lt;a href=&quot;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEim3XmMyXtIw7xgiECdqHePh2dkJN6LPqcydmj0LDhjY1Gtn-HuqqczqBkiLJC395xn3b5JCnee0uhUjmeeOPtvzJdZzipPRmRCk3SJtwWezplF6szNw6QXjBeO2Ynjv85-rB3m1UJagAbnfKIcvU369M3IU0pYVXIsdn6CVNnTC6gBrGG-SlqB8hqKw4Xp/s16000/09-02-2025+16:45:36.png&quot; data-lightbox=&quot;blog-img&quot; data-title=&quot;Screenshot&quot;&gt;
+  &lt;img src=&quot;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEim3XmMyXtIw7xgiECdqHePh2dkJN6LPqcydmj0LDhjY1Gtn-HuqqczqBkiLJC395xn3b5JCnee0uhUjmeeOPtvzJdZzipPRmRCk3SJtwWezplF6szNw6QXjBeO2Ynjv85-rB3m1UJagAbnfKIcvU369M3IU0pYVXIsdn6CVNnTC6gBrGG-SlqB8hqKw4Xp/s16000/09-02-2025+16:45:36.png&quot;
+       alt=&quot;Screenshot&quot;
+       loading=&quot;lazy&quot;
+       style=&quot;max-width: 100%; height: auto; border-radius: 6px;&quot; /&gt;
+&lt;/a&gt;
+&lt;p&gt;As soon as you run the code there a global Execution context is created and&lt;/p&gt;
+&lt;p&gt;In 1st phase of Memory allocation  we were allocating memory to variable and function inside the global space (whole program) and we allocated the memory to variable which is undefined in case of function we totally store whole functions code into the memory&lt;/p&gt;
+&lt;p&gt;Now in 2nd Phase which is Code Execution Phase Now it executed code line by line and
+it goes to first line allocate value to it variable and&lt;/p&gt;
+&lt;p&gt;as control goes to line number 6 ,it’ll invoke the function so when you invoke the function Execution context is created and as it is there 1st Memory allocation num and ans is allocated to memeory and 2nd in Code Execution whole function will run here num * num it store into ans and return statement is executed.In return statement we take back the control over at line number 6 and now square2 will store new value which is coming from function invocation which was the ans&lt;/p&gt;
+&lt;h5 id=&quot;how-javascript-engine-handle-all-this-execution-context-creation-deletion-and-control&quot;&gt;How javascript Engine handle all this execution context creation,deletion and control&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;It Manages a Call Stack&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;It is stack where a whole(Global) execution context is pushed inside the stack(GEC).&lt;/p&gt;
+&lt;a href=&quot;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiNgv7cIqJ7TynCvJSFwU19lFliThp1fHyFYVxeENPomHa5CJxJFX11lB86MIGmVE70PZZoqDAXhd6QoWR4-YmY-KcNKt7Fu7r8KmEQejYuGo-lPNoqBPUKCwK5HV0BM-uUYu2VBG8TIakNtLMGF7ihXaxwqIaIIx23myQXqhpvg6gJ3nDBMJjuzQbkfN3v/s1600/09-02-2025+21:29:51.png&quot; data-lightbox=&quot;blog-img&quot; data-title=&quot;Screenshot&quot;&gt;
+  &lt;img src=&quot;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiNgv7cIqJ7TynCvJSFwU19lFliThp1fHyFYVxeENPomHa5CJxJFX11lB86MIGmVE70PZZoqDAXhd6QoWR4-YmY-KcNKt7Fu7r8KmEQejYuGo-lPNoqBPUKCwK5HV0BM-uUYu2VBG8TIakNtLMGF7ihXaxwqIaIIx23myQXqhpvg6gJ3nDBMJjuzQbkfN3v/s1600/09-02-2025+21:29:51.png&quot;
+       alt=&quot;Screenshot&quot;
+       loading=&quot;lazy&quot;
+       style=&quot;max-width: 100%; height: auto; border-radius: 6px;&quot; /&gt;
+&lt;/a&gt;
+&lt;p&gt;when control goes to function invoaction it create new execution context 1. Which is pushed into stack e.g E1 Once we are done with executing function, we return the ans and poped out E1 and&lt;/p&gt;
+&lt;a href=&quot;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhrRsXvWFsJF8diu93CipTdGVnmLRKr5veGckgDcNMHdXdgdg5Hmjomi2tFDid8AqQpqsVy1YGOrwH-QWom5pvwMiphlHJOKM250RMLwHmIcO9-volynANnINnX4CbNphC00gcy_TPLywxMHBmrPastjRhYOjmyw1w0n60AeYPYxEcJZID2DpbN8ivQbnmj/s1600/09-02-2025+21:19:55.png&quot; data-lightbox=&quot;blog-img&quot; data-title=&quot;Screenshot&quot;&gt;
+  &lt;img src=&quot;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhrRsXvWFsJF8diu93CipTdGVnmLRKr5veGckgDcNMHdXdgdg5Hmjomi2tFDid8AqQpqsVy1YGOrwH-QWom5pvwMiphlHJOKM250RMLwHmIcO9-volynANnINnX4CbNphC00gcy_TPLywxMHBmrPastjRhYOjmyw1w0n60AeYPYxEcJZID2DpbN8ivQbnmj/s1600/09-02-2025+21:19:55.png&quot;
+       alt=&quot;Screenshot&quot;
+       loading=&quot;lazy&quot;
+       style=&quot;max-width: 100%; height: auto; border-radius: 6px;&quot; /&gt;
+&lt;/a&gt;
+&lt;p&gt;control goes back to GEC where it left&lt;br /&gt;
+then we move on line numeber 7,Where the new function is invoked and new execution context is created e.g E2…
+After executing function, we return the ans and poped out E2 and control goes back to GEC where it left&lt;/p&gt;
+&lt;p&gt;after all code is executed Whole stack become empty&lt;/p&gt;
+&lt;a href=&quot;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi8r4M3GWmCQlsMng-ycQkPZkCoTfMfAejzkoSmQeqgfy2MkTyJ1ffqJfQeGxY5VB2eOT9ncti3uDT_0Ump8MgKNCfWJxJY5MbuesEb3Wfmrydhe7ycIgcqxgUo0lHyOQoHbCpHswsPdL0wFdMeTkoyaIi_hrDBKmYYv7t70DeBbqVZSNOfvO5MlmJiqKvx/s1600/09-02-2025+21:28:08.png&quot; data-lightbox=&quot;blog-img&quot; data-title=&quot;Screenshot&quot;&gt;
+  &lt;img src=&quot;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi8r4M3GWmCQlsMng-ycQkPZkCoTfMfAejzkoSmQeqgfy2MkTyJ1ffqJfQeGxY5VB2eOT9ncti3uDT_0Ump8MgKNCfWJxJY5MbuesEb3Wfmrydhe7ycIgcqxgUo0lHyOQoHbCpHswsPdL0wFdMeTkoyaIi_hrDBKmYYv7t70DeBbqVZSNOfvO5MlmJiqKvx/s1600/09-02-2025+21:28:08.png&quot;
+       alt=&quot;Screenshot&quot;
+       loading=&quot;lazy&quot;
+       style=&quot;max-width: 100%; height: auto; border-radius: 6px;&quot; /&gt;
+&lt;/a&gt;
+&lt;p&gt;&lt;code&gt;Call Stack Maintain the order of execution of execution context&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;ALt Names of Call Stack&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;1.call Stack&lt;/li&gt;
+&lt;li&gt;2.Execution Context Stack&lt;/li&gt;
+&lt;li&gt;3.Program Stack&lt;/li&gt;
+&lt;li&gt;4.Runtime Stack&lt;/li&gt;
+&lt;li&gt;5.Machine Stack&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&quot;synchronous-or-asynchronous&quot;&gt;Synchronous OR Asynchronous&lt;/h4&gt;
+&lt;h4 id=&quot;single-threaded-or-multi-threaded&quot;&gt;Single Threaded OR Multi-Threaded&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Thank You For Your Time :)&lt;/p&gt;
+</content>
+        
+    </entry>
+</feed>

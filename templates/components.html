@@ -1,0 +1,14 @@
+{% component image_url(url, alt="Image", ...rest) %}
+<a href="{{ url }}" data-lightbox="blog-img" data-title="{{ alt }}">
+  <img src="{{ url }}"
+       alt="{{ alt }}"
+       loading="lazy"
+       style="max-width: 100%; height: auto; border-radius: 6px;" />
+</a>
+{% endcomponent image_url %}
+
+{% component responsive_img(path, alt="Image", ...rest) %}
+<div class="responsive-img">
+  <img src="{{ get_url(path=path) }}" alt="{{ alt }}" />
+</div>
+{% endcomponent responsive_img %}

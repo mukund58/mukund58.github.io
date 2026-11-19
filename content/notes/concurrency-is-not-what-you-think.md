@@ -18,13 +18,13 @@ Most people think of **multi-core CPUs**, which is understandable with the marke
 
 Back in the 1980s, machines like the **Commodore Amiga** and **Apple Macintosh** could already run multiple programs at once—even with only **one processor**.
 
-{{ image_url(url="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Amiga500_system.jpg/250px-Amiga500_system.jpg", alt="Online Image Example") }}
+{{ <image_url url="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Amiga500_system.jpg/250px-Amiga500_system.jpg" alt="Online Image Example" /> }}
 
 To understand how, we need to go back further.
 
 ### Mainframes and Limited Access
 
-{{ image_url(url="https://media.wired.com/photos/59329428a312645844995f4d/master/w_1600,c_limit/AP120305028348.jpg", alt="Online Image Example") }}
+{{ <image_url url="https://media.wired.com/photos/59329428a312645844995f4d/master/w_1600,c_limit/AP120305028348.jpg" alt="Online Image Example" /> }}
 
 Early computers were massive and expensive machines called **mainframes**. They filled entire rooms and were only accessible to governments, big companies, and universities. Due to their high cost and complexity, **computer time was highly valuable**.
 
@@ -55,7 +55,7 @@ A **CPU executes one instruction at a time**, but it does so incredibly fast whi
 Systems like **Multics** (developed in the 1960s) were pioneers in this approach.
 
 
-{{ image_url(url="https://www.macos.utah.edu/documentation/short_courses/mac_os_x_overview/history_and_evolution/unix_history/mainColumnParagraphs/010/image/openstep1.jpg", alt="Online Image Example") }}
+{{ <image_url url="https://www.macos.utah.edu/documentation/short_courses/mac_os_x_overview/history_and_evolution/unix_history/mainColumnParagraphs/010/image/openstep1.jpg" alt="Online Image Example" /> }}
 
 [refrence](https://www.macos.utah.edu/documentation/short_courses/mac_os_x_overview/history_and_evolution/unix_history.html)
 

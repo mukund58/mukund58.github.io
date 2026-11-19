@@ -13,7 +13,7 @@ image = "/images/system-design.png"
 
 This blog is where I will document my journey of learning React over the next 90 days. Each day, I will focus on a specific topic or concept, and share my notes, code snippets, and resources.
 
-{{image_url(url="/images/system-design.png", alt="React Logo")}}
+{{ <image_url url="/images/system-design.png" alt="React Logo" /> }}
 
 
 

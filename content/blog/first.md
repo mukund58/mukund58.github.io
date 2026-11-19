@@ -12,8 +12,8 @@ in_search_index = true
 +++
 
 ### What is free Software 
-<!-- {{ responsive_img(path="images/08-example.jpg", alt="Sample image") }} -->
-{{ responsive_img(path="images/gnu-means-freedom.png", alt="Sample image") }}
+{# {{ <responsive_img path="images/08-example.jpg" alt="Sample image" /> }} #}
+{{ <responsive_img path="images/gnu-means-freedom.png" alt="Sample image" /> }}
 
 A program is free software which respect user Freedom 'Its free as freedom' Its means Zero price but we are not taking about price, We talking about more freedom.
 

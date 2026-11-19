@@ -11,7 +11,7 @@ image = "/images/quantitative-aptitude.jpg"
 +++
 
 
-{{image_url(url="/images/quantitative-aptitude.jpg", alt="image", rel="preload", class="w-full h-auto mb-4")}}
+{{ <image_url url="/images/quantitative-aptitude.jpg" alt="image" rel="preload" class="w-full h-auto mb-4" /> }}
 
 
 

@@ -47,7 +47,7 @@ Permissive licenses (commonly referred to as “cuck licenses”) like the MIT l
 
 
 
-{{image_url(url="https://preview.redd.it/gpl-gigachad-v0-lfsxe7pwpgda1.jpg?width=640&crop=smart&auto=webp&s=f72b1d0db28eed57a3670ab3ccfe9d4602ebdfea", alt="Meme")}}
+{{ <image_url url="https://preview.redd.it/gpl-gigachad-v0-lfsxe7pwpgda1.jpg?width=640&crop=smart&auto=webp&s=f72b1d0db28eed57a3670ab3ccfe9d4602ebdfea" alt="Meme" /> }}
 
 
 
@@ -63,7 +63,7 @@ Key takeaways from his perspective:
 - **Respect and protection** – GPL enforces credit and sharing. MIT/BSD only rely on goodwill.  
 
 
-{{image_url(url="https://lemmy.world/pictrs/image/9a59b61d-20a4-4f40-9c30-bc273a20dfdd.webp?format=webp", alt="Meme")}}
+{{ <image_url url="https://lemmy.world/pictrs/image/9a59b61d-20a4-4f40-9c30-bc273a20dfdd.webp?format=webp" alt="Meme" /> }}
 
 Context:
 

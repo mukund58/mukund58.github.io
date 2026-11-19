@@ -7,8 +7,18 @@
 </a>
 {% endcomponent image_url %}
 
-{% component responsive_img(path, alt="Image", ...rest) %}
-<div class="responsive-img">
-  <img src="{{ get_url(path=path) }}" alt="{{ alt }}" />
-</div>
+{% component responsive_img(path, alt="Image", op="fit_width", ...rest) %}
+{% set mdata = get_image_metadata(path=path) %}
+{% set w = (mdata.width / 2) | round | int %}
+{% set h = (mdata.height / 2) | round | int %}
+{% set image = resize_image(path=path, width=w, height=h, op=op) %}
+<a href="/{{ path }}" data-lightbox="blog-img" data-title="{{ alt }}">
+    <img src="{{ image.url }}"
+         srcset="/{{ path }} 2x"
+         width="{{ w }}"
+         height="{{ h }}"
+         alt="{{ alt }}"
+         loading="lazy"
+         style="max-width: 100%; height: auto; border-radius: 6px;" />
+</a>
 {% endcomponent responsive_img %}

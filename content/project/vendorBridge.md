@@ -360,31 +360,31 @@ Implementing secure authentication with JWT and role-based authorization helped 
 
 ### Login
 
-{{ responsive_img(path="images/vendorbridge/login.png", alt="Sample image") }}
+{{ <responsive_img path="images/vendorbridge/login.png" alt="Sample image" /> }}
 
 ---
 
 ### Dashboard
 
-{{ responsive_img(path="images/vendorbridge/dashboard.png", alt="Sample image") }}
+{{ <responsive_img path="images/vendorbridge/dashboard.png" alt="Sample image" /> }}
 
 ---
 
 ### Vendor Directory
 
-{{ responsive_img(path="images/vendorbridge/vendors.png", alt="Sample image") }}
+{{ <responsive_img path="images/vendorbridge/vendors.png" alt="Sample image" /> }}
 
 ---
 
 ### RFQ Module
 
-{{ responsive_img(path="images/vendorbridge/rfq.png", alt="Sample image") }}
+{{ <responsive_img path="images/vendorbridge/rfq.png" alt="Sample image" /> }}
 
 ---
 
 ### Reports
 
-{{ responsive_img(path="images/vendorbridge/reports.png", alt="Sample image") }}
+{{ <responsive_img path="images/vendorbridge/reports.png" alt="Sample image" /> }}
 
 ---
 

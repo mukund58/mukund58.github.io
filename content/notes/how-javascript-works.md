@@ -68,7 +68,7 @@ var square2 = square(n);
 ```
 Everytime when Function Invoaction there a new Execution Context has been created 
 
-{{image_url(url="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEim3XmMyXtIw7xgiECdqHePh2dkJN6LPqcydmj0LDhjY1Gtn-HuqqczqBkiLJC395xn3b5JCnee0uhUjmeeOPtvzJdZzipPRmRCk3SJtwWezplF6szNw6QXjBeO2Ynjv85-rB3m1UJagAbnfKIcvU369M3IU0pYVXIsdn6CVNnTC6gBrGG-SlqB8hqKw4Xp/s16000/09-02-2025+16:45:36.png", alt="Screenshot")}}
+{{ <image_url url="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEim3XmMyXtIw7xgiECdqHePh2dkJN6LPqcydmj0LDhjY1Gtn-HuqqczqBkiLJC395xn3b5JCnee0uhUjmeeOPtvzJdZzipPRmRCk3SJtwWezplF6szNw6QXjBeO2Ynjv85-rB3m1UJagAbnfKIcvU369M3IU0pYVXIsdn6CVNnTC6gBrGG-SlqB8hqKw4Xp/s16000/09-02-2025+16:45:36.png" alt="Screenshot" /> }}
 
 As soon as you run the code there a global Execution context is created and 
 
@@ -83,16 +83,16 @@ as control goes to line number 6 ,it'll invoke the function so when you invoke t
 - It Manages a Call Stack
 
 It is stack where a whole(Global) execution context is pushed inside the stack(GEC). 
-{{image_url(url="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiNgv7cIqJ7TynCvJSFwU19lFliThp1fHyFYVxeENPomHa5CJxJFX11lB86MIGmVE70PZZoqDAXhd6QoWR4-YmY-KcNKt7Fu7r8KmEQejYuGo-lPNoqBPUKCwK5HV0BM-uUYu2VBG8TIakNtLMGF7ihXaxwqIaIIx23myQXqhpvg6gJ3nDBMJjuzQbkfN3v/s1600/09-02-2025+21:29:51.png", alt="Screenshot")}}
+{{ <image_url url="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiNgv7cIqJ7TynCvJSFwU19lFliThp1fHyFYVxeENPomHa5CJxJFX11lB86MIGmVE70PZZoqDAXhd6QoWR4-YmY-KcNKt7Fu7r8KmEQejYuGo-lPNoqBPUKCwK5HV0BM-uUYu2VBG8TIakNtLMGF7ihXaxwqIaIIx23myQXqhpvg6gJ3nDBMJjuzQbkfN3v/s1600/09-02-2025+21:29:51.png" alt="Screenshot" /> }}
 
  when control goes to function invoaction it create new execution context 1. Which is pushed into stack e.g E1 Once we are done with executing function, we return the ans and poped out E1 and 
-{{ image_url(url="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhrRsXvWFsJF8diu93CipTdGVnmLRKr5veGckgDcNMHdXdgdg5Hmjomi2tFDid8AqQpqsVy1YGOrwH-QWom5pvwMiphlHJOKM250RMLwHmIcO9-volynANnINnX4CbNphC00gcy_TPLywxMHBmrPastjRhYOjmyw1w0n60AeYPYxEcJZID2DpbN8ivQbnmj/s1600/09-02-2025+21:19:55.png", alt="Screenshot") }}
+{{ <image_url url="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhrRsXvWFsJF8diu93CipTdGVnmLRKr5veGckgDcNMHdXdgdg5Hmjomi2tFDid8AqQpqsVy1YGOrwH-QWom5pvwMiphlHJOKM250RMLwHmIcO9-volynANnINnX4CbNphC00gcy_TPLywxMHBmrPastjRhYOjmyw1w0n60AeYPYxEcJZID2DpbN8ivQbnmj/s1600/09-02-2025+21:19:55.png" alt="Screenshot" /> }}
 control goes back to GEC where it left  
 then we move on line numeber 7,Where the new function is invoked and new execution context is created e.g E2...
 After executing function, we return the ans and poped out E2 and control goes back to GEC where it left
 
 after all code is executed Whole stack become empty
-{{image_url(url="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi8r4M3GWmCQlsMng-ycQkPZkCoTfMfAejzkoSmQeqgfy2MkTyJ1ffqJfQeGxY5VB2eOT9ncti3uDT_0Ump8MgKNCfWJxJY5MbuesEb3Wfmrydhe7ycIgcqxgUo0lHyOQoHbCpHswsPdL0wFdMeTkoyaIi_hrDBKmYYv7t70DeBbqVZSNOfvO5MlmJiqKvx/s1600/09-02-2025+21:28:08.png", alt="Screenshot")}}
+{{ <image_url url="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi8r4M3GWmCQlsMng-ycQkPZkCoTfMfAejzkoSmQeqgfy2MkTyJ1ffqJfQeGxY5VB2eOT9ncti3uDT_0Ump8MgKNCfWJxJY5MbuesEb3Wfmrydhe7ycIgcqxgUo0lHyOQoHbCpHswsPdL0wFdMeTkoyaIi_hrDBKmYYv7t70DeBbqVZSNOfvO5MlmJiqKvx/s1600/09-02-2025+21:28:08.png" alt="Screenshot" /> }}
 
 `Call Stack Maintain the order of execution of execution context`
 

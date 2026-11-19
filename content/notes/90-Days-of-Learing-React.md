@@ -12,7 +12,7 @@ image = "/images/react-logo.png"
 
 This blog is where I will document my journey of learning React over the next 90 days. Each day, I will focus on a specific topic or concept, and share my notes, code snippets, and resources.
 
-{{image_url(url="/images/react-logo.png", alt="React Logo")}}
+{{ <image_url url="/images/react-logo.png" alt="React Logo" /> }}
 
 ## Day 1: Introduction to React
 - **What is React?**
@@ -207,7 +207,7 @@ and new concurrency primitives.
 
 The algorithm React uses to diff one tree with another to determine which parts need to be changed.
 
-{{ image_url(url="https://media.geeksforgeeks.org/wp-content/uploads/20241212235246933476/Browser-DOM-Virtual-DOM.webp", alt="Online Image Example") }}
+{{ <image_url url="https://media.geeksforgeeks.org/wp-content/uploads/20241212235246933476/Browser-DOM-Virtual-DOM.webp" alt="Online Image Example" /> }}
 
 **Reconciliation is the algorithm behind what is popularly understood as the "virtual DOM."**
 
@@ -388,6 +388,7 @@ const [count, setCount] = useState(0);
 - `initialState`: The initial value of the state.
 
 ### Example of useState Hook for Background Color Change on Button Click 
+{% raw %}
 ```js 
 import { useState } from 'react'
 
@@ -420,6 +421,7 @@ function App() {
 
 export default App
 ```
+{% endraw %}
 ### Explanation
 - We import the `useState` hook from React.
 - We define a functional component `App`.

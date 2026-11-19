@@ -23,12 +23,12 @@ in_search_index = true
 
 ### Home Page
 
-{{ responsive_img(path="images/project.png", alt="Sample image") }}
+{{ <responsive_img path="images/project.png" alt="Sample image" /> }}
 
 ### Login and Signup Page
 
-{{ responsive_img(path="images/project-login.png", alt="Sample image") }}
-{{ responsive_img(path="images/project-signup.png", alt="Sample image") }}
+{{ <responsive_img path="images/project-login.png" alt="Sample image" /> }}
+{{ <responsive_img path="images/project-signup.png" alt="Sample image" /> }}
 
 
 ### Dashboard Page
@@ -37,15 +37,15 @@ in_search_index = true
 - Edit or delete draft
 - Create new drafts
 
-{{ responsive_img(path="images/project-dashborad.png", alt="Sample image") }}
-{{ responsive_img(path="images/project-DashboardDraft.png", alt="Sample image") }}
+{{ <responsive_img path="images/project-dashborad.png" alt="Sample image" /> }}
+{{ <responsive_img path="images/project-DashboardDraft.png" alt="Sample image" /> }}
 
 ### Editor Page
 
 - Name and create drafts
 - View/search all drafts
 
-{{ responsive_img(path="images/project-editor.png", alt="Sample image") }}
+{{ <responsive_img path="images/project-editor.png" alt="Sample image" /> }}
 
 
 ## 1. Introduction
@@ -172,12 +172,12 @@ A wireframe is a simple sketch or blueprint that shows the basic layout of a web
 
 ## ER Model
 
-{{ responsive_img(path="images/ER.png", alt="Sample image") }}
+{{ <responsive_img path="images/ER.png" alt="Sample image" /> }}
 
 
 
 ## Relational Schema
-{{ responsive_img(path="images/RS.png", alt="Sample image") }}
+{{ <responsive_img path="images/RS.png" alt="Sample image" /> }}
 
 
 ---

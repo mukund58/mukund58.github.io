@@ -88,6 +88,46 @@
 
         
 
+<meta property="article:published_time" content="2025-06-23" />
+
+<meta property="article:author" content="Mukund Parmar" />
+
+
+<meta property="article:tag" content="Operating Systems" />
+
+<meta property="article:tag" content="Concurrency" />
+
+<meta property="article:tag" content="CPU" />
+
+<meta property="article:tag" content="Multitasking" />
+
+
+
+<!-- Schema.org Article Structured Data for Google Search -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "How Single-CPU Systems Multitask",
+  "description": "Explore how computers run multiple programs at once, even with a single CPU, by understanding concurrency and scheduling",
+  "datePublished": "2025-06-23",
+  "author": {
+    "@type": "Person",
+    "name": "Mukund Parmar",
+    "url": "https://www.mukund.xyz"
+  },
+  
+  "image": "/images/computer.jpg",
+  
+  "keywords": ["Operating Systems", "Concurrency", "CPU", "Multitasking"],
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.mukund.xyz/notes/concurrency-is-not-what-you-think/"
+  }
+}
+</script>
+
+
         <link rel="icon" href="https://www.mukund.xyz/images/logo.jpg" />
         <link
             href="https://cdn.boxicons.com/fonts/basic/boxicons.min.css"
@@ -185,166 +225,140 @@
 
         <section class="section w-full">
             
+<div class="wrapper max-w-4xl m-auto p-4 md:p-8">
+  <a href="/notes" class="inline-flex items-center gap-1 text-sm font-medium text-stone-600 dark:text-stone-400 hover:text-[#bc4a3c] dark:hover:text-[#bc4a3c] mb-6 transition-colors">
+    <i class="bx bx-left-arrow-alt text-lg"></i> Back to Notes
+  </a>
 
+  <h1 class="text-3xl md:text-4xl font-extrabold tracking-tight mb-3 text-stone-900 dark:text-white">
+    How Single-CPU Systems Multitask
+  </h1>
 
-<div class="max-w-5xl m-auto mt-4">
-
-    <div class=""><a href=".." class="text-black dark:text-amber-200"><-- </a><span class="accent-data">concurrency-is-not-what-you-think</span></div>
-    <time datetime="2025-06-23">Published on: <span class="accent-data">2025-06-23</span></time>
+  <div class="flex flex-wrap items-center gap-4 text-sm text-stone-500 dark:text-stone-400 mb-4 pb-4 border-b border-stone-200 dark:border-stone-800">
     
-    <address rel="author">By <span class="accent-data">Mukund Parmar</span></address>
+    <div class="flex items-center gap-1.5">
+      <i class="bx bx-calendar text-base"></i>
+      <span>June 23, 2025</span>
+    </div>
+    
+    
+    <div class="flex items-center gap-1.5">
+      <i class="bx bx-time text-base"></i>
+      <span>4 min read</span>
+    </div>
     
   </div>
-<div class="wrapper max-w-5xl m-auto">
-<h1 class="title">
-  How Single-CPU Systems Multitask
-</h1>
 
-         
-  <!-- <ul>
-    
-      <li class='list-none text-xl'><a href="https://www.mukund.xyz/notes/concurrency-is-not-what-you-think/#a-historical-perspective" class="no-underline hover:underline dark:text-white text-black>A Historical Perspective</a>
-        
-          <ul >
-            
-              <li class='list-none' ><a href="https://www.mukund.xyz/notes/concurrency-is-not-what-you-think/#mainframes-and-limited-access" class="no-underline hover:underline dark:text-white text-black">Mainframes and Limited Access</a></li>
-            
-              <li class='list-none' ><a href="https://www.mukund.xyz/notes/concurrency-is-not-what-you-think/#the-birth-of-operating-systems" class="no-underline hover:underline dark:text-white text-black">The Birth of Operating Systems</a></li>
-            
-          </ul>
-        
-      </li>
-    
-      <li class='list-none text-xl'><a href="https://www.mukund.xyz/notes/concurrency-is-not-what-you-think/#concurrency-in-single-cpu-systems" class="no-underline hover:underline dark:text-white text-black>Concurrency in Single-CPU Systems</a>
-        
-      </li>
-    
-      <li class='list-none text-xl'><a href="https://www.mukund.xyz/notes/concurrency-is-not-what-you-think/#how-cpus-execute-instructions" class="no-underline hover:underline dark:text-white text-black>How CPUs Execute Instructions</a>
-        
-      </li>
-    
-      <li class='list-none text-xl'><a href="https://www.mukund.xyz/notes/concurrency-is-not-what-you-think/#scheduling-and-process-management" class="no-underline hover:underline dark:text-white text-black>Scheduling and Process Management</a>
-        
-          <ul >
-            
-              <li class='list-none' ><a href="https://www.mukund.xyz/notes/concurrency-is-not-what-you-think/#but-when-does-the-os-run" class="no-underline hover:underline dark:text-white text-black">But When Does the OS Run?</a></li>
-            
-          </ul>
-        
-      </li>
-    
-      <li class='list-none text-xl'><a href="https://www.mukund.xyz/notes/concurrency-is-not-what-you-think/#the-problem-with-cooperative-scheduling" class="no-underline hover:underline dark:text-white text-black>The Problem With Cooperative Scheduling</a>
-        
-      </li>
-    
-      <li class='list-none text-xl'><a href="https://www.mukund.xyz/notes/concurrency-is-not-what-you-think/#enter-preemptive-scheduling" class="no-underline hover:underline dark:text-white text-black>Enter Preemptive Scheduling</a>
-        
-      </li>
-    
-      <li class='list-none text-xl'><a href="https://www.mukund.xyz/notes/concurrency-is-not-what-you-think/#what-about-multi-core-systems" class="no-underline hover:underline dark:text-white text-black>What About Multi-core Systems?</a>
-        
-          <ul >
-            
-              <li class='list-none' ><a href="https://www.mukund.xyz/notes/concurrency-is-not-what-you-think/#hardware-solution-multi-core-cpus" class="no-underline hover:underline dark:text-white text-black">Hardware Solution: Multi-core CPUs</a></li>
-            
-          </ul>
-        
-      </li>
-    
-      <li class='list-none text-xl'><a href="https://www.mukund.xyz/notes/concurrency-is-not-what-you-think/#final-thought" class="no-underline hover:underline dark:text-white text-black>Final Thought</a>
-        
-      </li>
-    
-  </ul> -->
   
-  <h2>Table of contents</h2>
-<ul>
+  <div class="flex flex-wrap items-center gap-2 mb-8">
+    <span class="text-xs uppercase tracking-wider text-stone-400 font-semibold">Tags:</span>
+    
+    <a href="https://www.mukund.xyz/tags/operating-systems/"
+       class="inline-flex items-center text-xs px-2.5 py-1 rounded-md bg-stone-100 hover:bg-[#bc4a3c] hover:text-white dark:bg-stone-800 dark:hover:bg-[#bc4a3c] dark:hover:text-white text-stone-700 dark:text-stone-300 font-medium transition-colors"
+       title="View all posts tagged #Operating Systems">
+      #Operating Systems
+    </a>
+    
+    <a href="https://www.mukund.xyz/tags/concurrency/"
+       class="inline-flex items-center text-xs px-2.5 py-1 rounded-md bg-stone-100 hover:bg-[#bc4a3c] hover:text-white dark:bg-stone-800 dark:hover:bg-[#bc4a3c] dark:hover:text-white text-stone-700 dark:text-stone-300 font-medium transition-colors"
+       title="View all posts tagged #Concurrency">
+      #Concurrency
+    </a>
+    
+    <a href="https://www.mukund.xyz/tags/cpu/"
+       class="inline-flex items-center text-xs px-2.5 py-1 rounded-md bg-stone-100 hover:bg-[#bc4a3c] hover:text-white dark:bg-stone-800 dark:hover:bg-[#bc4a3c] dark:hover:text-white text-stone-700 dark:text-stone-300 font-medium transition-colors"
+       title="View all posts tagged #CPU">
+      #CPU
+    </a>
+    
+    <a href="https://www.mukund.xyz/tags/multitasking/"
+       class="inline-flex items-center text-xs px-2.5 py-1 rounded-md bg-stone-100 hover:bg-[#bc4a3c] hover:text-white dark:bg-stone-800 dark:hover:bg-[#bc4a3c] dark:hover:text-white text-stone-700 dark:text-stone-300 font-medium transition-colors"
+       title="View all posts tagged #Multitasking">
+      #Multitasking
+    </a>
+    
+  </div>
+  
 
-  <li class='list-none text-base'>
-  <a href="https://www.mukund.xyz/notes/concurrency-is-not-what-you-think/#a-historical-perspective"  class="no-underline hover:underline dark:text-white text-black ">A Historical Perspective</a>
   
-    <ul>
+  <nav class="my-6 p-4 rounded-xl bg-stone-50 dark:bg-stone-900 border border-stone-200 dark:border-stone-800">
+    <h2 class="text-sm font-bold uppercase tracking-wider text-stone-500 dark:text-stone-400 mb-2">Table of Contents</h2>
+    <ul class="space-y-1 text-sm">
       
-        <li>
-        <a href="https://www.mukund.xyz/notes/concurrency-is-not-what-you-think/#mainframes-and-limited-access"class="text-black dark:text-amber-200" >Mainframes and Limited Access</a>
-          <ul>
+      <li>
+        <a href="https://www.mukund.xyz/notes/concurrency-is-not-what-you-think/#a-historical-perspective" class="text-stone-700 dark:text-stone-300 hover:text-[#bc4a3c] dark:hover:text-[#bc4a3c] hover:underline">A Historical Perspective</a>
+        
+        <ul class="pl-4 mt-1 space-y-1">
           
-          </ul>
-        </li>
+          <li>
+            <a href="https://www.mukund.xyz/notes/concurrency-is-not-what-you-think/#mainframes-and-limited-access" class="text-stone-600 dark:text-stone-400 hover:text-[#bc4a3c] dark:hover:text-[#bc4a3c] hover:underline">Mainframes and Limited Access</a>
+          </li>
+          
+          <li>
+            <a href="https://www.mukund.xyz/notes/concurrency-is-not-what-you-think/#the-birth-of-operating-systems" class="text-stone-600 dark:text-stone-400 hover:text-[#bc4a3c] dark:hover:text-[#bc4a3c] hover:underline">The Birth of Operating Systems</a>
+          </li>
+          
+        </ul>
+        
+      </li>
       
-        <li>
-        <a href="https://www.mukund.xyz/notes/concurrency-is-not-what-you-think/#the-birth-of-operating-systems"class="text-black dark:text-amber-200" >The Birth of Operating Systems</a>
-          <ul>
+      <li>
+        <a href="https://www.mukund.xyz/notes/concurrency-is-not-what-you-think/#concurrency-in-single-cpu-systems" class="text-stone-700 dark:text-stone-300 hover:text-[#bc4a3c] dark:hover:text-[#bc4a3c] hover:underline">Concurrency in Single-CPU Systems</a>
+        
+      </li>
+      
+      <li>
+        <a href="https://www.mukund.xyz/notes/concurrency-is-not-what-you-think/#how-cpus-execute-instructions" class="text-stone-700 dark:text-stone-300 hover:text-[#bc4a3c] dark:hover:text-[#bc4a3c] hover:underline">How CPUs Execute Instructions</a>
+        
+      </li>
+      
+      <li>
+        <a href="https://www.mukund.xyz/notes/concurrency-is-not-what-you-think/#scheduling-and-process-management" class="text-stone-700 dark:text-stone-300 hover:text-[#bc4a3c] dark:hover:text-[#bc4a3c] hover:underline">Scheduling and Process Management</a>
+        
+        <ul class="pl-4 mt-1 space-y-1">
           
-          </ul>
-        </li>
+          <li>
+            <a href="https://www.mukund.xyz/notes/concurrency-is-not-what-you-think/#but-when-does-the-os-run" class="text-stone-600 dark:text-stone-400 hover:text-[#bc4a3c] dark:hover:text-[#bc4a3c] hover:underline">But When Does the OS Run?</a>
+          </li>
+          
+        </ul>
+        
+      </li>
+      
+      <li>
+        <a href="https://www.mukund.xyz/notes/concurrency-is-not-what-you-think/#the-problem-with-cooperative-scheduling" class="text-stone-700 dark:text-stone-300 hover:text-[#bc4a3c] dark:hover:text-[#bc4a3c] hover:underline">The Problem With Cooperative Scheduling</a>
+        
+      </li>
+      
+      <li>
+        <a href="https://www.mukund.xyz/notes/concurrency-is-not-what-you-think/#enter-preemptive-scheduling" class="text-stone-700 dark:text-stone-300 hover:text-[#bc4a3c] dark:hover:text-[#bc4a3c] hover:underline">Enter Preemptive Scheduling</a>
+        
+      </li>
+      
+      <li>
+        <a href="https://www.mukund.xyz/notes/concurrency-is-not-what-you-think/#what-about-multi-core-systems" class="text-stone-700 dark:text-stone-300 hover:text-[#bc4a3c] dark:hover:text-[#bc4a3c] hover:underline">What About Multi-core Systems?</a>
+        
+        <ul class="pl-4 mt-1 space-y-1">
+          
+          <li>
+            <a href="https://www.mukund.xyz/notes/concurrency-is-not-what-you-think/#hardware-solution-multi-core-cpus" class="text-stone-600 dark:text-stone-400 hover:text-[#bc4a3c] dark:hover:text-[#bc4a3c] hover:underline">Hardware Solution: Multi-core CPUs</a>
+          </li>
+          
+        </ul>
+        
+      </li>
+      
+      <li>
+        <a href="https://www.mukund.xyz/notes/concurrency-is-not-what-you-think/#final-thought" class="text-stone-700 dark:text-stone-300 hover:text-[#bc4a3c] dark:hover:text-[#bc4a3c] hover:underline">Final Thought</a>
+        
+      </li>
       
     </ul>
+  </nav>
   
-  </li>
 
-  <li class='list-none text-base'>
-  <a href="https://www.mukund.xyz/notes/concurrency-is-not-what-you-think/#concurrency-in-single-cpu-systems"  class="no-underline hover:underline dark:text-white text-black ">Concurrency in Single-CPU Systems</a>
-  
-  </li>
-
-  <li class='list-none text-base'>
-  <a href="https://www.mukund.xyz/notes/concurrency-is-not-what-you-think/#how-cpus-execute-instructions"  class="no-underline hover:underline dark:text-white text-black ">How CPUs Execute Instructions</a>
-  
-  </li>
-
-  <li class='list-none text-base'>
-  <a href="https://www.mukund.xyz/notes/concurrency-is-not-what-you-think/#scheduling-and-process-management"  class="no-underline hover:underline dark:text-white text-black ">Scheduling and Process Management</a>
-  
-    <ul>
-      
-        <li>
-        <a href="https://www.mukund.xyz/notes/concurrency-is-not-what-you-think/#but-when-does-the-os-run"class="text-black dark:text-amber-200" >But When Does the OS Run?</a>
-          <ul>
-          
-          </ul>
-        </li>
-      
-    </ul>
-  
-  </li>
-
-  <li class='list-none text-base'>
-  <a href="https://www.mukund.xyz/notes/concurrency-is-not-what-you-think/#the-problem-with-cooperative-scheduling"  class="no-underline hover:underline dark:text-white text-black ">The Problem With Cooperative Scheduling</a>
-  
-  </li>
-
-  <li class='list-none text-base'>
-  <a href="https://www.mukund.xyz/notes/concurrency-is-not-what-you-think/#enter-preemptive-scheduling"  class="no-underline hover:underline dark:text-white text-black ">Enter Preemptive Scheduling</a>
-  
-  </li>
-
-  <li class='list-none text-base'>
-  <a href="https://www.mukund.xyz/notes/concurrency-is-not-what-you-think/#what-about-multi-core-systems"  class="no-underline hover:underline dark:text-white text-black ">What About Multi-core Systems?</a>
-  
-    <ul>
-      
-        <li>
-        <a href="https://www.mukund.xyz/notes/concurrency-is-not-what-you-think/#hardware-solution-multi-core-cpus"class="text-black dark:text-amber-200" >Hardware Solution: Multi-core CPUs</a>
-          <ul>
-          
-          </ul>
-        </li>
-      
-    </ul>
-  
-  </li>
-
-  <li class='list-none text-base'>
-  <a href="https://www.mukund.xyz/notes/concurrency-is-not-what-you-think/#final-thought"  class="no-underline hover:underline dark:text-white text-black ">Final Thought</a>
-  
-  </li>
-
-</ul>
-
-
-
-  <p>Have you ever wondered how your computer can run multiple programs at the same time?</p>
+  <div class="content prose dark:prose-invert max-w-none">
+    <p>Have you ever wondered how your computer can run multiple programs at the same time?</p>
 <p>Most people think of <strong>multi-core CPUs</strong>, which is understandable with the marketing push from CPU manufacturers. However, the ability to multitask has been around <strong>since the days of single-core processors</strong>.</p>
 <h2 id="a-historical-perspective">A Historical Perspective</h2>
 <p>Back in the 1980s, machines like the <strong>Commodore Amiga</strong> and <strong>Apple Macintosh</strong> could already run multiple programs at once—even with only <strong>one processor</strong>.</p>
@@ -458,6 +472,7 @@ Parallelism is about doing lots of things at once.</strong></p>
 </blockquote>
 <hr />
 
+  </div>
 </div>
 
         </section>

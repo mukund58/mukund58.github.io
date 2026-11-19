@@ -25,6 +25,13 @@
           <div class="mt-4 text-sm text-gray-400 dark:text-white">
             {{ page.date | date(format="%B %d, %Y") }}
           </div>
+          {% if page.taxonomies.tags %}
+          <div class="flex flex-wrap gap-1.5 mt-3 pt-3 border-t border-gray-100 dark:border-stone-800">
+            {% for tag in page.taxonomies.tags %}
+            <a href="{{ get_taxonomy_url(kind='tags', name=tag) | safe }}" class="text-xs px-2 py-0.5 rounded-md bg-stone-100 hover:bg-[#bc4a3c] hover:text-white dark:bg-stone-800 dark:hover:bg-[#bc4a3c] dark:hover:text-white text-stone-600 dark:text-stone-300 transition-colors">#{{ tag }}</a>
+            {% endfor %}
+          </div>
+          {% endif %}
         </div>
       </article>
     {% endfor %}
